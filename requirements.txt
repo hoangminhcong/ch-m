@@ -1,0 +1,15 @@
+# Phiên bản GHIM đúng như venv đã sinh mọi kết quả (Python 3.11.9) — ghi ngày 2026-11-20.
+# Cài:  pip install -r requirements.txt        (công cụ phát triển: requirements-dev.txt)
+pymupdf==2.1             # đọc PDF luật EU
+pm4py==2.7.23.11         # đối chiếu engine (TN4)
+pandas==3.1.0
+pyarrow==26.0.1          # log BPIC2018 dạng parquet
+numpy==2.4.6
+rustxes==0.2.11          # đọc XES
+pydantic==2.14.2         # schema AST (Tầng 1)
+rank-bm25==0.2.2         # cấu hình R (B4)
+neo4j==6.4.1             # nạp KG / M8
+python-dotenv==1.2.4
+openai==3.45.0           # client OpenAI-compatible (Cerebras / Groq)
+python-dateutil==4.0.0   # tháng theo lịch (Quy định 1182/71)
+tzdata==2026.6           # BẮT BUỘC trên Windows: múi giờ Europe/Berlin cho zoneinfo

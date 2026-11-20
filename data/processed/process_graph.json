@@ -1,0 +1,1921 @@
+{
+  "nodes": [
+    {
+      "id": "Act:A_Accepted",
+      "label": "Activity",
+      "props": {
+        "name": "A_Accepted",
+        "event_count": 31509,
+        "case_count": 31509,
+        "case_ratio": 1.0,
+        "origin": "Application"
+      }
+    },
+    {
+      "id": "Act:A_Cancelled",
+      "label": "Activity",
+      "props": {
+        "name": "A_Cancelled",
+        "event_count": 10431,
+        "case_count": 10431,
+        "case_ratio": 0.331,
+        "origin": "Application"
+      }
+    },
+    {
+      "id": "Act:A_Complete",
+      "label": "Activity",
+      "props": {
+        "name": "A_Complete",
+        "event_count": 31362,
+        "case_count": 31362,
+        "case_ratio": 0.9953,
+        "origin": "Application"
+      }
+    },
+    {
+      "id": "Act:A_Concept",
+      "label": "Activity",
+      "props": {
+        "name": "A_Concept",
+        "event_count": 31509,
+        "case_count": 31509,
+        "case_ratio": 1.0,
+        "origin": "Application"
+      }
+    },
+    {
+      "id": "Act:A_Create Application",
+      "label": "Activity",
+      "props": {
+        "name": "A_Create Application",
+        "event_count": 31509,
+        "case_count": 31509,
+        "case_ratio": 1.0,
+        "origin": "Application"
+      }
+    },
+    {
+      "id": "Act:A_Denied",
+      "label": "Activity",
+      "props": {
+        "name": "A_Denied",
+        "event_count": 3753,
+        "case_count": 3752,
+        "case_ratio": 0.1191,
+        "origin": "Application"
+      }
+    },
+    {
+      "id": "Act:A_Incomplete",
+      "label": "Activity",
+      "props": {
+        "name": "A_Incomplete",
+        "event_count": 23055,
+        "case_count": 15003,
+        "case_ratio": 0.4761,
+        "origin": "Application"
+      }
+    },
+    {
+      "id": "Act:A_Pending",
+      "label": "Activity",
+      "props": {
+        "name": "A_Pending",
+        "event_count": 17228,
+        "case_count": 17228,
+        "case_ratio": 0.5468,
+        "origin": "Application"
+      }
+    },
+    {
+      "id": "Act:A_Submitted",
+      "label": "Activity",
+      "props": {
+        "name": "A_Submitted",
+        "event_count": 20423,
+        "case_count": 20423,
+        "case_ratio": 0.6482,
+        "origin": "Application"
+      }
+    },
+    {
+      "id": "Act:A_Validating",
+      "label": "Activity",
+      "props": {
+        "name": "A_Validating",
+        "event_count": 38816,
+        "case_count": 21870,
+        "case_ratio": 0.6941,
+        "origin": "Application"
+      }
+    },
+    {
+      "id": "Act:O_Accepted",
+      "label": "Activity",
+      "props": {
+        "name": "O_Accepted",
+        "event_count": 17228,
+        "case_count": 17228,
+        "case_ratio": 0.5468,
+        "origin": "Offer"
+      }
+    },
+    {
+      "id": "Act:O_Cancelled",
+      "label": "Activity",
+      "props": {
+        "name": "O_Cancelled",
+        "event_count": 20898,
+        "case_count": 15682,
+        "case_ratio": 0.4977,
+        "origin": "Offer"
+      }
+    },
+    {
+      "id": "Act:O_Create Offer",
+      "label": "Activity",
+      "props": {
+        "name": "O_Create Offer",
+        "event_count": 42995,
+        "case_count": 31509,
+        "case_ratio": 1.0,
+        "origin": "Offer"
+      }
+    },
+    {
+      "id": "Act:O_Created",
+      "label": "Activity",
+      "props": {
+        "name": "O_Created",
+        "event_count": 42995,
+        "case_count": 31509,
+        "case_ratio": 1.0,
+        "origin": "Offer"
+      }
+    },
+    {
+      "id": "Act:O_Refused",
+      "label": "Activity",
+      "props": {
+        "name": "O_Refused",
+        "event_count": 4695,
+        "case_count": 3720,
+        "case_ratio": 0.1181,
+        "origin": "Offer"
+      }
+    },
+    {
+      "id": "Act:O_Returned",
+      "label": "Activity",
+      "props": {
+        "name": "O_Returned",
+        "event_count": 23305,
+        "case_count": 21768,
+        "case_ratio": 0.6909,
+        "origin": "Offer"
+      }
+    },
+    {
+      "id": "Act:O_Sent (mail and online)",
+      "label": "Activity",
+      "props": {
+        "name": "O_Sent (mail and online)",
+        "event_count": 39707,
+        "case_count": 31050,
+        "case_ratio": 0.9854,
+        "origin": "Offer"
+      }
+    },
+    {
+      "id": "Act:O_Sent (online only)",
+      "label": "Activity",
+      "props": {
+        "name": "O_Sent (online only)",
+        "event_count": 2026,
+        "case_count": 1800,
+        "case_ratio": 0.0571,
+        "origin": "Offer"
+      }
+    },
+    {
+      "id": "Act:W_Assess potential fraud",
+      "label": "Activity",
+      "props": {
+        "name": "W_Assess potential fraud",
+        "event_count": 3282,
+        "case_count": 303,
+        "case_ratio": 0.0096,
+        "origin": "Workflow"
+      }
+    },
+    {
+      "id": "Act:W_Call after offers",
+      "label": "Activity",
+      "props": {
+        "name": "W_Call after offers",
+        "event_count": 191092,
+        "case_count": 31362,
+        "case_ratio": 0.9953,
+        "origin": "Workflow"
+      }
+    },
+    {
+      "id": "Act:W_Call incomplete files",
+      "label": "Activity",
+      "props": {
+        "name": "W_Call incomplete files",
+        "event_count": 168529,
+        "case_count": 15003,
+        "case_ratio": 0.4761,
+        "origin": "Workflow"
+      }
+    },
+    {
+      "id": "Act:W_Complete application",
+      "label": "Activity",
+      "props": {
+        "name": "W_Complete application",
+        "event_count": 148900,
+        "case_count": 31509,
+        "case_ratio": 1.0,
+        "origin": "Workflow"
+      }
+    },
+    {
+      "id": "Act:W_Handle leads",
+      "label": "Activity",
+      "props": {
+        "name": "W_Handle leads",
+        "event_count": 47264,
+        "case_count": 20423,
+        "case_ratio": 0.6482,
+        "origin": "Workflow"
+      }
+    },
+    {
+      "id": "Act:W_Personal Loan collection",
+      "label": "Activity",
+      "props": {
+        "name": "W_Personal Loan collection",
+        "event_count": 22,
+        "case_count": 2,
+        "case_ratio": 0.0001,
+        "origin": "Workflow"
+      }
+    },
+    {
+      "id": "Act:W_Shortened completion ",
+      "label": "Activity",
+      "props": {
+        "name": "W_Shortened completion ",
+        "event_count": 238,
+        "case_count": 74,
+        "case_ratio": 0.0023,
+        "origin": "Workflow"
+      }
+    },
+    {
+      "id": "Act:W_Validate application",
+      "label": "Activity",
+      "props": {
+        "name": "W_Validate application",
+        "event_count": 209496,
+        "case_count": 21870,
+        "case_ratio": 0.6941,
+        "origin": "Workflow"
+      }
+    },
+    {
+      "id": "Attr:case:LoanGoal",
+      "label": "Attribute",
+      "props": {
+        "name": "case:LoanGoal",
+        "level": "case",
+        "non_null_ratio": 1.0,
+        "type": "string",
+        "distinct_count": 14,
+        "values": [
+          "Boat",
+          "Business goal",
+          "Car",
+          "Caravan / Camper",
+          "Debt restructuring",
+          "Existing loan takeover",
+          "Extra spending limit",
+          "Home improvement",
+          "Motorcycle",
+          "Not speficied",
+          "Other, see explanation",
+          "Remaining debt home",
+          "Tax payments",
+          "Unknown"
+        ]
+      }
+    },
+    {
+      "id": "Attr:Accepted",
+      "label": "Attribute",
+      "props": {
+        "name": "Accepted",
+        "level": "event",
+        "non_null_ratio": 0.0358,
+        "type": "boolean",
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    {
+      "id": "Attr:OfferedAmount",
+      "label": "Attribute",
+      "props": {
+        "name": "OfferedAmount",
+        "level": "event",
+        "non_null_ratio": 0.0358,
+        "type": "number",
+        "min": 5000.0,
+        "max": 75000.0
+      }
+    },
+    {
+      "id": "Attr:MonthlyCost",
+      "label": "Attribute",
+      "props": {
+        "name": "MonthlyCost",
+        "level": "event",
+        "non_null_ratio": 0.0358,
+        "type": "number",
+        "min": 43.05,
+        "max": 6673.83
+      }
+    },
+    {
+      "id": "Attr:case:ApplicationType",
+      "label": "Attribute",
+      "props": {
+        "name": "case:ApplicationType",
+        "level": "case",
+        "non_null_ratio": 1.0,
+        "type": "string",
+        "distinct_count": 2,
+        "values": [
+          "Limit raise",
+          "New credit"
+        ]
+      }
+    },
+    {
+      "id": "Attr:case:RequestedAmount",
+      "label": "Attribute",
+      "props": {
+        "name": "case:RequestedAmount",
+        "level": "case",
+        "non_null_ratio": 1.0,
+        "type": "number",
+        "min": 0.0,
+        "max": 450000.0
+      }
+    },
+    {
+      "id": "Attr:FirstWithdrawalAmount",
+      "label": "Attribute",
+      "props": {
+        "name": "FirstWithdrawalAmount",
+        "level": "event",
+        "non_null_ratio": 0.0358,
+        "type": "number",
+        "min": 0.0,
+        "max": 75000.0
+      }
+    },
+    {
+      "id": "Attr:CreditScore",
+      "label": "Attribute",
+      "props": {
+        "name": "CreditScore",
+        "level": "event",
+        "non_null_ratio": 0.0358,
+        "type": "number",
+        "min": 0.0,
+        "max": 1145.0
+      }
+    },
+    {
+      "id": "Attr:Selected",
+      "label": "Attribute",
+      "props": {
+        "name": "Selected",
+        "level": "event",
+        "non_null_ratio": 0.0358,
+        "type": "boolean",
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    {
+      "id": "Attr:NumberOfTerms",
+      "label": "Attribute",
+      "props": {
+        "name": "NumberOfTerms",
+        "level": "event",
+        "non_null_ratio": 0.0358,
+        "type": "number",
+        "min": 5.0,
+        "max": 180.0
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "Act:A_Accepted",
+      "target": "Act:O_Create Offer",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 29966
+      }
+    },
+    {
+      "source": "Act:A_Accepted",
+      "target": "Act:W_Complete application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1538
+      }
+    },
+    {
+      "source": "Act:A_Accepted",
+      "target": "Act:W_Shortened completion ",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 5
+      }
+    },
+    {
+      "source": "Act:A_Cancelled",
+      "target": "Act:O_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 10270
+      }
+    },
+    {
+      "source": "Act:A_Cancelled",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 103
+      }
+    },
+    {
+      "source": "Act:A_Cancelled",
+      "target": "Act:W_Call incomplete files",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 41
+      }
+    },
+    {
+      "source": "Act:A_Cancelled",
+      "target": "Act:W_Complete application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 14
+      }
+    },
+    {
+      "source": "Act:A_Cancelled",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3
+      }
+    },
+    {
+      "source": "Act:A_Complete",
+      "target": "Act:A_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 57
+      }
+    },
+    {
+      "source": "Act:A_Complete",
+      "target": "Act:A_Denied",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 15
+      }
+    },
+    {
+      "source": "Act:A_Complete",
+      "target": "Act:O_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 287
+      }
+    },
+    {
+      "source": "Act:A_Complete",
+      "target": "Act:O_Create Offer",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 521
+      }
+    },
+    {
+      "source": "Act:A_Complete",
+      "target": "Act:O_Sent (mail and online)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 39
+      }
+    },
+    {
+      "source": "Act:A_Complete",
+      "target": "Act:O_Sent (online only)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 2
+      }
+    },
+    {
+      "source": "Act:A_Complete",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 30396
+      }
+    },
+    {
+      "source": "Act:A_Complete",
+      "target": "Act:W_Shortened completion ",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 45
+      }
+    },
+    {
+      "source": "Act:A_Concept",
+      "target": "Act:A_Accepted",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 9231
+      }
+    },
+    {
+      "source": "Act:A_Concept",
+      "target": "Act:W_Complete application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 22264
+      }
+    },
+    {
+      "source": "Act:A_Concept",
+      "target": "Act:W_Shortened completion ",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 14
+      }
+    },
+    {
+      "source": "Act:A_Create Application",
+      "target": "Act:A_Concept",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3389
+      }
+    },
+    {
+      "source": "Act:A_Create Application",
+      "target": "Act:A_Submitted",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 20423
+      }
+    },
+    {
+      "source": "Act:A_Create Application",
+      "target": "Act:W_Complete application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 7697
+      }
+    },
+    {
+      "source": "Act:A_Denied",
+      "target": "Act:O_Refused",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3720
+      }
+    },
+    {
+      "source": "Act:A_Denied",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 9
+      }
+    },
+    {
+      "source": "Act:A_Denied",
+      "target": "Act:W_Call incomplete files",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 10
+      }
+    },
+    {
+      "source": "Act:A_Denied",
+      "target": "Act:W_Complete application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 11
+      }
+    },
+    {
+      "source": "Act:A_Denied",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 2
+      }
+    },
+    {
+      "source": "Act:A_Incomplete",
+      "target": "Act:A_Denied",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 9
+      }
+    },
+    {
+      "source": "Act:A_Incomplete",
+      "target": "Act:O_Accepted",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 19
+      }
+    },
+    {
+      "source": "Act:A_Incomplete",
+      "target": "Act:O_Create Offer",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3
+      }
+    },
+    {
+      "source": "Act:A_Incomplete",
+      "target": "Act:O_Returned",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 746
+      }
+    },
+    {
+      "source": "Act:A_Incomplete",
+      "target": "Act:W_Call incomplete files",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 22277
+      }
+    },
+    {
+      "source": "Act:A_Incomplete",
+      "target": "Act:W_Shortened completion ",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1
+      }
+    },
+    {
+      "source": "Act:A_Pending",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 2
+      }
+    },
+    {
+      "source": "Act:A_Pending",
+      "target": "Act:W_Call incomplete files",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 4935
+      }
+    },
+    {
+      "source": "Act:A_Pending",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 12291
+      }
+    },
+    {
+      "source": "Act:A_Submitted",
+      "target": "Act:W_Handle leads",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 20423
+      }
+    },
+    {
+      "source": "Act:A_Validating",
+      "target": "Act:A_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 6
+      }
+    },
+    {
+      "source": "Act:A_Validating",
+      "target": "Act:A_Denied",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 12
+      }
+    },
+    {
+      "source": "Act:A_Validating",
+      "target": "Act:O_Accepted",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 198
+      }
+    },
+    {
+      "source": "Act:A_Validating",
+      "target": "Act:O_Create Offer",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 2
+      }
+    },
+    {
+      "source": "Act:A_Validating",
+      "target": "Act:O_Returned",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 20673
+      }
+    },
+    {
+      "source": "Act:A_Validating",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 17925
+      }
+    },
+    {
+      "source": "Act:O_Accepted",
+      "target": "Act:A_Pending",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 17228
+      }
+    },
+    {
+      "source": "Act:O_Cancelled",
+      "target": "Act:A_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 166
+      }
+    },
+    {
+      "source": "Act:O_Cancelled",
+      "target": "Act:A_Denied",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 29
+      }
+    },
+    {
+      "source": "Act:O_Cancelled",
+      "target": "Act:O_Accepted",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1
+      }
+    },
+    {
+      "source": "Act:O_Cancelled",
+      "target": "Act:O_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 4426
+      }
+    },
+    {
+      "source": "Act:O_Cancelled",
+      "target": "Act:O_Create Offer",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 688
+      }
+    },
+    {
+      "source": "Act:O_Cancelled",
+      "target": "Act:O_Returned",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3
+      }
+    },
+    {
+      "source": "Act:O_Cancelled",
+      "target": "Act:O_Sent (mail and online)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 332
+      }
+    },
+    {
+      "source": "Act:O_Cancelled",
+      "target": "Act:O_Sent (online only)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 11
+      }
+    },
+    {
+      "source": "Act:O_Cancelled",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 9659
+      }
+    },
+    {
+      "source": "Act:O_Cancelled",
+      "target": "Act:W_Call incomplete files",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 920
+      }
+    },
+    {
+      "source": "Act:O_Cancelled",
+      "target": "Act:W_Complete application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 125
+      }
+    },
+    {
+      "source": "Act:O_Cancelled",
+      "target": "Act:W_Shortened completion ",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1
+      }
+    },
+    {
+      "source": "Act:O_Cancelled",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 101
+      }
+    },
+    {
+      "source": "Act:O_Create Offer",
+      "target": "Act:O_Created",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 42995
+      }
+    },
+    {
+      "source": "Act:O_Created",
+      "target": "Act:A_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 79
+      }
+    },
+    {
+      "source": "Act:O_Created",
+      "target": "Act:A_Denied",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 18
+      }
+    },
+    {
+      "source": "Act:O_Created",
+      "target": "Act:O_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 704
+      }
+    },
+    {
+      "source": "Act:O_Created",
+      "target": "Act:O_Create Offer",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3887
+      }
+    },
+    {
+      "source": "Act:O_Created",
+      "target": "Act:O_Sent (mail and online)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 35604
+      }
+    },
+    {
+      "source": "Act:O_Created",
+      "target": "Act:O_Sent (online only)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1895
+      }
+    },
+    {
+      "source": "Act:O_Created",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 46
+      }
+    },
+    {
+      "source": "Act:O_Created",
+      "target": "Act:W_Call incomplete files",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 28
+      }
+    },
+    {
+      "source": "Act:O_Created",
+      "target": "Act:W_Complete application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 722
+      }
+    },
+    {
+      "source": "Act:O_Created",
+      "target": "Act:W_Shortened completion ",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3
+      }
+    },
+    {
+      "source": "Act:O_Created",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 9
+      }
+    },
+    {
+      "source": "Act:O_Refused",
+      "target": "Act:O_Refused",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 975
+      }
+    },
+    {
+      "source": "Act:O_Refused",
+      "target": "Act:W_Assess potential fraud",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 102
+      }
+    },
+    {
+      "source": "Act:O_Refused",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 109
+      }
+    },
+    {
+      "source": "Act:O_Refused",
+      "target": "Act:W_Call incomplete files",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 195
+      }
+    },
+    {
+      "source": "Act:O_Refused",
+      "target": "Act:W_Complete application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 25
+      }
+    },
+    {
+      "source": "Act:O_Refused",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3289
+      }
+    },
+    {
+      "source": "Act:O_Returned",
+      "target": "Act:A_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 4
+      }
+    },
+    {
+      "source": "Act:O_Returned",
+      "target": "Act:A_Denied",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 25
+      }
+    },
+    {
+      "source": "Act:O_Returned",
+      "target": "Act:O_Accepted",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 483
+      }
+    },
+    {
+      "source": "Act:O_Returned",
+      "target": "Act:O_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 2
+      }
+    },
+    {
+      "source": "Act:O_Returned",
+      "target": "Act:O_Create Offer",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 2
+      }
+    },
+    {
+      "source": "Act:O_Returned",
+      "target": "Act:O_Returned",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 16
+      }
+    },
+    {
+      "source": "Act:O_Returned",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1
+      }
+    },
+    {
+      "source": "Act:O_Returned",
+      "target": "Act:W_Call incomplete files",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1536
+      }
+    },
+    {
+      "source": "Act:O_Returned",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 21235
+      }
+    },
+    {
+      "source": "Act:O_Sent (mail and online)",
+      "target": "Act:A_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 546
+      }
+    },
+    {
+      "source": "Act:O_Sent (mail and online)",
+      "target": "Act:A_Denied",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 8
+      }
+    },
+    {
+      "source": "Act:O_Sent (mail and online)",
+      "target": "Act:O_Accepted",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1
+      }
+    },
+    {
+      "source": "Act:O_Sent (mail and online)",
+      "target": "Act:O_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 363
+      }
+    },
+    {
+      "source": "Act:O_Sent (mail and online)",
+      "target": "Act:O_Create Offer",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 406
+      }
+    },
+    {
+      "source": "Act:O_Sent (mail and online)",
+      "target": "Act:O_Returned",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 100
+      }
+    },
+    {
+      "source": "Act:O_Sent (mail and online)",
+      "target": "Act:O_Sent (mail and online)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3111
+      }
+    },
+    {
+      "source": "Act:O_Sent (mail and online)",
+      "target": "Act:O_Sent (online only)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1
+      }
+    },
+    {
+      "source": "Act:O_Sent (mail and online)",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3451
+      }
+    },
+    {
+      "source": "Act:O_Sent (mail and online)",
+      "target": "Act:W_Call incomplete files",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 748
+      }
+    },
+    {
+      "source": "Act:O_Sent (mail and online)",
+      "target": "Act:W_Complete application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 30912
+      }
+    },
+    {
+      "source": "Act:O_Sent (mail and online)",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 45
+      }
+    },
+    {
+      "source": "Act:O_Sent (online only)",
+      "target": "Act:A_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 45
+      }
+    },
+    {
+      "source": "Act:O_Sent (online only)",
+      "target": "Act:A_Denied",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1
+      }
+    },
+    {
+      "source": "Act:O_Sent (online only)",
+      "target": "Act:O_Accepted",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3
+      }
+    },
+    {
+      "source": "Act:O_Sent (online only)",
+      "target": "Act:O_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 27
+      }
+    },
+    {
+      "source": "Act:O_Sent (online only)",
+      "target": "Act:O_Create Offer",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 88
+      }
+    },
+    {
+      "source": "Act:O_Sent (online only)",
+      "target": "Act:O_Returned",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 122
+      }
+    },
+    {
+      "source": "Act:O_Sent (online only)",
+      "target": "Act:O_Sent (mail and online)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1
+      }
+    },
+    {
+      "source": "Act:O_Sent (online only)",
+      "target": "Act:O_Sent (online only)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 85
+      }
+    },
+    {
+      "source": "Act:O_Sent (online only)",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 300
+      }
+    },
+    {
+      "source": "Act:O_Sent (online only)",
+      "target": "Act:W_Call incomplete files",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 868
+      }
+    },
+    {
+      "source": "Act:O_Sent (online only)",
+      "target": "Act:W_Complete application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 450
+      }
+    },
+    {
+      "source": "Act:O_Sent (online only)",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 28
+      }
+    },
+    {
+      "source": "Act:W_Assess potential fraud",
+      "target": "Act:A_Denied",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 102
+      }
+    },
+    {
+      "source": "Act:W_Assess potential fraud",
+      "target": "Act:W_Assess potential fraud",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 2866
+      }
+    },
+    {
+      "source": "Act:W_Assess potential fraud",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 12
+      }
+    },
+    {
+      "source": "Act:W_Assess potential fraud",
+      "target": "Act:W_Complete application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 12
+      }
+    },
+    {
+      "source": "Act:W_Assess potential fraud",
+      "target": "Act:W_Handle leads",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 22
+      }
+    },
+    {
+      "source": "Act:W_Assess potential fraud",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 166
+      }
+    },
+    {
+      "source": "Act:W_Call after offers",
+      "target": "Act:A_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 8539
+      }
+    },
+    {
+      "source": "Act:W_Call after offers",
+      "target": "Act:A_Complete",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 31362
+      }
+    },
+    {
+      "source": "Act:W_Call after offers",
+      "target": "Act:A_Denied",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 85
+      }
+    },
+    {
+      "source": "Act:W_Call after offers",
+      "target": "Act:O_Accepted",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 2
+      }
+    },
+    {
+      "source": "Act:W_Call after offers",
+      "target": "Act:O_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 208
+      }
+    },
+    {
+      "source": "Act:W_Call after offers",
+      "target": "Act:O_Create Offer",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3931
+      }
+    },
+    {
+      "source": "Act:W_Call after offers",
+      "target": "Act:O_Returned",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1
+      }
+    },
+    {
+      "source": "Act:W_Call after offers",
+      "target": "Act:O_Sent (mail and online)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 14
+      }
+    },
+    {
+      "source": "Act:W_Call after offers",
+      "target": "Act:W_Assess potential fraud",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 18
+      }
+    },
+    {
+      "source": "Act:W_Call after offers",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 115569
+      }
+    },
+    {
+      "source": "Act:W_Call after offers",
+      "target": "Act:W_Shortened completion ",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 26
+      }
+    },
+    {
+      "source": "Act:W_Call after offers",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 21880
+      }
+    },
+    {
+      "source": "Act:W_Call incomplete files",
+      "target": "Act:A_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 871
+      }
+    },
+    {
+      "source": "Act:W_Call incomplete files",
+      "target": "Act:A_Denied",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 186
+      }
+    },
+    {
+      "source": "Act:W_Call incomplete files",
+      "target": "Act:A_Incomplete",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 23055
+      }
+    },
+    {
+      "source": "Act:W_Call incomplete files",
+      "target": "Act:O_Accepted",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 4783
+      }
+    },
+    {
+      "source": "Act:W_Call incomplete files",
+      "target": "Act:O_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1529
+      }
+    },
+    {
+      "source": "Act:W_Call incomplete files",
+      "target": "Act:O_Create Offer",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1819
+      }
+    },
+    {
+      "source": "Act:W_Call incomplete files",
+      "target": "Act:O_Returned",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 721
+      }
+    },
+    {
+      "source": "Act:W_Call incomplete files",
+      "target": "Act:O_Sent (mail and online)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 8
+      }
+    },
+    {
+      "source": "Act:W_Call incomplete files",
+      "target": "Act:O_Sent (online only)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 15
+      }
+    },
+    {
+      "source": "Act:W_Call incomplete files",
+      "target": "Act:W_Assess potential fraud",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 13
+      }
+    },
+    {
+      "source": "Act:W_Call incomplete files",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 5
+      }
+    },
+    {
+      "source": "Act:W_Call incomplete files",
+      "target": "Act:W_Call incomplete files",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 113918
+      }
+    },
+    {
+      "source": "Act:W_Call incomplete files",
+      "target": "Act:W_Personal Loan collection",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1
+      }
+    },
+    {
+      "source": "Act:W_Call incomplete files",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 16929
+      }
+    },
+    {
+      "source": "Act:W_Complete application",
+      "target": "Act:A_Accepted",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 22249
+      }
+    },
+    {
+      "source": "Act:W_Complete application",
+      "target": "Act:A_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 40
+      }
+    },
+    {
+      "source": "Act:W_Complete application",
+      "target": "Act:A_Concept",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 28120
+      }
+    },
+    {
+      "source": "Act:W_Complete application",
+      "target": "Act:A_Denied",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 9
+      }
+    },
+    {
+      "source": "Act:W_Complete application",
+      "target": "Act:O_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 56
+      }
+    },
+    {
+      "source": "Act:W_Complete application",
+      "target": "Act:O_Create Offer",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1575
+      }
+    },
+    {
+      "source": "Act:W_Complete application",
+      "target": "Act:O_Sent (mail and online)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 596
+      }
+    },
+    {
+      "source": "Act:W_Complete application",
+      "target": "Act:O_Sent (online only)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 16
+      }
+    },
+    {
+      "source": "Act:W_Complete application",
+      "target": "Act:W_Assess potential fraud",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 13
+      }
+    },
+    {
+      "source": "Act:W_Complete application",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 31362
+      }
+    },
+    {
+      "source": "Act:W_Complete application",
+      "target": "Act:W_Complete application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 64695
+      }
+    },
+    {
+      "source": "Act:W_Complete application",
+      "target": "Act:W_Shortened completion ",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 25
+      }
+    },
+    {
+      "source": "Act:W_Handle leads",
+      "target": "Act:W_Assess potential fraud",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 22
+      }
+    },
+    {
+      "source": "Act:W_Handle leads",
+      "target": "Act:W_Complete application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 20423
+      }
+    },
+    {
+      "source": "Act:W_Handle leads",
+      "target": "Act:W_Handle leads",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 26819
+      }
+    },
+    {
+      "source": "Act:W_Personal Loan collection",
+      "target": "Act:W_Personal Loan collection",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 19
+      }
+    },
+    {
+      "source": "Act:W_Personal Loan collection",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1
+      }
+    },
+    {
+      "source": "Act:W_Shortened completion ",
+      "target": "Act:A_Accepted",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 29
+      }
+    },
+    {
+      "source": "Act:W_Shortened completion ",
+      "target": "Act:O_Create Offer",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3
+      }
+    },
+    {
+      "source": "Act:W_Shortened completion ",
+      "target": "Act:O_Sent (mail and online)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 2
+      }
+    },
+    {
+      "source": "Act:W_Shortened completion ",
+      "target": "Act:W_Call after offers",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 68
+      }
+    },
+    {
+      "source": "Act:W_Shortened completion ",
+      "target": "Act:W_Call incomplete files",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1
+      }
+    },
+    {
+      "source": "Act:W_Shortened completion ",
+      "target": "Act:W_Complete application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 12
+      }
+    },
+    {
+      "source": "Act:W_Shortened completion ",
+      "target": "Act:W_Shortened completion ",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 116
+      }
+    },
+    {
+      "source": "Act:W_Shortened completion ",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 2
+      }
+    },
+    {
+      "source": "Act:W_Validate application",
+      "target": "Act:A_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 78
+      }
+    },
+    {
+      "source": "Act:W_Validate application",
+      "target": "Act:A_Denied",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3254
+      }
+    },
+    {
+      "source": "Act:W_Validate application",
+      "target": "Act:A_Validating",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 38816
+      }
+    },
+    {
+      "source": "Act:W_Validate application",
+      "target": "Act:O_Accepted",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 11738
+      }
+    },
+    {
+      "source": "Act:W_Validate application",
+      "target": "Act:O_Cancelled",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 3026
+      }
+    },
+    {
+      "source": "Act:W_Validate application",
+      "target": "Act:O_Create Offer",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 104
+      }
+    },
+    {
+      "source": "Act:W_Validate application",
+      "target": "Act:O_Returned",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 923
+      }
+    },
+    {
+      "source": "Act:W_Validate application",
+      "target": "Act:O_Sent (online only)",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 1
+      }
+    },
+    {
+      "source": "Act:W_Validate application",
+      "target": "Act:W_Assess potential fraud",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 248
+      }
+    },
+    {
+      "source": "Act:W_Validate application",
+      "target": "Act:W_Call incomplete files",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 23052
+      }
+    },
+    {
+      "source": "Act:W_Validate application",
+      "target": "Act:W_Personal Loan collection",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 2
+      }
+    },
+    {
+      "source": "Act:W_Validate application",
+      "target": "Act:W_Shortened completion ",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 2
+      }
+    },
+    {
+      "source": "Act:W_Validate application",
+      "target": "Act:W_Validate application",
+      "type": "DIRECTLY_FOLLOWS",
+      "props": {
+        "count": 115590
+      }
+    },
+    {
+      "source": "Act:O_Create Offer",
+      "target": "Attr:Accepted",
+      "type": "HAS_ATTRIBUTE",
+      "props": {
+        "count": 42995,
+        "non_null_ratio": 1.0
+      }
+    },
+    {
+      "source": "Act:O_Create Offer",
+      "target": "Attr:OfferedAmount",
+      "type": "HAS_ATTRIBUTE",
+      "props": {
+        "count": 42995,
+        "non_null_ratio": 1.0
+      }
+    },
+    {
+      "source": "Act:O_Create Offer",
+      "target": "Attr:MonthlyCost",
+      "type": "HAS_ATTRIBUTE",
+      "props": {
+        "count": 42995,
+        "non_null_ratio": 1.0
+      }
+    },
+    {
+      "source": "Act:O_Create Offer",
+      "target": "Attr:FirstWithdrawalAmount",
+      "type": "HAS_ATTRIBUTE",
+      "props": {
+        "count": 42995,
+        "non_null_ratio": 1.0
+      }
+    },
+    {
+      "source": "Act:O_Create Offer",
+      "target": "Attr:CreditScore",
+      "type": "HAS_ATTRIBUTE",
+      "props": {
+        "count": 42995,
+        "non_null_ratio": 1.0
+      }
+    },
+    {
+      "source": "Act:O_Create Offer",
+      "target": "Attr:Selected",
+      "type": "HAS_ATTRIBUTE",
+      "props": {
+        "count": 42995,
+        "non_null_ratio": 1.0
+      }
+    },
+    {
+      "source": "Act:O_Create Offer",
+      "target": "Attr:NumberOfTerms",
+      "type": "HAS_ATTRIBUTE",
+      "props": {
+        "count": 42995,
+        "non_null_ratio": 1.0
+      }
+    }
+  ]
+}

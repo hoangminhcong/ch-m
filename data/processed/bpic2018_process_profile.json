@@ -1,0 +1,8636 @@
+{
+ "dataset": "bpic2018",
+ "years": [
+  2015,
+  2016,
+  2017
+ ],
+ "num_cases": 43809,
+ "activities": {
+  "Control summary / Main / begin editing": {
+   "doctype": "Control summary",
+   "subprocess": "Main",
+   "action": "begin editing",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 43808,
+   "case_ratio": 1.0,
+   "roles": {
+    "automated": 0.9814,
+    "staff": 0.0167,
+    "unknown": 0.0019
+   },
+   "predecessors": [
+    {
+     "activity": "Control summary / Main / initialize",
+     "count": 43758
+    },
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 50
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 43802
+    },
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 4
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 2
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Department control parcels / Main / begin editing",
+    "Entitlement application / Main / begin editing",
+    "Parcel document / Main / begin editing"
+   ]
+  },
+  "Control summary / Main / change department": {
+   "doctype": "Control summary",
+   "subprocess": "Main",
+   "action": "change department",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 11,
+   "case_ratio": 0.0003,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Department control parcels / Main / change department",
+     "count": 5
+    },
+    {
+     "activity": "Reference alignment / Main / change department",
+     "count": 3
+    },
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 2
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Main / change department",
+     "count": 7
+    },
+    {
+     "activity": "Geo parcel document / Main / change department",
+     "count": 4
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Department control parcels / Main / change department",
+    "Geo parcel document / Main / change department",
+    "Parcel document / Main / change department",
+    "Payment application / Main / change department",
+    "Reference alignment / Main / change department"
+   ]
+  },
+  "Control summary / Main / finish editing": {
+   "doctype": "Control summary",
+   "subprocess": "Main",
+   "action": "finish editing",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 43808,
+   "case_ratio": 1.0,
+   "roles": {
+    "automated": 0.9814,
+    "staff": 0.0167,
+    "unknown": 0.0019
+   },
+   "predecessors": [
+    {
+     "activity": "Control summary / Main / begin editing",
+     "count": 43802
+    },
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 6
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Reference alignment / Main / initialize",
+     "count": 12844
+    },
+    {
+     "activity": "Parcel document / Main / finish editing",
+     "count": 8303
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 5120
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Main / finish editing",
+    "Parcel document / Main / finish editing"
+   ]
+  },
+  "Control summary / Main / initialize": {
+   "doctype": "Control summary",
+   "subprocess": "Main",
+   "action": "initialize",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 43808,
+   "case_ratio": 1.0,
+   "roles": {
+    "automated": 0.9814,
+    "staff": 0.0167,
+    "unknown": 0.0019
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 16753
+    },
+    {
+     "activity": "Parcel document / Main / finish editing",
+     "count": 8583
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish pre-check",
+     "count": 6155
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Control summary / Main / begin editing",
+     "count": 43758
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 25
+    },
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 18
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Main / initialize",
+    "Geo parcel document / Main / initialize",
+    "Parcel document / Main / initialize",
+    "Reference alignment / Main / initialize"
+   ]
+  },
+  "Control summary / Main / insert document": {
+   "doctype": "Control summary",
+   "subprocess": "Main",
+   "action": "insert document",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 6,
+   "case_ratio": 0.0001,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Control summary / Main / save",
+     "count": 5
+    },
+    {
+     "activity": "Payment application / Application / finish payment",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Control summary / Main / save",
+     "count": 6
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Department control parcels / Main / insert document",
+    "Entitlement application / Main / insert document",
+    "Geo parcel document / Main / insert document",
+    "Parcel document / Main / insert document",
+    "Payment application / Main / insert document",
+    "Reference alignment / Main / insert document"
+   ]
+  },
+  "Control summary / Main / save": {
+   "doctype": "Control summary",
+   "subprocess": "Main",
+   "action": "save",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 11395,
+   "case_ratio": 0.2601,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Parcel document / Main / finish editing",
+     "count": 6809
+    },
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 6390
+    },
+    {
+     "activity": "Department control parcels / Main / save",
+     "count": 3723
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 3067
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 2909
+    },
+    {
+     "activity": "Department control parcels / Main / performed",
+     "count": 2748
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Department control parcels / Main / save",
+    "Entitlement application / Main / save",
+    "Geo parcel document / Main / save",
+    "Parcel document / Main / save",
+    "Payment application / Main / save",
+    "Reference alignment / Main / save"
+   ]
+  },
+  "Control summary / Main / take original document": {
+   "doctype": "Control summary",
+   "subprocess": "Main",
+   "action": "take original document",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 791,
+   "case_ratio": 0.0181,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Reported / finish editing",
+     "count": 244
+    },
+    {
+     "activity": "Payment application / Application / decide",
+     "count": 132
+    },
+    {
+     "activity": "Payment application / Application / finish editing",
+     "count": 125
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Reported / begin editing",
+     "count": 399
+    },
+    {
+     "activity": "Payment application / Application / begin payment",
+     "count": 132
+    },
+    {
+     "activity": "Reference alignment / Main / initialize",
+     "count": 75
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Main / take original document",
+    "Geo parcel document / Main / take original document",
+    "Parcel document / Main / take original document",
+    "Payment application / Main / take original document"
+   ]
+  },
+  "Department control parcels / Main / begin editing": {
+   "doctype": "Department control parcels",
+   "subprocess": "Main",
+   "action": "begin editing",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 5124,
+   "case_ratio": 0.117,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Parcel document / Main / finish editing",
+     "count": 1795
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 1109
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 1050
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Department control parcels / Main / save",
+     "count": 5485
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 822
+    },
+    {
+     "activity": "Department control parcels / Main / begin editing",
+     "count": 796
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / begin editing",
+    "Entitlement application / Main / begin editing",
+    "Parcel document / Main / begin editing"
+   ]
+  },
+  "Department control parcels / Main / change department": {
+   "doctype": "Department control parcels",
+   "subprocess": "Main",
+   "action": "change department",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 7,
+   "case_ratio": 0.0002,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Parcel document / Main / change department",
+     "count": 4
+    },
+    {
+     "activity": "Reference alignment / Main / change department",
+     "count": 2
+    },
+    {
+     "activity": "Payment application / Application / finish payment",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Control summary / Main / change department",
+     "count": 5
+    },
+    {
+     "activity": "Reference alignment / Main / change department",
+     "count": 2
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / change department",
+    "Geo parcel document / Main / change department",
+    "Parcel document / Main / change department",
+    "Payment application / Main / change department",
+    "Reference alignment / Main / change department"
+   ]
+  },
+  "Department control parcels / Main / insert document": {
+   "doctype": "Department control parcels",
+   "subprocess": "Main",
+   "action": "insert document",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 174,
+   "case_ratio": 0.004,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Department control parcels / Main / save",
+     "count": 83
+    },
+    {
+     "activity": "Department control parcels / Main / begin editing",
+     "count": 48
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 25
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Department control parcels / Main / save",
+     "count": 182
+    },
+    {
+     "activity": "Department control parcels / Main / begin editing",
+     "count": 1
+    },
+    {
+     "activity": "Department control parcels / Main / insert document",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / insert document",
+    "Entitlement application / Main / insert document",
+    "Geo parcel document / Main / insert document",
+    "Parcel document / Main / insert document",
+    "Payment application / Main / insert document",
+    "Reference alignment / Main / insert document"
+   ]
+  },
+  "Department control parcels / Main / performed": {
+   "doctype": "Department control parcels",
+   "subprocess": "Main",
+   "action": "performed",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 29297,
+   "case_ratio": 0.6687,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Reference alignment / Main / performed",
+     "count": 16705
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 4162
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 2748
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / initialize",
+     "count": 12126
+    },
+    {
+     "activity": "Entitlement application / Main / initialize",
+     "count": 7943
+    },
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 3104
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Reference alignment / Main / performed"
+   ]
+  },
+  "Department control parcels / Main / remove document": {
+   "doctype": "Department control parcels",
+   "subprocess": "Main",
+   "action": "remove document",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 10,
+   "case_ratio": 0.0002,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Department control parcels / Main / begin editing",
+     "count": 3
+    },
+    {
+     "activity": "Department control parcels / Main / save",
+     "count": 2
+    },
+    {
+     "activity": "Department control parcels / Main / insert document",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Department control parcels / Main / save",
+     "count": 9
+    },
+    {
+     "activity": "Department control parcels / Main / begin editing",
+     "count": 1
+    },
+    {
+     "activity": "Department control parcels / Main / remove document",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Main / remove document",
+    "Geo parcel document / Main / remove document",
+    "Parcel document / Main / remove document",
+    "Payment application / Main / remove document",
+    "Reference alignment / Main / remove document"
+   ]
+  },
+  "Department control parcels / Main / save": {
+   "doctype": "Department control parcels",
+   "subprocess": "Main",
+   "action": "save",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 4725,
+   "case_ratio": 0.1079,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Department control parcels / Main / begin editing",
+     "count": 5485
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 534
+    },
+    {
+     "activity": "Department control parcels / Main / save",
+     "count": 435
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Control summary / Main / save",
+     "count": 3723
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 660
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 471
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / save",
+    "Entitlement application / Main / save",
+    "Geo parcel document / Main / save",
+    "Parcel document / Main / save",
+    "Payment application / Main / save",
+    "Reference alignment / Main / save"
+   ]
+  },
+  "Entitlement application / Change / begin editing": {
+   "doctype": "Entitlement application",
+   "subprocess": "Change",
+   "action": "begin editing",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2536,
+   "case_ratio": 0.0579,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Change / initialize",
+     "count": 3156
+    },
+    {
+     "activity": "Entitlement application / Change / decide",
+     "count": 202
+    },
+    {
+     "activity": "Entitlement application / Change / finish editing",
+     "count": 85
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Change / calculate",
+     "count": 3236
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 187
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 44
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Change / begin editing"
+   ]
+  },
+  "Entitlement application / Change / calculate": {
+   "doctype": "Entitlement application",
+   "subprocess": "Change",
+   "action": "calculate",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2536,
+   "case_ratio": 0.0579,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Change / begin editing",
+     "count": 3236
+    },
+    {
+     "activity": "Entitlement application / Change / calculate",
+     "count": 976
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 597
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Change / finish editing",
+     "count": 1741
+    },
+    {
+     "activity": "Entitlement application / Change / remove document",
+     "count": 1371
+    },
+    {
+     "activity": "Entitlement application / Change / calculate",
+     "count": 976
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Change / calculate"
+   ]
+  },
+  "Entitlement application / Change / change department": {
+   "doctype": "Entitlement application",
+   "subprocess": "Change",
+   "action": "change department",
+   "years": [
+    2015
+   ],
+   "case_count": 5,
+   "case_ratio": 0.0001,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Main / change department",
+     "count": 5
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / finish payment",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Entitlement application / Change / decide": {
+   "doctype": "Entitlement application",
+   "subprocess": "Change",
+   "action": "decide",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 1355,
+   "case_ratio": 0.0309,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Change / finish editing",
+     "count": 1446
+    },
+    {
+     "activity": "Entitlement application / Change / decide",
+     "count": 353
+    },
+    {
+     "activity": "Payment application / Change / calculate",
+     "count": 206
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 979
+    },
+    {
+     "activity": "Entitlement application / Change / decide",
+     "count": 353
+    },
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 326
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Change / decide"
+   ]
+  },
+  "Entitlement application / Change / finish editing": {
+   "doctype": "Entitlement application",
+   "subprocess": "Change",
+   "action": "finish editing",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 1370,
+   "case_ratio": 0.0313,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Change / calculate",
+     "count": 1741
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 96
+    },
+    {
+     "activity": "Payment application / Change / calculate",
+     "count": 76
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Change / decide",
+     "count": 1446
+    },
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 198
+    },
+    {
+     "activity": "Entitlement application / Change / calculate",
+     "count": 101
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Change / finish editing"
+   ]
+  },
+  "Entitlement application / Change / initialize": {
+   "doctype": "Entitlement application",
+   "subprocess": "Change",
+   "action": "initialize",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2536,
+   "case_ratio": 0.0579,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 3066
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 36
+    },
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 7
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Change / begin editing",
+     "count": 3156
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Change / initialize"
+   ]
+  },
+  "Entitlement application / Change / insert document": {
+   "doctype": "Entitlement application",
+   "subprocess": "Change",
+   "action": "insert document",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2991,
+   "case_ratio": 0.0683,
+   "roles": {
+    "automated": 0.0752,
+    "staff": 0.9248,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Change / decide",
+     "count": 979
+    },
+    {
+     "activity": "Entitlement application / Change / remove document",
+     "count": 964
+    },
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 826
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Change / initialize",
+     "count": 3066
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 1722
+    },
+    {
+     "activity": "Payment application / Objection / initialize",
+     "count": 471
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Change / insert document"
+   ]
+  },
+  "Entitlement application / Change / remove document": {
+   "doctype": "Entitlement application",
+   "subprocess": "Change",
+   "action": "remove document",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 1321,
+   "case_ratio": 0.0302,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Change / calculate",
+     "count": 1371
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 94
+    },
+    {
+     "activity": "Entitlement application / Change / revoke withdrawal",
+     "count": 55
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 964
+    },
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 348
+    },
+    {
+     "activity": "Payment application / Change / calculate",
+     "count": 72
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Change / remove document"
+   ]
+  },
+  "Entitlement application / Change / revoke decision": {
+   "doctype": "Entitlement application",
+   "subprocess": "Change",
+   "action": "revoke decision",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 66,
+   "case_ratio": 0.0015,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Change / revoke decision",
+     "count": 35
+    },
+    {
+     "activity": "Entitlement application / Change / remove document",
+     "count": 26
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 22
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 55
+    },
+    {
+     "activity": "Entitlement application / Change / revoke decision",
+     "count": 35
+    },
+    {
+     "activity": "Entitlement application / Change / calculate",
+     "count": 12
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Change / revoke decision"
+   ]
+  },
+  "Entitlement application / Change / revoke withdrawal": {
+   "doctype": "Entitlement application",
+   "subprocess": "Change",
+   "action": "revoke withdrawal",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 67,
+   "case_ratio": 0.0015,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Change / withdraw",
+     "count": 39
+    },
+    {
+     "activity": "Entitlement application / Change / remove document",
+     "count": 8
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 6
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Change / remove document",
+     "count": 55
+    },
+    {
+     "activity": "Entitlement application / Change / begin editing",
+     "count": 18
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Change / revoke withdrawal"
+   ]
+  },
+  "Entitlement application / Change / withdraw": {
+   "doctype": "Entitlement application",
+   "subprocess": "Change",
+   "action": "withdraw",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 174,
+   "case_ratio": 0.004,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Change / calculate",
+     "count": 181
+    },
+    {
+     "activity": "Payment application / Change / calculate",
+     "count": 10
+    },
+    {
+     "activity": "Entitlement application / Change / decide",
+     "count": 4
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 80
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 54
+    },
+    {
+     "activity": "Entitlement application / Change / revoke withdrawal",
+     "count": 39
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Change / withdraw"
+   ]
+  },
+  "Entitlement application / Main / begin editing": {
+   "doctype": "Entitlement application",
+   "subprocess": "Main",
+   "action": "begin editing",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 15260,
+   "case_ratio": 0.3483,
+   "roles": {
+    "automated": 0.854,
+    "staff": 0.146,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 23243
+    },
+    {
+     "activity": "Entitlement application / Main / finish editing",
+     "count": 17532
+    },
+    {
+     "activity": "Entitlement application / Main / initialize",
+     "count": 13200
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Main / calculate",
+     "count": 57895
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 260
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 105
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / begin editing",
+    "Department control parcels / Main / begin editing",
+    "Parcel document / Main / begin editing"
+   ]
+  },
+  "Entitlement application / Main / calculate": {
+   "doctype": "Entitlement application",
+   "subprocess": "Main",
+   "action": "calculate",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 15260,
+   "case_ratio": 0.3483,
+   "roles": {
+    "automated": 0.7874,
+    "staff": 0.2126,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Main / begin editing",
+     "count": 57895
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 5049
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 3221
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Main / finish editing",
+     "count": 58553
+    },
+    {
+     "activity": "Payment application / Application / initialize",
+     "count": 3372
+    },
+    {
+     "activity": "Entitlement application / Main / calculate",
+     "count": 2913
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Entitlement application / Main / decide": {
+   "doctype": "Entitlement application",
+   "subprocess": "Main",
+   "action": "decide",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 15256,
+   "case_ratio": 0.3482,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Main / finish editing",
+     "count": 15460
+    },
+    {
+     "activity": "Entitlement application / Main / decide",
+     "count": 327
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 198
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 15116
+    },
+    {
+     "activity": "Entitlement application / Main / decide",
+     "count": 327
+    },
+    {
+     "activity": "Entitlement application / Main / begin editing",
+     "count": 173
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Entitlement application / Main / finish editing": {
+   "doctype": "Entitlement application",
+   "subprocess": "Main",
+   "action": "finish editing",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 15257,
+   "case_ratio": 0.3483,
+   "roles": {
+    "automated": 0.818,
+    "staff": 0.182,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Main / calculate",
+     "count": 58553
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 119
+    },
+    {
+     "activity": "Entitlement application / Main / begin editing",
+     "count": 41
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Main / begin editing",
+     "count": 17532
+    },
+    {
+     "activity": "Entitlement application / Main / decide",
+     "count": 15460
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 12982
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / finish editing",
+    "Parcel document / Main / finish editing"
+   ]
+  },
+  "Entitlement application / Main / initialize": {
+   "doctype": "Entitlement application",
+   "subprocess": "Main",
+   "action": "initialize",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 15260,
+   "case_ratio": 0.3483,
+   "roles": {
+    "automated": 0.9969,
+    "staff": 0.0031,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Department control parcels / Main / performed",
+     "count": 7943
+    },
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 2506
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 2317
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Main / begin editing",
+     "count": 13200
+    },
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 805
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 279
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / initialize",
+    "Geo parcel document / Main / initialize",
+    "Parcel document / Main / initialize",
+    "Reference alignment / Main / initialize"
+   ]
+  },
+  "Entitlement application / Main / insert document": {
+   "doctype": "Entitlement application",
+   "subprocess": "Main",
+   "action": "insert document",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 770,
+   "case_ratio": 0.0176,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Main / decide",
+     "count": 168
+    },
+    {
+     "activity": "Payment application / Application / decide",
+     "count": 163
+    },
+    {
+     "activity": "Payment application / Application / begin payment",
+     "count": 145
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 526
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 86
+    },
+    {
+     "activity": "Entitlement application / Main / remove document",
+     "count": 67
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / insert document",
+    "Department control parcels / Main / insert document",
+    "Geo parcel document / Main / insert document",
+    "Parcel document / Main / insert document",
+    "Payment application / Main / insert document",
+    "Reference alignment / Main / insert document"
+   ]
+  },
+  "Entitlement application / Main / mail valid": {
+   "doctype": "Entitlement application",
+   "subprocess": "Main",
+   "action": "mail valid",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 15259,
+   "case_ratio": 0.3483,
+   "roles": {
+    "automated": 0.0,
+    "staff": 0.0,
+    "unknown": 1.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / mail valid",
+     "count": 15124
+    },
+    {
+     "activity": "Payment application / Application / mail income",
+     "count": 11857
+    },
+    {
+     "activity": "Entitlement application / Main / mail valid",
+     "count": 3423
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Parcel document / Main / initialize",
+     "count": 12997
+    },
+    {
+     "activity": "Payment application / Application / mail valid",
+     "count": 11822
+    },
+    {
+     "activity": "Entitlement application / Main / mail valid",
+     "count": 3423
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Entitlement application / Main / remove document": {
+   "doctype": "Entitlement application",
+   "subprocess": "Main",
+   "action": "remove document",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 132,
+   "case_ratio": 0.003,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / decide",
+     "count": 73
+    },
+    {
+     "activity": "Entitlement application / Main / insert document",
+     "count": 67
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 6
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Main / insert document",
+     "count": 59
+    },
+    {
+     "activity": "Payment application / Application / begin payment",
+     "count": 55
+    },
+    {
+     "activity": "Payment application / Application / revoke decision",
+     "count": 10
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Department control parcels / Main / remove document",
+    "Geo parcel document / Main / remove document",
+    "Parcel document / Main / remove document",
+    "Payment application / Main / remove document",
+    "Reference alignment / Main / remove document"
+   ]
+  },
+  "Entitlement application / Main / revoke decision": {
+   "doctype": "Entitlement application",
+   "subprocess": "Main",
+   "action": "revoke decision",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 249,
+   "case_ratio": 0.0057,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Control summary / Main / save",
+     "count": 143
+    },
+    {
+     "activity": "Payment application / Application / decide",
+     "count": 48
+    },
+    {
+     "activity": "Entitlement application / Main / decide",
+     "count": 30
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Main / calculate",
+     "count": 199
+    },
+    {
+     "activity": "Entitlement application / Main / insert document",
+     "count": 19
+    },
+    {
+     "activity": "Entitlement application / Main / revoke decision",
+     "count": 17
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Entitlement application / Main / revoke withdrawal": {
+   "doctype": "Entitlement application",
+   "subprocess": "Main",
+   "action": "revoke withdrawal",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 6,
+   "case_ratio": 0.0001,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 4
+    },
+    {
+     "activity": "Entitlement application / Main / withdraw",
+     "count": 2
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Main / begin editing",
+     "count": 9
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Entitlement application / Main / save": {
+   "doctype": "Entitlement application",
+   "subprocess": "Main",
+   "action": "save",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 4418,
+   "case_ratio": 0.1008,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Main / calculate",
+     "count": 2110
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 1722
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 760
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Main / calculate",
+     "count": 3221
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 760
+    },
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 727
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / save",
+    "Department control parcels / Main / save",
+    "Geo parcel document / Main / save",
+    "Parcel document / Main / save",
+    "Payment application / Main / save",
+    "Reference alignment / Main / save"
+   ]
+  },
+  "Entitlement application / Main / take original document": {
+   "doctype": "Entitlement application",
+   "subprocess": "Main",
+   "action": "take original document",
+   "years": [
+    2015,
+    2017
+   ],
+   "case_count": 9,
+   "case_ratio": 0.0002,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Main / take original document",
+     "count": 6
+    },
+    {
+     "activity": "Entitlement application / Main / insert document",
+     "count": 1
+    },
+    {
+     "activity": "Geo parcel document / Reported / finish editing",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Main / calculate",
+     "count": 4
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 2
+    },
+    {
+     "activity": "Payment application / Application / begin payment",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / take original document",
+    "Geo parcel document / Main / take original document",
+    "Parcel document / Main / take original document",
+    "Payment application / Main / take original document"
+   ]
+  },
+  "Entitlement application / Main / withdraw": {
+   "doctype": "Entitlement application",
+   "subprocess": "Main",
+   "action": "withdraw",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 9,
+   "case_ratio": 0.0002,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Main / calculate",
+     "count": 4
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 3
+    },
+    {
+     "activity": "Entitlement application / Main / finish editing",
+     "count": 2
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 4
+    },
+    {
+     "activity": "Entitlement application / Main / revoke withdrawal",
+     "count": 2
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Entitlement application / Objection / approve": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "approve",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 357,
+   "case_ratio": 0.0081,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Objection / check admissibility",
+     "count": 180
+    },
+    {
+     "activity": "Entitlement application / Objection / calculate",
+     "count": 129
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 20
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Objection / begin editing",
+     "count": 209
+    },
+    {
+     "activity": "Entitlement application / Objection / calculate",
+     "count": 129
+    },
+    {
+     "activity": "Entitlement application / Objection / revoke approval",
+     "count": 10
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / approve"
+   ]
+  },
+  "Entitlement application / Objection / begin admissibility check": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "begin admissibility check",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 503,
+   "case_ratio": 0.0115,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Control summary / Main / save",
+     "count": 214
+    },
+    {
+     "activity": "Entitlement application / Objection / check admissibility",
+     "count": 140
+    },
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 134
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Objection / check admissibility",
+     "count": 453
+    },
+    {
+     "activity": "Entitlement application / Objection / calculate",
+     "count": 186
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 65
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / begin admissibility check"
+   ]
+  },
+  "Entitlement application / Objection / begin editing": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "begin editing",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 369,
+   "case_ratio": 0.0084,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Objection / approve",
+     "count": 209
+    },
+    {
+     "activity": "Entitlement application / Objection / calculate",
+     "count": 135
+    },
+    {
+     "activity": "Entitlement application / Objection / decide",
+     "count": 103
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Objection / calculate",
+     "count": 387
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 67
+    },
+    {
+     "activity": "Entitlement application / Objection / finish editing",
+     "count": 50
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / begin editing"
+   ]
+  },
+  "Entitlement application / Objection / begin editing from refused": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "begin editing from refused",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 53,
+   "case_ratio": 0.0012,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Objection / refuse",
+     "count": 32
+    },
+    {
+     "activity": "Entitlement application / Objection / calculate",
+     "count": 22
+    },
+    {
+     "activity": "Entitlement application / Objection / begin editing from refused",
+     "count": 18
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Objection / calculate",
+     "count": 35
+    },
+    {
+     "activity": "Entitlement application / Objection / begin editing from refused",
+     "count": 18
+    },
+    {
+     "activity": "Entitlement application / Objection / insert document",
+     "count": 14
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / begin editing from refused"
+   ]
+  },
+  "Entitlement application / Objection / calculate": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "calculate",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 484,
+   "case_ratio": 0.011,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Objection / begin editing",
+     "count": 387
+    },
+    {
+     "activity": "Entitlement application / Objection / check admissibility",
+     "count": 241
+    },
+    {
+     "activity": "Entitlement application / Objection / calculate",
+     "count": 204
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Objection / finish editing",
+     "count": 544
+    },
+    {
+     "activity": "Entitlement application / Objection / check admissibility",
+     "count": 211
+    },
+    {
+     "activity": "Entitlement application / Objection / calculate",
+     "count": 204
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / calculate"
+   ]
+  },
+  "Entitlement application / Objection / check admissibility": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "check admissibility",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 502,
+   "case_ratio": 0.0115,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Objection / begin admissibility check",
+     "count": 453
+    },
+    {
+     "activity": "Entitlement application / Objection / calculate",
+     "count": 211
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 40
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Objection / calculate",
+     "count": 241
+    },
+    {
+     "activity": "Entitlement application / Objection / approve",
+     "count": 180
+    },
+    {
+     "activity": "Entitlement application / Objection / begin admissibility check",
+     "count": 140
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / check admissibility"
+   ]
+  },
+  "Entitlement application / Objection / decide": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "decide",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 380,
+   "case_ratio": 0.0087,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Objection / finish editing",
+     "count": 481
+    },
+    {
+     "activity": "Entitlement application / Objection / decide",
+     "count": 190
+    },
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 8
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Objection / insert document",
+     "count": 238
+    },
+    {
+     "activity": "Entitlement application / Objection / decide",
+     "count": 190
+    },
+    {
+     "activity": "Entitlement application / Objection / begin editing",
+     "count": 103
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / decide"
+   ]
+  },
+  "Entitlement application / Objection / finish editing": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "finish editing",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 380,
+   "case_ratio": 0.0087,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Objection / calculate",
+     "count": 544
+    },
+    {
+     "activity": "Entitlement application / Objection / begin editing",
+     "count": 50
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 25
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Objection / decide",
+     "count": 481
+    },
+    {
+     "activity": "Entitlement application / Objection / calculate",
+     "count": 56
+    },
+    {
+     "activity": "Entitlement application / Objection / begin editing",
+     "count": 41
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / finish editing"
+   ]
+  },
+  "Entitlement application / Objection / initialize": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "initialize",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 545,
+   "case_ratio": 0.0124,
+   "roles": {
+    "automated": 0.9075,
+    "staff": 0.0925,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / finish payment",
+     "count": 267
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 157
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 43
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 512
+    },
+    {
+     "activity": "Entitlement application / Objection / begin admissibility check",
+     "count": 45
+    },
+    {
+     "activity": "Entitlement application / Objection / withdraw",
+     "count": 2
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / initialize"
+   ]
+  },
+  "Entitlement application / Objection / insert document": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "insert document",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 472,
+   "case_ratio": 0.0108,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Objection / decide",
+     "count": 238
+    },
+    {
+     "activity": "Entitlement application / Objection / insert document",
+     "count": 185
+    },
+    {
+     "activity": "Entitlement application / Objection / remove document",
+     "count": 103
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 399
+    },
+    {
+     "activity": "Entitlement application / Objection / insert document",
+     "count": 185
+    },
+    {
+     "activity": "Entitlement application / Objection / remove document",
+     "count": 92
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / insert document"
+   ]
+  },
+  "Entitlement application / Objection / refuse": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "refuse",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 135,
+   "case_ratio": 0.0031,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Objection / check admissibility",
+     "count": 82
+    },
+    {
+     "activity": "Entitlement application / Objection / calculate",
+     "count": 47
+    },
+    {
+     "activity": "Entitlement application / Objection / revoke approval",
+     "count": 7
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Objection / insert document",
+     "count": 51
+    },
+    {
+     "activity": "Payment application / Objection / begin admissibility check",
+     "count": 34
+    },
+    {
+     "activity": "Entitlement application / Objection / begin editing from refused",
+     "count": 32
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / refuse"
+   ]
+  },
+  "Entitlement application / Objection / remove document": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "remove document",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 90,
+   "case_ratio": 0.0021,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Objection / insert document",
+     "count": 92
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 19
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 10
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Objection / insert document",
+     "count": 103
+    },
+    {
+     "activity": "Entitlement application / Objection / revoke decision",
+     "count": 14
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 9
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / remove document"
+   ]
+  },
+  "Entitlement application / Objection / revoke approval": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "revoke approval",
+   "years": [
+    2015
+   ],
+   "case_count": 36,
+   "case_ratio": 0.0008,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Objection / begin editing from refused",
+     "count": 11
+    },
+    {
+     "activity": "Entitlement application / Objection / approve",
+     "count": 10
+    },
+    {
+     "activity": "Entitlement application / Objection / refuse",
+     "count": 7
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Objection / begin admissibility check",
+     "count": 22
+    },
+    {
+     "activity": "Entitlement application / Objection / approve",
+     "count": 12
+    },
+    {
+     "activity": "Entitlement application / Objection / refuse",
+     "count": 7
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / revoke approval"
+   ]
+  },
+  "Entitlement application / Objection / revoke decision": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "revoke decision",
+   "years": [
+    2015
+   ],
+   "case_count": 56,
+   "case_ratio": 0.0013,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Objection / revoke decision",
+     "count": 25
+    },
+    {
+     "activity": "Entitlement application / Objection / insert document",
+     "count": 22
+    },
+    {
+     "activity": "Entitlement application / Objection / remove document",
+     "count": 14
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Objection / insert document",
+     "count": 41
+    },
+    {
+     "activity": "Entitlement application / Objection / revoke decision",
+     "count": 25
+    },
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 11
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / revoke decision"
+   ]
+  },
+  "Entitlement application / Objection / revoke withdrawal": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "revoke withdrawal",
+   "years": [
+    2015
+   ],
+   "case_count": 8,
+   "case_ratio": 0.0002,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 4
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 1
+    },
+    {
+     "activity": "Entitlement application / Change / remove document",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Objection / begin admissibility check",
+     "count": 7
+    },
+    {
+     "activity": "Entitlement application / Objection / withdraw",
+     "count": 2
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / revoke withdrawal"
+   ]
+  },
+  "Entitlement application / Objection / withdraw": {
+   "doctype": "Entitlement application",
+   "subprocess": "Objection",
+   "action": "withdraw",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 71,
+   "case_ratio": 0.0016,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Objection / begin admissibility check",
+     "count": 29
+    },
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 17
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 9
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / withdraw",
+     "count": 33
+    },
+    {
+     "activity": "Entitlement application / Objection / insert document",
+     "count": 16
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 9
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Payment application / Objection / withdraw"
+   ]
+  },
+  "Geo parcel document / Declared / begin editing": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Declared",
+   "action": "begin editing",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 29059,
+   "case_ratio": 0.6633,
+   "roles": {
+    "automated": 0.7112,
+    "staff": 0.2888,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Main / initialize",
+     "count": 29003
+    },
+    {
+     "activity": "Geo parcel document / Declared / begin editing",
+     "count": 5467
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 4897
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Declared / finish pre-check",
+     "count": 16567
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 11265
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 10403
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Declared / calculate": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Declared",
+   "action": "calculate",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 11962,
+   "case_ratio": 0.273,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 15496
+    },
+    {
+     "activity": "Reference alignment / Main / performed",
+     "count": 2913
+    },
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 1765
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 16853
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish pre-check",
+     "count": 3325
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 2457
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Declared / correction GFM17": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Declared",
+   "action": "correction GFM17",
+   "years": [
+    2017
+   ],
+   "case_count": 17,
+   "case_ratio": 0.0004,
+   "roles": {
+    "automated": 1.0,
+    "staff": 0.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 6
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 6
+    },
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 2
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Declared / calculate",
+     "count": 11
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 4
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish pre-check",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Declared / create": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Declared",
+   "action": "create",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 29059,
+   "case_ratio": 0.6633,
+   "roles": {
+    "automated": 1.0,
+    "staff": 0.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 14612
+    },
+    {
+     "activity": "Geo parcel document / Reported / finish editing",
+     "count": 9361
+    },
+    {
+     "activity": "Geo parcel document / Declared / begin editing",
+     "count": 8474
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Control summary / Main / initialize",
+     "count": 16753
+    },
+    {
+     "activity": "Reference alignment / Main / initialize",
+     "count": 7352
+    },
+    {
+     "activity": "Geo parcel document / Main / clear",
+     "count": 4333
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Declared / discard": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Declared",
+   "action": "discard",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 38,
+   "case_ratio": 0.0009,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Declared / begin editing",
+     "count": 24
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 4
+    },
+    {
+     "activity": "Geo parcel document / Declared / restart editing",
+     "count": 3
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 14
+    },
+    {
+     "activity": "Geo parcel document / Declared / calculate",
+     "count": 10
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 4
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Declared / finish editing": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Declared",
+   "action": "finish editing",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 29054,
+   "case_ratio": 0.6632,
+   "roles": {
+    "automated": 0.4011,
+    "staff": 0.5989,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Declared / calculate",
+     "count": 16853
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish pre-check",
+     "count": 13841
+    },
+    {
+     "activity": "Geo parcel document / Declared / begin editing",
+     "count": 11265
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 14612
+    },
+    {
+     "activity": "Geo parcel document / Reported / finish editing",
+     "count": 7847
+    },
+    {
+     "activity": "Reference alignment / Main / initialize",
+     "count": 7075
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Declared / finish pre-check": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Declared",
+   "action": "finish pre-check",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 15032,
+   "case_ratio": 0.3431,
+   "roles": {
+    "automated": 0.6782,
+    "staff": 0.3218,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Declared / begin editing",
+     "count": 16567
+    },
+    {
+     "activity": "Geo parcel document / Declared / calculate",
+     "count": 3325
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 2794
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 13841
+    },
+    {
+     "activity": "Control summary / Main / initialize",
+     "count": 6155
+    },
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 1781
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Declared / insert document": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Declared",
+   "action": "insert document",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 135,
+   "case_ratio": 0.0031,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 80
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 23
+    },
+    {
+     "activity": "Geo parcel document / Declared / calculate",
+     "count": 10
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 130
+    },
+    {
+     "activity": "Geo parcel document / Declared / begin editing",
+     "count": 2
+    },
+    {
+     "activity": "Geo parcel document / Declared / calculate",
+     "count": 2
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Declared / remove document": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Declared",
+   "action": "remove document",
+   "years": [
+    2017
+   ],
+   "case_count": 5,
+   "case_ratio": 0.0001,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 3
+    },
+    {
+     "activity": "Geo parcel document / Declared / insert document",
+     "count": 2
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Reported / insert document",
+     "count": 2
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 1
+    },
+    {
+     "activity": "Geo parcel document / Main / insert document",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Declared / restart editing": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Declared",
+   "action": "restart editing",
+   "years": [
+    2016
+   ],
+   "case_count": 768,
+   "case_ratio": 0.0175,
+   "roles": {
+    "automated": 0.007,
+    "staff": 0.993,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / finish editing",
+     "count": 316
+    },
+    {
+     "activity": "Payment application / Application / finish payment",
+     "count": 212
+    },
+    {
+     "activity": "Geo parcel document / Declared / restart editing",
+     "count": 119
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 822
+    },
+    {
+     "activity": "Geo parcel document / Declared / restart editing",
+     "count": 119
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 104
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Main / calculate protocol": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Main",
+   "action": "calculate protocol",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 81,
+   "case_ratio": 0.0018,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Main / calculate protocol",
+     "count": 1182
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 89
+    },
+    {
+     "activity": "Geo parcel document / Reported / begin editing",
+     "count": 56
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Main / calculate protocol",
+     "count": 1182
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 180
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 8
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Main / change department": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Main",
+   "action": "change department",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 6,
+   "case_ratio": 0.0001,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Control summary / Main / change department",
+     "count": 4
+    },
+    {
+     "activity": "Payment application / Main / change department",
+     "count": 2
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Reference alignment / Main / initialize",
+     "count": 3
+    },
+    {
+     "activity": "Payment application / Application / initialize",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / change department",
+    "Department control parcels / Main / change department",
+    "Parcel document / Main / change department",
+    "Payment application / Main / change department",
+    "Reference alignment / Main / change department"
+   ]
+  },
+  "Geo parcel document / Main / clear": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Main",
+   "action": "clear",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 2342,
+   "case_ratio": 0.0535,
+   "roles": {
+    "automated": 1.0,
+    "staff": 0.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 4333
+    },
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 520
+    },
+    {
+     "activity": "Payment application / Application / mail income",
+     "count": 129
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Declared / begin editing",
+     "count": 4247
+    },
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 790
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish pre-check",
+     "count": 16
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Main / initialize": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Main",
+   "action": "initialize",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 29059,
+   "case_ratio": 0.6633,
+   "roles": {
+    "automated": 1.0,
+    "staff": 0.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / mail valid",
+     "count": 24367
+    },
+    {
+     "activity": "Payment application / Application / mail income",
+     "count": 2234
+    },
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 1915
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Declared / begin editing",
+     "count": 29003
+    },
+    {
+     "activity": "Control summary / Main / initialize",
+     "count": 56
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / initialize",
+    "Entitlement application / Main / initialize",
+    "Parcel document / Main / initialize",
+    "Reference alignment / Main / initialize"
+   ]
+  },
+  "Geo parcel document / Main / insert document": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Main",
+   "action": "insert document",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 5223,
+   "case_ratio": 0.1192,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Declared / begin editing",
+     "count": 3647
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 445
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 293
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 4927
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 96
+    },
+    {
+     "activity": "Geo parcel document / Declared / calculate",
+     "count": 43
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / insert document",
+    "Department control parcels / Main / insert document",
+    "Entitlement application / Main / insert document",
+    "Parcel document / Main / insert document",
+    "Payment application / Main / insert document",
+    "Reference alignment / Main / insert document"
+   ]
+  },
+  "Geo parcel document / Main / remove document": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Main",
+   "action": "remove document",
+   "years": [
+    2017
+   ],
+   "case_count": 1,
+   "case_ratio": 0.0,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / begin payment",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / insert document",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Department control parcels / Main / remove document",
+    "Entitlement application / Main / remove document",
+    "Parcel document / Main / remove document",
+    "Payment application / Main / remove document",
+    "Reference alignment / Main / remove document"
+   ]
+  },
+  "Geo parcel document / Main / save": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Main",
+   "action": "save",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 14370,
+   "case_ratio": 0.328,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Declared / begin editing",
+     "count": 10403
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 8886
+    },
+    {
+     "activity": "Geo parcel document / Main / insert document",
+     "count": 4927
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Declared / calculate",
+     "count": 15496
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 10168
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 8886
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / save",
+    "Department control parcels / Main / save",
+    "Entitlement application / Main / save",
+    "Parcel document / Main / save",
+    "Payment application / Main / save",
+    "Reference alignment / Main / save"
+   ]
+  },
+  "Geo parcel document / Main / take original document": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Main",
+   "action": "take original document",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 13,
+   "case_ratio": 0.0003,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 3
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 2
+    },
+    {
+     "activity": "Geo parcel document / Reported / begin editing",
+     "count": 2
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Reported / calculate",
+     "count": 3
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 2
+    },
+    {
+     "activity": "Geo parcel document / Reported / begin editing",
+     "count": 2
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / take original document",
+    "Entitlement application / Main / take original document",
+    "Parcel document / Main / take original document",
+    "Payment application / Main / take original document"
+   ]
+  },
+  "Geo parcel document / Reported / begin editing": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Reported",
+   "action": "begin editing",
+   "years": [
+    2016,
+    2017
+   ],
+   "case_count": 15340,
+   "case_ratio": 0.3502,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Reported / finish editing",
+     "count": 48543
+    },
+    {
+     "activity": "Payment application / Application / finish editing",
+     "count": 16316
+    },
+    {
+     "activity": "Payment application / Application / initialize",
+     "count": 9209
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Reported / calculate",
+     "count": 77747
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 1830
+    },
+    {
+     "activity": "Geo parcel document / Reported / begin editing",
+     "count": 933
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Reported / calculate": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Reported",
+   "action": "calculate",
+   "years": [
+    2017
+   ],
+   "case_count": 14507,
+   "case_ratio": 0.3311,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Reported / begin editing",
+     "count": 77747
+    },
+    {
+     "activity": "Payment application / Application / initialize",
+     "count": 4704
+    },
+    {
+     "activity": "Geo parcel document / Reported / calculate",
+     "count": 4597
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Reported / finish editing",
+     "count": 85012
+    },
+    {
+     "activity": "Geo parcel document / Reported / calculate",
+     "count": 4597
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 1546
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Reported / finish editing": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Reported",
+   "action": "finish editing",
+   "years": [
+    2017
+   ],
+   "case_count": 14501,
+   "case_ratio": 0.331,
+   "roles": {
+    "automated": 0.0989,
+    "staff": 0.9011,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Reported / calculate",
+     "count": 85012
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 7847
+    },
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 1607
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Reported / begin editing",
+     "count": 48543
+    },
+    {
+     "activity": "Payment application / Application / begin editing",
+     "count": 29626
+    },
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 9361
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Reported / insert document": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Reported",
+   "action": "insert document",
+   "years": [
+    2017
+   ],
+   "case_count": 832,
+   "case_ratio": 0.019,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Reported / begin editing",
+     "count": 307
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 300
+    },
+    {
+     "activity": "Geo parcel document / Reported / calculate",
+     "count": 110
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 811
+    },
+    {
+     "activity": "Geo parcel document / Reported / remove document",
+     "count": 17
+    },
+    {
+     "activity": "Geo parcel document / Reported / calculate",
+     "count": 14
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Geo parcel document / Reported / remove document": {
+   "doctype": "Geo parcel document",
+   "subprocess": "Reported",
+   "action": "remove document",
+   "years": [
+    2017
+   ],
+   "case_count": 27,
+   "case_ratio": 0.0006,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Geo parcel document / Reported / insert document",
+     "count": 17
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 9
+    },
+    {
+     "activity": "Geo parcel document / Declared / finish editing",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Reported / insert document",
+     "count": 15
+    },
+    {
+     "activity": "Geo parcel document / Main / save",
+     "count": 4
+    },
+    {
+     "activity": "Geo parcel document / Reported / begin editing",
+     "count": 3
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / abort external": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "abort external",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 19,
+   "case_ratio": 0.0004,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / On-Site / prepare external",
+     "count": 21
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / On-Site / prepare offline",
+     "count": 12
+    },
+    {
+     "activity": "Inspection / On-Site / performed",
+     "count": 6
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 2
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / begin editing": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "begin editing",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 823,
+   "case_ratio": 0.0188,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / On-Site / finish editing",
+     "count": 615
+    },
+    {
+     "activity": "Geo parcel document / Reported / calculate",
+     "count": 228
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 200
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 1631
+    },
+    {
+     "activity": "Inspection / On-Site / finish editing",
+     "count": 52
+    },
+    {
+     "activity": "Inspection / On-Site / begin editing",
+     "count": 26
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / begin preparations": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "begin preparations",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2548,
+   "case_ratio": 0.0582,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 2763
+    },
+    {
+     "activity": "Inspection / On-Site / finish preparations",
+     "count": 658
+    },
+    {
+     "activity": "Inspection / On-Site / finish editing",
+     "count": 9
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / On-Site / prepare offline",
+     "count": 1783
+    },
+    {
+     "activity": "Inspection / On-Site / performed",
+     "count": 930
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 451
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / cancel offline": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "cancel offline",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 131,
+   "case_ratio": 0.003,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / On-Site / prepare offline",
+     "count": 169
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 8
+    },
+    {
+     "activity": "Department control parcels / Main / performed",
+     "count": 2
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / On-Site / prepare offline",
+     "count": 122
+    },
+    {
+     "activity": "Inspection / On-Site / finish preparations",
+     "count": 34
+    },
+    {
+     "activity": "Payment application / Application / initialize",
+     "count": 9
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / finish editing": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "finish editing",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2548,
+   "case_ratio": 0.0582,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 4130
+    },
+    {
+     "activity": "Inspection / On-Site / performed",
+     "count": 795
+    },
+    {
+     "activity": "Inspection / On-Site / begin editing",
+     "count": 52
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Control summary / Main / save",
+     "count": 1132
+    },
+    {
+     "activity": "Inspection / On-Site / begin editing",
+     "count": 615
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 589
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / finish preparations": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "finish preparations",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2549,
+   "case_ratio": 0.0582,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 892
+    },
+    {
+     "activity": "Inspection / On-Site / plan",
+     "count": 639
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 304
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 2652
+    },
+    {
+     "activity": "Inspection / On-Site / begin preparations",
+     "count": 658
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 21
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / initialize": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "initialize",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2553,
+   "case_ratio": 0.0583,
+   "roles": {
+    "automated": 0.6907,
+    "staff": 0.3093,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 494
+    },
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 482
+    },
+    {
+     "activity": "Inspection / On-Site / plan",
+     "count": 472
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / On-Site / plan",
+     "count": 2764
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 298
+    },
+    {
+     "activity": "Inspection / On-Site / finish preparations",
+     "count": 166
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / insert document": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "insert document",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 91,
+   "case_ratio": 0.0021,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / On-Site / insert document",
+     "count": 124
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 61
+    },
+    {
+     "activity": "Inspection / On-Site / finish editing",
+     "count": 15
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / On-Site / insert document",
+     "count": 124
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 68
+    },
+    {
+     "activity": "Inspection / On-Site / finish preparations",
+     "count": 24
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / performed": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "performed",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 1212,
+   "case_ratio": 0.0277,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / On-Site / begin preparations",
+     "count": 930
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 441
+    },
+    {
+     "activity": "Inspection / On-Site / abort external",
+     "count": 6
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / On-Site / finish editing",
+     "count": 795
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 572
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 3
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / performed offline": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "performed offline",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 1750,
+   "case_ratio": 0.0399,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 1755
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 18
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 10
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 1520
+    },
+    {
+     "activity": "Inspection / On-Site / finish editing",
+     "count": 43
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 43
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / plan": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "plan",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2553,
+   "case_ratio": 0.0583,
+   "roles": {
+    "automated": 0.6907,
+    "staff": 0.3093,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / On-Site / initialize",
+     "count": 2764
+    },
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 107
+    },
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 49
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 2095
+    },
+    {
+     "activity": "Inspection / On-Site / finish preparations",
+     "count": 639
+    },
+    {
+     "activity": "Inspection / On-Site / initialize",
+     "count": 472
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / prepare external": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "prepare external",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 19,
+   "case_ratio": 0.0004,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / On-Site / begin preparations",
+     "count": 21
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / On-Site / abort external",
+     "count": 21
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / prepare offline": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "prepare offline",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 1755,
+   "case_ratio": 0.0401,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / On-Site / begin preparations",
+     "count": 1783
+    },
+    {
+     "activity": "Inspection / On-Site / cancel offline",
+     "count": 122
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 21
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 1463
+    },
+    {
+     "activity": "Inspection / On-Site / cancel offline",
+     "count": 169
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 81
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / remove document": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "remove document",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 5,
+   "case_ratio": 0.0001,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / On-Site / insert document",
+     "count": 6
+    },
+    {
+     "activity": "Inspection / On-Site / remove document",
+     "count": 4
+    },
+    {
+     "activity": "Inspection / On-Site / begin editing",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / On-Site / insert document",
+     "count": 5
+    },
+    {
+     "activity": "Inspection / On-Site / remove document",
+     "count": 4
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 3
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / On-Site / save": {
+   "doctype": "Inspection",
+   "subprocess": "On-Site",
+   "action": "save",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2548,
+   "case_ratio": 0.0582,
+   "roles": {
+    "automated": 0.0497,
+    "staff": 0.9503,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 95513
+    },
+    {
+     "activity": "Inspection / On-Site / finish preparations",
+     "count": 2652
+    },
+    {
+     "activity": "Inspection / On-Site / plan",
+     "count": 2095
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 95513
+    },
+    {
+     "activity": "Inspection / On-Site / finish editing",
+     "count": 4130
+    },
+    {
+     "activity": "Inspection / On-Site / begin preparations",
+     "count": 2763
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / Remote / abort external": {
+   "doctype": "Inspection",
+   "subprocess": "Remote",
+   "action": "abort external",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2245,
+   "case_ratio": 0.0512,
+   "roles": {
+    "automated": 1.0,
+    "staff": 0.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / Remote / prepare external",
+     "count": 4395
+    },
+    {
+     "activity": "Inspection / Remote / begin preparations",
+     "count": 1836
+    },
+    {
+     "activity": "Inspection / Remote / finish preparations",
+     "count": 1128
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / Remote / finish preparations",
+     "count": 4414
+    },
+    {
+     "activity": "Inspection / Remote / prepare external",
+     "count": 1654
+    },
+    {
+     "activity": "Inspection / Remote / begin preparations",
+     "count": 1441
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / Remote / begin editing": {
+   "doctype": "Inspection",
+   "subprocess": "Remote",
+   "action": "begin editing",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 708,
+   "case_ratio": 0.0162,
+   "roles": {
+    "automated": 0.9013,
+    "staff": 0.0987,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / Remote / finish editing",
+     "count": 538
+    },
+    {
+     "activity": "Payment application / Application / finish editing",
+     "count": 96
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 73
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / Remote / save",
+     "count": 799
+    },
+    {
+     "activity": "Inspection / Remote / finish editing",
+     "count": 36
+    },
+    {
+     "activity": "Inspection / On-Site / begin editing",
+     "count": 3
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / Remote / begin preparations": {
+   "doctype": "Inspection",
+   "subprocess": "Remote",
+   "action": "begin preparations",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2249,
+   "case_ratio": 0.0513,
+   "roles": {
+    "automated": 0.9996,
+    "staff": 0.0004,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / Remote / finish preparations",
+     "count": 5554
+    },
+    {
+     "activity": "Inspection / Remote / prepare external",
+     "count": 2737
+    },
+    {
+     "activity": "Inspection / Remote / abort external",
+     "count": 1441
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / Remote / prepare external",
+     "count": 5374
+    },
+    {
+     "activity": "Inspection / Remote / finish preparations",
+     "count": 2002
+    },
+    {
+     "activity": "Inspection / Remote / abort external",
+     "count": 1836
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / Remote / finish editing": {
+   "doctype": "Inspection",
+   "subprocess": "Remote",
+   "action": "finish editing",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2249,
+   "case_ratio": 0.0513,
+   "roles": {
+    "automated": 0.9719,
+    "staff": 0.0281,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / Remote / performed",
+     "count": 1420
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 829
+    },
+    {
+     "activity": "Inspection / Remote / save",
+     "count": 802
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 664
+    },
+    {
+     "activity": "Department control parcels / Main / performed",
+     "count": 560
+    },
+    {
+     "activity": "Inspection / Remote / begin editing",
+     "count": 538
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / Remote / finish preparations": {
+   "doctype": "Inspection",
+   "subprocess": "Remote",
+   "action": "finish preparations",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2249,
+   "case_ratio": 0.0513,
+   "roles": {
+    "automated": 0.9996,
+    "staff": 0.0004,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / Remote / abort external",
+     "count": 4414
+    },
+    {
+     "activity": "Inspection / Remote / begin preparations",
+     "count": 2002
+    },
+    {
+     "activity": "Inspection / Remote / save",
+     "count": 1462
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / Remote / begin preparations",
+     "count": 5554
+    },
+    {
+     "activity": "Inspection / Remote / prepare external",
+     "count": 2723
+    },
+    {
+     "activity": "Inspection / Remote / abort external",
+     "count": 1128
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / Remote / initialize": {
+   "doctype": "Inspection",
+   "subprocess": "Remote",
+   "action": "initialize",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2249,
+   "case_ratio": 0.0513,
+   "roles": {
+    "automated": 0.9982,
+    "staff": 0.0018,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / Remote / plan",
+     "count": 727
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 514
+    },
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 351
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / Remote / plan",
+     "count": 1522
+    },
+    {
+     "activity": "Inspection / Remote / save",
+     "count": 725
+    },
+    {
+     "activity": "Inspection / Remote / finish preparations",
+     "count": 2
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / Remote / insert document": {
+   "doctype": "Inspection",
+   "subprocess": "Remote",
+   "action": "insert document",
+   "years": [
+    2015
+   ],
+   "case_count": 1,
+   "case_ratio": 0.0,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / Remote / begin editing",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / Remote / finish editing",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / Remote / performed": {
+   "doctype": "Inspection",
+   "subprocess": "Remote",
+   "action": "performed",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2249,
+   "case_ratio": 0.0513,
+   "roles": {
+    "automated": 0.9987,
+    "staff": 0.0013,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / Remote / save",
+     "count": 2232
+    },
+    {
+     "activity": "Department control parcels / Main / performed",
+     "count": 16
+    },
+    {
+     "activity": "Inspection / On-Site / finish preparations",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / Remote / finish editing",
+     "count": 1420
+    },
+    {
+     "activity": "Inspection / On-Site / initialize",
+     "count": 456
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 327
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / Remote / plan": {
+   "doctype": "Inspection",
+   "subprocess": "Remote",
+   "action": "plan",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2249,
+   "case_ratio": 0.0513,
+   "roles": {
+    "automated": 0.9982,
+    "staff": 0.0018,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / Remote / initialize",
+     "count": 1522
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 289
+    },
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 196
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / Remote / save",
+     "count": 1520
+    },
+    {
+     "activity": "Inspection / Remote / initialize",
+     "count": 727
+    },
+    {
+     "activity": "Inspection / Remote / finish preparations",
+     "count": 2
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / Remote / prepare external": {
+   "doctype": "Inspection",
+   "subprocess": "Remote",
+   "action": "prepare external",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2249,
+   "case_ratio": 0.0513,
+   "roles": {
+    "automated": 0.9996,
+    "staff": 0.0004,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / Remote / begin preparations",
+     "count": 5374
+    },
+    {
+     "activity": "Inspection / Remote / finish preparations",
+     "count": 2723
+    },
+    {
+     "activity": "Inspection / Remote / abort external",
+     "count": 1654
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / Remote / abort external",
+     "count": 4395
+    },
+    {
+     "activity": "Inspection / Remote / begin preparations",
+     "count": 2737
+    },
+    {
+     "activity": "Inspection / Remote / finish preparations",
+     "count": 1126
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Inspection / Remote / save": {
+   "doctype": "Inspection",
+   "subprocess": "Remote",
+   "action": "save",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2249,
+   "case_ratio": 0.0513,
+   "roles": {
+    "automated": 0.995,
+    "staff": 0.005,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Inspection / Remote / save",
+     "count": 6041
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 1712
+    },
+    {
+     "activity": "Inspection / Remote / plan",
+     "count": 1520
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Inspection / Remote / save",
+     "count": 6041
+    },
+    {
+     "activity": "Inspection / Remote / performed",
+     "count": 2232
+    },
+    {
+     "activity": "Inspection / On-Site / save",
+     "count": 1884
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Parcel document / Main / begin editing": {
+   "doctype": "Parcel document",
+   "subprocess": "Main",
+   "action": "begin editing",
+   "years": [
+    2015
+   ],
+   "case_count": 14750,
+   "case_ratio": 0.3367,
+   "roles": {
+    "automated": 0.946,
+    "staff": 0.054,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Parcel document / Main / initialize",
+     "count": 13957
+    },
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 591
+    },
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 186
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Parcel document / Main / finish editing",
+     "count": 8737
+    },
+    {
+     "activity": "Control summary / Main / initialize",
+     "count": 4319
+    },
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 745
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / begin editing",
+    "Department control parcels / Main / begin editing",
+    "Entitlement application / Main / begin editing"
+   ]
+  },
+  "Parcel document / Main / change department": {
+   "doctype": "Parcel document",
+   "subprocess": "Main",
+   "action": "change department",
+   "years": [
+    2015
+   ],
+   "case_count": 5,
+   "case_ratio": 0.0001,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Reference alignment / Main / change department",
+     "count": 3
+    },
+    {
+     "activity": "Payment application / Application / begin payment",
+     "count": 1
+    },
+    {
+     "activity": "Payment application / Application / finish payment",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Department control parcels / Main / change department",
+     "count": 4
+    },
+    {
+     "activity": "Reference alignment / Main / change department",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / change department",
+    "Department control parcels / Main / change department",
+    "Geo parcel document / Main / change department",
+    "Payment application / Main / change department",
+    "Reference alignment / Main / change department"
+   ]
+  },
+  "Parcel document / Main / check": {
+   "doctype": "Parcel document",
+   "subprocess": "Main",
+   "action": "check",
+   "years": [
+    2015
+   ],
+   "case_count": 6386,
+   "case_ratio": 0.1458,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 9576
+    },
+    {
+     "activity": "Reference alignment / Main / performed",
+     "count": 1246
+    },
+    {
+     "activity": "Parcel document / Main / check",
+     "count": 991
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Parcel document / Main / finish editing",
+     "count": 9635
+    },
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 1006
+    },
+    {
+     "activity": "Parcel document / Main / check",
+     "count": 991
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Parcel document / Main / discard": {
+   "doctype": "Parcel document",
+   "subprocess": "Main",
+   "action": "discard",
+   "years": [
+    2015
+   ],
+   "case_count": 17,
+   "case_ratio": 0.0004,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Parcel document / Main / check",
+     "count": 5
+    },
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 4
+    },
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 2
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 6
+    },
+    {
+     "activity": "Entitlement application / Main / initialize",
+     "count": 4
+    },
+    {
+     "activity": "Parcel document / Main / finish editing",
+     "count": 4
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Parcel document / Main / finish editing": {
+   "doctype": "Parcel document",
+   "subprocess": "Main",
+   "action": "finish editing",
+   "years": [
+    2015
+   ],
+   "case_count": 14748,
+   "case_ratio": 0.3366,
+   "roles": {
+    "automated": 0.3673,
+    "staff": 0.6327,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 15316
+    },
+    {
+     "activity": "Parcel document / Main / check",
+     "count": 9635
+    },
+    {
+     "activity": "Parcel document / Main / begin editing",
+     "count": 8737
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Reference alignment / Main / initialize",
+     "count": 9504
+    },
+    {
+     "activity": "Control summary / Main / initialize",
+     "count": 8583
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 6809
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / finish editing",
+    "Entitlement application / Main / finish editing"
+   ]
+  },
+  "Parcel document / Main / initialize": {
+   "doctype": "Parcel document",
+   "subprocess": "Main",
+   "action": "initialize",
+   "years": [
+    2015
+   ],
+   "case_count": 14750,
+   "case_ratio": 0.3367,
+   "roles": {
+    "automated": 0.9565,
+    "staff": 0.0435,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Main / mail valid",
+     "count": 12997
+    },
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 969
+    },
+    {
+     "activity": "Payment application / Application / mail income",
+     "count": 639
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Parcel document / Main / begin editing",
+     "count": 13957
+    },
+    {
+     "activity": "Control summary / Main / initialize",
+     "count": 792
+    },
+    {
+     "activity": "Parcel document / Main / insert document",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / initialize",
+    "Entitlement application / Main / initialize",
+    "Geo parcel document / Main / initialize",
+    "Reference alignment / Main / initialize"
+   ]
+  },
+  "Parcel document / Main / insert document": {
+   "doctype": "Parcel document",
+   "subprocess": "Main",
+   "action": "insert document",
+   "years": [
+    2015
+   ],
+   "case_count": 9121,
+   "case_ratio": 0.2082,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 2091
+    },
+    {
+     "activity": "Reference alignment / Main / performed",
+     "count": 1215
+    },
+    {
+     "activity": "Payment application / Application / finish payment",
+     "count": 908
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 9381
+    },
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 157
+    },
+    {
+     "activity": "Reference alignment / Main / insert document",
+     "count": 28
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / insert document",
+    "Department control parcels / Main / insert document",
+    "Entitlement application / Main / insert document",
+    "Geo parcel document / Main / insert document",
+    "Payment application / Main / insert document",
+    "Reference alignment / Main / insert document"
+   ]
+  },
+  "Parcel document / Main / remove document": {
+   "doctype": "Parcel document",
+   "subprocess": "Main",
+   "action": "remove document",
+   "years": [
+    2015
+   ],
+   "case_count": 8,
+   "case_ratio": 0.0002,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Parcel document / Main / check",
+     "count": 2
+    },
+    {
+     "activity": "Parcel document / Main / insert document",
+     "count": 2
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 8
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Department control parcels / Main / remove document",
+    "Entitlement application / Main / remove document",
+    "Geo parcel document / Main / remove document",
+    "Payment application / Main / remove document",
+    "Reference alignment / Main / remove document"
+   ]
+  },
+  "Parcel document / Main / save": {
+   "doctype": "Parcel document",
+   "subprocess": "Main",
+   "action": "save",
+   "years": [
+    2015
+   ],
+   "case_count": 10505,
+   "case_ratio": 0.2398,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Parcel document / Main / insert document",
+     "count": 9381
+    },
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 5601
+    },
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 2966
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Parcel document / Main / finish editing",
+     "count": 15316
+    },
+    {
+     "activity": "Parcel document / Main / check",
+     "count": 9576
+    },
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 5601
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / save",
+    "Department control parcels / Main / save",
+    "Entitlement application / Main / save",
+    "Geo parcel document / Main / save",
+    "Payment application / Main / save",
+    "Reference alignment / Main / save"
+   ]
+  },
+  "Parcel document / Main / take original document": {
+   "doctype": "Parcel document",
+   "subprocess": "Main",
+   "action": "take original document",
+   "years": [
+    2015
+   ],
+   "case_count": 5,
+   "case_ratio": 0.0001,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 2
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 1
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Reference alignment / Main / initialize",
+     "count": 2
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 1
+    },
+    {
+     "activity": "Parcel document / Main / check",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / take original document",
+    "Entitlement application / Main / take original document",
+    "Geo parcel document / Main / take original document",
+    "Payment application / Main / take original document"
+   ]
+  },
+  "Payment application / Application / abort payment": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "abort payment",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 26625,
+   "case_ratio": 0.6078,
+   "roles": {
+    "automated": 0.0,
+    "staff": 0.0,
+    "unknown": 1.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / begin payment",
+     "count": 31021
+    },
+    {
+     "activity": "Payment application / Application / insert document",
+     "count": 1877
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 16
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / begin payment",
+     "count": 32812
+    },
+    {
+     "activity": "Payment application / Application / remove document",
+     "count": 41
+    },
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 24
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Application / begin editing": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "begin editing",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 43808,
+   "case_ratio": 1.0,
+   "roles": {
+    "automated": 0.0001,
+    "staff": 0.9999,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / finish editing",
+     "count": 55229
+    },
+    {
+     "activity": "Geo parcel document / Reported / finish editing",
+     "count": 29626
+    },
+    {
+     "activity": "Payment application / Application / initialize",
+     "count": 26827
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 117324
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 56
+    },
+    {
+     "activity": "Payment application / Application / finish editing",
+     "count": 35
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Application / begin payment": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "begin payment",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 43727,
+   "case_ratio": 0.9981,
+   "roles": {
+    "automated": 0.0,
+    "staff": 0.0,
+    "unknown": 1.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / decide",
+     "count": 42834
+    },
+    {
+     "activity": "Payment application / Application / abort payment",
+     "count": 32812
+    },
+    {
+     "activity": "Payment application / Application / insert document",
+     "count": 266
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / abort payment",
+     "count": 31021
+    },
+    {
+     "activity": "Payment application / Application / insert document",
+     "count": 30645
+    },
+    {
+     "activity": "Payment application / Application / finish payment",
+     "count": 12984
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Application / calculate": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "calculate",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 43808,
+   "case_ratio": 1.0,
+   "roles": {
+    "automated": 0.0409,
+    "staff": 0.9591,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / begin editing",
+     "count": 117324
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 69188
+    },
+    {
+     "activity": "Payment application / Application / revoke decision",
+     "count": 19089
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / finish editing",
+     "count": 138228
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 69188
+    },
+    {
+     "activity": "Entitlement application / Main / begin editing",
+     "count": 23243
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Application / decide": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "decide",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 43793,
+   "case_ratio": 0.9996,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / finish editing",
+     "count": 63344
+    },
+    {
+     "activity": "Payment application / Application / revoke decision",
+     "count": 1423
+    },
+    {
+     "activity": "Payment application / Application / decide",
+     "count": 543
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / begin payment",
+     "count": 42834
+    },
+    {
+     "activity": "Payment application / Application / revoke decision",
+     "count": 18834
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 1385
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Application / finish editing": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "finish editing",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 43795,
+   "case_ratio": 0.9997,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 138228
+    },
+    {
+     "activity": "Payment application / Application / begin editing",
+     "count": 35
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 23
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / decide",
+     "count": 63344
+    },
+    {
+     "activity": "Payment application / Application / begin editing",
+     "count": 55229
+    },
+    {
+     "activity": "Geo parcel document / Reported / begin editing",
+     "count": 16316
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Application / finish payment": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "finish payment",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 43721,
+   "case_ratio": 0.998,
+   "roles": {
+    "automated": 0.0,
+    "staff": 0.0,
+    "unknown": 1.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / insert document",
+     "count": 28820
+    },
+    {
+     "activity": "Payment application / Application / begin payment",
+     "count": 12984
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 694
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 3310
+    },
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 1592
+    },
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 1270
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Application / initialize": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "initialize",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 43809,
+   "case_ratio": 1.0,
+   "roles": {
+    "automated": 0.9999,
+    "staff": 0.0001,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Reference alignment / Main / performed",
+     "count": 12192
+    },
+    {
+     "activity": "Department control parcels / Main / performed",
+     "count": 12126
+    },
+    {
+     "activity": "Entitlement application / Main / finish editing",
+     "count": 8872
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / begin editing",
+     "count": 26827
+    },
+    {
+     "activity": "Geo parcel document / Reported / begin editing",
+     "count": 9209
+    },
+    {
+     "activity": "Geo parcel document / Reported / calculate",
+     "count": 4704
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Application / insert document": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "insert document",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 29276,
+   "case_ratio": 0.6683,
+   "roles": {
+    "automated": 0.9908,
+    "staff": 0.0092,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / begin payment",
+     "count": 30645
+    },
+    {
+     "activity": "Payment application / Application / insert document",
+     "count": 12508
+    },
+    {
+     "activity": "Payment application / Application / decide",
+     "count": 446
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / finish payment",
+     "count": 28820
+    },
+    {
+     "activity": "Payment application / Application / insert document",
+     "count": 12508
+    },
+    {
+     "activity": "Payment application / Application / abort payment",
+     "count": 1877
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Application / mail income": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "mail income",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 43808,
+   "case_ratio": 1.0,
+   "roles": {
+    "automated": 0.0,
+    "staff": 0.0,
+    "unknown": 1.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / mail valid",
+     "count": 3761
+    },
+    {
+     "activity": "Entitlement application / Main / mail valid",
+     "count": 910
+    },
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 367
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / mail valid",
+     "count": 26897
+    },
+    {
+     "activity": "Entitlement application / Main / mail valid",
+     "count": 11857
+    },
+    {
+     "activity": "Geo parcel document / Main / initialize",
+     "count": 2234
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Application / mail valid": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "mail valid",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 43808,
+   "case_ratio": 1.0,
+   "roles": {
+    "automated": 0.0,
+    "staff": 0.0,
+    "unknown": 1.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / mail income",
+     "count": 26897
+    },
+    {
+     "activity": "Entitlement application / Main / mail valid",
+     "count": 11822
+    },
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 8
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Geo parcel document / Main / initialize",
+     "count": 24367
+    },
+    {
+     "activity": "Entitlement application / Main / mail valid",
+     "count": 15124
+    },
+    {
+     "activity": "Payment application / Application / mail income",
+     "count": 3761
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Application / remove document": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "remove document",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 123,
+   "case_ratio": 0.0028,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / abort payment",
+     "count": 41
+    },
+    {
+     "activity": "Payment application / Application / insert document",
+     "count": 25
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 22
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / revoke decision",
+     "count": 98
+    },
+    {
+     "activity": "Payment application / Application / insert document",
+     "count": 15
+    },
+    {
+     "activity": "Payment application / Application / begin payment",
+     "count": 13
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Application / revoke decision": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "revoke decision",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 20621,
+   "case_ratio": 0.4707,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / decide",
+     "count": 18834
+    },
+    {
+     "activity": "Payment application / Application / finish editing",
+     "count": 1424
+    },
+    {
+     "activity": "Payment application / Application / revoke decision",
+     "count": 482
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 19089
+    },
+    {
+     "activity": "Payment application / Application / decide",
+     "count": 1423
+    },
+    {
+     "activity": "Payment application / Application / revoke decision",
+     "count": 482
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Application / revoke withdrawal": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "revoke withdrawal",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 39,
+   "case_ratio": 0.0009,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / withdraw",
+     "count": 40
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / begin editing",
+     "count": 39
+    },
+    {
+     "activity": "Payment application / Application / withdraw",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Application / withdraw": {
+   "doctype": "Payment application",
+   "subprocess": "Application",
+   "action": "withdraw",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 47,
+   "case_ratio": 0.0011,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / revoke decision",
+     "count": 37
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 4
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 2
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / revoke withdrawal",
+     "count": 40
+    },
+    {
+     "activity": "Payment application / Application / withdraw",
+     "count": 2
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Change / abort payment": {
+   "doctype": "Payment application",
+   "subprocess": "Change",
+   "action": "abort payment",
+   "years": [
+    2015
+   ],
+   "case_count": 384,
+   "case_ratio": 0.0088,
+   "roles": {
+    "automated": 0.0,
+    "staff": 0.0,
+    "unknown": 1.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Change / begin payment",
+     "count": 988
+    },
+    {
+     "activity": "Payment application / Change / remove document",
+     "count": 2
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Change / begin payment",
+     "count": 988
+    },
+    {
+     "activity": "Payment application / Change / revoke decision",
+     "count": 1
+    },
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Change / begin editing": {
+   "doctype": "Payment application",
+   "subprocess": "Change",
+   "action": "begin editing",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 3951,
+   "case_ratio": 0.0902,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Change / initialize",
+     "count": 4541
+    },
+    {
+     "activity": "Payment application / Change / decide",
+     "count": 146
+    },
+    {
+     "activity": "Payment application / Change / finish editing",
+     "count": 94
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Change / calculate",
+     "count": 4645
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 125
+    },
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 37
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Change / begin editing"
+   ]
+  },
+  "Payment application / Change / begin payment": {
+   "doctype": "Payment application",
+   "subprocess": "Change",
+   "action": "begin payment",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 1613,
+   "case_ratio": 0.0368,
+   "roles": {
+    "automated": 0.0,
+    "staff": 0.0,
+    "unknown": 1.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Change / abort payment",
+     "count": 988
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 785
+    },
+    {
+     "activity": "Payment application / Change / insert document",
+     "count": 771
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Change / finish payment",
+     "count": 1612
+    },
+    {
+     "activity": "Payment application / Change / abort payment",
+     "count": 988
+    },
+    {
+     "activity": "Payment application / Change / insert document",
+     "count": 9
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Change / calculate": {
+   "doctype": "Payment application",
+   "subprocess": "Change",
+   "action": "calculate",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 3951,
+   "case_ratio": 0.0902,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Change / begin editing",
+     "count": 4645
+    },
+    {
+     "activity": "Payment application / Change / calculate",
+     "count": 1078
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 440
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Main / remove document",
+     "count": 2093
+    },
+    {
+     "activity": "Payment application / Change / finish editing",
+     "count": 1999
+    },
+    {
+     "activity": "Payment application / Change / calculate",
+     "count": 1078
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Change / calculate"
+   ]
+  },
+  "Payment application / Change / decide": {
+   "doctype": "Payment application",
+   "subprocess": "Change",
+   "action": "decide",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 1670,
+   "case_ratio": 0.0381,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Change / finish editing",
+     "count": 1856
+    },
+    {
+     "activity": "Payment application / Change / decide",
+     "count": 369
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 33
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Change / insert document",
+     "count": 1505
+    },
+    {
+     "activity": "Payment application / Change / decide",
+     "count": 369
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 191
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Change / decide"
+   ]
+  },
+  "Payment application / Change / finish editing": {
+   "doctype": "Payment application",
+   "subprocess": "Change",
+   "action": "finish editing",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 1714,
+   "case_ratio": 0.0391,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Change / calculate",
+     "count": 1999
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 69
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 18
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Change / decide",
+     "count": 1856
+    },
+    {
+     "activity": "Payment application / Change / begin editing",
+     "count": 94
+    },
+    {
+     "activity": "Payment application / Change / calculate",
+     "count": 71
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Change / finish editing"
+   ]
+  },
+  "Payment application / Change / finish payment": {
+   "doctype": "Payment application",
+   "subprocess": "Change",
+   "action": "finish payment",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 1613,
+   "case_ratio": 0.0368,
+   "roles": {
+    "automated": 0.0,
+    "staff": 0.0,
+    "unknown": 1.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Change / begin payment",
+     "count": 1612
+    },
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 6
+    },
+    {
+     "activity": "Department control parcels / Main / begin editing",
+     "count": 4
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 108
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 62
+    },
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 57
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Change / initialize": {
+   "doctype": "Payment application",
+   "subprocess": "Change",
+   "action": "initialize",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 3951,
+   "case_ratio": 0.0902,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 4474
+    },
+    {
+     "activity": "Payment application / Application / finish payment",
+     "count": 21
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 11
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Change / begin editing",
+     "count": 4541
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Change / initialize"
+   ]
+  },
+  "Payment application / Change / insert document": {
+   "doctype": "Payment application",
+   "subprocess": "Change",
+   "action": "insert document",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 1725,
+   "case_ratio": 0.0394,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Change / decide",
+     "count": 1505
+    },
+    {
+     "activity": "Payment application / Change / insert document",
+     "count": 158
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 148
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Main / save",
+     "count": 936
+    },
+    {
+     "activity": "Payment application / Change / begin payment",
+     "count": 771
+    },
+    {
+     "activity": "Payment application / Change / insert document",
+     "count": 158
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Change / insert document"
+   ]
+  },
+  "Payment application / Change / remove document": {
+   "doctype": "Payment application",
+   "subprocess": "Change",
+   "action": "remove document",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 76,
+   "case_ratio": 0.0017,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Change / insert document",
+     "count": 73
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 12
+    },
+    {
+     "activity": "Payment application / Change / calculate",
+     "count": 6
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Change / insert document",
+     "count": 57
+    },
+    {
+     "activity": "Payment application / Change / revoke decision",
+     "count": 17
+    },
+    {
+     "activity": "Payment application / Main / remove document",
+     "count": 12
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Change / remove document"
+   ]
+  },
+  "Payment application / Change / revoke decision": {
+   "doctype": "Payment application",
+   "subprocess": "Change",
+   "action": "revoke decision",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 43,
+   "case_ratio": 0.001,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Change / remove document",
+     "count": 17
+    },
+    {
+     "activity": "Payment application / Change / decide",
+     "count": 15
+    },
+    {
+     "activity": "Payment application / Change / insert document",
+     "count": 6
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Main / remove document",
+     "count": 18
+    },
+    {
+     "activity": "Payment application / Change / calculate",
+     "count": 10
+    },
+    {
+     "activity": "Payment application / Change / remove document",
+     "count": 4
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Change / revoke decision"
+   ]
+  },
+  "Payment application / Change / revoke withdrawal": {
+   "doctype": "Payment application",
+   "subprocess": "Change",
+   "action": "revoke withdrawal",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 101,
+   "case_ratio": 0.0023,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Change / withdraw",
+     "count": 50
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 43
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 7
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Main / remove document",
+     "count": 89
+    },
+    {
+     "activity": "Payment application / Change / begin editing",
+     "count": 19
+    },
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 2
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Change / revoke withdrawal"
+   ]
+  },
+  "Payment application / Change / withdraw": {
+   "doctype": "Payment application",
+   "subprocess": "Change",
+   "action": "withdraw",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 122,
+   "case_ratio": 0.0028,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Change / calculate",
+     "count": 113
+    },
+    {
+     "activity": "Payment application / Change / finish editing",
+     "count": 7
+    },
+    {
+     "activity": "Payment application / Change / begin editing",
+     "count": 5
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Change / insert document",
+     "count": 68
+    },
+    {
+     "activity": "Payment application / Change / revoke withdrawal",
+     "count": 50
+    },
+    {
+     "activity": "Payment application / Main / remove document",
+     "count": 6
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Change / withdraw"
+   ]
+  },
+  "Payment application / Main / change department": {
+   "doctype": "Payment application",
+   "subprocess": "Main",
+   "action": "change department",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 10,
+   "case_ratio": 0.0002,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Control summary / Main / change department",
+     "count": 7
+    },
+    {
+     "activity": "Payment application / Application / finish editing",
+     "count": 2
+    },
+    {
+     "activity": "Payment application / Application / initialize",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Entitlement application / Change / change department",
+     "count": 5
+    },
+    {
+     "activity": "Geo parcel document / Main / change department",
+     "count": 2
+    },
+    {
+     "activity": "Payment application / Application / begin editing",
+     "count": 2
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / change department",
+    "Department control parcels / Main / change department",
+    "Geo parcel document / Main / change department",
+    "Parcel document / Main / change department",
+    "Reference alignment / Main / change department"
+   ]
+  },
+  "Payment application / Main / insert document": {
+   "doctype": "Payment application",
+   "subprocess": "Main",
+   "action": "insert document",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 4740,
+   "case_ratio": 0.1082,
+   "roles": {
+    "automated": 0.1096,
+    "staff": 0.8904,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Main / remove document",
+     "count": 1602
+    },
+    {
+     "activity": "Payment application / Application / finish payment",
+     "count": 1270
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 727
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Change / initialize",
+     "count": 4474
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 1638
+    },
+    {
+     "activity": "Payment application / Objection / initialize",
+     "count": 310
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / insert document",
+    "Department control parcels / Main / insert document",
+    "Entitlement application / Main / insert document",
+    "Geo parcel document / Main / insert document",
+    "Parcel document / Main / insert document",
+    "Reference alignment / Main / insert document"
+   ]
+  },
+  "Payment application / Main / remove document": {
+   "doctype": "Payment application",
+   "subprocess": "Main",
+   "action": "remove document",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2087,
+   "case_ratio": 0.0476,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Change / calculate",
+     "count": 2093
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 97
+    },
+    {
+     "activity": "Payment application / Change / revoke withdrawal",
+     "count": 89
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 1602
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 74
+    },
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 72
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Department control parcels / Main / remove document",
+    "Entitlement application / Main / remove document",
+    "Geo parcel document / Main / remove document",
+    "Parcel document / Main / remove document",
+    "Reference alignment / Main / remove document"
+   ]
+  },
+  "Payment application / Main / save": {
+   "doctype": "Payment application",
+   "subprocess": "Main",
+   "action": "save",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 3569,
+   "case_ratio": 0.0815,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 1638
+    },
+    {
+     "activity": "Payment application / Change / insert document",
+     "count": 936
+    },
+    {
+     "activity": "Payment application / Objection / insert document",
+     "count": 697
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Change / begin payment",
+     "count": 785
+    },
+    {
+     "activity": "Payment application / Change / calculate",
+     "count": 440
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 438
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / save",
+    "Department control parcels / Main / save",
+    "Entitlement application / Main / save",
+    "Geo parcel document / Main / save",
+    "Parcel document / Main / save",
+    "Reference alignment / Main / save"
+   ]
+  },
+  "Payment application / Main / take original document": {
+   "doctype": "Payment application",
+   "subprocess": "Main",
+   "action": "take original document",
+   "years": [
+    2015
+   ],
+   "case_count": 77,
+   "case_ratio": 0.0018,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Control summary / Main / save",
+     "count": 21
+    },
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 21
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 13
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Application / calculate",
+     "count": 46
+    },
+    {
+     "activity": "Payment application / Change / begin payment",
+     "count": 18
+    },
+    {
+     "activity": "Entitlement application / Main / take original document",
+     "count": 6
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / take original document",
+    "Entitlement application / Main / take original document",
+    "Geo parcel document / Main / take original document",
+    "Parcel document / Main / take original document"
+   ]
+  },
+  "Payment application / Objection / abort payment": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "abort payment",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 265,
+   "case_ratio": 0.006,
+   "roles": {
+    "automated": 0.0,
+    "staff": 0.0,
+    "unknown": 1.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / begin payment",
+     "count": 338
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 14
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 6
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / begin payment",
+     "count": 356
+    },
+    {
+     "activity": "Payment application / Objection / remove document",
+     "count": 4
+    },
+    {
+     "activity": "Payment application / Objection / insert document",
+     "count": 2
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Objection / approve": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "approve",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 506,
+   "case_ratio": 0.0116,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / check admissibility",
+     "count": 237
+    },
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 205
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 17
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / begin editing",
+     "count": 273
+    },
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 217
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 15
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / approve"
+   ]
+  },
+  "Payment application / Objection / begin admissibility check": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "begin admissibility check",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 771,
+   "case_ratio": 0.0176,
+   "roles": {
+    "automated": 0.0151,
+    "staff": 0.9849,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / check admissibility",
+     "count": 270
+    },
+    {
+     "activity": "Payment application / Objection / initialize",
+     "count": 201
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 145
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / check admissibility",
+     "count": 655
+    },
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 298
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 155
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / begin admissibility check"
+   ]
+  },
+  "Payment application / Objection / begin editing": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "begin editing",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 522,
+   "case_ratio": 0.0119,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / approve",
+     "count": 273
+    },
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 225
+    },
+    {
+     "activity": "Payment application / Objection / decide",
+     "count": 132
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 523
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 80
+    },
+    {
+     "activity": "Payment application / Objection / finish editing",
+     "count": 69
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / begin editing"
+   ]
+  },
+  "Payment application / Objection / begin editing from refused": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "begin editing from refused",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 84,
+   "case_ratio": 0.0019,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 49
+    },
+    {
+     "activity": "Payment application / Objection / refuse",
+     "count": 44
+    },
+    {
+     "activity": "Payment application / Objection / begin editing from refused",
+     "count": 10
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 72
+    },
+    {
+     "activity": "Payment application / Objection / insert document",
+     "count": 15
+    },
+    {
+     "activity": "Payment application / Objection / revoke approval",
+     "count": 12
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / begin editing from refused"
+   ]
+  },
+  "Payment application / Objection / begin payment": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "begin payment",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 543,
+   "case_ratio": 0.0124,
+   "roles": {
+    "automated": 0.0,
+    "staff": 0.0,
+    "unknown": 1.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Main / save",
+     "count": 426
+    },
+    {
+     "activity": "Payment application / Objection / abort payment",
+     "count": 356
+    },
+    {
+     "activity": "Payment application / Objection / decide",
+     "count": 55
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / finish payment",
+     "count": 512
+    },
+    {
+     "activity": "Payment application / Objection / abort payment",
+     "count": 338
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 16
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Objection / calculate": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "calculate",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 734,
+   "case_ratio": 0.0168,
+   "roles": {
+    "automated": 0.0052,
+    "staff": 0.9948,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / begin editing",
+     "count": 523
+    },
+    {
+     "activity": "Payment application / Objection / check admissibility",
+     "count": 397
+    },
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 354
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / finish editing",
+     "count": 766
+    },
+    {
+     "activity": "Payment application / Objection / check admissibility",
+     "count": 370
+    },
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 354
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / calculate"
+   ]
+  },
+  "Payment application / Objection / check admissibility": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "check admissibility",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 768,
+   "case_ratio": 0.0175,
+   "roles": {
+    "automated": 0.0158,
+    "staff": 0.9842,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / begin admissibility check",
+     "count": 655
+    },
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 370
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 86
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 397
+    },
+    {
+     "activity": "Payment application / Objection / begin admissibility check",
+     "count": 270
+    },
+    {
+     "activity": "Payment application / Objection / approve",
+     "count": 237
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / check admissibility"
+   ]
+  },
+  "Payment application / Objection / decide": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "decide",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 553,
+   "case_ratio": 0.0126,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / finish editing",
+     "count": 737
+    },
+    {
+     "activity": "Payment application / Objection / decide",
+     "count": 259
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 17
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / insert document",
+     "count": 459
+    },
+    {
+     "activity": "Payment application / Objection / decide",
+     "count": 259
+    },
+    {
+     "activity": "Payment application / Objection / begin editing",
+     "count": 132
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / decide"
+   ]
+  },
+  "Payment application / Objection / finish editing": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "finish editing",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 557,
+   "case_ratio": 0.0127,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 766
+    },
+    {
+     "activity": "Payment application / Objection / begin editing",
+     "count": 69
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 31
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / decide",
+     "count": 737
+    },
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 54
+    },
+    {
+     "activity": "Payment application / Objection / begin editing",
+     "count": 49
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / finish editing"
+   ]
+  },
+  "Payment application / Objection / finish payment": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "finish payment",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 543,
+   "case_ratio": 0.0124,
+   "roles": {
+    "automated": 0.0,
+    "staff": 0.0,
+    "unknown": 1.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / begin payment",
+     "count": 512
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 9
+    },
+    {
+     "activity": "Parcel document / Main / finish editing",
+     "count": 4
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 68
+    },
+    {
+     "activity": "Entitlement application / Objection / insert document",
+     "count": 38
+    },
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 23
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": []
+  },
+  "Payment application / Objection / initialize": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "initialize",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 843,
+   "case_ratio": 0.0192,
+   "roles": {
+    "automated": 0.8918,
+    "staff": 0.1082,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Change / insert document",
+     "count": 471
+    },
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 310
+    },
+    {
+     "activity": "Payment application / Application / finish payment",
+     "count": 35
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 542
+    },
+    {
+     "activity": "Payment application / Objection / begin admissibility check",
+     "count": 201
+    },
+    {
+     "activity": "Geo parcel document / Reported / begin editing",
+     "count": 26
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / initialize"
+   ]
+  },
+  "Payment application / Objection / insert document": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "insert document",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 706,
+   "case_ratio": 0.0161,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / decide",
+     "count": 459
+    },
+    {
+     "activity": "Payment application / Objection / insert document",
+     "count": 125
+    },
+    {
+     "activity": "Entitlement application / Main / save",
+     "count": 104
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Main / save",
+     "count": 697
+    },
+    {
+     "activity": "Payment application / Objection / insert document",
+     "count": 125
+    },
+    {
+     "activity": "Payment application / Objection / remove document",
+     "count": 90
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / insert document"
+   ]
+  },
+  "Payment application / Objection / refuse": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "refuse",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 211,
+   "case_ratio": 0.0048,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / check admissibility",
+     "count": 125
+    },
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 84
+    },
+    {
+     "activity": "Payment application / Objection / refuse",
+     "count": 8
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / insert document",
+     "count": 98
+    },
+    {
+     "activity": "Payment application / Objection / begin editing from refused",
+     "count": 44
+    },
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 27
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / refuse"
+   ]
+  },
+  "Payment application / Objection / remove document": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "remove document",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 79,
+   "case_ratio": 0.0018,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / insert document",
+     "count": 90
+    },
+    {
+     "activity": "Payment application / Main / save",
+     "count": 24
+    },
+    {
+     "activity": "Payment application / Objection / revoke decision",
+     "count": 8
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / insert document",
+     "count": 91
+    },
+    {
+     "activity": "Payment application / Objection / revoke decision",
+     "count": 24
+    },
+    {
+     "activity": "Payment application / Main / insert document",
+     "count": 8
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / remove document"
+   ]
+  },
+  "Payment application / Objection / revoke approval": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "revoke approval",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 31,
+   "case_ratio": 0.0007,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / begin editing from refused",
+     "count": 12
+    },
+    {
+     "activity": "Payment application / Objection / insert document",
+     "count": 9
+    },
+    {
+     "activity": "Payment application / Objection / refuse",
+     "count": 5
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / begin admissibility check",
+     "count": 18
+    },
+    {
+     "activity": "Payment application / Objection / approve",
+     "count": 11
+    },
+    {
+     "activity": "Payment application / Objection / refuse",
+     "count": 2
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / revoke approval"
+   ]
+  },
+  "Payment application / Objection / revoke decision": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "revoke decision",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 37,
+   "case_ratio": 0.0008,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / remove document",
+     "count": 24
+    },
+    {
+     "activity": "Payment application / Objection / insert document",
+     "count": 11
+    },
+    {
+     "activity": "Payment application / Objection / decide",
+     "count": 9
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / calculate",
+     "count": 19
+    },
+    {
+     "activity": "Payment application / Objection / remove document",
+     "count": 8
+    },
+    {
+     "activity": "Payment application / Objection / finish editing",
+     "count": 7
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / revoke decision"
+   ]
+  },
+  "Payment application / Objection / revoke withdrawal": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "revoke withdrawal",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 2,
+   "case_ratio": 0.0,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Objection / withdraw",
+     "count": 3
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / begin admissibility check",
+     "count": 2
+    },
+    {
+     "activity": "Payment application / Objection / withdraw",
+     "count": 1
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / revoke withdrawal"
+   ]
+  },
+  "Payment application / Objection / withdraw": {
+   "doctype": "Payment application",
+   "subprocess": "Objection",
+   "action": "withdraw",
+   "years": [
+    2015,
+    2016
+   ],
+   "case_count": 84,
+   "case_ratio": 0.0019,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Entitlement application / Objection / withdraw",
+     "count": 33
+    },
+    {
+     "activity": "Payment application / Objection / begin admissibility check",
+     "count": 25
+    },
+    {
+     "activity": "Payment application / Objection / withdraw",
+     "count": 12
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Payment application / Objection / withdraw",
+     "count": 12
+    },
+    {
+     "activity": "Payment application / Objection / insert document",
+     "count": 10
+    },
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 10
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Entitlement application / Objection / withdraw"
+   ]
+  },
+  "Reference alignment / Main / change department": {
+   "doctype": "Reference alignment",
+   "subprocess": "Main",
+   "action": "change department",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 8,
+   "case_ratio": 0.0002,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Payment application / Application / finish payment",
+     "count": 3
+    },
+    {
+     "activity": "Department control parcels / Main / change department",
+     "count": 2
+    },
+    {
+     "activity": "Parcel document / Main / change department",
+     "count": 1
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Control summary / Main / change department",
+     "count": 3
+    },
+    {
+     "activity": "Parcel document / Main / change department",
+     "count": 3
+    },
+    {
+     "activity": "Department control parcels / Main / change department",
+     "count": 2
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / change department",
+    "Department control parcels / Main / change department",
+    "Geo parcel document / Main / change department",
+    "Parcel document / Main / change department",
+    "Payment application / Main / change department"
+   ]
+  },
+  "Reference alignment / Main / initialize": {
+   "doctype": "Reference alignment",
+   "subprocess": "Main",
+   "action": "initialize",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 43802,
+   "case_ratio": 0.9998,
+   "roles": {
+    "automated": 1.0,
+    "staff": 0.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Control summary / Main / finish editing",
+     "count": 12844
+    },
+    {
+     "activity": "Parcel document / Main / finish editing",
+     "count": 9504
+    },
+    {
+     "activity": "Geo parcel document / Declared / create",
+     "count": 7352
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Reference alignment / Main / performed",
+     "count": 43802
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / initialize",
+    "Entitlement application / Main / initialize",
+    "Geo parcel document / Main / initialize",
+    "Parcel document / Main / initialize"
+   ]
+  },
+  "Reference alignment / Main / insert document": {
+   "doctype": "Reference alignment",
+   "subprocess": "Main",
+   "action": "insert document",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 2732,
+   "case_ratio": 0.0624,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 945
+    },
+    {
+     "activity": "Payment application / Application / finish payment",
+     "count": 539
+    },
+    {
+     "activity": "Parcel document / Main / finish editing",
+     "count": 463
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 3553
+    },
+    {
+     "activity": "Reference alignment / Main / insert document",
+     "count": 94
+    },
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 51
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / insert document",
+    "Department control parcels / Main / insert document",
+    "Entitlement application / Main / insert document",
+    "Geo parcel document / Main / insert document",
+    "Parcel document / Main / insert document",
+    "Payment application / Main / insert document"
+   ]
+  },
+  "Reference alignment / Main / performed": {
+   "doctype": "Reference alignment",
+   "subprocess": "Main",
+   "action": "performed",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 43802,
+   "case_ratio": 0.9998,
+   "roles": {
+    "automated": 1.0,
+    "staff": 0.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Reference alignment / Main / initialize",
+     "count": 43802
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Department control parcels / Main / performed",
+     "count": 16705
+    },
+    {
+     "activity": "Payment application / Application / initialize",
+     "count": 12192
+    },
+    {
+     "activity": "Geo parcel document / Declared / calculate",
+     "count": 2913
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Department control parcels / Main / performed"
+   ]
+  },
+  "Reference alignment / Main / remove document": {
+   "doctype": "Reference alignment",
+   "subprocess": "Main",
+   "action": "remove document",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 99,
+   "case_ratio": 0.0023,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 36
+    },
+    {
+     "activity": "Reference alignment / Main / insert document",
+     "count": 33
+    },
+    {
+     "activity": "Parcel document / Main / finish editing",
+     "count": 6
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 79
+    },
+    {
+     "activity": "Reference alignment / Main / insert document",
+     "count": 19
+    },
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 3
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Department control parcels / Main / remove document",
+    "Entitlement application / Main / remove document",
+    "Geo parcel document / Main / remove document",
+    "Parcel document / Main / remove document",
+    "Payment application / Main / remove document"
+   ]
+  },
+  "Reference alignment / Main / save": {
+   "doctype": "Reference alignment",
+   "subprocess": "Main",
+   "action": "save",
+   "years": [
+    2015,
+    2016,
+    2017
+   ],
+   "case_count": 13064,
+   "case_ratio": 0.2982,
+   "roles": {
+    "automated": 0.0,
+    "staff": 1.0,
+    "unknown": 0.0
+   },
+   "predecessors": [
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 9416
+    },
+    {
+     "activity": "Parcel document / Main / finish editing",
+     "count": 3753
+    },
+    {
+     "activity": "Reference alignment / Main / insert document",
+     "count": 3553
+    }
+   ],
+   "successors": [
+    {
+     "activity": "Reference alignment / Main / save",
+     "count": 9416
+    },
+    {
+     "activity": "Control summary / Main / save",
+     "count": 6390
+    },
+    {
+     "activity": "Parcel document / Main / save",
+     "count": 2966
+    }
+   ],
+   "event_attributes": [
+    "note",
+    "success"
+   ],
+   "same_step": [
+    "Control summary / Main / save",
+    "Department control parcels / Main / save",
+    "Entitlement application / Main / save",
+    "Geo parcel document / Main / save",
+    "Parcel document / Main / save",
+    "Payment application / Main / save"
+   ]
+  }
+ },
+ "documents": {
+  "Control summary": {
+   "cases": 43808,
+   "per_case_median": 1.0,
+   "per_case_max": 1
+  },
+  "Department control parcels": {
+   "cases": 29297,
+   "per_case_median": 1.0,
+   "per_case_max": 1
+  },
+  "Entitlement application": {
+   "cases": 15260,
+   "per_case_median": 1.0,
+   "per_case_max": 1
+  },
+  "Geo parcel document": {
+   "cases": 29059,
+   "per_case_median": 1.0,
+   "per_case_max": 1
+  },
+  "Inspection": {
+   "cases": 3044,
+   "per_case_median": 2.0,
+   "per_case_max": 18
+  },
+  "Parcel document": {
+   "cases": 14750,
+   "per_case_median": 1.0,
+   "per_case_max": 1
+  },
+  "Payment application": {
+   "cases": 43809,
+   "per_case_median": 1.0,
+   "per_case_max": 1
+  },
+  "Reference alignment": {
+   "cases": 43802,
+   "per_case_median": 1.0,
+   "per_case_max": 1
+  }
+ },
+ "doctype_years": {
+  "Control summary": [
+   2015,
+   2016,
+   2017
+  ],
+  "Department control parcels": [
+   2015,
+   2016
+  ],
+  "Entitlement application": [
+   2015,
+   2016,
+   2017
+  ],
+  "Geo parcel document": [
+   2016,
+   2017
+  ],
+  "Inspection": [
+   2015,
+   2016,
+   2017
+  ],
+  "Parcel document": [
+   2015
+  ],
+  "Payment application": [
+   2015,
+   2016,
+   2017
+  ],
+  "Reference alignment": [
+   2015,
+   2016,
+   2017
+  ]
+ },
+ "doctype_replacements": {
+  "Geo parcel document": [
+   "Parcel document"
+  ],
+  "Parcel document": [
+   "Geo parcel document"
+  ]
+ }
+}

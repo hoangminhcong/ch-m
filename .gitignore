@@ -1,0 +1,58 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+.env
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# OS files
+.DS_Store
+Thumbs.db
+
+datasets/BPI Challenge 2017.xes
+
+# Dữ liệu lớn / kết quả chạy / tạm (2026-11-20) — KHÔNG đưa vào git
+data/interim/
+*.parquet
+*.xes
+results/
+scratch/
+.ruff_cache/
+*.tmp
+# bí mật: mọi biến thể .env trừ file mẫu
+.env.*
+!.env.example

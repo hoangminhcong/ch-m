@@ -1,0 +1,6011 @@
+{
+ "ais": [
+  "claude-opus-5-5",
+  "gemini"
+ ],
+ "n": 218,
+ "agreed": [
+  "R1306:Art12(2)",
+  "R1306:Art24(3)",
+  "R1306:Art62(2)",
+  "R1306:Art67(2)",
+  "R1306:Art69(1)",
+  "R1306:Art70(2)",
+  "R1306:Art112",
+  "R1307:Art8(1)",
+  "R1307:Art21(4)",
+  "R1307:Art24(2)",
+  "R1307:Art24(8)",
+  "R1307:Art30(7)",
+  "R1307:Art31(1)",
+  "R1307:Art36(2)",
+  "R1307:Art36(5)",
+  "R1307:Art39(1)",
+  "R1307:Art39(2)",
+  "R1307:Art40(3)",
+  "R1307:Art45(2)",
+  "R1307:Art46(1)",
+  "R1307:Art46(2)",
+  "R1307:Art48(3)",
+  "R1307:Art50(2)",
+  "R1307:Art50(10)",
+  "R1307:Art68(5)",
+  "R640:Art2(1)",
+  "R640:Art2(2)",
+  "R640:Art4(1)",
+  "R640:Art5(1)",
+  "R640:Art7(1)",
+  "R640:Art8",
+  "R640:Art9(1)",
+  "R640:Art9(2)",
+  "R640:Art10(2)",
+  "R640:Art11",
+  "R640:Art13(2)",
+  "R640:Art16(1)",
+  "R640:Art16(2)",
+  "R640:Art18(2)",
+  "R640:Art18(3)",
+  "R640:Art18(4)",
+  "R640:Art18(6)",
+  "R640:Art19(3)",
+  "R640:Art20",
+  "R640:Art21(1)",
+  "R640:Art21(2)",
+  "R640:Art22(1)",
+  "R640:Art24(1)",
+  "R640:Art24(2)",
+  "R640:Art24(3)",
+  "R640:Art25(1)",
+  "R640:Art25(3)",
+  "R640:Art26(1)",
+  "R640:Art26(2)",
+  "R640:Art26(3)",
+  "R640:Art27(1)",
+  "R640:Art28(2)",
+  "R640:Art28(3)",
+  "R640:Art28(4)",
+  "R640:Art29",
+  "R640:Art30(2)",
+  "R640:Art31(2)",
+  "R640:Art31(3)",
+  "R640:Art33(2)",
+  "R640:Art35(7)",
+  "R640:Art38(1)",
+  "R640:Art39(1)",
+  "R640:Art39(2)",
+  "R640:Art39(3)",
+  "R640:Art41",
+  "R640:Art42(2)",
+  "R809:Art5",
+  "R809:Art6(1)",
+  "R809:Art6(2)",
+  "R809:Art6(3)",
+  "R809:Art10",
+  "R809:Art11(1)",
+  "R809:Art11(2)",
+  "R809:Art12(1)",
+  "R809:Art13(2)",
+  "R809:Art14(1)",
+  "R809:Art14(2)",
+  "R809:Art16",
+  "R809:Art17(1)",
+  "R809:Art17(4)",
+  "R809:Art17(6)",
+  "R809:Art17(7)",
+  "R809:Art18",
+  "R809:Art19(1)",
+  "R809:Art19(2)",
+  "R809:Art19(3)",
+  "R809:Art19(4)",
+  "R809:Art20",
+  "R809:Art21(1)",
+  "R809:Art21(4)",
+  "R809:Art23(1)",
+  "R809:Art23(2)",
+  "R809:Art27",
+  "R809:Art29(3)",
+  "R809:Art30",
+  "R809:Art31(1)",
+  "R809:Art31(2)",
+  "R809:Art31(3)",
+  "R809:Art32(1)",
+  "R809:Art34(2)",
+  "R809:Art36(3)",
+  "R809:Art36(4)",
+  "R809:Art36(5)",
+  "R809:Art36(6)",
+  "R809:Art37(1)",
+  "R809:Art37(2)",
+  "R809:Art37(3)",
+  "R809:Art38(1)",
+  "R809:Art38(5)",
+  "R809:Art38(6)",
+  "R809:Art38(7)",
+  "R809:Art39(2)",
+  "R809:Art39(3)",
+  "R809:Art42(1)",
+  "R809:Art44",
+  "R809:Art45(1)",
+  "R809:Art45(3)",
+  "R809:Art50(6)",
+  "R809:Art64",
+  "R809:Art65(1)",
+  "R809:Art66",
+  "R809:Art68(1)",
+  "R809:Art68(2)",
+  "R809:Art68(3)",
+  "R809:Art68(5)",
+  "R809:Art69(1)",
+  "R809:Art69(2)",
+  "R809:Art69(6)",
+  "R809:Art69(7)",
+  "R809:Art73(1)",
+  "R809:Art73(2)",
+  "R809:Art73(4)",
+  "R809:Art74(1)",
+  "R809:Art75",
+  "R1306:Art7(3)",
+  "R1306:Art7(6)",
+  "R1306:Art9(1)",
+  "R1306:Art12(1)",
+  "R1306:Art18(1)",
+  "R1306:Art20(4)",
+  "R1306:Art30",
+  "R1306:Art33",
+  "R1306:Art38(3)",
+  "R1306:Art45(4)",
+  "R1306:Art48(3)",
+  "R1306:Art52(1)",
+  "R1306:Art63(3)",
+  "R1306:Art79(3)",
+  "R1306:Art84(1)",
+  "R1306:Art84(3)",
+  "R1306:Art87(3)",
+  "R1306:Art96(2)",
+  "R1306:Art101(1)",
+  "R1306:Art101(2)",
+  "R1306:Art105(1)",
+  "R1306:Art114",
+  "R1306:Art116(3)",
+  "R1307:Art9(1)",
+  "R1307:Art14(1)",
+  "R1307:Art20(2)",
+  "R1307:Art22(1)",
+  "R1307:Art25(3)",
+  "R1307:Art28",
+  "R1307:Art30(1)",
+  "R1307:Art33(2)",
+  "R1307:Art37(6)",
+  "R1307:Art37(7)",
+  "R1307:Art41(8)",
+  "R1307:Art42(2)",
+  "R1307:Art44(1)",
+  "R1307:Art44(4)",
+  "R1307:Art45(6)",
+  "R1307:Art46(3)",
+  "R1307:Art48(4)",
+  "R1307:Art52(3)",
+  "R1307:Art58(5)",
+  "R1307:Art58(6)",
+  "R640:Art7(2)",
+  "R640:Art30(3)",
+  "R640:Art35(3)",
+  "R640:Art35(5)",
+  "R809:Art3(1)",
+  "R809:Art7(3)",
+  "R809:Art9(1)",
+  "R809:Art24(3)",
+  "R809:Art34(6)",
+  "R809:Art49(2)",
+  "R809:Art50(5)",
+  "R809:Art70(2)"
+ ],
+ "disagreed": [
+  "R1306:Art63(1)",
+  "R1307:Art10(1)",
+  "R1307:Art24(1)",
+  "R1307:Art32(1)",
+  "R1307:Art33(1)",
+  "R1307:Art41(3)",
+  "R1307:Art43(9)",
+  "R1307:Art50(4)",
+  "R640:Art5(2)",
+  "R640:Art13(1)",
+  "R640:Art13(3)",
+  "R640:Art14",
+  "R809:Art17(5)",
+  "R809:Art22(1)",
+  "R809:Art28(1)",
+  "R809:Art29(1)",
+  "R809:Art71(6)",
+  "R809:Art72(1)",
+  "R809:Art72(3)",
+  "R1306:Art99(4)",
+  "R1307:Art62(1)",
+  "R809:Art34(1)",
+  "R809:Art48(1)",
+  "R809:Art49(1)"
+ ],
+ "spot_check": [
+  "R1306:Art70(2)",
+  "R1307:Art8(1)",
+  "R1307:Art21(4)",
+  "R1307:Art24(8)",
+  "R1307:Art39(2)",
+  "R640:Art8",
+  "R640:Art9(2)",
+  "R640:Art30(2)",
+  "R809:Art11(1)",
+  "R809:Art32(1)",
+  "R809:Art37(3)",
+  "R809:Art39(3)",
+  "R809:Art68(5)",
+  "R809:Art73(2)",
+  "R809:Art73(4)",
+  "R1306:Art7(6)",
+  "R1306:Art84(3)",
+  "R1306:Art114",
+  "R1307:Art14(1)",
+  "R1307:Art37(7)"
+ ],
+ "observable_agreement": 0.9037,
+ "full_agreement": 0.8899,
+ "kappa_observable": {
+  "claude-opus-5-5 vs gemini": 0.3705
+ },
+ "clauses": {
+  "R1306:Art12(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản quy định phạm vi nội dung của hệ thống tư vấn nông trại (farm advisory system) do Nhà nước lập; không có sự kiện tương ứng trong log và không ở mức từng hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định phạm vi nội dung tối thiểu của hệ thống tư vấn trang trại ở cấp độ Nhà nước thành viên, không phải quy trình xử lý hồ sơ chi trả trong log."
+    }
+   }
+  },
+  "R1306:Art24(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản định nghĩa trần quốc gia là trần tài chính bằng euro; nghĩa vụ ở mức ngân sách quốc gia, không ở mức hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định mức trần quốc gia về chi trả trực tiếp được coi là trần tài chính tính bằng đồng euro (cấp độ vĩ mô), không đặt nghĩa vụ ở mức từng hồ sơ."
+    }
+   }
+  },
+  "R1306:Art62(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản trao quyền cho Ủy ban ban hành văn bản thực thi về kiểm tra; không đặt nghĩa vụ xử lý hồ sơ quan sát được."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này trao quyền cho Ủy ban ban hành các văn bản thực thi về quy tắc kiểm tra, không đặt ra nghĩa vụ trực tiếp trên từng hồ sơ trong log."
+    }
+   }
+  },
+  "R1306:Art63(1)": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Nghĩa vụ không chi / thu hồi khi phát hiện không tuân thủ, nhưng log không ghi việc \"phát hiện không đáp ứng điều kiện\" (mã penalty không công bố nghĩa, case:rejected không rõ là từ chối toàn phần) và chi trả từng phần vẫn được phép, nên không viết được ràng buộc chắc chắn."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": false,
+    "constraints": [
+     "LỖI: Not Co-Existence(Payment application / Application / begin payment, Payment application / Application / finish payment) | case:rejected == True (Activity 'Payment application / Application / begin payment, Payment application)"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Not Co-Existence(Payment application / Application / begin payment, Payment application / Application / finish payment) | case:rejected == True"
+     ],
+     "needs_ref": "Không",
+     "confidence": "TB",
+     "reason": "Khi người thụ hưởng không tuân thủ điều kiện đủ tư cách (proxy: case:rejected == True ≈ không đáp ứng điều kiện hưởng hỗ trợ), khoản viện trợ không được phép chi trả (proxy: Payment application / Application / begin payment và Payment application / Application / finish payment ≈ chi trả viện trợ)."
+    }
+   }
+  },
+  "R1306:Art67(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản phạm vi áp dụng của hệ thống tích hợp (IACS); không có nghĩa vụ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định phạm vi áp dụng của hệ thống quản lý và kiểm soát tích hợp (IACS) đối với các chương trình hỗ trợ, không chứa nghĩa vụ xử lý hồ sơ cụ thể."
+    }
+   }
+  },
+  "R1306:Art69(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Yêu cầu về cơ sở dữ liệu điện tử (lưu và cho tra cứu dữ liệu nhiều năm); nghĩa vụ duy trì hệ thống, không có sự kiện trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nghĩa vụ của Nhà nước thành viên về việc ghi nhận và cho phép tra cứu dữ liệu lịch sử trong hệ thống cơ sở dữ liệu máy tính, không có sự kiện tương ứng ở mức quy trình xử lý từng hồ sơ."
+    }
+   }
+  },
+  "R1306:Art70(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ của Nhà nước thành viên về nội dung lớp tham chiếu của hệ thống nhận dạng thửa đất (LPIS); là việc duy trì hệ thống, không có sự kiện ở mức hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này đặt nghĩa vụ cho Nhà nước thành viên đảm bảo hệ thống nhận dạng thửa đất có lớp tham chiếu cho vùng trọng điểm sinh thái chậm nhất vào năm yêu cầu 2018 (ngoài phạm vi log 2015–2017 và ở mức hệ thống)."
+    }
+   }
+  },
+  "R1306:Art112": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy định về việc không công bố tên người thụ hưởng dưới ngưỡng; log không có sự kiện công bố thông tin."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nghĩa vụ công khai hoặc ẩn tên người thụ hưởng trên trang web sau khi chi trả tùy theo ngưỡng tiền, nhưng log không ghi nhận hoạt động công bố thông tin này."
+    }
+   }
+  },
+  "R1307:Art8(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Tỉ lệ điều chỉnh (kỷ luật tài chính) chỉ áp cho phần chi trả trên EUR 2 000; log không có thuộc tính tỉ lệ điều chỉnh hay cách tính tiền nên không kiểm được."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định tỷ lệ điều chỉnh kỷ luật tài chính chỉ áp dụng cho phần chi trả trực tiếp vượt quá 2 000 EUR, nhưng log không có sự kiện hay thuộc tính riêng phản ánh việc áp dụng tỷ lệ điều chỉnh này."
+    }
+   }
+  },
+  "R1307:Art10(1)": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Log có case:area và số tiền, nhưng khoản để Nhà nước thành viên chọn MỘT trong hai ngưỡng (EUR 100 hoặc 1 ha) và luật không nói Đức chọn ngưỡng nào, nên không viết được ràng buộc xác định."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Khoản này yêu cầu Nhà nước thành viên chọn một trong hai ngưỡng tối thiểu (100 EUR hoặc 1 ha) để từ chối chi trả trực tiếp, nhưng văn bản luật không xác định bang của Đức trong log đã chọn phương án hay con số cụ thể nào."
+    }
+   }
+  },
+  "R1307:Art21(4)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy định về việc quyền hưởng vượt số ha hợp lệ bị hết hiệu lực; log không có số quyền hưởng hay sự kiện hết hiệu lực."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định số quyền hưởng thanh toán vượt quá số héc-ta hợp lệ sẽ hết hạn, nhưng log không có thuộc tính ghi nhận số lượng quyền hưởng thanh toán hiện có của nông dân để kiểm tra."
+    }
+   }
+  },
+  "R1307:Art24(1)": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Phân bổ quyền hưởng khi nông dân nộp đơn trước hạn chót năm 2015, nhưng hạn chót do văn bản thực thi theo Art78(b) ấn định, không có trong khoản hay khoản dẫn chiếu; điều kiện (b) về chi trả năm 2013 không có trong log."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": false,
+    "constraints": [
+     "Precedence[Entitlement application / Main / initialize, Entitlement application / Main / decide] ['case:year == 2015.0'] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Precedence(Entitlement application / Main / initialize → Entitlement application / Main / decide) | case:year == 2015"
+     ],
+     "needs_ref": "Không",
+     "confidence": "TB",
+     "reason": "Theo điểm (a) khoản 1, quyền hưởng thanh toán chỉ được phân bổ nếu nông dân nộp đơn xin phân bổ trong năm 2015 (proxy: Entitlement application / Main / initialize ≈ nộp đơn xin phân bổ quyền hưởng thanh toán; proxy: Entitlement application / Main / decide ≈ quyết định phân bổ quyền hưởng thanh toán)."
+    }
+   }
+  },
+  "R1307:Art24(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Số quyền hưởng phân bổ phải bằng số ha hợp lệ khai báo; log không có thuộc tính số quyền hưởng được phân bổ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định số lượng quyền hưởng thanh toán được phân bổ năm 2015 phải bằng số héc-ta hợp lệ được kê khai, nhưng log không có thuộc tính lưu số lượng quyền hưởng thanh toán được phân bổ."
+    }
+   }
+  },
+  "R1307:Art24(8)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản chỉ cho phép (\"may\") chuyển quyền nhận quyền hưởng bằng hợp đồng; log không có sự kiện hợp đồng mua bán / thuê."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ trao quyền (\"may\") cho phép chuyển nhượng quyền nhận quyền hưởng thanh toán qua hợp đồng khi bán hoặc cho thuê trang trại, không đặt ra nghĩa vụ bắt buộc."
+    }
+   }
+  },
+  "R1307:Art30(7)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản cho phép (\"may\") Nhà nước dùng dự trữ quốc gia cho các mục đích; nghĩa vụ ở mức quỹ dự trữ, không ở mức hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định các mục đích mà Nhà nước thành viên có thể (\"may\") sử dụng quỹ dự trữ quốc gia hoặc khu vực và việc quyết định thứ tự ưu tiên ở cấp chính sách."
+    }
+   }
+  },
+  "R1307:Art31(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Liệt kê nguồn bổ sung dự trữ quốc gia; không có sự kiện về quyền hưởng hoàn trả dự trữ trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định các nguồn bổ sung vào quỹ dự trữ quốc gia hoặc khu vực ở cấp độ quản lý quỹ của Nhà nước thành viên, không có sự kiện tương ứng trong log."
+    }
+   }
+  },
+  "R1307:Art32(1)": {
+   "claude-opus-5-5": {
+    "observable": "yes",
+    "tier4": true,
+    "constraints": [
+     "Precedence[{Geo parcel document / Declared / finish editing | Parcel document / Main / finish editing}, Payment application / Application / begin payment] [] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Precedence({Parcel document / Main / finish editing | Geo parcel document / Declared / finish editing} → Payment application / Application / begin payment)"
+     ],
+     "needs_ref": "Một phần",
+     "confidence": "Thấp",
+     "reason": "Hỗ trợ chi trả cơ bản chỉ được cấp qua khai báo theo Art33(1); đối tượng khai báo (các thửa đất tương ứng số ha hợp lệ) lấy từ Art33(1). proxy: Parcel document / Main / finish editing, Geo parcel document / Declared / finish editing ≈ hoàn tất khai báo thửa đất; proxy: Payment application / Application / begin payment ≈ cấp chi trả; phần kích hoạt quyền hưởng không có trong log."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": true,
+    "constraints": [
+     "Precedence[Geo parcel document / Declared / create, Payment application / Application / begin payment] ['case:basic payment == True'] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Precedence(Geo parcel document / Declared / create → Payment application / Application / begin payment) | case:basic payment == True"
+     ],
+     "needs_ref": "Có",
+     "confidence": "TB",
+     "reason": "Hỗ trợ theo chương trình thanh toán cơ bản chỉ được cấp khi nông dân kích hoạt quyền hưởng thông qua việc kê khai các thửa đất tương ứng với diện tích hợp lệ lấy từ R1307:Art33(1) (proxy: Geo parcel document / Declared / create ≈ kê khai thửa đất để kích hoạt quyền hưởng; proxy: Payment application / Application / begin payment ≈ chi trả hỗ trợ)."
+    }
+   }
+  },
+  "R1307:Art33(1)": {
+   "claude-opus-5-5": {
+    "observable": "yes",
+    "tier4": false,
+    "constraints": [
+     "Responded Existence[Payment application / Application / mail income, {Geo parcel document / Declared / create | Parcel document / Main / initialize}] ['case:basic payment == True'] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Responded Existence(Payment application / Application / mail income → {Parcel document / Main / initialize | Geo parcel document / Declared / create}) | case:basic payment == True"
+     ],
+     "needs_ref": "Không",
+     "confidence": "Thấp",
+     "reason": "Nông dân phải khai báo các thửa đất ứng với số ha hợp lệ để kích hoạt quyền hưởng. proxy: Parcel document / Main / initialize, Geo parcel document / Declared / create ≈ khai báo thửa đất (Parcel document năm 2015, Geo parcel document 2016–2017); điều kiện thửa đất thuộc quyền sử dụng tại ngày Nhà nước ấn định không có trong log."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": false,
+    "constraints": [
+     "Existence[Geo parcel document / Declared / create, None] ['case:basic payment == True'] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Existence(Geo parcel document / Declared / create) | case:basic payment == True"
+     ],
+     "needs_ref": "Không",
+     "confidence": "TB",
+     "reason": "Để kích hoạt quyền hưởng thanh toán theo chương trình thanh toán cơ bản, nông dân bắt buộc phải kê khai các thửa đất tương ứng với số héc-ta hợp lệ (proxy: Geo parcel document / Declared / create ≈ kê khai thửa đất)."
+    }
+   }
+  },
+  "R1307:Art36(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Quy định cách tính chi trả theo diện tích đơn nhất (SAPS), không áp dụng cho chương trình chi trả cơ bản của Đức; log không có cách tính đơn giá."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định về chương trình thanh toán diện tích đơn lẻ (SAPS), trong khi log BPIC2018 thu thập tại Đức nơi áp dụng chương trình thanh toán cơ bản (`case:basic payment` luôn là True) và không có thuộc tính hay dữ liệu về SAPS."
+    }
+   }
+  },
+  "R1307:Art36(5)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Điều kiện số ha thuộc quyền sử dụng tại ngày Nhà nước ấn định (SAPS); log không ghi ngày thửa đất thuộc quyền sử dụng và không có ngày cụ thể trong luật."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định điều kiện diện tích thuộc quyền sử dụng của nông dân trong chương trình SAPS vào ngày do Nhà nước thành viên ấn định, không áp dụng cho Đức và log cũng không có thông tin quyền sử dụng đất thực tế."
+    }
+   }
+  },
+  "R1307:Art39(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Phân bổ quyền hưởng lần đầu cho Nhà nước chuyển từ SAPS; hạn chót nộp đơn do văn bản thực thi theo Art78(b) ấn định, không có ngày trong khoản; điều kiện chi trả năm 2013 không có trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc phân bổ quyền hưởng thanh toán lần đầu đối với các quốc gia chuyển đổi từ chương trình SAPS sang chương trình thanh toán cơ bản, không áp dụng cho bối cảnh log tại Đức và không phân biệt được trong log."
+    }
+   }
+  },
+  "R1307:Art39(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Số quyền hưởng phân bổ phải bằng số ha hợp lệ khai báo; log không có số quyền hưởng được phân bổ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định cách xác định số lượng quyền hưởng thanh toán phân bổ bằng số héc-ta kê khai khi chuyển từ SAPS sang chương trình thanh toán cơ bản, nhưng log không có thuộc tính số lượng quyền hưởng được phân bổ."
+    }
+   }
+  },
+  "R1307:Art40(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Công thức tính giá trị đơn vị ban đầu của quyền hưởng; log không có giá trị quyền hưởng, số quyền hưởng hay trần quốc gia nên không kiểm được."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định công thức tính giá trị đơn vị ban đầu của quyền hưởng thanh toán dựa trên dữ liệu lịch sử năm trước khi áp dụng chương trình, không thể kiểm tra trên log sự kiện."
+    }
+   }
+  },
+  "R1307:Art41(3)": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Chi trả tái phân phối được cấp hằng năm khi nông dân kích hoạt quyền hưởng; log có case:redistribution nhưng không có sự kiện kích hoạt quyền hưởng, và thời điểm chi trả không được luật nối với activity cụ thể nào."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": true,
+    "constraints": [
+     "Precedence[Geo parcel document / Declared / create, Payment application / Application / begin payment] ['case:redistribution == True'] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Precedence(Geo parcel document / Declared / create → Payment application / Application / begin payment) | case:redistribution == True"
+     ],
+     "needs_ref": "Có",
+     "confidence": "TB",
+     "reason": "Khoản thanh toán phân phối lại (`case:redistribution == True`) được cấp hàng năm khi nông dân kích hoạt quyền hưởng thanh toán hoặc kê khai héc-ta hợp lệ như quy định tại R1307:Art36(2) (proxy: Geo parcel document / Declared / create ≈ kê khai thửa đất / kích hoạt quyền hưởng; proxy: Payment application / Application / begin payment ≈ cấp thanh toán)."
+    }
+   }
+  },
+  "R1307:Art43(9)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Nghĩa vụ chi trả greening phụ thuộc việc nông dân tuân thủ các thực hành Điều 44–46 và cách tính số tiền theo Điều 47; log không ghi nội dung thực hành canh tác, cũng không tách khoản chi greening (case:greening chỉ là cờ chương trình) nên không kiểm được theo từng hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": true,
+    "constraints": [
+     "Precedence[Geo parcel document / Declared / create, Payment application / Application / begin payment] ['case:greening == True'] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Precedence(Geo parcel document / Declared / create → Payment application / Application / begin payment) | case:greening == True"
+     ],
+     "needs_ref": "Có",
+     "confidence": "TB",
+     "reason": "Khoản thanh toán xanh hóa (`case:greening == True`) được cấp hàng năm trên mỗi héc-ta hợp lệ được nông dân kê khai theo R1307:Art33(1) hoặc R1307:Art36(2) (proxy: Geo parcel document / Declared / create ≈ kê khai diện tích hợp lệ; proxy: Payment application / Application / begin payment ≈ cấp khoản thanh toán)."
+    }
+   }
+  },
+  "R1307:Art45(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ của Nhà nước thành viên duy trì tỉ lệ đồng cỏ vĩnh viễn ở cấp quốc gia/vùng và thông báo Ủy ban; không ở mức từng hồ sơ, log không có diện tích đồng cỏ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này đặt nghĩa vụ cho Nhà nước thành viên đảm bảo tỷ lệ đồng cỏ lâu năm ở cấp quốc gia hoặc khu vực không giảm quá 5% so với tỷ lệ tham chiếu, không phải nghĩa vụ kiểm tra trên từng hồ sơ trong log."
+    }
+   }
+  },
+  "R1307:Art46(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ của nông dân bố trí ít nhất 5 % đất canh tác là diện tích sinh thái khi đất canh tác > 15 ha; log không có diện tích đất canh tác hay diện tích sinh thái (case:area là tổng diện tích), không có sự kiện tương ứng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này yêu cầu nông dân có trên 15 ha đất canh tác phải dành ít nhất 5% làm vùng trọng điểm sinh thái, nhưng log không có thuộc tính tách riêng diện tích đất canh tác hay diện tích vùng trọng điểm sinh thái để kiểm tra."
+    }
+   }
+  },
+  "R1307:Art46(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nhà nước thành viên quyết định trước 1/8/2014 loại diện tích nào là diện tích sinh thái — việc làm luật, không có sự kiện trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nghĩa vụ của Nhà nước thành viên trước ngày 01/08/2014 phải quyết định loại diện tích nào được coi là vùng trọng điểm sinh thái và vị trí của chúng trên thực địa, không có dữ liệu trong log."
+    }
+   }
+  },
+  "R1307:Art48(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy định cách cấp khoản chi cho vùng có hạn chế tự nhiên (hằng năm theo hecta); log không có cờ hay thuộc tính về vùng hạn chế tự nhiên, không có nghĩa vụ kiểm được theo hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc chi trả cho các vùng có hạn chế tự nhiên, nhưng log không có thuộc tính hay sự kiện nào cho biết hồ sơ thuộc diện vùng có hạn chế tự nhiên."
+    }
+   }
+  },
+  "R1307:Art50(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản định nghĩa \"young farmers\" (mới lập nghiệp trong 5 năm, không quá 40 tuổi); không đặt nghĩa vụ, log không có tuổi hay ngày lập trang trại."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này định nghĩa tiêu chí \"nông dân trẻ\" (lập trang trại lần đầu trong 5 năm trước đó và không quá 40 tuổi), nhưng log chỉ có cờ kết quả `case:young farmer` chứ không có tuổi hay ngày lập trang trại để kiểm tra."
+    }
+   }
+  },
+  "R1307:Art50(4)": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Khoản quy định khoản chi cho nông dân trẻ được cấp hằng năm khi kích hoạt quyền hưởng; log có cờ case:young farmer và các bước chi trả, nhưng việc chi bị bảo lưu bởi Điều 63 của 1306/2013 (có thể không chi khi không đủ điều kiện) và log không tách riêng khoản chi nông dân trẻ, nên không kiểm được chắc chắn theo hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": true,
+    "constraints": [
+     "Precedence[Geo parcel document / Declared / create, Payment application / Application / begin payment] ['case:young farmer == True'] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Precedence(Geo parcel document / Declared / create → Payment application / Application / begin payment) | case:young farmer == True"
+     ],
+     "needs_ref": "Có",
+     "confidence": "TB",
+     "reason": "Khoản thanh toán cho nông dân trẻ (`case:young farmer == True`) được cấp hàng năm khi nông dân kích hoạt quyền hưởng thanh toán hoặc kê khai diện tích hợp lệ theo R1307:Art36(2) (proxy: Geo parcel document / Declared / create ≈ kê khai diện tích / kích hoạt quyền hưởng; proxy: Payment application / Application / begin payment ≈ cấp thanh toán)."
+    }
+   }
+  },
+  "R1307:Art50(10)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản cho phép (\"may\") Nhà nước thành viên tính khoản trọn gói cho nông dân trẻ (25 % mức bình quân); là quy tắc tính tiền ở mức quốc gia, log không có số quyền hưởng hay mức bình quân để kiểm."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này cho phép (\"may\") Nhà nước thành viên chọn phương thức tính tiền khoán hàng năm cho nông dân trẻ và giới hạn số tiền, nhưng log chỉ có tổng tiền chứ không tách riêng khoản chi trả nông dân trẻ và khoản cơ bản."
+    }
+   }
+  },
+  "R1307:Art68(5)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản chỉ dẫn chiếu Điều 111–114 của 1306/2013 về công bố danh tính người thụ hưởng và bảo vệ dữ liệu; không có nghĩa vụ xử lý hồ sơ được ghi trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ dẫn chiếu việc xử lý và bảo vệ dữ liệu cá nhân phải tuân theo các Điều 111 đến 114 của Quy định 1306/2013 (về công bố thông tin trên web và thông báo quyền bảo mật), không có sự kiện trong log."
+    }
+   }
+  },
+  "R640:Art2(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản định nghĩa (beneficiary, non-compliance, reference parcel, …); không đặt nghĩa vụ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ liệt kê các định nghĩa thuật ngữ dùng cho hệ thống tích hợp, không đặt ra nghĩa vụ nào."
+    }
+   }
+  },
+  "R640:Art2(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản định nghĩa \"standards\" cho Title IV; không đặt nghĩa vụ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ quy định việc áp dụng các định nghĩa cho Tiêu đề IV của Quy định, không đặt ra nghĩa vụ nào."
+    }
+   }
+  },
+  "R640:Art4(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy định quyền giữ trợ cấp và miễn phạt khi bất khả kháng/hoàn cảnh ngoại lệ; log không ghi sự kiện bất khả kháng nên không xác định được hồ sơ áp dụng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc giữ quyền hưởng hỗ trợ và miễn phạt trong trường hợp bất khả kháng hoặc hoàn cảnh đặc biệt, nhưng log không có thuộc tính hay sự kiện nào ghi nhận trường hợp bất khả kháng."
+    }
+   }
+  },
+  "R640:Art5(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Yêu cầu về cách thiết kế hệ thống nhận dạng thửa đất (LPIS) ở cấp thửa tham chiếu — nghĩa vụ lập/duy trì hệ thống của Nhà nước thành viên, không có sự kiện trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nguyên tắc kỹ thuật cho Nhà nước thành viên khi vận hành hệ thống nhận dạng thửa đất và phân định thửa tham chiếu, không phải bước xử lý từng hồ sơ trong log."
+    }
+   }
+  },
+  "R640:Art5(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ của Nhà nước thành viên bảo đảm nhận dạng thửa đất và xác định diện tích hợp lệ tối đa, diện tích sinh thái, vùng đặc thù cho từng thửa tham chiếu — thuộc việc lập/duy trì LPIS, log không có dữ liệu thửa tham chiếu."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": false,
+    "constraints": [
+     "Existence[Reference alignment / Main / performed, None] [] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Existence(Reference alignment / Main / performed)"
+     ],
+     "needs_ref": "Không",
+     "confidence": "Thấp",
+     "reason": "Nhà nước thành viên phải đảm bảo các thửa đất kê khai được nhận dạng tin cậy và xác định diện tích hợp lệ tối đa cho từng thửa tham chiếu (proxy: Reference alignment / Main / performed ≈ thực hiện đối chiếu và xác định trên thửa tham chiếu)."
+    }
+   }
+  },
+  "R640:Art7(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Yêu cầu về sổ đăng ký điện tử quyền hưởng ở cấp Nhà nước thành viên (truy vết chủ sở hữu, giá trị, ngày lập…); là nghĩa vụ duy trì hệ thống, không có sự kiện trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định các thông tin cần đảm bảo truy xuất nguồn gốc trong sổ đăng ký điện tử về quyền hưởng thanh toán ở cấp độ hệ thống của Nhà nước thành viên, không có sự kiện trong log."
+    }
+   }
+  },
+  "R640:Art8": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Yêu cầu hệ thống ghi danh tính người thụ hưởng bảo đảm định danh duy nhất — nghĩa vụ về hệ thống; case:applicant là định danh sẵn có, không có sự kiện nào để vi phạm theo từng hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định yêu cầu kỹ thuật đối với hệ thống ghi nhận danh tính người thụ hưởng phải đảm bảo mã định danh duy nhất, không tạo ra ràng buộc hành vi có thể vi phạm trên log."
+    }
+   }
+  },
+  "R640:Art9(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản cho phép (\"may\") tính các yếu tố cảnh quan rộng tối đa 2 mét vào diện tích hợp lệ; log không có dữ liệu chiều rộng hay yếu tố cảnh quan."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này cho phép (\"may\") Nhà nước thành viên tính các đặc điểm cảnh quan có chiều rộng không quá 2 mét vào diện tích hợp lệ, không có dữ liệu kích thước cảnh quan trong log."
+    }
+   }
+  },
+  "R640:Art9(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc xác định diện tích hợp lệ (yếu tố cảnh quan thuộc Annex II được tính vào); không có sự kiện tương ứng trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc tính diện tích các đặc điểm cảnh quan thuộc diện tuân thủ chéo vào diện tích hợp lệ của thửa đất, nhưng log không có dữ liệu chi tiết về diện tích đặc điểm cảnh quan."
+    }
+   }
+  },
+  "R640:Art10(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc xác định diện tích hợp lệ trong hệ thống pro-rata; log không ghi yếu tố cảnh quan hay cách tính diện tích."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định các đặc điểm cảnh quan thuộc diện tuân thủ chéo được tính vào diện tích hợp lệ khi áp dụng hệ thống tỷ lệ (pro-rata) cho đồng cỏ lâu năm, không có dữ liệu tương ứng trong log."
+    }
+   }
+  },
+  "R640:Art11": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Khoản quy định phạm vi nội dung của đơn đơn nhất (phải bao gồm đơn chi trả trực tiếp cho basic payment và các chương trình theo diện tích); là yêu cầu về nội dung/mẫu đơn, log không ghi nội dung đơn."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định phạm vi các chương trình hỗ trợ mà mẫu đơn chung (single application) phải bao gồm, không có thông tin nội dung mẫu đơn trong log để kiểm tra."
+    }
+   }
+  },
+  "R640:Art13(1)": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Có nghĩa vụ (nộp muộn giảm 1 %/ngày làm việc; muộn hơn 25 ngày lịch thì không được chi) và log có Payment application / Application / mail income, nhưng \"final date\" do Ủy ban ấn định không có trong khoản này hay trong R1306:Art78 được dẫn chiếu, nên không viết được mốc; log cũng chỉ có thời điểm hệ thống ghi nhận, không có ngày nộp, và không tách được mức giảm 1 %."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định mức giảm 1% mỗi ngày làm việc khi nộp đơn trễ và từ chối nếu trễ quá 25 ngày lịch sau hạn chót do Ủy ban/Nhà nước thành viên ấn định, nhưng cả khoản này lẫn khoản được dẫn chiếu R1306:Art78 đều không chứa ngày hạn chót cụ thể."
+    }
+   }
+  },
+  "R640:Art13(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Áp dụng cho người thụ hưởng chương trình theo Điều 46, 47 của 1308/2013 (ngành rượu vang); log BPIC2018 là chi trả trực tiếp, không có chương trình hay sự kiện tương ứng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định mức giảm do nộp đơn trễ đối với người thụ hưởng thuộc các chương trình rượu vang (Điều 46, 47 Quy định 1308/2013) và cũng thiếu ngày hạn chót cụ thể trong văn bản."
+    }
+   }
+  },
+  "R640:Art13(3)": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Có nghĩa vụ về sửa đổi đơn sau hạn (giảm 1 %/ngày làm việc, không chấp nhận sau hạn nộp muộn cuối cùng), có thể proxy Payment application / Change / initialize ≈ nộp sửa đổi đơn, nhưng ngày hạn chót không có trong khoản này hay trong R1306:Art78 được dẫn chiếu, nên không viết được ràng buộc ngày hợp lệ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định mức giảm 1% mỗi ngày làm việc và tính hợp lệ khi nộp sửa đổi đơn trễ hạn, nhưng văn bản luật và khoản dẫn chiếu R1306:Art78 không nêu ngày hạn chót cụ thể."
+    }
+   }
+  },
+  "R640:Art14": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Khoản quy định giảm 3 %/ngày làm việc và quá 25 ngày lịch thì đơn xin quyền hưởng bị coi là không chấp nhận; nhưng hạn chót do Ủy ban ấn định (R1306 Art78(b)) không có ngày cụ thể trong khoản hay khoản được dẫn chiếu, và log không có tỉ lệ giảm theo quyền hưởng, nên không viết được ràng buộc với ngày hợp lệ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định mức giảm 3% mỗi ngày làm việc và từ chối nếu trễ quá 25 ngày lịch khi nộp đơn xin phân bổ quyền hưởng thanh toán sau hạn chót, nhưng khoản luật và R1306:Art78 không có ngày hạn chót cụ thể."
+    }
+   }
+  },
+  "R640:Art16(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc tính mức giảm khi không khai đủ thửa đất (chênh lệch >3 %); log không có diện tích thửa không khai báo hay cách tính mức giảm."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định mức phạt giảm tới 3% khi nông dân không kê khai hết các thửa đất và phần chênh lệch vượt quá 3% diện tích kê khai, nhưng log chỉ có một thuộc tính `case:area` mà không có tổng diện tích các thửa chưa kê khai."
+    }
+   }
+  },
+  "R640:Art16(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Mở rộng phạm vi áp dụng khoản 1 cho chương trình nho/rượu (1308/2013 Art46–47), không có trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này mở rộng quy định phạt không kê khai hết diện tích ở khoản 1 cho các chương trình thuộc Quy định 1308/2013, không có dữ liệu diện tích không kê khai trong log."
+    }
+   }
+  },
+  "R640:Art18(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc tính toán (giới hạn diện tích cho chi trả nông dân trẻ theo mức do Nhà nước đặt); log không có diện tích được dùng để tính hay giới hạn quốc gia."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc cắt giảm diện tích kê khai về mức giới hạn tối đa do Nhà nước thành viên đặt ra khi tính thanh toán cho nông dân trẻ, nhưng log không ghi diện tích tính toán riêng cho chương trình này và chưa rõ giới hạn cụ thể mà quốc gia đã chọn trong khoảng 25–90."
+    }
+   }
+  },
+  "R640:Art18(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc tính chi trả tái phân phối (giới hạn ha do Nhà nước đặt); log không ghi diện tích dùng để tính hay mức giới hạn."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định giảm diện tích kê khai về mức giới hạn do Nhà nước thành viên đặt ra khi tính thanh toán phân phối lại, nhưng log không có thuộc tính diện tích được điều chỉnh riêng cho khoản phân phối lại."
+    }
+   }
+  },
+  "R640:Art18(4)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc tính chi trả vùng khó khăn tự nhiên; log không có chương trình này hay số ha tối đa."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định giảm diện tích kê khai về mức tối đa do Nhà nước thành viên đặt ra đối với thanh toán cho vùng có hạn chế tự nhiên, không có thuộc tính tương ứng trong log."
+    }
+   }
+  },
+  "R640:Art18(6)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc tính viện trợ theo diện tích xác định theo nhóm cây trồng (dung sai 0,1 ha, 20 %); log không có diện tích khai báo/xác định theo nhóm cây trồng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định cách lấy diện tích xác định hoặc diện tích kê khai để tính tiền khi chênh lệch trên hoặc dưới 0,1 ha, nhưng log chỉ có một thuộc tính `case:area` duy nhất mà không tách riêng diện tích kê khai và diện tích xác định."
+    }
+   }
+  },
+  "R640:Art19(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Hủy số dư phạt chưa bù trừ sau ba năm dương lịch; việc bù trừ/hủy kéo dài sau 2017 và không có sự kiện trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc xóa số dư nợ phạt nếu không thể khấu trừ hết trong vòng 3 năm lịch tiếp theo năm phát hiện, vượt ra ngoài phạm vi theo dõi của một hồ sơ đơn lẻ trong log."
+    }
+   }
+  },
+  "R640:Art20": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Phạt liên quan chi trả riêng cho bông; log (bang ở Đức) không có chương trình bông hay tư cách thành viên tổ chức liên ngành."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định hình phạt hành chính đối với khoản thanh toán đặc thù cho cây bông, không áp dụng cho Đức và không có thuộc tính về cây bông trong log."
+    }
+   }
+  },
+  "R640:Art21(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Có case:young farmer nhưng log không ghi việc phát hiện nông dân không đáp ứng điều kiện Art50(2) hay bằng chứng giả, cũng không tách khoản chi cho nông dân trẻ, nên không kiểm được việc không chi/thu hồi hay phạt 20 %."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc không trả hoặc thu hồi khoản thanh toán nông dân trẻ và phạt 20% nếu cung cấp bằng chứng giả, nhưng log không có thuộc tính tách riêng số tiền thanh toán nông dân trẻ hay thông tin về bằng chứng giả."
+    }
+   }
+  },
+  "R640:Art21(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Hủy số dư chưa bù trừ sau ba năm dương lịch; không có sự kiện tương ứng trong log và vượt khung thời gian log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc xóa số dư nợ thu hồi và tiền phạt đối với hỗ trợ nông dân trẻ nếu không khấu trừ hết trong 3 năm lịch tiếp theo, không quan sát được ở mức từng hồ sơ trong log."
+    }
+   }
+  },
+  "R640:Art22(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản định nghĩa các nhóm cây trồng cho mục greening, không đặt nghĩa vụ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ phân loại các nhóm cây trồng để phục vụ tính toán thanh toán xanh hóa trong Mục 3, không đặt ra nghĩa vụ hành vi nào."
+    }
+   }
+  },
+  "R640:Art24(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Công thức giảm diện tích greening khi cây chính vượt 75 %; log có case:greening nhưng không có cơ cấu cây trồng hay diện tích dùng để tính."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định công thức giảm diện tích tính thanh toán xanh hóa khi cây trồng chính chiếm hơn 75% diện tích đất canh tác xác định, nhưng log không có dữ liệu diện tích theo từng nhóm cây trồng."
+    }
+   }
+  },
+  "R640:Art24(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Công thức giảm khi hai cây chính vượt 95 %; log không có dữ liệu cơ cấu cây trồng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định công thức giảm diện tích tính thanh toán xanh hóa khi hai cây trồng chính chiếm hơn 95% diện tích đất canh tác xác định, nhưng log không có dữ liệu diện tích từng nhóm cây trồng."
+    }
+   }
+  },
+  "R640:Art24(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Công thức kết hợp tỉ lệ chênh lệch của khoản 1 và 2 (tối đa 1); thuần tính toán, log không có dữ liệu cây trồng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định công thức giảm diện tích tính thanh toán xanh hóa khi vi phạm đồng thời ngưỡng 75% và 95% của đa dạng hóa cây trồng, không có dữ liệu diện tích từng nhóm cây trồng trong log để kiểm tra."
+    }
+   }
+  },
+  "R640:Art25(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc giảm diện tích tính greening theo diện tích đồng cỏ nhạy cảm bị chuyển đổi; log không có dữ liệu đồng cỏ hay diện tích dùng để tính."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc trừ diện tích vi phạm quy định về đồng cỏ lâu năm nhạy cảm môi trường khi tính thanh toán xanh hóa, nhưng log không có dữ liệu diện tích vi phạm này."
+    }
+   }
+  },
+  "R640:Art25(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản định nghĩa khi nào vi phạm được coi là \"determined\", không đặt nghĩa vụ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ định nghĩa thế nào là một vi phạm \"được xác định\" (determined), không đặt ra nghĩa vụ hành vi trên log."
+    }
+   }
+  },
+  "R640:Art26(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc tính diện tích trọng điểm sinh thái bắt buộc; thuần tính toán, log không có diện tích đất canh tác/EFA."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định cơ sở tính diện tích vùng trọng điểm sinh thái bắt buộc dựa trên tổng diện tích đất canh tác xác định, nhưng log không có thuộc tính tách riêng diện tích đất canh tác hay vùng trọng điểm sinh thái."
+    }
+   }
+  },
+  "R640:Art26(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Công thức giảm 50 % × tỉ lệ chênh lệch EFA; log không có EFA bắt buộc/xác định."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định công thức giảm diện tích tính thanh toán xanh hóa khi vùng trọng điểm sinh thái xác định thấp hơn mức bắt buộc, không có dữ liệu diện tích vùng trọng điểm sinh thái trong log để kiểm tra."
+    }
+   }
+  },
+  "R640:Art26(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Công thức giảm tăng nặng sau ba năm vi phạm EFA; log không ghi phát hiện vi phạm EFA và chỉ có 3 năm, hồ sơ là nông dân × năm."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định công thức giảm diện tích tính thanh toán xanh hóa khi vi phạm yêu cầu vùng trọng điểm sinh thái trong 3 năm, không có dữ liệu diện tích tương ứng và vượt quá phạm vi một hồ sơ đơn lẻ."
+    }
+   }
+  },
+  "R640:Art27(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Trần tổng mức giảm (ha) theo Art24 và Art26; log không có các mức giảm tính bằng ha."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này giới hạn tổng mức giảm diện tích theo Điều 24 và 26 không vượt quá tổng diện tích đất canh tác xác định, nhưng log không có các số liệu diện tích thành phần này."
+    }
+   }
+  },
+  "R640:Art28(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Giảm thêm 10 % khi không khai đủ đất canh tác/đồng cỏ nhạy cảm >0,1 ha; log không có diện tích không khai báo."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định giảm thêm 10% diện tích tính thanh toán xanh hóa nếu nông dân không kê khai hết đất canh tác hoặc đồng cỏ lâu năm nhạy cảm trên 0,1 ha, nhưng log không có dữ liệu diện tích không kê khai."
+    }
+   }
+  },
+  "R640:Art28(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Cấm áp phạt greening năm 2015–2016 và trần 20 %/25 %; log có case:year và case:penalty_amount0 nhưng không tách phạt greening khỏi phạt khác, còn ý nghĩa mã case:penalty_* không được công bố nên không kiểm được."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Khoản này quy định không áp dụng phạt hành chính về xanh hóa trong năm 2015–2016 và giới hạn mức phạt tối đa 20% vào năm 2017, nhưng log không công bố ý nghĩa cụ thể của các mã cờ phạt `case:penalty_*` và không tách riêng số tiền phạt xanh hóa."
+    }
+   }
+  },
+  "R640:Art28(4)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Hủy số dư phạt chưa bù trừ sau ba năm dương lịch; không có sự kiện trong log, vượt khung thời gian log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định xóa số dư tiền phạt hành chính về xanh hóa nếu không khấu trừ hết trong vòng 3 năm lịch tiếp theo năm phát hiện, không quan sát được ở mức từng hồ sơ trong log."
+    }
+   }
+  },
+  "R640:Art29": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản phạm vi áp dụng (mutatis mutandis cho thực hành tương đương), không đặt nghĩa vụ riêng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ quy định việc áp dụng tương tự các quy tắc trong Mục 3 cho các biện pháp canh tác tương đương, không đặt ra nghĩa vụ riêng."
+    }
+   }
+  },
+  "R640:Art30(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc về vật nuôi trong đơn hỗ trợ theo con; log chỉ có chi trả theo diện tích, không có vật nuôi hay sự kiện thay thế vật nuôi."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định điều kiện xác định và thay thế vật nuôi trong các chương trình hỗ trợ chăn nuôi, trong khi log BPIC2018 không có dữ liệu hay sự kiện về vật nuôi."
+    }
+   }
+  },
+  "R640:Art31(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Phạt theo số vật nuôi vi phạm (>3 con, 10 %, 20 %, 50 %); log không có chương trình hỗ trợ vật nuôi."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định mức phạt hành chính khi phát hiện trên 3 vật nuôi không tuân thủ trong chương trình hỗ trợ vật nuôi, không có dữ liệu vật nuôi trong log."
+    }
+   }
+  },
+  "R640:Art31(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Cách tính tỉ lệ vật nuôi vi phạm; thuần tính toán, không có dữ liệu vật nuôi trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định cách tính tỷ lệ phần trăm vật nuôi vi phạm trên tổng số vật nuôi xác định, không có dữ liệu vật nuôi trong log."
+    }
+   }
+  },
+  "R640:Art33(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ Nhà nước phạt tổ chức bên thứ ba cung cấp bằng chứng sai và loại trừ ít nhất một năm; không ở mức hồ sơ nông dân, không có sự kiện trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc phạt và đình chỉ quyền cung cấp bằng chứng của các tổ chức bên thứ ba khi cung cấp bằng chứng sai lệch, không phải sự kiện xử lý hồ sơ trong log."
+    }
+   }
+  },
+  "R640:Art35(7)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Hủy số dư thu hồi/phạt (phát triển nông thôn) chưa bù trừ sau ba năm dương lịch; không có sự kiện tương ứng, vượt khung thời gian log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc xóa số dư nợ thu hồi và tiền phạt nếu không khấu trừ hết trong 3 năm lịch tiếp theo năm phát hiện, vượt ra ngoài phạm vi một hồ sơ trong log."
+    }
+   }
+  },
+  "R640:Art38(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản định nghĩa \"tái phạm\" (cross-compliance trong ba năm dương lịch liên tiếp), không đặt nghĩa vụ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ định nghĩa khái niệm \"tái phạm\" (reoccurrence) trong tuân thủ chéo trong giai đoạn 3 năm liên tiếp, không đặt ra nghĩa vụ hành vi trực tiếp trên một hồ sơ."
+    }
+   }
+  },
+  "R640:Art39(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Mức giảm 3 % (1 %/5 %) do vi phạm cross-compliance vì sơ suất; log có case:cross_compliance nhưng không ghi việc phát hiện vi phạm, mức độ hay lỗi sơ suất, nên không kiểm được tỉ lệ giảm."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định mức giảm thông thường 3% (hoặc điều chỉnh thành 1%, 5%, 0%) khi vi phạm tuân thủ chéo do sơ suất, nhưng log không có thông tin lỗi do sơ suất hay cố ý để kiểm tra mức phần trăm cụ thể."
+    }
+   }
+  },
+  "R640:Art39(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Áp phạt khi không khắc phục trong hạn (tối đa cuối năm sau năm phát hiện) với trường hợp de minimis; log không có sự kiện phát hiện vi phạm, thông báo hay khắc phục."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc áp dụng phạt nếu người thụ hưởng không khắc phục vi phạm nhỏ trước hạn chót (tối đa cuối năm sau), không có dữ liệu theo dõi khắc phục vi phạm qua các năm trong log."
+    }
+   }
+  },
+  "R640:Art39(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Hệ thống cảnh báo sớm, áp giảm hồi tố ít nhất 1 %; log không có cảnh báo sớm, hạn khắc phục hay kiểm tra lại."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc áp dụng hồi tố mức giảm ít nhất 1% trong hệ thống cảnh báo sớm nếu không khắc phục vi phạm trong tối đa 3 năm lịch, không có dữ liệu tương ứng trong log."
+    }
+   }
+  },
+  "R640:Art41": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản dẫn chiếu quy tắc cộng dồn phạt do Ủy ban ban hành, không có nghĩa vụ riêng kiểm được trên log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ dẫn chiếu việc cộng dồn hình phạt hành chính phải tuân theo quy tắc do Ủy ban ban hành theo Điều 77(8)(a) của Quy định 1306/2013, không chứa nghĩa vụ độc lập."
+    }
+   }
+  },
+  "R640:Art42(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy định chuyển tiếp về xác minh khắc phục vi phạm cross-compliance trước đây; log không có sự kiện tương ứng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định chuyển tiếp về nghĩa vụ kiểm tra khắc phục đối với các vi phạm tuân thủ chéo được miễn phạt theo quy tắc tối thiểu của các quy định cũ, không có dữ liệu trong log."
+    }
+   }
+  },
+  "R809:Art5": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc áp dụng phạt khi vi phạm thuộc cả cross-compliance và điều kiện hưởng; thuần tính toán số tiền, log không tách các loại giảm/phạt."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nguyên tắc phân bổ việc áp dụng các khoản giảm trừ, từ chối, thu hồi và phạt giữa các chương trình, nhưng log không tách riêng số tiền tính toán chi tiết của từng bước giảm trừ."
+    }
+   }
+  },
+  "R809:Art6(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nhà nước xác định số tiền chi theo điều kiện của từng chương trình; khoản chung về cách tính, không có nghĩa vụ cụ thể kiểm được trên log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nguyên tắc chung rằng Nhà nước thành viên xác định số tiền thanh toán dựa trên điều kiện của từng chương trình hỗ trợ, không tạo ra ràng buộc sự kiện cụ thể trên log."
+    }
+   }
+  },
+  "R809:Art6(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Khoản quy định thứ tự tính các khoản giảm/từ chối/thu hồi/phạt; log chỉ có kết quả (case:penalty_amount*, case:payment_actual*) và activity calculate chung, không ghi từng bước tính hay cơ sở tính nên không kiểm được thứ tự."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định thứ tự toán học khi tính các khoản giảm trừ, từ chối, thu hồi và phạt trên số tiền hỗ trợ, nhưng log chỉ có sự kiện `calculate` chung chứ không ghi thứ tự các phép tính nội bộ."
+    }
+   }
+  },
+  "R809:Art6(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Quy định cơ sở tính các khoản giảm theo Art 11, 7(1), 8 của 1307/2013 (tỉ lệ điều chỉnh, giảm tuyến tính); log không ghi các bước tính hay tỉ lệ áp dụng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc lấy số tiền sau bước (f) khoản 2 làm cơ sở để tính các mức giảm tuyến tính và tỷ lệ điều chỉnh kỷ luật tài chính, không quan sát được các bước tính toán trung gian trong log."
+    }
+   }
+  },
+  "R809:Art10": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Ứng trước là \"may\"; phần bắt buộc chỉ là khoản chi phần còn lại phải tính đến tỉ lệ điều chỉnh kỷ luật tài chính — đây là nội dung cách tính số tiền, log không ghi tỉ lệ áp dụng nên không kiểm được."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này cho phép trả tạm ứng không áp dụng tỷ lệ kỷ luật tài chính và yêu cầu tính tỷ lệ này vào khoản thanh toán số dư từ ngày 1 tháng 12, nhưng log không phân biệt sự kiện chi trả tạm ứng với chi trả số dư và không ghi nhận việc tính tỷ lệ điều chỉnh."
+    }
+   }
+  },
+  "R809:Art11(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản cho phép (\"may permit or require\") liên lạc điện tử và các biện pháp bảo đảm ở mức hệ thống; log không ghi kênh liên lạc hay việc định danh."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ cho phép (\"may\") Nhà nước thành viên quy định giao tiếp bằng phương thức điện tử và các điều kiện đảm bảo an toàn hệ thống ở cấp độ chung."
+    }
+   }
+  },
+  "R809:Art11(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản chỉ cho phép thủ tục đơn giản hoá và dùng nguồn dữ liệu sẵn có; nghĩa vụ bảo đảm độ tin cậy nguồn dữ liệu nằm ở mức hệ thống, không ở từng hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này cho phép (\"may\") Nhà nước thành viên áp dụng thủ tục nộp đơn giản lược và sử dụng nguồn dữ liệu sẵn có của cơ quan quốc gia, không đặt ra nghĩa vụ bắt buộc trên từng hồ sơ."
+    }
+   }
+  },
+  "R809:Art12(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản chỉ quy định áp dụng tương tự Điều 20–22 khi Nhà nước chọn đơn hợp nhất; bản thân khoản không đặt nghĩa vụ riêng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ dẫn chiếu việc áp dụng tương tự các Điều 20, 21 và 22 khi Nhà nước thành viên gộp các đơn vào mẫu đơn chung, không đặt ra nghĩa vụ riêng."
+    }
+   }
+  },
+  "R809:Art13(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản chỉ cho phép lùi hạn chót ở vùng có điều kiện khí hậu đặc biệt theo thủ tục của Ủy ban; không có nghĩa vụ kiểm được trên log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ cho phép (\"may\") ấn định ngày hạn chót nộp đơn muộn hơn tại các khu vực có điều kiện khí hậu đặc biệt."
+    }
+   }
+  },
+  "R809:Art14(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Khoản quy định nội dung bắt buộc của đơn (danh tính, thửa đất, diện tích hai chữ số thập phân…); log không ghi nội dung giấy tờ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định các thông tin chi tiết phải có bên trong nội dung mẫu đơn chung hoặc yêu cầu thanh toán, trong khi log không lưu trữ nội dung chi tiết của giấy tờ."
+    }
+   }
+  },
+  "R809:Art14(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy định nội dung mẫu đơn soạn sẵn (phải ghi mã định danh quyền hưởng); log không ghi nội dung giấy tờ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định biểu mẫu lập sẵn cung cấp cho nông dân phải nêu mã nhận dạng của các quyền hưởng thanh toán, nhưng log không ghi nhận nội dung chi tiết trên biểu mẫu lập sẵn."
+    }
+   }
+  },
+  "R809:Art16": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Nông dân phải sửa mẫu soạn sẵn khi thông tin thay đổi/sai; log không cho biết thông tin có sai hay quyền hưởng có chuyển nhượng hay không nên không xác định được khi nào phát sinh nghĩa vụ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này yêu cầu người thụ hưởng phải sửa biểu mẫu lập sẵn nếu có thay đổi hoặc thông tin sai lệch, nhưng log không cho biết biểu mẫu lập sẵn ban đầu có thông tin sai hay không để kiểm tra."
+    }
+   }
+  },
+  "R809:Art17(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Nghĩa vụ cung cấp mẫu đơn không gian địa lý qua giao diện GIS là nghĩa vụ ở mức hệ thống; log không có sự kiện \"cung cấp mẫu đơn cho nông dân\" (Geo parcel document / Main / initialize chỉ là bước nội bộ, không phải proxy hợp lệ)."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Khoản này quy định cơ quan có thẩm quyền phải cung cấp biểu mẫu lập sẵn và tài liệu đồ họa qua giao diện GIS theo lộ trình tại khoản 2 (từ năm 2016 chỉ bắt buộc cho một tỷ lệ phần trăm nhất định và từ năm 2018 mới bắt buộc cho mọi hồ sơ), nên không tạo thành nghĩa vụ bắt buộc cho mọi hồ sơ trong log giai đoạn 2015–2017."
+    }
+   }
+  },
+  "R809:Art17(4)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy định nội dung mẫu soạn sẵn và tài liệu đồ hoạ (diện tích tối đa, ranh giới thửa, EFA); log không ghi nội dung giấy tờ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định các thông tin chi tiết (diện tích tối đa, ranh giới thửa tham chiếu, vùng trọng điểm sinh thái năm trước) phải được thể hiện trên biểu mẫu lập sẵn và tài liệu đồ họa, không có trong log."
+    }
+   }
+  },
+  "R809:Art17(5)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Nghĩa vụ khai báo diện tích, mục đích sử dụng từng thửa và sửa mẫu khi sai; log không ghi nội dung khai báo, cũng không có sự kiện đánh giá cập nhật thửa tham chiếu tương ứng."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": false,
+    "constraints": [
+     "Existence[Geo parcel document / Declared / create, None] [] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Existence(Geo parcel document / Declared / create)"
+     ],
+     "needs_ref": "Không",
+     "confidence": "Thấp",
+     "reason": "Người thụ hưởng có nghĩa vụ xác định rõ ràng và kê khai diện tích của từng thửa đất nông nghiệp (proxy: Geo parcel document / Declared / create ≈ kê khai các thửa đất nông nghiệp)."
+    }
+   }
+  },
+  "R809:Art17(6)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy định nội dung đơn về thực hành tương đương và thực hiện EFA tập thể/vùng; log không có thuộc tính hay activity về các việc này."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định cách ghi thông tin trên đơn khi người thụ hưởng thực hiện các biện pháp canh tác tương đương hoặc thực hiện vùng trọng điểm sinh thái cấp vùng/tập thể, không có dữ liệu tương ứng trong log."
+    }
+   }
+  },
+  "R809:Art17(7)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nội dung đơn đối với cây gai dầu và hạn nộp nhãn 30/6; log không có thông tin về cây gai dầu hay sự kiện nộp nhãn hạt giống."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định các thông tin và thời hạn nộp nhãn bao bì hạt giống đến ngày 30 tháng 6 đối với diện tích trồng cây gai dầu (hemp), nhưng log không có thuộc tính nhận diện hồ sơ trồng cây gai dầu."
+    }
+   }
+  },
+  "R809:Art18": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Tờ khai thực hiện EFA vùng/tập thể và nội dung của nó; log không có loại giấy tờ hay thuộc tính tương ứng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc nộp bản kê khai bổ sung khi thực hiện vùng trọng điểm sinh thái cấp vùng hoặc tập thể, nhưng log không có dữ liệu về hình thức thực hiện này."
+    }
+   }
+  },
+  "R809:Art19(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Quy định nội dung đơn tham gia chương trình nông dân nhỏ năm 2015 (dẫn chiếu đơn hợp nhất, cam kết); log chỉ có cờ case:small farmer, không có sự kiện nộp đơn tham gia hay nội dung đơn."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nội dung văn bản của đơn đăng ký tham gia chương trình nông dân nhỏ năm 2015 (phải dẫn chiếu tới đơn chung và cam kết nắm rõ điều kiện), không quan sát được nội dung giấy tờ trong log."
+    }
+   }
+  },
+  "R809:Art19(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ của Nhà nước thành viên thiết lập thủ tục nộp đơn đơn giản hoá từ 2016 — mức hệ thống, không có sự kiện trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nghĩa vụ ở cấp độ Nhà nước thành viên từ năm 2016 phải cung cấp thủ tục nộp đơn giản lược cho chương trình nông dân nhỏ, không có sự kiện riêng trong log."
+    }
+   }
+  },
+  "R809:Art19(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy định nội dung mẫu soạn sẵn cho chương trình nông dân nhỏ; log không ghi nội dung giấy tờ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nội dung thông tin phải có trong biểu mẫu lập sẵn dùng cho chương trình nông dân nhỏ, không có dữ liệu nội dung biểu mẫu trong log."
+    }
+   }
+  },
+  "R809:Art19(4)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Nông dân rút khỏi chương trình nông dân nhỏ phải thông báo theo thể thức quốc gia; log không có sự kiện rút khỏi chương trình nông dân nhỏ (các activity withdraw là rút đơn, không cùng sự việc)."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định người thụ hưởng muốn rút khỏi chương trình nông dân nhỏ vào các năm sau năm 2015 phải thông báo cho cơ quan có thẩm quyền, nhưng log không có sự kiện riêng về việc rút khỏi chương trình nông dân nhỏ."
+    }
+   }
+  },
+  "R809:Art20": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Nông dân không xin chương trình theo diện tích vẫn phải khai diện tích; log không cho biết nông dân có xin chương trình theo diện tích hay không (hầu như mọi hồ sơ có case:basic payment) và không ghi nội dung khai báo."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nghĩa vụ kê khai diện tích đối với người không xin hỗ trợ theo diện tích hoặc thuộc chương trình rượu vang và cho phép Nhà nước thành viên miễn trừ, không áp dụng hoặc không tách biệt được trong log."
+    }
+   }
+  },
+  "R809:Art21(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy định nội dung đơn hỗ trợ chăn nuôi (số con vật, mã định danh…); log không có đơn chăn nuôi và không ghi nội dung giấy tờ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định các thông tin phải có trong đơn xin hỗ trợ chăn nuôi (livestock aid application), trong khi log không có dữ liệu về hỗ trợ chăn nuôi và nội dung đơn."
+    }
+   }
+  },
+  "R809:Art21(4)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản cho phép (\"may\") dùng cơ sở dữ liệu vật nuôi và nghĩa vụ thông tin cho nông dân ở mức hệ thống; log không có sự kiện về vật nuôi."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này cho phép (\"may\") Nhà nước thành viên sử dụng dữ liệu trong cơ sở dữ liệu máy tính về vật nuôi để phục vụ đơn xin hỗ trợ chăn nuôi, không liên quan đến log."
+    }
+   }
+  },
+  "R809:Art22(1)": {
+   "claude-opus-5-5": {
+    "observable": "yes",
+    "tier4": false,
+    "constraints": [
+     "Absence[Entitlement application / Main / mail valid, None] [\"date > 'year-05-15'\"] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Absence(Entitlement application / Main / mail valid) với ngày(Entitlement application / Main / mail valid) > 15/05/năm"
+     ],
+     "needs_ref": "Không",
+     "confidence": "Thấp",
+     "reason": "Đơn xin cấp/tăng giá trị quyền hưởng phải nộp trước ngày do Nhà nước ấn định, không muộn hơn 15/5 (ngày nằm ngay trong khoản; Đức không thuộc các nước được lùi đến 15/6); proxy: Entitlement application / Main / mail valid ≈ việc đơn xin quyền hưởng được nhận — không chắc thời điểm sự kiện trùng ngày nộp đơn."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": false,
+    "constraints": [
+     "Existence[Entitlement application / Main / mail valid, None] [\"date <= 'year-05-15'\"] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Existence(Entitlement application / Main / mail valid) với ngày(Entitlement application / Main / mail valid) <= 15/05/năm"
+     ],
+     "needs_ref": "Không",
+     "confidence": "TB",
+     "reason": "Đơn xin phân bổ hoặc tăng giá trị quyền hưởng thanh toán theo chương trình thanh toán cơ bản phải được nộp chậm nhất vào ngày 15 tháng 5 của năm lịch liên quan tại Đức (proxy: Entitlement application / Main / mail valid ≈ nộp đơn xin phân bổ quyền hưởng thanh toán hợp lệ)."
+    }
+   }
+  },
+  "R809:Art23(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Số quyền hưởng cấp thừa phải hoàn về dự trữ quốc gia; log không ghi số lượng/giá trị quyền hưởng hay sự kiện hoàn về dự trữ, cũng không biết khi nào phát hiện cấp thừa."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc thu hồi số lượng quyền hưởng thanh toán được phân bổ vượt mức về quỹ dự trữ quốc gia và điều chỉnh giá trị quyền hưởng, không có dữ liệu số lượng quyền hưởng trong log."
+    }
+   }
+  },
+  "R809:Art23(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Điều chỉnh giá trị quyền hưởng khi tham chiếu tính sai; log không ghi giá trị quyền hưởng hay căn cứ tính, không có sự kiện tương ứng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc điều chỉnh giảm giá trị đơn vị của quyền hưởng thanh toán khi phát hiện giá trị tham chiếu lịch sử bị tính quá cao, không có dữ liệu trong log."
+    }
+   }
+  },
+  "R809:Art27": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ thông báo chéo kết quả kiểm tra giữa các cơ quan / tổ chức chứng nhận; log không có sự kiện thông báo chéo hay báo cáo nghi vấn từ cơ quan khác."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc thông báo chéo kết quả kiểm tra giữa các cơ quan quản lý và tổ chức chứng nhận, không có sự kiện tương ứng trong log."
+    }
+   }
+  },
+  "R809:Art28(1)": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Khoản quy định phạm vi/nội dung kiểm tra hành chính (tiêu chí đủ điều kiện, không tài trợ kép, đơn đầy đủ và đúng hạn) nhưng không nêu thứ tự với chi trả hay thời hạn cụ thể; log không ghi nội dung kiểm tra nên chỉ kiểm được rất gián tiếp."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": true,
+    "constraints": [
+     "Precedence[Control summary / Main / finish editing, Payment application / Application / begin payment] [] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Precedence(Control summary / Main / finish editing → Payment application / Application / begin payment)"
+     ],
+     "needs_ref": "Có",
+     "confidence": "Thấp",
+     "reason": "Cơ quan chi trả phải thực hiện kiểm tra hành chính trên đơn xin hỗ trợ theo R1306:Art74 để đảm bảo đáp ứng đủ các điều kiện trước khi chi trả (proxy: Control summary / Main / finish editing ≈ hoàn tất kiểm tra hành chính; proxy: Payment application / Application / begin payment ≈ bắt đầu chi trả)."
+    }
+   }
+  },
+  "R809:Art29(1)": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Kiểm tra chéo \"where appropriate\" với LPIS, quyền hưởng, hệ thống vật nuôi; Reference alignment / Main / performed có thể gần với kiểm tra chéo thửa đất (điểm c) nhưng khoản không nêu mốc thứ tự với chi trả, nội dung đối chiếu không có trong log."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": false,
+    "constraints": [
+     "Precedence[Reference alignment / Main / performed, Payment application / Application / begin payment] [] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Precedence(Reference alignment / Main / performed → Payment application / Application / begin payment)"
+     ],
+     "needs_ref": "Không",
+     "confidence": "Thấp",
+     "reason": "Điểm (c) quy định kiểm tra hành chính phải bao gồm kiểm tra chéo (giao cắt không gian) giữa các thửa đất kê khai trong đơn với hệ thống nhận dạng thửa đất nông nghiệp để xác minh tính hợp lệ (proxy: Reference alignment / Main / performed ≈ kiểm tra chéo với thửa tham chiếu; proxy: Payment application / Application / begin payment ≈ bắt đầu chi trả)."
+    }
+   }
+  },
+  "R809:Art29(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Chỉ là quyền (\"may provide for a proportional reduction\") khi diện tích chồng lấn giữa nhiều người; log không có dữ liệu thửa tham chiếu dùng chung."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ cho phép (\"may\") Nhà nước thành viên giảm diện tích theo tỷ lệ khi hai hay nhiều người thụ hưởng kê khai chồng lấn trên cùng một thửa tham chiếu."
+    }
+   }
+  },
+  "R809:Art30": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Tỉ lệ mẫu kiểm tra tại chỗ tối thiểu (5 %, 30 %) là nghĩa vụ ở mức toàn bộ quần thể, không phải mức từng hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định tỷ lệ mẫu kiểm tra tại chỗ tối thiểu (5%, 30%) tính trên tổng số người thụ hưởng ở cấp độ toàn quần thể hồ sơ, không phải ràng buộc có thể vi phạm ở mức từng hồ sơ đơn lẻ."
+    }
+   }
+  },
+  "R809:Art31(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Tỉ lệ mẫu kiểm tra greening (5 %, 3 %, 100 %, 20 %) là nghĩa vụ mức quần thể; một hồ sơ riêng lẻ không thể vi phạm."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định tỷ lệ mẫu kiểm tra tại chỗ tối thiểu đối với thanh toán xanh hóa ở cấp độ tổng thể quần thể người thụ hưởng (5%, 3%, 20%, 100% nhóm đặc thù không có cờ trong log), không kiểm tra được ở mức từng hồ sơ."
+    }
+   }
+  },
+  "R809:Art31(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Loại trừ khỏi mẫu kiểm tra greening (người dùng thực hành tương đương, small farmer, hữu cơ); log không phân biệt kiểm tra tại chỗ cho greening với kiểm tra cho chương trình khác (small farmer vẫn thuộc mẫu 5 % ở Art30(f)), nên không thể viết Absence(Inspection…) | case:small farmer == True."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Khoản này quy định không đưa người thụ hưởng tham gia chương trình nông dân nhỏ vào mẫu kiểm tra xanh hóa của Điều 31, nhưng log chỉ có cờ chọn mẫu chung (`case:selected_random`, `case:selected_risk`) cho mọi chương trình (bao gồm cả mẫu kiểm tra nông dân nhỏ theo Điều 30(f)) nên không phân biệt được."
+    }
+   }
+  },
+  "R809:Art31(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Bổ sung tỉ lệ mẫu kiểm tra 5 % cho diện tích sinh thái (EFA) — nghĩa vụ mức quần thể; log không ghi EFA có được xác định trong LPIS hay không."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc tăng thêm 5% tỷ lệ mẫu kiểm tra tại chỗ ở cấp độ quần thể nếu hệ thống LPIS chưa nhận dạng vùng trọng điểm sinh thái, không phải nghĩa vụ trên từng hồ sơ."
+    }
+   }
+  },
+  "R809:Art32(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Tỉ lệ mẫu 5 % cho biện pháp phát triển nông thôn — nghĩa vụ mức quần thể, và log là chi trả trực tiếp, không có biện pháp phát triển nông thôn."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định tỷ lệ mẫu kiểm tra tại chỗ tối thiểu 5% đối với các biện pháp phát triển nông thôn ở cấp độ tổng thể quần thể, không kiểm tra được trên từng hồ sơ trong log."
+    }
+   }
+  },
+  "R809:Art34(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Quy định cách chọn mẫu kiểm tra (1–1,25 % ngẫu nhiên, phần còn lại theo phân tích rủi ro) — nghĩa vụ ở mức quần thể; dù có cờ case:selected_random / case:selected_risk, một hồ sơ riêng lẻ không thể vi phạm tỉ lệ chọn mẫu."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định tỷ lệ phần trăm chọn mẫu ngẫu nhiên (1–1,25%, 20–25%) và chọn mẫu theo phân tích rủi ro ở cấp độ tổng thể quần thể người thụ hưởng, không phải ràng buộc trên từng hồ sơ cá별."
+    }
+   }
+  },
+  "R809:Art36(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quyền (\"may\") giảm mẫu kiểm tra kèm điều kiện cập nhật LPIS, ảnh trực giao ≤ 15 tháng — nghĩa vụ về hệ thống của Nhà nước thành viên, không có sự kiện trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này cho phép (\"may\") Nhà nước thành viên giảm kích thước mẫu kiểm tra tại chỗ nếu cập nhật hệ thống nhận dạng thửa đất bằng ảnh trực giao, là quy định cấp độ hệ thống/quốc gia."
+    }
+   }
+  },
+  "R809:Art36(4)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quyền giảm tỉ lệ kiểm tra tại chỗ xuống 3 % cho biện pháp phát triển nông thôn — mức quần thể, ngoài phạm vi log chi trả trực tiếp."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ cho phép (\"may\") Nhà nước thành viên giảm tỷ lệ kiểm tra tại chỗ tối thiểu xuống 3% đối với các biện pháp phát triển nông thôn."
+    }
+   }
+  },
+  "R809:Art36(5)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ Nhà nước thành viên thu hồi quyết định giảm tỉ lệ kiểm tra khi không còn đủ điều kiện — quyết định chính sách, không ở mức từng hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định điều kiện áp dụng và nghĩa vụ của Nhà nước thành viên phải thu hồi quyết định giảm tỷ lệ mẫu kiểm tra tại chỗ ở cấp độ chính sách khi không còn đáp ứng điều kiện."
+    }
+   }
+  },
+  "R809:Art36(6)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quyền giảm tỉ lệ kiểm tra cây gai dầu xuống 20 % và nghĩa vụ thông báo Ủy ban — mức quần thể / báo cáo, log không có sự kiện tương ứng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này cho phép (\"may\") giảm tỷ lệ kiểm tra tại chỗ xuống 20% đối với diện tích trồng cây gai dầu và nghĩa vụ thông báo cho Ủy ban, không có sự kiện trong log."
+    }
+   }
+  },
+  "R809:Art37(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Quy định phạm vi kiểm tra tại chỗ (phủ mọi thửa đất được xin hỗ trợ) và đánh giá cập nhật thửa tham chiếu; log chỉ có các bước Inspection, không ghi kiểm tra phủ những thửa nào nên không kiểm được."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định kiểm tra tại chỗ phải bao quát tất cả các thửa đất nông nghiệp của hồ sơ và đánh giá việc cập nhật thửa tham chiếu, nhưng log không ghi nhận chi tiết kiểm tra tới từng thửa đất."
+    }
+   }
+  },
+  "R809:Art37(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Nội dung kiểm tra tại chỗ (đo diện tích, xác minh tiêu chí, hoạt động tối thiểu); log không ghi nội dung kiểm tra hay loại diện tích chăn thả tự nhiên."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nội dung chuyên môn của cuộc kiểm tra tại chỗ (đo đạc diện tích, xác minh điều kiện hợp lệ và hoạt động tối thiểu), không tách biệt được các nội dung này trong log."
+    }
+   }
+  },
+  "R809:Art37(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nội dung kiểm tra tại chỗ về greening (ngưỡng miễn trừ, thực hiện vùng/tập thể); log không ghi nội dung kiểm tra, không có thuộc tính về thực hiện vùng/tập thể."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định các nội dung phải xác minh khi kiểm tra tại chỗ đối với các biện pháp xanh hóa (ngưỡng miễn trừ, thực hiện cấp vùng/tập thể), không có dữ liệu chi tiết trong log."
+    }
+   }
+  },
+  "R809:Art38(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc đo diện tích theo mẫu ≥ 50 % thửa và ngoại suy — mức thửa đất trong cuộc kiểm tra, log không có dữ liệu đo từng thửa."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc đo đạc diện tích thực tế khi kiểm tra tại chỗ có thể giới hạn ở mẫu ngẫu nhiên tối thiểu 50% số thửa đất của hồ sơ và mở rộng nếu có vi phạm, nhưng log chỉ ghi sự kiện kiểm tra ở mức cả hồ sơ chứ không ở mức từng thửa đất."
+    }
+   }
+  },
+  "R809:Art38(5)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc kỹ thuật tính diện tích đủ điều kiện (toàn bộ / thực, pro-rata \"may\"); không có sự kiện tương ứng trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nguyên tắc tính tổng diện tích hoặc diện tích hợp lệ ròng khi đo đạc thửa đất nông nghiệp, không có sự kiện hay thuộc tính tương ứng trong log."
+    }
+   }
+  },
+  "R809:Art38(6)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc đo diện tích từng loại cây để tính đa dạng cây trồng; log không có dữ liệu cây trồng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định cách tính diện tích thực tế có cây trồng và diện tích trồng xen canh khi đo đạc để kiểm tra đa dạng hóa cây trồng, không có dữ liệu trong log."
+    }
+   }
+  },
+  "R809:Art38(7)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc gộp đo thửa liền kề cùng lớp phủ; log không có dữ liệu thửa / phép đo."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc gộp các thửa đất nông nghiệp liền kề có cùng loại hình che phủ đất vào một phép đo duy nhất khi kiểm tra, không có dữ liệu từng phép đo thửa đất trong log."
+    }
+   }
+  },
+  "R809:Art39(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quyền áp dụng hệ số giảm cho đồng cỏ và phân bổ diện tích dùng chung; log không có dữ liệu diện tích dùng chung hay hệ số."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc áp dụng hệ số giảm cho đồng cỏ lâu năm và phân bổ diện tích sử dụng chung giữa những người thụ hưởng, không có dữ liệu diện tích sử dụng chung trong log."
+    }
+   }
+  },
+  "R809:Art39(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nguyên tắc xác minh yếu tố cảnh quan khai là EFA; log không có dữ liệu về yếu tố cảnh quan hay EFA."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nguyên tắc xác minh các đặc điểm cảnh quan được kê khai làm vùng trọng điểm sinh thái, không có dữ liệu tương ứng trong log."
+    }
+   }
+  },
+  "R809:Art42(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ kiểm tra tại chỗ đối với chương trình hỗ trợ theo vật nuôi (đếm con vật, đối chiếu sổ đăng ký); log BPIC2018 chỉ có chi trả theo diện tích, không có sự kiện về vật nuôi, và tỉ lệ 50 % là mức tổng thể chứ không phải từng hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nội dung và phân bổ thời gian kiểm tra tại chỗ đối với các chương trình hỗ trợ vật nuôi, không có dữ liệu vật nuôi trong log."
+    }
+   }
+  },
+  "R809:Art44": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc tính và phân bổ diện tích EFA cho người tham gia thực hiện tập thể/vùng; là quy tắc tính toán, log không có dữ liệu diện tích EFA hay việc thực hiện tập thể."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định cách phân bổ diện tích vùng trọng điểm sinh thái chung sau kiểm tra cho từng người tham gia thực hiện cấp vùng hoặc tập thể, không có dữ liệu trong log."
+    }
+   }
+  },
+  "R809:Art45(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ của Nhà nước thành viên lập hệ thống xác định hàm lượng THC của cây gai dầu; không phải nghĩa vụ xử lý từng hồ sơ, log không có sự kiện tương ứng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này đặt nghĩa vụ cho Nhà nước thành viên thiết lập hệ thống xác định hàm lượng THC trong cây gai dầu theo Phụ lục I, không phải sự kiện trong log."
+    }
+   }
+  },
+  "R809:Art45(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Áp dụng thủ tục B cho giống gai dầu và thông báo Ủy ban trước 15/11; đây là nghĩa vụ ở mức giống cây / Nhà nước thành viên, log không có giống cây, kết quả THC hay việc thông báo Ủy ban."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định thủ tục kiểm nghiệm B và nghĩa vụ của Nhà nước thành viên thông báo cho Ủy ban trước ngày 15 tháng 11 khi giống cây gai dầu vượt ngưỡng THC, không có sự kiện trong log."
+    }
+   }
+  },
+  "R809:Art50(6)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quyền giảm tỉ lệ kiểm tra tại chỗ tối thiểu (3 % chi tiêu EAFRD) cho phát triển nông thôn; là mức tổng thể theo năm của Nhà nước thành viên, không kiểm được trên từng hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này cho phép (\"may\") Nhà nước thành viên giảm tỷ lệ kiểm tra tại chỗ tối thiểu xuống 3% đối với chi tiêu do quỹ EAFRD đồng tài trợ và thu hồi quyết định khi không còn đủ điều kiện."
+    }
+   }
+  },
+  "R809:Art64": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản định nghĩa (cơ quan kiểm tra chuyên ngành, act, năm phát hiện, lĩnh vực cross-compliance), không đặt nghĩa vụ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ định nghĩa các thuật ngữ liên quan đến hệ thống kiểm soát và phạt hành chính về tuân thủ chéo, không đặt ra nghĩa vụ nào."
+    }
+   }
+  },
+  "R809:Art65(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ Nhà nước thành viên thiết lập hệ thống kiểm soát cross-compliance (chuyển thông tin, phương pháp chọn mẫu, báo cáo kiểm tra); là nghĩa vụ lập hệ thống, log không có sự kiện tương ứng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nghĩa vụ của Nhà nước thành viên trong việc thiết lập hệ thống kiểm soát tuân thủ chéo ở cấp độ tổ chức hệ thống, không tạo ràng buộc trực tiếp trên từng hồ sơ trong log."
+    }
+   }
+  },
+  "R809:Art66": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Thu hồi tiền phạt cross-compliance khi kiểm tra chưa xong trước lúc chi trả, theo Art7 hoặc bằng bù trừ; log không có sự kiện kiểm tra cross-compliance riêng hay lệnh thu hồi / bù trừ (case:cross_compliance chỉ là con số, không có mốc hoàn tất kiểm tra)."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc thu hồi hoặc khấu trừ tiền phạt tuân thủ chéo khi việc kiểm tra chưa hoàn tất trước lúc người thụ hưởng nhận tiền, nhưng log không có sự kiện kiểm tra tuân thủ chéo riêng hay sự kiện thu hồi nợ sau chi trả."
+    }
+   }
+  },
+  "R809:Art68(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Tỉ lệ kiểm tra tại chỗ tối thiểu 1 % số người hưởng là chỉ tiêu tổng thể của cơ quan kiểm tra, không phải nghĩa vụ mà từng hồ sơ có thể vi phạm."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định cơ quan kiểm soát phải kiểm tra tại chỗ về tuân thủ chéo đối với ít nhất 1% tổng số người thụ hưởng ở cấp độ toàn quần thể, không phải ràng buộc trên từng hồ sơ đơn lẻ."
+    }
+   }
+  },
+  "R809:Art68(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản cho phép (\"may\") dùng kết quả kiểm tra theo luật chuyên ngành để đạt tỉ lệ tối thiểu; về cách đạt chỉ tiêu tổng thể, không kiểm được trên từng hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ cho phép (\"may\") Nhà nước thành viên sử dụng kết quả kiểm tra chuyên ngành hoặc thay thế người thụ hưởng được chọn để đạt tỷ lệ kiểm tra tối thiểu 1%."
+    }
+   }
+  },
+  "R809:Art68(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc tính tỉ lệ kiểm tra tối thiểu (không tính các hành động theo Art97(3) R1306); là chỉ tiêu tổng thể, không kiểm được trên từng hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nguyên tắc không tính các đợt kiểm tra khắc phục theo Điều 97(3) vào tỷ lệ kiểm tra tối thiểu 1% ở cấp quần thể, không phải nghĩa vụ trên từng hồ sơ."
+    }
+   }
+  },
+  "R809:Art68(5)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Mẫu 20 % người hưởng để kiểm việc khắc phục khi không phạt dưới 100 EUR; là tỉ lệ mẫu tổng thể, log không có sự kiện kiểm tra khắc phục."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định tỷ lệ mẫu kiểm tra xác minh khắc phục vi phạm ở mức 20% trên nhóm đối tượng liên quan (cấp quần thể), không quan sát được trên từng hồ sơ trong log."
+    }
+   }
+  },
+  "R809:Art69(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Phương pháp chọn mẫu kiểm tra cross-compliance dựa trên phân tích rủi ro; log không ghi tiêu chí rủi ro hay tham gia hệ thống tư vấn/chứng nhận, không phải nghĩa vụ ở mức từng hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định phương pháp phân tích rủi ro để chọn mẫu trang trại kiểm tra tuân thủ chéo ở cấp độ cơ quan quản lý, không tạo ràng buộc sự kiện cụ thể trên từng hồ sơ."
+    }
+   }
+  },
+  "R809:Art69(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản phạm vi áp dụng của đoạn 1 (không áp dụng cho kiểm tra theo dõi), không đặt nghĩa vụ riêng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định phạm vi áp dụng của khoản 1 đối với các cuộc kiểm tra tiếp theo sau khi phát hiện vi phạm, không đặt ra nghĩa vụ trực tiếp trên log."
+    }
+   }
+  },
+  "R809:Art69(6)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản cho phép (\"may\") chọn mẫu 1 % riêng theo từng nhóm người hưởng; chỉ tiêu tổng thể, không kiểm được trên từng hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ cho phép (\"may\") chọn mẫu kiểm tra tại chỗ ở mức tối thiểu 1% riêng biệt cho từng nhóm người thụ hưởng ở cấp độ quần thể."
+    }
+   }
+  },
+  "R809:Art69(7)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Cho phép thay người hưởng bằng người không hưởng trong mẫu kiểm tra và ghi lý do; log chỉ có hồ sơ người nộp đơn, không có người không hưởng, nghĩa vụ ở mức mẫu."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này cho phép (\"may\") thay thế người thụ hưởng bằng người không thụ hưởng khi chọn mẫu kiểm tra nếu có rủi ro cao hơn và yêu cầu lưu hồ sơ giải trình ở cấp quản lý."
+    }
+   }
+  },
+  "R809:Art71(6)": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Kiểm tra tại chỗ cross-compliance phải làm trong cùng năm dương lịch nộp đơn; log có Inspection / On-Site / performed nhưng không rõ đó là kiểm tra cross-compliance (thuộc mẫu Art68(1)) hay kiểm tra điều kiện hưởng, và khoản không nêu ngày cụ thể nên không viết ràng buộc."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": false,
+    "constraints": [
+     "Existence[Inspection / On-Site / performed, None] ['case:selected_random == True', \"date <= 'year-12-31'\"] None",
+     "Existence[Inspection / On-Site / performed, None] ['case:selected_risk == True', \"date <= 'year-12-31'\"] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Existence(Inspection / On-Site / performed) với ngày(Inspection / On-Site / performed) <= 31/12/năm | case:selected_random == True",
+      "Existence(Inspection / On-Site / performed) với ngày(Inspection / On-Site / performed) <= 31/12/năm | case:selected_risk == True"
+     ],
+     "needs_ref": "Không",
+     "confidence": "Thấp",
+     "reason": "Các cuộc kiểm tra tại chỗ đối với mẫu được chọn phải được thực hiện trong cùng năm lịch nộp đơn xin hỗ trợ (proxy: Inspection / On-Site / performed ≈ thực hiện kiểm tra tại chỗ)."
+    }
+   }
+  },
+  "R809:Art72(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Mỗi lần kiểm tra tại chỗ phải có báo cáo kiểm tra với nội dung quy định; log không có nội dung giấy tờ hay sự kiện lập báo cáo kiểm tra cross-compliance (Inspection / On-Site / finish editing chỉ là bước chỉnh sửa, không chắc là báo cáo)."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": false,
+    "constraints": [
+     "Response[Inspection / On-Site / performed, Inspection / On-Site / finish editing] [] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Response(Inspection / On-Site / performed → Inspection / On-Site / finish editing)"
+     ],
+     "needs_ref": "Không",
+     "confidence": "Thấp",
+     "reason": "Mọi cuộc kiểm tra tại chỗ phải được cơ quan kiểm soát lập thành báo cáo kiểm tra với các phần thông tin quy định (proxy: Inspection / On-Site / performed ≈ thực hiện kiểm tra tại chỗ; proxy: Inspection / On-Site / finish editing ≈ hoàn tất lập báo cáo kiểm tra tại chỗ)."
+    }
+   }
+  },
+  "R809:Art72(3)": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Người hưởng phải được thông báo vi phạm trong ba tháng sau kiểm tra tại chỗ; log có Inspection / On-Site / performed nhưng không có sự kiện thông báo vi phạm cho người hưởng, dùng decide làm proxy là phải đoán nên không viết ràng buộc."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định phải thông báo cho người thụ hưởng về mọi vi phạm tuân thủ chéo được xác định trong vòng 3 tháng sau ngày kiểm tra tại chỗ, nhưng log không có sự kiện thông báo kết quả kiểm tra tuân thủ chéo cho nông dân."
+    }
+   }
+  },
+  "R809:Art73(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ Nhà nước thành viên bảo đảm thông tin vi phạm được chuyển giữa nhiều cơ quan chi trả; log chỉ có một cơ quan chi trả, không có sự kiện chuyển thông tin."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc phối hợp thông tin giữa nhiều cơ quan chi trả khác nhau trong cùng một quốc gia, trong khi log chỉ ghi nhận dữ liệu tại một cơ quan chi trả và không có sự kiện thông báo liên cơ quan."
+    }
+   }
+  },
+  "R809:Art73(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy tắc tính mức giảm (gộp nhiều vi phạm cùng lĩnh vực thành một); log không có từng vi phạm theo act/lĩnh vực, ý nghĩa mã case:penalty_* không được công bố."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nguyên tắc gộp nhiều vi phạm trong cùng một lĩnh vực tuân thủ chéo thành một vi phạm khi tính mức giảm trừ, không có dữ liệu chi tiết từng vi phạm tuân thủ chéo trong log."
+    }
+   }
+  },
+  "R809:Art73(4)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Quy tắc cơ sở tính phạt hành chính (tổng chi trả trong năm phát hiện); là cách tính, log không có cách tính phạt cross-compliance để đối chiếu."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định cơ sở tổng số tiền thanh toán để áp dụng phạt hành chính tuân thủ chéo và quy tắc chia 3 cho chương trình rượu vang, không kiểm tra được công thức tính nội bộ trên log."
+    }
+   }
+  },
+  "R809:Art74(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Mức giảm do vi phạm vô ý cộng dồn tối đa 5 % tổng chi trả; log có case:penalty_amount0 và case:cross_compliance nhưng không phân biệt phạt cross-compliance vô ý với các loại phạt khác, nên không kiểm được ngưỡng 5 %."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Khoản này giới hạn mức giảm tối đa không vượt quá 5% tổng số tiền khi có nhiều vi phạm tuân thủ chéo do sơ suất, nhưng thuộc tính `case:cross_compliance` trong log không phân biệt vi phạm do sơ suất, tái phạm (tối đa 15%) hay cố ý (tối đa 100%)."
+    }
+   }
+  },
+  "R809:Art75": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Loại trừ khỏi mọi khoản chi trả năm sau khi vi phạm cố ý nghiêm trọng; log không ghi tính cố ý/mức độ vi phạm và mỗi hồ sơ là một năm, nên không kiểm được trên từng hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc loại người thụ hưởng khỏi các khoản thanh toán vào năm lịch tiếp theo nếu vi phạm tuân thủ chéo cố ý ở mức độ nghiêm trọng, nhưng log không có thông tin phân loại lỗi cố ý nghiêm trọng."
+    }
+   }
+  },
+  "R1306:Art7(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ người đứng đầu cơ quan chi trả lập báo cáo tài chính năm, tuyên bố quản lý trước 15/2; là báo cáo cấp cơ quan, log không có sự kiện tương ứng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nghĩa vụ của người đứng đầu cơ quan chi trả phải lập báo cáo quyết toán hàng năm và tuyên bố quản lý trước ngày 15 tháng 2 cho Ủy ban, không phải sự kiện xử lý từng hồ sơ trong log."
+    }
+   }
+  },
+  "R1306:Art7(6)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Trách nhiệm chung của cơ quan chi trả về các hoạt động can thiệp công (public intervention); không liên quan hồ sơ chi trả trực tiếp và log không có sự kiện tương ứng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định trách nhiệm chung của cơ quan chi trả đối với các hoạt động can thiệp công cộng trên thị trường, không liên quan đến hồ sơ chi trả trực tiếp trong log."
+    }
+   }
+  },
+  "R1306:Art9(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy định về cơ quan chứng nhận (kiểm toán báo cáo năm của cơ quan chi trả); nghĩa vụ cấp tổ chức, log không có sự kiện tương ứng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc chỉ định và nhiệm vụ kiểm toán độc lập của tổ chức chứng nhận đối với tài khoản hàng năm của cơ quan chi trả, không có trong log."
+    }
+   }
+  },
+  "R1306:Art12(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ Nhà nước thành viên lập hệ thống tư vấn nông trại; là lập hệ thống, không có sự kiện trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nghĩa vụ cấp quốc gia của Nhà nước thành viên trong việc thiết lập hệ thống tư vấn trang trại, không phải sự kiện xử lý hồ sơ trong log."
+    }
+   }
+  },
+  "R1306:Art18(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Ủy ban chi trả hàng tháng cho chi tiêu của cơ quan chi trả; quan hệ tài chính Ủy ban – Nhà nước thành viên, không ở mức hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc Ủy ban châu Âu thanh toán hàng tháng cho các cơ quan chi trả dựa trên chi tiêu đã thực hiện, không phải sự kiện chi trả cho từng nông dân trong log."
+    }
+   }
+  },
+  "R1306:Art20(4)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Trao quyền cho Ủy ban ban hành văn bản thực thi ấn định khoản tiền chuẩn cho can thiệp công; không có nghĩa vụ kiểm được trên log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này trao quyền cho Ủy ban ban hành văn bản thực thi ấn định các khoản tiền tiêu chuẩn cho chi tiêu can thiệp công cộng, không liên quan đến log."
+    }
+   }
+  },
+  "R1306:Art30": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Cấm tài trợ kép cho chi tiêu EAFRD; log là chi trả trực tiếp và không có thông tin về các nguồn tài trợ khác."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nguyên tắc chi tiêu do quỹ EAFRD tài trợ không được nhận nguồn tài trợ nào khác từ ngân sách Liên minh, không có thông tin nguồn ngân sách trùng lặp trong log."
+    }
+   }
+  },
+  "R1306:Art33": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản dẫn chiếu áp dụng Art76 của 1303/2013 cho cam kết ngân sách phát triển nông thôn; cấp ngân sách, không ở mức hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ dẫn chiếu việc áp dụng Điều 76 của Quy định 1303/2013 đối với các cam kết ngân sách của Liên minh cho chương trình phát triển nông thôn."
+    }
+   }
+  },
+  "R1306:Art38(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Gián đoạn thời hạn tự động hủy cam kết ngân sách khi có tố tụng, với thông báo cho Ủy ban trước 31/12 năm N+3; cấp ngân sách, không có trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc gián đoạn thời hạn tự động hủy cam kết ngân sách giữa Ủy ban và Nhà nước thành viên đối với chương trình phát triển nông thôn, không phải sự kiện trong log."
+    }
+   }
+  },
+  "R1306:Art45(4)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Thông báo cho Ủy ban/Ủy ban quỹ về các biện pháp thông tin; không liên quan xử lý hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc thông báo cho Ủy ban về các biện pháp thông tin được dự kiến và thực hiện theo Điều 45, không liên quan đến xử lý hồ sơ trong log."
+    }
+   }
+  },
+  "R1306:Art48(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ Nhà nước thành viên cung cấp thông tin về bất thường/gian lận cho Ủy ban; là báo cáo Ủy ban, không có sự kiện trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nghĩa vụ của Nhà nước thành viên trong việc cung cấp thông tin cho Ủy ban về các sai phạm và vụ việc nghi ngờ gian lận, không có sự kiện trong log."
+    }
+   }
+  },
+  "R1306:Art52(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Ủy ban quyết định loại trừ chi tiêu khỏi tài trợ Liên minh (thanh toán tuân thủ); quan hệ Ủy ban – Nhà nước thành viên, không ở mức hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc Ủy ban ban hành văn bản thực thi loại trừ các khoản chi không đúng luật khỏi nguồn tài trợ của Liên minh, không phải sự kiện trên từng hồ sơ trong log."
+    }
+   }
+  },
+  "R1306:Art63(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Phải thu hồi số tiền (kèm lãi) và quyền hưởng bị rút hoặc bị phạt; log không có activity thu hồi tiền, và không xác định được trường hợp rút hỗ trợ do không đạt điều kiện vì log không ghi lý do quyết định."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc thu hồi các khoản tiền đã chi trả sai kèm tiền lãi và thu hồi quyền hưởng thanh toán, nhưng log không có sự kiện theo dõi quá trình thu hồi nợ từ nông dân."
+    }
+   }
+  },
+  "R1306:Art79(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản định nghĩa (\"commercial document\", \"third party\"), không đặt nghĩa vụ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ định nghĩa các thuật ngữ \"chứng từ thương mại\" và \"bên thứ ba\", không đặt ra nghĩa vụ nào."
+    }
+   }
+  },
+  "R1306:Art84(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nhà nước thành viên lập chương trình kiểm tra chứng từ thương mại của doanh nghiệp; là lập kế hoạch, không có sự kiện trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nghĩa vụ của Nhà nước thành viên lập chương trình kiểm tra chứng từ thương mại của các doanh nghiệp cho kỳ tiếp theo, không liên quan đến log."
+    }
+   }
+  },
+  "R1306:Art84(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Thực hiện chương trình kiểm tra nếu Ủy ban không có ý kiến trong tám tuần; quan hệ Nhà nước thành viên – Ủy ban, không ở mức hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định Nhà nước thành viên triển khai chương trình kiểm tra chứng từ thương mại nếu sau 8 tuần Ủy ban không có ý kiến, không phải quy trình xử lý hồ sơ trong log."
+    }
+   }
+  },
+  "R1306:Art87(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy định về hỗ trợ lẫn nhau giữa các Nhà nước thành viên khi thẩm tra doanh nghiệp (Art83); không phải xử lý từng hồ sơ chi trả, log không có sự kiện tương ứng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định quyền có mặt và yêu cầu xuất trình giấy tờ công vụ của công chức quốc gia yêu cầu khi tham gia kiểm tra chứng từ thương mại tại quốc gia khác, không có trong log."
+    }
+   }
+  },
+  "R1306:Art96(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Chỉ là \"may decide\" (cho phép) Nhà nước thành viên tiến hành kiểm tra hành chính về cross-compliance; không có nghĩa vụ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ cho phép (\"may\") Nhà nước thành viên quyết định thực hiện kiểm tra hành chính đối với tuân thủ chéo tùy theo yêu cầu hoặc tiêu chuẩn."
+    }
+   }
+  },
+  "R1306:Art99(4)": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Trần tổng giảm trừ ≤ tổng chi trả trong năm (Art99(1)); log có case:penalty_amount0 và case:amount_applied0 nhưng đây là so sánh số tiền giữa thuộc tính, không biểu diễn được bằng mẫu DECLARE theo activity, và penalty_amount không chỉ là phạt cross-compliance."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này giới hạn tổng số tiền giảm trừ và loại trừ do vi phạm tuân thủ chéo trong một năm không vượt quá tổng số tiền thanh toán được cấp, nhưng log không tách riêng số tiền phạt tuân thủ chéo với các khoản phạt khác."
+    }
+   }
+  },
+  "R1306:Art101(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Trao quyền cho Ủy ban ban hành văn bản ủy quyền (Art115); không có nghĩa vụ ở mức hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này trao quyền cho Ủy ban ban hành các văn bản được ủy quyền về cơ sở và điều kiện tính phạt hành chính tuân thủ chéo, không đặt nghĩa vụ trên hồ sơ."
+    }
+   }
+  },
+  "R1306:Art101(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Ủy ban ban hành văn bản thực thi về tính phạt; nghĩa vụ làm luật, không quan sát được trên log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định Ủy ban ban hành các văn bản thực thi về quy tắc thủ tục và kỹ thuật tính phạt hành chính tuân thủ chéo, không phải nghĩa vụ trên từng hồ sơ trong log."
+    }
+   }
+  },
+  "R1306:Art105(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quy định đơn vị tiền tệ euro cho quyết định và khai báo chi tiêu; log không ghi đơn vị tiền tệ, không có nghĩa vụ kiểm được theo hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định đơn vị tiền tệ trong các quyết định của Ủy ban và báo cáo chi tiêu của Nhà nước thành viên đối với chương trình phát triển nông thôn phải bằng đồng euro, không kiểm tra trên log."
+    }
+   }
+  },
+  "R1306:Art114": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Trao quyền cho Ủy ban ban hành văn bản thực thi về công bố người thụ hưởng; không có sự kiện tương ứng trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này trao quyền cho Ủy ban ban hành văn bản thực thi về hình thức và lịch biểu công bố thông tin người thụ hưởng, không tạo nghĩa vụ trên từng hồ sơ trong log."
+    }
+   }
+  },
+  "R1306:Art116(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Thủ tục ủy ban (comitology) của Ủy ban; không liên quan xử lý hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định thủ tục làm việc của ủy ban (committee procedure) khi Ủy ban châu Âu thông qua văn bản thực thi, không liên quan đến log."
+    }
+   }
+  },
+  "R1307:Art9(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Cấm chi trả cho người không thực hiện hoạt động tối thiểu trên diện tích tự nhiên; log không có thuộc tính/sự kiện về loại diện tích hay hoạt động tối thiểu (cần đoán), nên không kiểm được."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định không cấp chi trả trực tiếp cho người có diện tích đất chủ yếu được giữ tự nhiên mà không thực hiện hoạt động tối thiểu, nhưng log không có thuộc tính phân biệt loại đất này hay việc thực hiện hoạt động tối thiểu."
+    }
+   }
+  },
+  "R1307:Art14(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Quyết định của Nhà nước thành viên chuyển ngân sách giữa hai trụ cột và thông báo Ủy ban; mức quốc gia, không có trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này cho phép (\"may\") Nhà nước thành viên chuyển tối đa 15% trần ngân sách quốc gia hàng năm sang quỹ phát triển nông thôn EAFRD và thông báo cho Ủy ban, không phải quy trình ở mức hồ sơ."
+    }
+   }
+  },
+  "R1307:Art20(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Ủy ban tính khoản bổ sung trần quốc gia cho Croatia; không liên quan log (Đức)."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc Ủy ban tính toán số tiền bổ sung hàng năm vào trần ngân sách cho quỹ dự trữ rà phá bom mìn của Croatia, không áp dụng cho Đức và ở cấp độ vĩ mô."
+    }
+   }
+  },
+  "R1307:Art22(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Ủy ban ấn định trần quốc gia cho basic payment scheme; mức quốc gia."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc Ủy ban ban hành văn bản thực thi thiết lập trần quốc gia hàng năm cho chương trình thanh toán cơ bản của từng Nhà nước thành viên, không phải nghĩa vụ trên từng hồ sơ."
+    }
+   }
+  },
+  "R1307:Art25(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Giá trị đơn vị đồng nhất của quyền chi trả từ năm 2019; log chỉ đến 2017 và không có giá trị quyền chi trả."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định chậm nhất từ năm yêu cầu 2019 mọi quyền hưởng thanh toán trong một quốc gia hoặc khu vực phải có giá trị đơn vị đồng nhất, nằm ngoài giai đoạn log 2015–2017 và không có thuộc tính giá trị đơn vị quyền hưởng trong log."
+    }
+   }
+  },
+  "R1307:Art28": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "\"may provide\" — lựa chọn của Nhà nước thành viên về lợi nhuận bất thường do bán/cho thuê đất; log không có sự kiện chuyển nhượng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ cho phép (\"may\") Nhà nước thành viên quy định thu hồi khoản tăng giá trị quyền hưởng thanh toán mang tính lợi nhuận bất ngờ về quỹ dự trữ quốc gia khi bán hoặc cho thuê đất."
+    }
+   }
+  },
+  "R1307:Art30(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nhà nước thành viên lập dự trữ quốc gia bằng giảm trần tuyến tính; nghĩa vụ mức quốc gia, không có trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nghĩa vụ vĩ mô của Nhà nước thành viên trong việc lập quỹ dự trữ quốc gia thông qua giảm tuyến tính trần chương trình thanh toán cơ bản."
+    }
+   }
+  },
+  "R1307:Art33(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "\"may authorise\" — chỉ cho phép sửa khai báo; điều kiện giữ đủ số ha theo quyền chi trả không có trong log (không có số quyền chi trả)."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ cho phép (\"may\") Nhà nước thành viên cho phép nông dân sửa đổi bản kê khai trong những trường hợp có lý do chính đáng."
+    }
+   }
+  },
+  "R1307:Art37(6)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nghĩa vụ Nhà nước thành viên thông báo Ủy ban trước 31/3 về viện trợ quốc gia chuyển tiếp; mức quốc gia, không có trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nghĩa vụ của Nhà nước thành viên áp dụng SAPS phải thông báo quyết định cấp hỗ trợ quốc gia chuyển tiếp cho Ủy ban trước ngày 31 tháng 3 hàng năm, không phải sự kiện trong log."
+    }
+   }
+  },
+  "R1307:Art37(7)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "\"may decide\" về mức viện trợ quốc gia chuyển tiếp (chỉ cho nước áp dụng SAPS); không có nghĩa vụ kiểm được trên log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ cho phép (\"may\") Nhà nước thành viên quyết định số tiền hỗ trợ quốc gia chuyển tiếp được cấp trong phạm vi giới hạn."
+    }
+   }
+  },
+  "R1307:Art41(8)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "\"may apply\" giới hạn ha của redistributive payment ở mức thành viên pháp nhân; quyền lựa chọn, log không có thông tin thành viên."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ cho phép (\"may\") Nhà nước thành viên áp dụng giới hạn số lượng quyền hưởng thanh toán hoặc héc-ta tối đa ở cấp độ từng thành viên của pháp nhân hoặc nhóm người đối với thanh toán phân phối lại."
+    }
+   }
+  },
+  "R1307:Art42(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Ủy ban ban hành văn bản thực thi ấn định trần redistributive payment; mức quốc gia."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định Ủy ban ban hành văn bản thực thi ấn định trần tương ứng hàng năm cho khoản thanh toán phân phối lại, không phải nghĩa vụ trên từng hồ sơ."
+    }
+   }
+  },
+  "R1307:Art44(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Nghĩa vụ đa dạng cây trồng của nông dân theo diện tích đất canh tác; log chỉ có case:area tổng, không có đất canh tác, số loại cây hay tỉ lệ cây chính."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định số lượng cây trồng tối thiểu (2 hoặc 3 loại) và tỷ lệ diện tích tối đa (75%, 95%) khi diện tích đất canh tác từ 10–30 ha hoặc trên 30 ha, nhưng log không có thuộc tính số lượng loại cây trồng hay diện tích từng loại cây."
+    }
+   }
+  },
+  "R1307:Art44(4)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản định nghĩa \"crop\"; không đặt nghĩa vụ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này chỉ định nghĩa khái niệm \"cây trồng\" (crop) dùng cho Điều 44, không đặt ra nghĩa vụ hành vi nào."
+    }
+   }
+  },
+  "R1307:Art45(6)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Trao quyền cho Ủy ban ban hành văn bản ủy quyền về đồng cỏ lâu năm; không có nghĩa vụ ở mức hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này trao quyền cho Ủy ban ban hành các văn bản được ủy quyền liên quan đến đồng cỏ lâu năm, không đặt ra nghĩa vụ trên từng hồ sơ."
+    }
+   }
+  },
+  "R1307:Art46(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Cách tính diện tích vùng sinh thái (hệ số quy đổi/trọng số); log không có dữ liệu loại diện tích sinh thái."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc Nhà nước thành viên sử dụng các hệ số chuyển đổi và hệ số trọng số tại Phụ lục X khi tính tổng diện tích vùng trọng điểm sinh thái, nhưng log không có dữ liệu diện tích vùng trọng điểm sinh thái."
+    }
+   }
+  },
+  "R1307:Art48(4)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Công thức tính khoản chi cho vùng có hạn chế tự nhiên ở mức quốc gia; log không có thông tin vùng hay cách tính."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định công thức tính mức chi trả trên mỗi héc-ta cho các vùng có hạn chế tự nhiên và quyền giới hạn số héc-ta tối đa của Nhà nước thành viên, không có thuộc tính tương ứng trong log."
+    }
+   }
+  },
+  "R1307:Art52(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Điều kiện ngành/vùng được hỗ trợ gắn với sản xuất; quyết định chính sách quốc gia, log không có cờ coupled support."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định điều kiện cấp chính sách về việc chỉ cấp hỗ trợ gắn với sản xuất (coupled support) cho những ngành hoặc vùng gặp khó khăn nhất định, không quan sát được trên log."
+    }
+   }
+  },
+  "R1307:Art58(5)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Trao quyền cho Ủy ban ban hành văn bản về chi trả cho bông; không liên quan log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này trao quyền cho Ủy ban ban hành các văn bản được ủy quyền về điều kiện và yêu cầu hợp lệ đối với khoản thanh toán đặc thù cho cây bông, không liên quan đến log."
+    }
+   }
+  },
+  "R1307:Art58(6)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Ủy ban \"may adopt\" văn bản thực thi về giảm trừ chi trả bông; không có nghĩa vụ ở mức hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này cho phép Ủy ban ban hành văn bản thực thi về quy tắc tính mức giảm thanh toán đối với cây bông khi vượt diện tích cơ sở, không liên quan đến log."
+    }
+   }
+  },
+  "R1307:Art62(1)": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Hạn nộp đơn tham gia small farmers scheme (không muộn hơn 15/10/2015) là nghĩa vụ nông dân, nhưng log không có activity riêng cho đơn tham gia chương trình nông dân nhỏ (chỉ có cờ case:small farmer); dùng Payment application / Application / mail income làm proxy là đoán, nên không viết ràng buộc."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Khoản này quy định nông dân muốn tham gia chương trình nông dân nhỏ phải nộp đơn chậm nhất vào ngày 15/10/2015, nhưng log không có sự kiện riêng cho việc nộp đơn tham gia chương trình nông dân nhỏ (chỉ có đơn chung nộp trước tháng 5)."
+    }
+   }
+  },
+  "R640:Art7(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "\"may decide\" vận hành sổ đăng ký điện tử theo cơ quan chi trả và bảo đảm tương thích hệ thống; nghĩa vụ về hệ thống, không có trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này cho phép (\"may\") Nhà nước thành viên có nhiều cơ quan chi trả được vận hành sổ đăng ký điện tử ở cấp cơ quan chi trả và đảm bảo tính tương thích hệ thống, không phải sự kiện trên từng hồ sơ."
+    }
+   }
+  },
+  "R640:Art30(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Cách tính viện trợ theo số gia súc xác định được; log BPIC2018 là chi trả theo diện tích, không có số gia súc khai/xác định."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định tính tiền hỗ trợ dựa trên số vật nuôi xác định nếu số vật nuôi kê khai vượt quá số xác định, nhưng log không có dữ liệu về vật nuôi."
+    }
+   }
+  },
+  "R640:Art35(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Tiêu chí cân nhắc (mức độ, phạm vi, thời gian, tái phạm) khi quyết định tỉ lệ từ chối hỗ trợ phát triển nông thôn; log không ghi lý do/cách tính quyết định."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định các tiêu chí định tính (mức độ nghiêm trọng, phạm vi, thời gian kéo dài, tái phạm) mà Nhà nước thành viên phải xét khi quyết định tỷ lệ từ chối hoặc thu hồi hỗ trợ phát triển nông thôn, không quan sát được trong log."
+    }
+   }
+  },
+  "R640:Art35(5)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Loại trừ khỏi biện pháp phát triển nông thôn năm phát hiện và năm sau khi vi phạm nghiêm trọng; log không có cờ \"vi phạm nghiêm trọng\" và không liên kết được qua các năm cho cùng biện pháp (mã phạt không công bố ý nghĩa)."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc từ chối hoặc thu hồi toàn bộ hỗ trợ phát triển nông thôn và loại khỏi biện pháp trong 2 năm khi phát hiện vi phạm nghiêm trọng, nhưng log là hồ sơ chi trả trực tiếp và không có cờ phân loại vi phạm nghiêm trọng theo Điều 35(3)."
+    }
+   }
+  },
+  "R809:Art3(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "\"may be withdrawn at any time\" là quyền của người nộp đơn; nghĩa vụ \"shall be recorded\" của cơ quan không tạo ra trường hợp vi phạm kiểm được (log chỉ chứa các lần rút đã được ghi, VD Payment application / Application / withdraw)."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Khoản này cho phép người thụ hưởng rút đơn bất cứ lúc nào bằng văn bản và cơ quan có thẩm quyền phải ghi nhận việc rút đơn đó, nhưng log chỉ ghi nhận sự kiện rút đơn (`withdraw`) mà không có sự kiện nhận yêu cầu rút đơn trước đó để kiểm tra nghĩa vụ ghi nhận."
+    }
+   }
+  },
+  "R809:Art7(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Ngoại lệ miễn hoàn trả khi lỗi do cơ quan và không thông báo thu hồi trong 12 tháng; log không ghi lỗi của ai hay quyết định thu hồi/thông báo, phải đoán."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định miễn nghĩa vụ hoàn trả khoản thanh toán sai nếu lỗi do cơ quan có thẩm quyền và quyết định thu hồi không được thông báo trong vòng 12 tháng, nhưng log không có dữ liệu về lỗi của cơ quan hay thông báo thu hồi nợ."
+    }
+   }
+  },
+  "R809:Art9(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Nhà nước thành viên báo cáo dữ liệu kiểm tra cho Ủy ban trước 15/7 hằng năm; nghĩa vụ báo cáo, không có sự kiện trong log."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nghĩa vụ của Nhà nước thành viên phải thông báo dữ liệu và thống kê kiểm soát năm trước cho Ủy ban trước ngày 15 tháng 7 hàng năm, không phải sự kiện trên từng hồ sơ."
+    }
+   }
+  },
+  "R809:Art24(3)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Đánh giá rủi ro chung từ kết quả kiểm tra; nghĩa vụ phân tích tổng thể, không ở mức từng hồ sơ và log không có sự kiện tương ứng."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định nghĩa vụ đánh giá tổng thể kết quả kiểm tra để tìm nguyên nhân và biện pháp phòng ngừa rủi ro chung cho các hoạt động tương tự ở cấp quản lý, không phải bước xử lý từng hồ sơ trong log."
+    }
+   }
+  },
+  "R809:Art34(1)": {
+   "claude-opus-5-5": {
+    "observable": "unsure",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "unsure",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Thấp",
+     "reason": "Hồ sơ không hợp lệ/không đủ điều kiện không được vào tập mẫu kiểm tra (khoản thuộc phần phát triển nông thôn); log không có sự kiện xác định \"không hợp lệ khi nộp/sau kiểm tra hành chính\" — case:rejected không rõ thời điểm và lý do, dùng làm proxy là đoán."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": false,
+    "constraints": [
+     "Absence[Inspection / On-Site / initialize, None] ['case:rejected == True'] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Absence(Inspection / On-Site / initialize) | case:rejected == True"
+     ],
+     "needs_ref": "Không",
+     "confidence": "Thấp",
+     "reason": "Các đơn hoặc người nộp đơn bị xác định là không hợp lệ hoặc không đủ điều kiện nhận thanh toán thì không được đưa vào quần thể chọn mẫu kiểm tra (proxy: case:rejected == True ≈ đơn không đủ điều kiện thanh toán; proxy: Inspection / On-Site / initialize ≈ đưa vào diện kiểm tra tại chỗ)."
+    }
+   }
+  },
+  "R809:Art34(6)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Nghĩa vụ lưu lý do chọn mẫu và báo cho thanh tra viên; log có cờ case:selected_* nhưng không có sự kiện \"thông báo cho thanh tra viên\", không kiểm được vi phạm."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định cơ quan có thẩm quyền phải lưu hồ sơ lý do chọn mẫu kiểm tra tại chỗ và thông báo cho thanh tra viên trước khi bắt đầu kiểm tra, không có sự kiện thông báo nội bộ này trong log."
+    }
+   }
+  },
+  "R809:Art48(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Kiểm tra hành chính mọi đơn hỗ trợ thuộc biện pháp phát triển nông thôn ngoài IACS (Title IV Ch. II R809), không phải chi trả trực tiếp trong log; nghĩa vụ ghi chép quy trình cũng không quan sát được."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": false,
+    "constraints": [
+     "Existence[Control summary / Main / initialize, None] [] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Existence(Control summary / Main / initialize)"
+     ],
+     "needs_ref": "Không",
+     "confidence": "Thấp",
+     "reason": "Kiểm tra hành chính phải được thực hiện trên tất cả các đơn xin hỗ trợ, yêu cầu thanh toán và phải ghi nhận công việc kiểm soát đã thực hiện (proxy: Control summary / Main / initialize ≈ thực hiện và ghi nhận kiểm tra hành chính)."
+    }
+   }
+  },
+  "R809:Art49(1)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "TB",
+     "reason": "Kiểm tra tại chỗ đối với hoạt động phát triển nông thôn đã duyệt, \"to the extent possible\" trước lần chi cuối; không phải nghĩa vụ cứng và không thuộc phạm vi chi trả trực tiếp của log."
+    }
+   },
+   "gemini": {
+    "observable": "yes",
+    "tier4": false,
+    "constraints": [
+     "Precedence[Inspection / On-Site / performed, Payment application / Application / finish payment] ['case:selected_random == True'] None",
+     "Precedence[Inspection / On-Site / performed, Payment application / Application / finish payment] ['case:selected_risk == True'] None"
+    ],
+    "raw": {
+     "observable": "yes",
+     "constraints": [
+      "Precedence(Inspection / On-Site / performed → Payment application / Application / finish payment) | case:selected_random == True",
+      "Precedence(Inspection / On-Site / performed → Payment application / Application / finish payment) | case:selected_risk == True"
+     ],
+     "needs_ref": "Không",
+     "confidence": "Thấp",
+     "reason": "Các cuộc kiểm tra tại chỗ đối với các hồ sơ trong mẫu kiểm tra phải được thực hiện trước khi khoản thanh toán cuối cùng được chi trả (proxy: Inspection / On-Site / performed ≈ thực hiện kiểm tra tại chỗ; proxy: Payment application / Application / finish payment ≈ hoàn tất thanh toán cuối cùng)."
+    }
+   }
+  },
+  "R809:Art49(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Thanh tra viên tại chỗ không được tham gia kiểm tra hành chính cùng hồ sơ; log không có thuộc tính người thực hiện (resource)."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định thanh tra viên thực hiện kiểm tra tại chỗ không được là người đã tham gia kiểm tra hành chính của cùng hoạt động đó, nhưng bảng từ vựng log không có thuộc tính định danh nhân sự thực hiện từng sự kiện."
+    }
+   }
+  },
+  "R809:Art50(5)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Tăng tỉ lệ kiểm tra năm sau khi phát hiện vi phạm đáng kể; nghĩa vụ ở mức tổng thể (tỉ lệ mẫu), không ở mức từng hồ sơ."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định cơ quan có thẩm quyền phải tăng tỷ lệ mẫu kiểm tra tại chỗ vào năm lịch tiếp theo ở cấp độ toàn biện pháp hỗ trợ nếu phát hiện vi phạm nghiêm trọng, không phải nghĩa vụ trên từng hồ sơ."
+    }
+   }
+  },
+  "R809:Art70(2)": {
+   "claude-opus-5-5": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Phương pháp xác định tuân thủ (độ chính xác của phép đo) do cơ quan quyết định; log không có thông tin phương pháp đo."
+    }
+   },
+   "gemini": {
+    "observable": "no",
+    "tier4": null,
+    "constraints": [],
+    "raw": {
+     "observable": "no",
+     "constraints": [],
+     "needs_ref": "—",
+     "confidence": "Cao",
+     "reason": "Khoản này quy định việc xác định sự tuân thủ các yêu cầu và tiêu chuẩn bằng bất kỳ phương tiện thích hợp nào đảm bảo độ chính xác tương đương quy tắc quốc gia, không tạo ra ràng buộc sự kiện cụ thể trên log."
+    }
+   }
+  }
+ },
+ "seed": 2018
+}

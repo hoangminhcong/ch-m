@@ -1,0 +1,195 @@
+{
+ "status": "approved",
+ "approved_by": "chủ dự án",
+ "approved_at": "2026-11-20",
+ "approval_note": "Duyệt nguyên bản nháp trong phiên làm việc 2026-11-20 (0 mục sửa), gồm cả legal_terms_de. Không tham khảo gold hay kết quả chạy. Trong bài ghi: do Claude soạn từ mô tả bộ dữ liệu và thống kê log, người duyệt, 0 mục sửa.",
+ "drafted_by": "Claude (v2, 2026-11-16) — CẦN NGƯỜI DUYỆT, xem docs/ONTOLOGY_BPIC2018_DUYET.md — 2026-11-18: thêm legal_terms_de (thuật ngữ tiếng Đức cho tập Đức), cũng cần duyệt",
+ "sources": [
+  "BPIC2018 DATA.xml (doi:10.4121/uuid:3301445f-95e8-4ff0-98a4-901f1f204972): direct payments for German farmers, IACS, profil c/s; workflows are documents with states and actions, some scheduled automatically",
+  "data/processed/bpic2018_process_profile.json: activity names, years, case ratios, roles (org:resource)",
+  "Regulations (EU) 1306/2013, 1307/2013, 640/2014, 809/2014: defined terms (DefinedTerm)"
+ ],
+ "doctypes": {
+  "Payment application": {
+   "meaning": "the farmer's yearly application for direct payments (aid application / payment claim); its decision and payment steps",
+   "confidence": "high",
+   "basis": "present in 100% of cases every year; subprocess Application has mail income, decide, calculate, begin/finish payment",
+   "legal_terms": [
+    "aid application",
+    "single application",
+    "payment claim",
+    "application for direct payments",
+    "direct payments",
+    "basic payment"
+   ],
+   "legal_terms_de": [
+    "Sammelantrag",
+    "Sammelantrags",
+    "Antrag auf Direktzahlungen",
+    "Anträge auf Direktzahlungen",
+    "Basisprämie",
+    "Zahlungsantrag",
+    "Zahlungsanträge"
+   ]
+  },
+  "Entitlement application": {
+   "meaning": "application for the allocation of payment entitlements under the basic payment scheme",
+   "confidence": "medium",
+   "basis": "mostly 2015 (first year of the basic payment scheme); actions initialize, decide, calculate; subprocesses Change and Objection",
+   "legal_terms": [
+    "payment entitlement",
+    "allocation of payment entitlements",
+    "national reserve"
+   ],
+   "legal_terms_de": [
+    "Zahlungsansprüche",
+    "Zahlungsansprüchen",
+    "Zahlungsanspruch",
+    "Zuweisung von Zahlungsansprüchen",
+    "nationale Reserve",
+    "nationalen Reserve"
+   ]
+  },
+  "Parcel document": {
+   "meaning": "the farmer's declaration of agricultural parcels (2015 format)",
+   "confidence": "medium",
+   "basis": "only 2015; replaced in 2016–2017 by Geo parcel document (doctype_replacements in the process profile)",
+   "legal_terms": [
+    "agricultural parcel",
+    "parcel",
+    "declare all the agricultural parcels"
+   ],
+   "legal_terms_de": [
+    "landwirtschaftliche Parzelle",
+    "landwirtschaftlichen Parzelle",
+    "landwirtschaftlichen Parzellen",
+    "Parzelle",
+    "Parzellen"
+   ]
+  },
+  "Geo parcel document": {
+   "meaning": "the farmer's geo-spatial declaration of agricultural parcels (2016–2017 format)",
+   "confidence": "medium",
+   "basis": "only 2016–2017; subprocess Declared (parcels declared by the farmer) and Reported",
+   "legal_terms": [
+    "agricultural parcel",
+    "parcel",
+    "geo-spatial aid application",
+    "declare all the agricultural parcels"
+   ],
+   "legal_terms_de": [
+    "landwirtschaftliche Parzelle",
+    "landwirtschaftlichen Parzelle",
+    "landwirtschaftlichen Parzellen",
+    "Parzelle",
+    "Parzellen",
+    "geografisches Beihilfeantragsformular",
+    "geografischen Beihilfeantragsformular"
+   ]
+  },
+  "Reference alignment": {
+   "meaning": "cross-check of declared parcels against the reference parcels of the identification system for agricultural parcels",
+   "confidence": "low",
+   "basis": "name only; present in almost every case; mostly automated",
+   "legal_terms": [
+    "identification system for agricultural parcels",
+    "reference parcel",
+    "land parcel identification system"
+   ],
+   "legal_terms_de": [
+    "Referenzparzelle",
+    "Referenzparzellen",
+    "Referenzflächensystem",
+    "Referenzflächensysteme",
+    "System zur Identifizierung landwirtschaftlicher Parzellen"
+   ]
+  },
+  "Control summary": {
+   "meaning": "summary of the administrative checks and their results for the application",
+   "confidence": "low",
+   "basis": "name only; present in almost every case",
+   "legal_terms": [
+    "administrative checks",
+    "cross-checks"
+   ],
+   "legal_terms_de": [
+    "Verwaltungskontrollen",
+    "Verwaltungskontrolle",
+    "Gegenkontrollen"
+   ]
+  },
+  "Department control parcels": {
+   "meaning": "parcel checks carried out by the local department",
+   "confidence": "low",
+   "basis": "name only; 2015–2016",
+   "legal_terms": [
+    "administrative checks"
+   ],
+   "legal_terms_de": [
+    "Verwaltungskontrollen",
+    "Verwaltungskontrolle"
+   ]
+  },
+  "Inspection": {
+   "meaning": "on-the-spot checks, either on site or by remote sensing",
+   "confidence": "high",
+   "basis": "subprocesses On-Site and Remote; present in ~7% of cases (control sample)",
+   "legal_terms": [
+    "on-the-spot check",
+    "remote sensing",
+    "control sample",
+    "inspection"
+   ],
+   "legal_terms_de": [
+    "Vor-Ort-Kontrolle",
+    "Vor-Ort-Kontrollen",
+    "Fernerkundung",
+    "Kontrollstichprobe"
+   ]
+  }
+ },
+ "relations": [
+  {
+   "from": "Payment application",
+   "to": "Parcel document",
+   "type": "declares_parcels_in",
+   "years": [
+    2015
+   ],
+   "confidence": "medium"
+  },
+  {
+   "from": "Payment application",
+   "to": "Geo parcel document",
+   "type": "declares_parcels_in",
+   "years": [
+    2016,
+    2017
+   ],
+   "confidence": "medium"
+  },
+  {
+   "from": "Payment application",
+   "to": "Entitlement application",
+   "type": "uses_entitlements_from",
+   "confidence": "low"
+  },
+  {
+   "from": "Reference alignment",
+   "to": "Geo parcel document",
+   "type": "checks",
+   "confidence": "low"
+  },
+  {
+   "from": "Inspection",
+   "to": "Payment application",
+   "type": "checks",
+   "confidence": "medium"
+  }
+ ],
+ "applicant_initiated": [
+  "Payment application / Application / mail income",
+  "Geo parcel document / Declared / create"
+ ],
+ "applicant_initiated_note": "Mọi event đều do cơ quan ghi (org:resource toàn phía cơ quan); đây là các bước khởi phát bởi việc nông dân nộp hồ sơ. 'Objection' (khiếu nại) cũng có thể do nông dân khởi phát — chưa đưa vào vì chưa chắc."
+}

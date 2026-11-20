@@ -1,0 +1,98 @@
+{
+ "chunk": {
+  "article_id": "Article 8(1)",
+  "article_title": "Creditworthiness",
+  "text": "1. Member States shall ensure that, before the conclusion of the credit agreement, the creditor assesses the consumer's creditworthiness. Within 14 days, EUR 200."
+ },
+ "runs": [
+  {
+   "ast": {
+    "article_id": "Article 8(1)",
+    "template_name": "Precedence",
+    "activation_activity": "W_Validate application",
+    "target_activity": "O_Accepted",
+    "activation_attr": null,
+    "activation_op": null,
+    "activation_val": null,
+    "time_min": null,
+    "time_max": null,
+    "time_unit": null
+   },
+   "status": "PASSED",
+   "calls": [
+    [
+     {
+      "role": "system",
+      "content": "You are a formal compliance assistant for financial workflows. Translate the cited EU Directive clause into a formal DECLARE constraint in JSON format.\nAllowed DECLARE templates: ['Absence', 'Alternate Precedence', 'Alternate Response', 'Chain Precedence', 'Chain Response', 'Choice', 'Exactly1', 'Exclusive Choice', 'Existence', 'Init', 'Not Co-Existence', 'Not Precedence', 'Not Responded Existence', 'Not Response', 'Precedence', 'Responded Existence', 'Response']\nReturn valid JSON with keys: article_id, template_name, activation_activity, target_activity, activation_attr, activation_op, activation_val, time_min, time_max, time_unit.\nIMPORTANT RULES:\n1. Only specify activation_attr, activation_op, activation_val, or time_max if explicitly stated in the directive clause; otherwise, you MUST set them to null.\n2. Numeric monetary thresholds (e.g. 500) belong to activation_val as a float (e.g. 500.0) with activation_op (e.g. '<=', '>=').\n3. Durations (e.g. 7 days) belong to time_max (e.g. 7) with time_unit ('s', 'm', 'h', 'd')."
+     },
+     {
+      "role": "user",
+      "content": "Directive Clause (Article Example-1): The creditor shall verify the identity of the consumer before granting the credit.\nAllowed Activities: ['Identity_Verification', 'Account_Opening']\nAllowed Case Attributes: ['case:RequestedAmount']\nAllowed Event Attributes: ['Action']"
+     },
+     {
+      "role": "assistant",
+      "content": "{\"article_id\": \"Article Example-1\", \"template_name\": \"Precedence\", \"activation_activity\": \"Identity_Verification\", \"target_activity\": \"Account_Opening\", \"activation_attr\": null, \"activation_op\": null, \"activation_val\": null, \"time_min\": null, \"time_max\": null, \"time_unit\": null}"
+     },
+     {
+      "role": "user",
+      "content": "Directive Clause (Article Example-2): For incoming transfers exceeding EUR 5,000, the bank shall notify the compliance officer within 3 days.\nAllowed Activities: ['Receive_Transfer', 'Notify_Officer']\nAllowed Case Attributes: ['case:CustomerSegment']\nAllowed Event Attributes: ['TransferAmount']"
+     },
+     {
+      "role": "assistant",
+      "content": "{\"article_id\": \"Article Example-2\", \"template_name\": \"Response\", \"activation_activity\": \"Receive_Transfer\", \"target_activity\": \"Notify_Officer\", \"activation_attr\": \"TransferAmount\", \"activation_op\": \">\", \"activation_val\": 5000.0, \"time_min\": null, \"time_max\": 3, \"time_unit\": \"d\"}"
+     },
+     {
+      "role": "user",
+      "content": "Directive Clause (Article 8(1)): 1. Member States shall ensure that, before the conclusion of the credit agreement, the creditor assesses the consumer's creditworthiness. Within 14 days, EUR 200.\nAllowed Activities: ['A_Accepted', 'A_Cancelled', 'A_Complete', 'A_Concept', 'A_Create Application', 'A_Denied', 'A_Incomplete', 'A_Pending', 'A_Submitted', 'A_Validating', 'O_Accepted', 'O_Cancelled', 'O_Create Offer', 'O_Created', 'O_Refused', 'O_Returned', 'O_Sent (mail and online)', 'O_Sent (online only)', 'W_Assess potential fraud', 'W_Call after offers', 'W_Call incomplete files', 'W_Complete application', 'W_Handle leads', 'W_Personal Loan collection', 'W_Shortened completion ', 'W_Validate application']\nAllowed Case Attributes: ['case:LoanGoal', 'case:concept:name', 'case:ApplicationType', 'case:RequestedAmount']\nAllowed Event Attributes: ['Action', 'EventID', 'EventOrigin', 'Accepted', 'lifecycle:transition', 'time:timestamp', 'OfferedAmount', 'MonthlyCost', 'FirstWithdrawalAmount', 'CreditScore', 'Selected', 'OfferID', 'NumberOfTerms', 'concept:name', 'org:resource']\nReturn the DECLARE constraint as a valid JSON object."
+     }
+    ],
+    "You are a formal semantic compliance judge for financial process mining.\nCompare the original EU Directive 2008/48/EC legal clause with the back-translated business process constraint:\n- Original Legal Clause (Article 8(1)): \"1. Member States shall ensure that, before the conclusion of the credit agreement, the creditor assesses the consumer's creditworthiness. Within 14 days, EUR 200.\"\n- Candidate AST JSON: {\"article_id\": \"Article 8(1)\", \"decomposition\": null, \"template_name\": \"Precedence\", \"activation_activity\": \"W_Validate application\", \"target_activity\": \"O_Accepted\", \"activation_attr\": null, \"activation_op\": null, \"activation_val\": null, \"time_min\": null, \"time_max\": null, \"time_unit\": null}\n- Back-translated Constraint: \"Whenever 'O_Accepted' occurs, 'W_Validate application' must have occurred BEFORE it.\"\n\nContext:\nIn business process modeling for financial institutions, statutory principles are operationalized into concrete workflow steps and status transitions in the bank's IT system.\n- An operational workflow constraint that logically supports, facilitates, or implements the statutory obligation stated in the clause is a legitimate implementation and should be classified as EQUIVALENT.\n- Do NOT classify a constraint as BASELESS simply because IT activity names do not appear verbatim in the Directive text.\n- STRICTLY classify as BASELESS if and only if:\n   1. The transaction or domain is explicitly EXCLUDED from the Directive's scope by the clause;\n   2. The constraint introduces a quantitative threshold or deadline that is not stated in the clause;\n   3. The claimed rule contradicts the legal text (e.g. it turns a right granted to one party into an obligation imposed on that party).\n\nProvide compiler-style diagnostic feedback WITHOUT revealing any benchmark ground-truth answers.\nReturn JSON only: {\"verdict\": \"EQUIVALENT\" | \"REVERSED_ORDER\" | \"THRESHOLD_MISMATCH\" | \"BASELESS\", \"diagnostic_feedback\": \"...\"}\n"
+   ]
+  },
+  {
+   "ast": {
+    "article_id": "Article 8(1)",
+    "template_name": "Response",
+    "activation_activity": "O_Accepted",
+    "target_activity": "A_Pending",
+    "activation_attr": "OfferedAmount",
+    "activation_op": ">=",
+    "activation_val": 200.0,
+    "time_min": 0,
+    "time_max": 14,
+    "time_unit": "d"
+   },
+   "status": "PASSED",
+   "calls": [
+    [
+     {
+      "role": "system",
+      "content": "You are a formal compliance assistant for financial workflows. Translate the cited EU Directive clause into a formal DECLARE constraint in JSON format.\nAllowed DECLARE templates: ['Absence', 'Alternate Precedence', 'Alternate Response', 'Chain Precedence', 'Chain Response', 'Choice', 'Exactly1', 'Exclusive Choice', 'Existence', 'Init', 'Not Co-Existence', 'Not Precedence', 'Not Responded Existence', 'Not Response', 'Precedence', 'Responded Existence', 'Response']\nReturn valid JSON with keys: article_id, template_name, activation_activity, target_activity, activation_attr, activation_op, activation_val, time_min, time_max, time_unit.\nIMPORTANT RULES:\n1. Only specify activation_attr, activation_op, activation_val, or time_max if explicitly stated in the directive clause; otherwise, you MUST set them to null.\n2. Numeric monetary thresholds (e.g. 500) belong to activation_val as a float (e.g. 500.0) with activation_op (e.g. '<=', '>=').\n3. Durations (e.g. 7 days) belong to time_max (e.g. 7) with time_unit ('s', 'm', 'h', 'd')."
+     },
+     {
+      "role": "user",
+      "content": "Directive Clause (Article Example-1): The creditor shall verify the identity of the consumer before granting the credit.\nAllowed Activities: ['Identity_Verification', 'Account_Opening']\nAllowed Case Attributes: ['case:RequestedAmount']\nAllowed Event Attributes: ['Action']"
+     },
+     {
+      "role": "assistant",
+      "content": "{\"article_id\": \"Article Example-1\", \"template_name\": \"Precedence\", \"activation_activity\": \"Identity_Verification\", \"target_activity\": \"Account_Opening\", \"activation_attr\": null, \"activation_op\": null, \"activation_val\": null, \"time_min\": null, \"time_max\": null, \"time_unit\": null}"
+     },
+     {
+      "role": "user",
+      "content": "Directive Clause (Article Example-2): For incoming transfers exceeding EUR 5,000, the bank shall notify the compliance officer within 3 days.\nAllowed Activities: ['Receive_Transfer', 'Notify_Officer']\nAllowed Case Attributes: ['case:CustomerSegment']\nAllowed Event Attributes: ['TransferAmount']"
+     },
+     {
+      "role": "assistant",
+      "content": "{\"article_id\": \"Article Example-2\", \"template_name\": \"Response\", \"activation_activity\": \"Receive_Transfer\", \"target_activity\": \"Notify_Officer\", \"activation_attr\": \"TransferAmount\", \"activation_op\": \">\", \"activation_val\": 5000.0, \"time_min\": null, \"time_max\": 3, \"time_unit\": \"d\"}"
+     },
+     {
+      "role": "user",
+      "content": "Directive Clause (Article 8(1)): 1. Member States shall ensure that, before the conclusion of the credit agreement, the creditor assesses the consumer's creditworthiness. Within 14 days, EUR 200.\nAllowed Activities: ['A_Accepted', 'A_Cancelled', 'A_Complete', 'A_Concept', 'A_Create Application', 'A_Denied', 'A_Incomplete', 'A_Pending', 'A_Submitted', 'A_Validating', 'O_Accepted', 'O_Cancelled', 'O_Create Offer', 'O_Created', 'O_Refused', 'O_Returned', 'O_Sent (mail and online)', 'O_Sent (online only)', 'W_Assess potential fraud', 'W_Call after offers', 'W_Call incomplete files', 'W_Complete application', 'W_Handle leads', 'W_Personal Loan collection', 'W_Shortened completion ', 'W_Validate application']\nAllowed Case Attributes: ['case:LoanGoal', 'case:concept:name', 'case:ApplicationType', 'case:RequestedAmount']\nAllowed Event Attributes: ['Action', 'EventID', 'EventOrigin', 'Accepted', 'lifecycle:transition', 'time:timestamp', 'OfferedAmount', 'MonthlyCost', 'FirstWithdrawalAmount', 'CreditScore', 'Selected', 'OfferID', 'NumberOfTerms', 'concept:name', 'org:resource']\nReturn the DECLARE constraint as a valid JSON object."
+     }
+    ],
+    "You are a formal semantic compliance judge for financial process mining.\nCompare the original EU Directive 2008/48/EC legal clause with the back-translated business process constraint:\n- Original Legal Clause (Article 8(1)): \"1. Member States shall ensure that, before the conclusion of the credit agreement, the creditor assesses the consumer's creditworthiness. Within 14 days, EUR 200.\"\n- Candidate AST JSON: {\"article_id\": \"Article 8(1)\", \"decomposition\": null, \"template_name\": \"Response\", \"activation_activity\": \"O_Accepted\", \"target_activity\": \"A_Pending\", \"activation_attr\": \"OfferedAmount\", \"activation_op\": \">=\", \"activation_val\": 200.0, \"time_min\": 0, \"time_max\": 14, \"time_unit\": \"d\"}\n- Back-translated Constraint: \"Whenever 'O_Accepted' when OfferedAmount >= 200.0 occurs, 'A_Pending' must eventually occur AFTER it within 14 calendar days.\"\n\nContext:\nIn business process modeling for financial institutions, statutory principles are operationalized into concrete workflow steps and status transitions in the bank's IT system.\n- An operational workflow constraint that logically supports, facilitates, or implements the statutory obligation stated in the clause is a legitimate implementation and should be classified as EQUIVALENT.\n- Do NOT classify a constraint as BASELESS simply because IT activity names do not appear verbatim in the Directive text.\n- STRICTLY classify as BASELESS if and only if:\n   1. The transaction or domain is explicitly EXCLUDED from the Directive's scope by the clause;\n   2. The constraint introduces a quantitative threshold or deadline that is not stated in the clause;\n   3. The claimed rule contradicts the legal text (e.g. it turns a right granted to one party into an obligation imposed on that party).\n\nProvide compiler-style diagnostic feedback WITHOUT revealing any benchmark ground-truth answers.\nReturn JSON only: {\"verdict\": \"EQUIVALENT\" | \"REVERSED_ORDER\" | \"THRESHOLD_MISMATCH\" | \"BASELESS\", \"diagnostic_feedback\": \"...\"}\n"
+   ]
+  }
+ ],
+ "note": "Prompt BPIC2017 chụp 2026-11-09 từ code hiện tại; đã bỏ ', \"extra_conditions\": []' khỏi prompt trọng tài để khớp prompt trước khi AST có trường extra_conditions (2026-11-08)."
+}

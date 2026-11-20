@@ -1,0 +1,8199 @@
+{
+ "nodes": [
+  {
+   "id": "Doc:Payment application",
+   "label": "DocumentType",
+   "props": {
+    "name": "Payment application",
+    "meaning": "the farmer's yearly application for direct payments (aid application / payment claim); its decision and payment steps",
+    "confidence": "high"
+   }
+  },
+  {
+   "id": "Doc:Entitlement application",
+   "label": "DocumentType",
+   "props": {
+    "name": "Entitlement application",
+    "meaning": "application for the allocation of payment entitlements under the basic payment scheme",
+    "confidence": "medium"
+   }
+  },
+  {
+   "id": "Doc:Parcel document",
+   "label": "DocumentType",
+   "props": {
+    "name": "Parcel document",
+    "meaning": "the farmer's declaration of agricultural parcels (2015 format)",
+    "confidence": "medium"
+   }
+  },
+  {
+   "id": "Doc:Geo parcel document",
+   "label": "DocumentType",
+   "props": {
+    "name": "Geo parcel document",
+    "meaning": "the farmer's geo-spatial declaration of agricultural parcels (2016–2017 format)",
+    "confidence": "medium"
+   }
+  },
+  {
+   "id": "Doc:Reference alignment",
+   "label": "DocumentType",
+   "props": {
+    "name": "Reference alignment",
+    "meaning": "cross-check of declared parcels against the reference parcels of the identification system for agricultural parcels",
+    "confidence": "low"
+   }
+  },
+  {
+   "id": "Doc:Control summary",
+   "label": "DocumentType",
+   "props": {
+    "name": "Control summary",
+    "meaning": "summary of the administrative checks and their results for the application",
+    "confidence": "low"
+   }
+  },
+  {
+   "id": "Doc:Department control parcels",
+   "label": "DocumentType",
+   "props": {
+    "name": "Department control parcels",
+    "meaning": "parcel checks carried out by the local department",
+    "confidence": "low"
+   }
+  },
+  {
+   "id": "Doc:Inspection",
+   "label": "DocumentType",
+   "props": {
+    "name": "Inspection",
+    "meaning": "on-the-spot checks, either on site or by remote sensing",
+    "confidence": "high"
+   }
+  }
+ ],
+ "edges": [
+  {
+   "source": "Act:Control summary / Main / begin editing",
+   "target": "Doc:Control summary",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Control summary / Main / change department",
+   "target": "Doc:Control summary",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Control summary / Main / finish editing",
+   "target": "Doc:Control summary",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Control summary / Main / initialize",
+   "target": "Doc:Control summary",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Control summary / Main / insert document",
+   "target": "Doc:Control summary",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Control summary / Main / save",
+   "target": "Doc:Control summary",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Control summary / Main / take original document",
+   "target": "Doc:Control summary",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Department control parcels / Main / begin editing",
+   "target": "Doc:Department control parcels",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Department control parcels / Main / change department",
+   "target": "Doc:Department control parcels",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Department control parcels / Main / insert document",
+   "target": "Doc:Department control parcels",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Department control parcels / Main / performed",
+   "target": "Doc:Department control parcels",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Department control parcels / Main / remove document",
+   "target": "Doc:Department control parcels",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Department control parcels / Main / save",
+   "target": "Doc:Department control parcels",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Change / begin editing",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Change / calculate",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Change / change department",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Change / decide",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Change / finish editing",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Change / initialize",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Change / insert document",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Change / remove document",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Change / revoke decision",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Change / revoke withdrawal",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Change / withdraw",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Main / begin editing",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Main / calculate",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Main / decide",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Main / finish editing",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Main / initialize",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Main / insert document",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Main / mail valid",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Main / remove document",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Main / revoke decision",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Main / revoke withdrawal",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Main / save",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Main / take original document",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Main / withdraw",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / approve",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / begin admissibility check",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / begin editing",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / begin editing from refused",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / calculate",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / check admissibility",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / decide",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / finish editing",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / initialize",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / insert document",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / refuse",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / remove document",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / revoke approval",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / revoke decision",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / revoke withdrawal",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Entitlement application / Objection / withdraw",
+   "target": "Doc:Entitlement application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Declared / begin editing",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Declared / calculate",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Declared / correction GFM17",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Declared / create",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Declared / discard",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Declared / finish editing",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Declared / finish pre-check",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Declared / insert document",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Declared / remove document",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Declared / restart editing",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Main / calculate protocol",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Main / change department",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Main / clear",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Main / initialize",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Main / insert document",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Main / remove document",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Main / save",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Main / take original document",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Reported / begin editing",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Reported / calculate",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Reported / finish editing",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Reported / insert document",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Geo parcel document / Reported / remove document",
+   "target": "Doc:Geo parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / abort external",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / begin editing",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / begin preparations",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / cancel offline",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / finish editing",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / finish preparations",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / initialize",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / insert document",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / performed",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / performed offline",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / plan",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / prepare external",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / prepare offline",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / remove document",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / On-Site / save",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / Remote / abort external",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / Remote / begin editing",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / Remote / begin preparations",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / Remote / finish editing",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / Remote / finish preparations",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / Remote / initialize",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / Remote / insert document",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / Remote / performed",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / Remote / plan",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / Remote / prepare external",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Inspection / Remote / save",
+   "target": "Doc:Inspection",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Parcel document / Main / begin editing",
+   "target": "Doc:Parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Parcel document / Main / change department",
+   "target": "Doc:Parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Parcel document / Main / check",
+   "target": "Doc:Parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Parcel document / Main / discard",
+   "target": "Doc:Parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Parcel document / Main / finish editing",
+   "target": "Doc:Parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Parcel document / Main / initialize",
+   "target": "Doc:Parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Parcel document / Main / insert document",
+   "target": "Doc:Parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Parcel document / Main / remove document",
+   "target": "Doc:Parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Parcel document / Main / save",
+   "target": "Doc:Parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Parcel document / Main / take original document",
+   "target": "Doc:Parcel document",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / abort payment",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / begin editing",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / begin payment",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / calculate",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / decide",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / finish editing",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / finish payment",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / initialize",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / insert document",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / mail income",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / mail valid",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / remove document",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / revoke decision",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / revoke withdrawal",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Application / withdraw",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Change / abort payment",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Change / begin editing",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Change / begin payment",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Change / calculate",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Change / decide",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Change / finish editing",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Change / finish payment",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Change / initialize",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Change / insert document",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Change / remove document",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Change / revoke decision",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Change / revoke withdrawal",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Change / withdraw",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Main / change department",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Main / insert document",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Main / remove document",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Main / save",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Main / take original document",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / abort payment",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / approve",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / begin admissibility check",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / begin editing",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / begin editing from refused",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / begin payment",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / calculate",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / check admissibility",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / decide",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / finish editing",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / finish payment",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / initialize",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / insert document",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / refuse",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / remove document",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / revoke approval",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / revoke decision",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / revoke withdrawal",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Payment application / Objection / withdraw",
+   "target": "Doc:Payment application",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Reference alignment / Main / change department",
+   "target": "Doc:Reference alignment",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Reference alignment / Main / initialize",
+   "target": "Doc:Reference alignment",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Reference alignment / Main / insert document",
+   "target": "Doc:Reference alignment",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Reference alignment / Main / performed",
+   "target": "Doc:Reference alignment",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Reference alignment / Main / remove document",
+   "target": "Doc:Reference alignment",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Act:Reference alignment / Main / save",
+   "target": "Doc:Reference alignment",
+   "type": "OF_DOCTYPE",
+   "props": {}
+  },
+  {
+   "source": "Doc:Payment application",
+   "target": "Doc:Parcel document",
+   "type": "RELATED_DOCTYPE",
+   "props": {
+    "kind": "declares_parcels_in",
+    "confidence": "medium",
+    "approved_by": "chủ dự án",
+    "years": [
+     2015
+    ]
+   }
+  },
+  {
+   "source": "Doc:Payment application",
+   "target": "Doc:Geo parcel document",
+   "type": "RELATED_DOCTYPE",
+   "props": {
+    "kind": "declares_parcels_in",
+    "confidence": "medium",
+    "approved_by": "chủ dự án",
+    "years": [
+     2016,
+     2017
+    ]
+   }
+  },
+  {
+   "source": "Doc:Payment application",
+   "target": "Doc:Entitlement application",
+   "type": "RELATED_DOCTYPE",
+   "props": {
+    "kind": "uses_entitlements_from",
+    "confidence": "low",
+    "approved_by": "chủ dự án"
+   }
+  },
+  {
+   "source": "Doc:Reference alignment",
+   "target": "Doc:Geo parcel document",
+   "type": "RELATED_DOCTYPE",
+   "props": {
+    "kind": "checks",
+    "confidence": "low",
+    "approved_by": "chủ dự án"
+   }
+  },
+  {
+   "source": "Doc:Inspection",
+   "target": "Doc:Payment application",
+   "type": "RELATED_DOCTYPE",
+   "props": {
+    "kind": "checks",
+    "confidence": "medium",
+    "approved_by": "chủ dự án"
+   }
+  },
+  {
+   "source": "R1306:Art2(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art4(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art6",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "inspection"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art9(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art21",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "inspection",
+     "remote sensing"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art22",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "remote sensing"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art24(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art25",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art26(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art47(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art47(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art48(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art50(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art52(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "inspection"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art52(4)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "inspection"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art52(5)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "inspection"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art59(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art59(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art59(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art59(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art59(4)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art59(6)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art59(7)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art59(7)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art61",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art61",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art61",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art61",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art62(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art62(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art63(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art63(3)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art63(5)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art64(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art64(5)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art67(4)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art67(4)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art67(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art68(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art68(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art68(1)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "identification system for agricultural parcels"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art69(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art69(2)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "cross-checks"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art70(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art70(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art70(1)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "identification system for agricultural parcels"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art70(2)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "identification system for agricultural parcels"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art71(1)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "cross-checks"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art71(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art71(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art71(1)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "identification system for agricultural parcels"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art72(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art72(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art72(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art72(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "application for direct payments",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art72(2)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel",
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art72(2)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel",
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art72(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art72(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art72(5)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art73",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art74(1)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art74(1)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art74(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art74(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art74(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art74(3)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art74(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check",
+     "remote sensing"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art74(3)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art75(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "direct payments",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art75(2)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art75(2)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art76(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art76(2)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art76(2)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art76(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art76(2)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "identification system for agricultural parcels",
+     "reference parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art77(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art77(5)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art78",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art78",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art78",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art81(1)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "cross-checks"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art83(3)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "cross-checks"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art92",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art93(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art96(2)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art96(2)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art96(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art97(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art97(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art99(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art103(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "inspection"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art110(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art110(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1306:Art116(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art1",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment",
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art3",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art4(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art6(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art6(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art7(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art7(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art8(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art8(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art8(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art9(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art9(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art9(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art9(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art9(5)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "allocation of payment entitlements",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art9(5)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art10(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art11(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art11(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art12",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art14(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art14(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art17",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art18(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment",
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art18(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art18(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art19(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art19(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art19(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art19(5)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art19(6)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art19(7)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art19(8)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art20(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art20(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art20(3)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art20(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art20(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art20(5)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art21(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art21(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art21(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art21(3)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art21(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art21(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art22(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art22(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art22(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art22(5)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art23(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art23(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art23(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art23(5)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art24(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "allocation of payment entitlements",
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art24(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "application for direct payments",
+     "basic payment",
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art24(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art24(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art24(3)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art24(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "allocation of payment entitlements",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art24(5)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art24(5)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art24(6)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art24(7)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art24(8)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art24(9)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "allocation of payment entitlements"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art24(11)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "allocation of payment entitlements",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art25(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art25(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art25(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art25(3)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art25(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art25(5)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art25(5)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art25(7)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art25(8)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art25(9)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art25(10)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art26(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art26(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art26(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art26(3)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art26(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art26(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art26(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art26(5)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art26(5)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art27",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art27",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art28",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art30(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art30(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art30(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art30(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art30(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art30(5)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art30(5)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art30(6)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art30(7)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art30(7)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art30(8)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art30(8)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art30(9)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art30(9)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art31(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art31(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art31(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art32(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art32(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art33(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art33(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art33(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art33(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art33(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art33(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art34(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art34(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art34(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art34(3)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art34(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art34(5)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art35(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "allocation of payment entitlements",
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art35(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art35(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art36(5)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art37(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art39(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "allocation of payment entitlements",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art39(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "application for direct payments",
+     "basic payment",
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art39(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art39(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art39(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art39(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "allocation of payment entitlements",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art40(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art40(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art40(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art40(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art40(3)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art40(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art40(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art40(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art40(5)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art41(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art41(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art41(3)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art41(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art41(8)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art43(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art43(9)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art44(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art48(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art48(3)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art50(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art50(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art50(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art50(6)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art50(6)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art50(9)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art50(10)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art52(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art52(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art53(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art53(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art61(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art62(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art62(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art64(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art64(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art64(3)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art64(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art65(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art67(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art69(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:Art71(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art1",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art1",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "identification system for agricultural parcels"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art2(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art2(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art2(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art2(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art2(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "direct payments",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art2(1)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "identification system for agricultural parcels",
+     "reference parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art4(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art5(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art5(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art5(1)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "identification system for agricultural parcels",
+     "reference parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art5(2)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art5(2)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art5(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art5(2)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "reference parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art5(3)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "reference parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art5(5)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art5(5)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art6(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art6(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art6(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art6(1)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "identification system for agricultural parcels",
+     "reference parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art6(2)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "reference parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art7(1)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "cross-checks"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art7(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art8",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art9(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art9(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art9(2)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art9(2)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art9(3)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel",
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art9(3)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel",
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art10(1)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "reference parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art10(2)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art10(2)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art11",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "application for direct payments",
+     "basic payment",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art12",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art12",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art13(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art13(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art13(3)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art13(3)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art13(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment claim",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art14",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art15(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art15(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art15(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art16(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "declare all the agricultural parcels",
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art16(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "declare all the agricultural parcels",
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art16(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments",
+     "payment claim",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art17(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art17(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art17(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art18(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "allocation of payment entitlements",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art18(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art18(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art18(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art18(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art18(5)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art18(6)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art18(7)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art18(7)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art23(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art23(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art23(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "basic payment",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art30(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art30(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art30(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art30(3)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art30(3)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art30(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art30(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art31(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art31(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art34",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art37(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art43",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "direct payments",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R640:Art44",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art1",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art1",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art1",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art2(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "direct payments",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art3(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art3(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art4",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art6(2)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art6(2)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art8(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art8(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art9(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art9(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art10",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art11(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art11(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art12(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "direct payments",
+     "payment claim",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art12(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art13(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art14(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art14(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art14(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art14(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment",
+     "payment claim",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art14(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art14(3)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art14(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art15(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art15(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art15(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art15(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment claim",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art15(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment claim",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art15(3)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art15(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art15(3)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art15(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment claim",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art16",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art16",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel",
+     "geo-spatial aid application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(3)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "geo-spatial aid application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(4)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(4)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(4)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "reference parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(5)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(5)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(5)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "reference parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(6)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(6)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(6)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(7)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(7)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(7)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art17(8)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art18",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art18",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "reference parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art19(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art19(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art20",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art21(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art21(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art21(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art21(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art22(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "allocation of payment entitlements",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art22(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art22(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "allocation of payment entitlements"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art22(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art23(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art23(2)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art23(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art23(3)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "national reserve",
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art23(4)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art23(5)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art23(5)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art24(1)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art24(1)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art24(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art24(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art24(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art24(4)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "inspection",
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art25",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art25",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art26(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art26(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art26(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art26(4)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check",
+     "remote sensing"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art27",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art28(1)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks",
+     "cross-checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art28(1)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art28(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art29(1)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks",
+     "cross-checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art29(1)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art29(1)",
+   "target": "Doc:Entitlement application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment entitlement"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art29(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel",
+     "geo-spatial aid application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art29(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art29(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment claim",
+     "single application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art29(1)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "identification system for agricultural parcels",
+     "reference parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art29(2)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "cross-checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art29(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art29(3)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art29(3)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art29(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art29(3)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "reference parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art30",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample",
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art30",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art31(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample",
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art31(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art31(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art31(3)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "identification system for agricultural parcels"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art32(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample",
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art33(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample",
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art33(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample",
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art34(1)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art34(1)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art34(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample",
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art34(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art34(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art34(4)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art34(6)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art34(7)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art34(7)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art35",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art36(2)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "cross-checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art36(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art36(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art36(2)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "identification system for agricultural parcels"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art36(3)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art36(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art36(3)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art36(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art36(3)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "identification system for agricultural parcels"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art36(4)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art36(5)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art36(6)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art37(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art37(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art37(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art37(1)",
+   "target": "Doc:Reference alignment",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "reference parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art37(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art37(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art37(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(2)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(2)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "remote sensing"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(4)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(4)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(5)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(5)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(7)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(7)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(8)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(8)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art38(8)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art39(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art39(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art39(4)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art40",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel",
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art40",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "inspection",
+     "on-the-spot check",
+     "remote sensing"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art40",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel",
+     "parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art40",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art41(1)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art41(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art41(1)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art41(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art41(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check",
+     "remote sensing"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art42(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art42(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art42(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art42(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art43(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art43(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art43(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "inspection",
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art43(4)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art45(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art45(4)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "inspection"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art47(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art47(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art48(1)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art48(1)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art48(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art48(2)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art48(2)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art48(3)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art48(3)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art48(3)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art48(4)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art48(4)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art48(5)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art48(5)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art48(5)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art49(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art49(2)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art49(2)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art49(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art50(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art50(2)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art50(2)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art50(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art50(5)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art50(6)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art51(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art51(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art51(2)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art51(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art51(4)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art53(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art53(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art54",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art54",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art54",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art55",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art55",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art55",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art56",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art56",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art56",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art57",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art57",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art57",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art58",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art58",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art58",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art59",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art59",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art59",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art60(2)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art60(2)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art60(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample",
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art60(3)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art60(3)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art61(1)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art61(1)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art61(2)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art61(2)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art62",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art62",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art62",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art63(1)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art63(1)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art63(1)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art63(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art64",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art65(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art68(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample",
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art68(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art68(4)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art69(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art69(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art69(4)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "control sample"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art69(6)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art70(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art71(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art71(2)",
+   "target": "Doc:Geo parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art71(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "inspection",
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art71(2)",
+   "target": "Doc:Parcel document",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "agricultural parcel"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art71(4)",
+   "target": "Doc:Control summary",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art71(4)",
+   "target": "Doc:Department control parcels",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "administrative checks"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art71(4)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art71(5)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art71(6)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art71(6)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art72(1)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art72(2)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art72(3)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art72(4)",
+   "target": "Doc:Inspection",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "on-the-spot check"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art73(4)",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application"
+    ]
+   }
+  },
+  {
+   "source": "R809:Art76",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "aid application",
+     "payment claim"
+    ]
+   }
+  },
+  {
+   "source": "R1307:AnnexI",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment",
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:AnnexV",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "basic payment",
+     "direct payments"
+    ]
+   }
+  },
+  {
+   "source": "R1307:AnnexVI",
+   "target": "Doc:Payment application",
+   "type": "MAPS_TO",
+   "props": {
+    "approved_by": "chủ dự án",
+    "terms": [
+     "direct payments"
+    ]
+   }
+  }
+ ],
+ "meta": {
+  "ontology_approved_by": "chủ dự án",
+  "ontology_approved_at": "2026-11-20",
+  "provisions_with_text": 979,
+  "provisions_mapped": 399,
+  "maps_to_per_doctype": {
+   "Doc:Control summary": 36,
+   "Doc:Department control parcels": 29,
+   "Doc:Entitlement application": 111,
+   "Doc:Geo parcel document": 43,
+   "Doc:Inspection": 112,
+   "Doc:Parcel document": 42,
+   "Doc:Payment application": 228,
+   "Doc:Reference alignment": 22
+  },
+  "unmapped_activities": []
+ }
+}

@@ -1,0 +1,1271 @@
+{
+  "dataset": "BPIC2018",
+  "source": "knowledge_graph",
+  "valid_activities": [
+    "Control summary / Main / begin editing",
+    "Control summary / Main / change department",
+    "Control summary / Main / finish editing",
+    "Control summary / Main / initialize",
+    "Control summary / Main / insert document",
+    "Control summary / Main / save",
+    "Control summary / Main / take original document",
+    "Department control parcels / Main / begin editing",
+    "Department control parcels / Main / change department",
+    "Department control parcels / Main / insert document",
+    "Department control parcels / Main / performed",
+    "Department control parcels / Main / remove document",
+    "Department control parcels / Main / save",
+    "Entitlement application / Change / begin editing",
+    "Entitlement application / Change / calculate",
+    "Entitlement application / Change / change department",
+    "Entitlement application / Change / decide",
+    "Entitlement application / Change / finish editing",
+    "Entitlement application / Change / initialize",
+    "Entitlement application / Change / insert document",
+    "Entitlement application / Change / remove document",
+    "Entitlement application / Change / revoke decision",
+    "Entitlement application / Change / revoke withdrawal",
+    "Entitlement application / Change / withdraw",
+    "Entitlement application / Main / begin editing",
+    "Entitlement application / Main / calculate",
+    "Entitlement application / Main / decide",
+    "Entitlement application / Main / finish editing",
+    "Entitlement application / Main / initialize",
+    "Entitlement application / Main / insert document",
+    "Entitlement application / Main / mail valid",
+    "Entitlement application / Main / remove document",
+    "Entitlement application / Main / revoke decision",
+    "Entitlement application / Main / revoke withdrawal",
+    "Entitlement application / Main / save",
+    "Entitlement application / Main / take original document",
+    "Entitlement application / Main / withdraw",
+    "Entitlement application / Objection / approve",
+    "Entitlement application / Objection / begin admissibility check",
+    "Entitlement application / Objection / begin editing",
+    "Entitlement application / Objection / begin editing from refused",
+    "Entitlement application / Objection / calculate",
+    "Entitlement application / Objection / check admissibility",
+    "Entitlement application / Objection / decide",
+    "Entitlement application / Objection / finish editing",
+    "Entitlement application / Objection / initialize",
+    "Entitlement application / Objection / insert document",
+    "Entitlement application / Objection / refuse",
+    "Entitlement application / Objection / remove document",
+    "Entitlement application / Objection / revoke approval",
+    "Entitlement application / Objection / revoke decision",
+    "Entitlement application / Objection / revoke withdrawal",
+    "Entitlement application / Objection / withdraw",
+    "Geo parcel document / Declared / begin editing",
+    "Geo parcel document / Declared / calculate",
+    "Geo parcel document / Declared / correction GFM17",
+    "Geo parcel document / Declared / create",
+    "Geo parcel document / Declared / discard",
+    "Geo parcel document / Declared / finish editing",
+    "Geo parcel document / Declared / finish pre-check",
+    "Geo parcel document / Declared / insert document",
+    "Geo parcel document / Declared / remove document",
+    "Geo parcel document / Declared / restart editing",
+    "Geo parcel document / Main / calculate protocol",
+    "Geo parcel document / Main / change department",
+    "Geo parcel document / Main / clear",
+    "Geo parcel document / Main / initialize",
+    "Geo parcel document / Main / insert document",
+    "Geo parcel document / Main / remove document",
+    "Geo parcel document / Main / save",
+    "Geo parcel document / Main / take original document",
+    "Geo parcel document / Reported / begin editing",
+    "Geo parcel document / Reported / calculate",
+    "Geo parcel document / Reported / finish editing",
+    "Geo parcel document / Reported / insert document",
+    "Geo parcel document / Reported / remove document",
+    "Inspection / On-Site / abort external",
+    "Inspection / On-Site / begin editing",
+    "Inspection / On-Site / begin preparations",
+    "Inspection / On-Site / cancel offline",
+    "Inspection / On-Site / finish editing",
+    "Inspection / On-Site / finish preparations",
+    "Inspection / On-Site / initialize",
+    "Inspection / On-Site / insert document",
+    "Inspection / On-Site / performed",
+    "Inspection / On-Site / performed offline",
+    "Inspection / On-Site / plan",
+    "Inspection / On-Site / prepare external",
+    "Inspection / On-Site / prepare offline",
+    "Inspection / On-Site / remove document",
+    "Inspection / On-Site / save",
+    "Inspection / Remote / abort external",
+    "Inspection / Remote / begin editing",
+    "Inspection / Remote / begin preparations",
+    "Inspection / Remote / finish editing",
+    "Inspection / Remote / finish preparations",
+    "Inspection / Remote / initialize",
+    "Inspection / Remote / insert document",
+    "Inspection / Remote / performed",
+    "Inspection / Remote / plan",
+    "Inspection / Remote / prepare external",
+    "Inspection / Remote / save",
+    "Parcel document / Main / begin editing",
+    "Parcel document / Main / change department",
+    "Parcel document / Main / check",
+    "Parcel document / Main / discard",
+    "Parcel document / Main / finish editing",
+    "Parcel document / Main / initialize",
+    "Parcel document / Main / insert document",
+    "Parcel document / Main / remove document",
+    "Parcel document / Main / save",
+    "Parcel document / Main / take original document",
+    "Payment application / Application / abort payment",
+    "Payment application / Application / begin editing",
+    "Payment application / Application / begin payment",
+    "Payment application / Application / calculate",
+    "Payment application / Application / decide",
+    "Payment application / Application / finish editing",
+    "Payment application / Application / finish payment",
+    "Payment application / Application / initialize",
+    "Payment application / Application / insert document",
+    "Payment application / Application / mail income",
+    "Payment application / Application / mail valid",
+    "Payment application / Application / remove document",
+    "Payment application / Application / revoke decision",
+    "Payment application / Application / revoke withdrawal",
+    "Payment application / Application / withdraw",
+    "Payment application / Change / abort payment",
+    "Payment application / Change / begin editing",
+    "Payment application / Change / begin payment",
+    "Payment application / Change / calculate",
+    "Payment application / Change / decide",
+    "Payment application / Change / finish editing",
+    "Payment application / Change / finish payment",
+    "Payment application / Change / initialize",
+    "Payment application / Change / insert document",
+    "Payment application / Change / remove document",
+    "Payment application / Change / revoke decision",
+    "Payment application / Change / revoke withdrawal",
+    "Payment application / Change / withdraw",
+    "Payment application / Main / change department",
+    "Payment application / Main / insert document",
+    "Payment application / Main / remove document",
+    "Payment application / Main / save",
+    "Payment application / Main / take original document",
+    "Payment application / Objection / abort payment",
+    "Payment application / Objection / approve",
+    "Payment application / Objection / begin admissibility check",
+    "Payment application / Objection / begin editing",
+    "Payment application / Objection / begin editing from refused",
+    "Payment application / Objection / begin payment",
+    "Payment application / Objection / calculate",
+    "Payment application / Objection / check admissibility",
+    "Payment application / Objection / decide",
+    "Payment application / Objection / finish editing",
+    "Payment application / Objection / finish payment",
+    "Payment application / Objection / initialize",
+    "Payment application / Objection / insert document",
+    "Payment application / Objection / refuse",
+    "Payment application / Objection / remove document",
+    "Payment application / Objection / revoke approval",
+    "Payment application / Objection / revoke decision",
+    "Payment application / Objection / revoke withdrawal",
+    "Payment application / Objection / withdraw",
+    "Reference alignment / Main / change department",
+    "Reference alignment / Main / initialize",
+    "Reference alignment / Main / insert document",
+    "Reference alignment / Main / performed",
+    "Reference alignment / Main / remove document",
+    "Reference alignment / Main / save"
+  ],
+  "activities_by_origin": {
+    "Control summary": [
+      "Control summary / Main / begin editing",
+      "Control summary / Main / change department",
+      "Control summary / Main / finish editing",
+      "Control summary / Main / initialize",
+      "Control summary / Main / insert document",
+      "Control summary / Main / save",
+      "Control summary / Main / take original document"
+    ],
+    "Department control parcels": [
+      "Department control parcels / Main / begin editing",
+      "Department control parcels / Main / change department",
+      "Department control parcels / Main / insert document",
+      "Department control parcels / Main / performed",
+      "Department control parcels / Main / remove document",
+      "Department control parcels / Main / save"
+    ],
+    "Entitlement application": [
+      "Entitlement application / Change / begin editing",
+      "Entitlement application / Change / calculate",
+      "Entitlement application / Change / change department",
+      "Entitlement application / Change / decide",
+      "Entitlement application / Change / finish editing",
+      "Entitlement application / Change / initialize",
+      "Entitlement application / Change / insert document",
+      "Entitlement application / Change / remove document",
+      "Entitlement application / Change / revoke decision",
+      "Entitlement application / Change / revoke withdrawal",
+      "Entitlement application / Change / withdraw",
+      "Entitlement application / Main / begin editing",
+      "Entitlement application / Main / calculate",
+      "Entitlement application / Main / decide",
+      "Entitlement application / Main / finish editing",
+      "Entitlement application / Main / initialize",
+      "Entitlement application / Main / insert document",
+      "Entitlement application / Main / mail valid",
+      "Entitlement application / Main / remove document",
+      "Entitlement application / Main / revoke decision",
+      "Entitlement application / Main / revoke withdrawal",
+      "Entitlement application / Main / save",
+      "Entitlement application / Main / take original document",
+      "Entitlement application / Main / withdraw",
+      "Entitlement application / Objection / approve",
+      "Entitlement application / Objection / begin admissibility check",
+      "Entitlement application / Objection / begin editing",
+      "Entitlement application / Objection / begin editing from refused",
+      "Entitlement application / Objection / calculate",
+      "Entitlement application / Objection / check admissibility",
+      "Entitlement application / Objection / decide",
+      "Entitlement application / Objection / finish editing",
+      "Entitlement application / Objection / initialize",
+      "Entitlement application / Objection / insert document",
+      "Entitlement application / Objection / refuse",
+      "Entitlement application / Objection / remove document",
+      "Entitlement application / Objection / revoke approval",
+      "Entitlement application / Objection / revoke decision",
+      "Entitlement application / Objection / revoke withdrawal",
+      "Entitlement application / Objection / withdraw"
+    ],
+    "Geo parcel document": [
+      "Geo parcel document / Declared / begin editing",
+      "Geo parcel document / Declared / calculate",
+      "Geo parcel document / Declared / correction GFM17",
+      "Geo parcel document / Declared / create",
+      "Geo parcel document / Declared / discard",
+      "Geo parcel document / Declared / finish editing",
+      "Geo parcel document / Declared / finish pre-check",
+      "Geo parcel document / Declared / insert document",
+      "Geo parcel document / Declared / remove document",
+      "Geo parcel document / Declared / restart editing",
+      "Geo parcel document / Main / calculate protocol",
+      "Geo parcel document / Main / change department",
+      "Geo parcel document / Main / clear",
+      "Geo parcel document / Main / initialize",
+      "Geo parcel document / Main / insert document",
+      "Geo parcel document / Main / remove document",
+      "Geo parcel document / Main / save",
+      "Geo parcel document / Main / take original document",
+      "Geo parcel document / Reported / begin editing",
+      "Geo parcel document / Reported / calculate",
+      "Geo parcel document / Reported / finish editing",
+      "Geo parcel document / Reported / insert document",
+      "Geo parcel document / Reported / remove document"
+    ],
+    "Inspection": [
+      "Inspection / On-Site / abort external",
+      "Inspection / On-Site / begin editing",
+      "Inspection / On-Site / begin preparations",
+      "Inspection / On-Site / cancel offline",
+      "Inspection / On-Site / finish editing",
+      "Inspection / On-Site / finish preparations",
+      "Inspection / On-Site / initialize",
+      "Inspection / On-Site / insert document",
+      "Inspection / On-Site / performed",
+      "Inspection / On-Site / performed offline",
+      "Inspection / On-Site / plan",
+      "Inspection / On-Site / prepare external",
+      "Inspection / On-Site / prepare offline",
+      "Inspection / On-Site / remove document",
+      "Inspection / On-Site / save",
+      "Inspection / Remote / abort external",
+      "Inspection / Remote / begin editing",
+      "Inspection / Remote / begin preparations",
+      "Inspection / Remote / finish editing",
+      "Inspection / Remote / finish preparations",
+      "Inspection / Remote / initialize",
+      "Inspection / Remote / insert document",
+      "Inspection / Remote / performed",
+      "Inspection / Remote / plan",
+      "Inspection / Remote / prepare external",
+      "Inspection / Remote / save"
+    ],
+    "Parcel document": [
+      "Parcel document / Main / begin editing",
+      "Parcel document / Main / change department",
+      "Parcel document / Main / check",
+      "Parcel document / Main / discard",
+      "Parcel document / Main / finish editing",
+      "Parcel document / Main / initialize",
+      "Parcel document / Main / insert document",
+      "Parcel document / Main / remove document",
+      "Parcel document / Main / save",
+      "Parcel document / Main / take original document"
+    ],
+    "Payment application": [
+      "Payment application / Application / abort payment",
+      "Payment application / Application / begin editing",
+      "Payment application / Application / begin payment",
+      "Payment application / Application / calculate",
+      "Payment application / Application / decide",
+      "Payment application / Application / finish editing",
+      "Payment application / Application / finish payment",
+      "Payment application / Application / initialize",
+      "Payment application / Application / insert document",
+      "Payment application / Application / mail income",
+      "Payment application / Application / mail valid",
+      "Payment application / Application / remove document",
+      "Payment application / Application / revoke decision",
+      "Payment application / Application / revoke withdrawal",
+      "Payment application / Application / withdraw",
+      "Payment application / Change / abort payment",
+      "Payment application / Change / begin editing",
+      "Payment application / Change / begin payment",
+      "Payment application / Change / calculate",
+      "Payment application / Change / decide",
+      "Payment application / Change / finish editing",
+      "Payment application / Change / finish payment",
+      "Payment application / Change / initialize",
+      "Payment application / Change / insert document",
+      "Payment application / Change / remove document",
+      "Payment application / Change / revoke decision",
+      "Payment application / Change / revoke withdrawal",
+      "Payment application / Change / withdraw",
+      "Payment application / Main / change department",
+      "Payment application / Main / insert document",
+      "Payment application / Main / remove document",
+      "Payment application / Main / save",
+      "Payment application / Main / take original document",
+      "Payment application / Objection / abort payment",
+      "Payment application / Objection / approve",
+      "Payment application / Objection / begin admissibility check",
+      "Payment application / Objection / begin editing",
+      "Payment application / Objection / begin editing from refused",
+      "Payment application / Objection / begin payment",
+      "Payment application / Objection / calculate",
+      "Payment application / Objection / check admissibility",
+      "Payment application / Objection / decide",
+      "Payment application / Objection / finish editing",
+      "Payment application / Objection / finish payment",
+      "Payment application / Objection / initialize",
+      "Payment application / Objection / insert document",
+      "Payment application / Objection / refuse",
+      "Payment application / Objection / remove document",
+      "Payment application / Objection / revoke approval",
+      "Payment application / Objection / revoke decision",
+      "Payment application / Objection / revoke withdrawal",
+      "Payment application / Objection / withdraw"
+    ],
+    "Reference alignment": [
+      "Reference alignment / Main / change department",
+      "Reference alignment / Main / initialize",
+      "Reference alignment / Main / insert document",
+      "Reference alignment / Main / performed",
+      "Reference alignment / Main / remove document",
+      "Reference alignment / Main / save"
+    ]
+  },
+  "case_attributes": {
+    "case:penalty_JLP1": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:number_parcels": {
+      "type": "Float",
+      "samples": [
+        0.0,
+        103.0
+      ],
+      "domain": {
+        "min": 0.0,
+        "max": 103.0
+      }
+    },
+    "case:penalty_JLP3": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_JLP2": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_JLP5": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:year": {
+      "type": "String",
+      "samples": [
+        "2015",
+        "2016",
+        "2017"
+      ],
+      "domain": {
+        "values": [
+          "2015",
+          "2016",
+          "2017"
+        ]
+      }
+    },
+    "case:penalty_JLP7": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_JLP6": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:redistribution": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:amount_applied0": {
+      "type": "Float",
+      "samples": [
+        0.0,
+        587772.08
+      ],
+      "domain": {
+        "min": 0.0,
+        "max": 587772.08
+      }
+    },
+    "case:payment_actual0": {
+      "type": "Float",
+      "samples": [
+        0.0,
+        587989.47
+      ],
+      "domain": {
+        "min": 0.0,
+        "max": 587989.47
+      }
+    },
+    "case:penalty_V5": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_B5F": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:basic payment": {
+      "type": "Boolean",
+      "samples": [
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "True"
+        ]
+      }
+    },
+    "case:penalty_GP1": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_B16": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_AGP": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:selected_manually": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:area": {
+      "type": "Float",
+      "samples": [
+        0.0,
+        576.0705
+      ],
+      "domain": {
+        "min": 0.0,
+        "max": 576.0705
+      }
+    },
+    "case:penalty_B3": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:selected_risk": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_B2": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_AVBP": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_B5": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_B4": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_B6": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_ABP": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_AVGP": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_C4": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:greening": {
+      "type": "Boolean",
+      "samples": [
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "True"
+        ]
+      }
+    },
+    "case:rejected": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:cross_compliance": {
+      "type": "Float",
+      "samples": [
+        0.0,
+        100.0
+      ],
+      "domain": {
+        "min": 0.0,
+        "max": 100.0
+      }
+    },
+    "case:penalty_C9": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_AVJLP": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_CC": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_AVUVP": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_BGK": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_C16": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:department": {
+      "type": "String",
+      "samples": [
+        "4e",
+        "6b",
+        "d4",
+        "e7"
+      ],
+      "domain": {
+        "values": [
+          "4e",
+          "6b",
+          "d4",
+          "e7"
+        ]
+      }
+    },
+    "case:penalty_BGP": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:small farmer": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:risk_factor": {
+      "type": "Float",
+      "samples": [
+        0.99,
+        1.0
+      ],
+      "domain": {
+        "min": 0.99,
+        "max": 1.0
+      }
+    },
+    "case:applicant": {
+      "type": "String",
+      "samples": []
+    },
+    "case:penalty_AUVP": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_BGKV": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:program-id": {
+      "type": "String",
+      "samples": [
+        "215"
+      ],
+      "domain": {
+        "values": [
+          "215"
+        ]
+      }
+    },
+    "case:penalty_amount0": {
+      "type": "Float",
+      "samples": [
+        0.0,
+        37298.68
+      ],
+      "domain": {
+        "min": 0.0,
+        "max": 37298.68
+      }
+    },
+    "case:application": {
+      "type": "String",
+      "samples": []
+    },
+    "case:penalty_AJLP": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:selected_random": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:young farmer": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    },
+    "case:penalty_amount1": {
+      "type": "Float",
+      "samples": [
+        0.0,
+        31241.38
+      ],
+      "domain": {
+        "min": 0.0,
+        "max": 31241.38
+      }
+    },
+    "case:payment_actual1": {
+      "type": "Float",
+      "samples": [
+        -11945.8,
+        35716.71
+      ],
+      "domain": {
+        "min": -11945.8,
+        "max": 35716.71
+      }
+    },
+    "case:amount_applied1": {
+      "type": "Float",
+      "samples": [
+        0.0,
+        608980.2
+      ],
+      "domain": {
+        "min": 0.0,
+        "max": 608980.2
+      }
+    },
+    "case:penalty_amount2": {
+      "type": "Float",
+      "samples": [
+        0.0,
+        31241.39
+      ],
+      "domain": {
+        "min": 0.0,
+        "max": 31241.39
+      }
+    },
+    "case:payment_actual2": {
+      "type": "Float",
+      "samples": [
+        -17421.93,
+        18186.34
+      ],
+      "domain": {
+        "min": -17421.93,
+        "max": 18186.34
+      }
+    },
+    "case:amount_applied2": {
+      "type": "Float",
+      "samples": [
+        0.0,
+        587833.23
+      ],
+      "domain": {
+        "min": 0.0,
+        "max": 587833.23
+      }
+    },
+    "case:penalty_amount3": {
+      "type": "Float",
+      "samples": [
+        0.0,
+        3314.65
+      ],
+      "domain": {
+        "min": 0.0,
+        "max": 3314.65
+      }
+    },
+    "case:payment_actual3": {
+      "type": "Float",
+      "samples": [
+        -841.24,
+        786.37
+      ],
+      "domain": {
+        "min": -841.24,
+        "max": 786.37
+      }
+    },
+    "case:amount_applied3": {
+      "type": "Float",
+      "samples": [
+        35253.72,
+        587261.11
+      ],
+      "domain": {
+        "min": 35253.72,
+        "max": 587261.11
+      }
+    }
+  },
+  "event_attributes": {
+    "time:timestamp": {
+      "type": "Timestamp",
+      "samples": []
+    },
+    "note": {
+      "type": "String",
+      "samples": []
+    },
+    "success": {
+      "type": "Boolean",
+      "samples": [
+        "False",
+        "True"
+      ],
+      "domain": {
+        "values": [
+          "False",
+          "True"
+        ]
+      }
+    }
+  },
+  "frequent_transitions": [
+    {
+      "from": "Payment application / Application / calculate",
+      "to": "Payment application / Application / finish editing",
+      "count": 138228
+    },
+    {
+      "from": "Payment application / Application / begin editing",
+      "to": "Payment application / Application / calculate",
+      "count": 117324
+    },
+    {
+      "from": "Inspection / On-Site / save",
+      "to": "Inspection / On-Site / save",
+      "count": 95513
+    },
+    {
+      "from": "Geo parcel document / Reported / calculate",
+      "to": "Geo parcel document / Reported / finish editing",
+      "count": 85012
+    },
+    {
+      "from": "Geo parcel document / Reported / begin editing",
+      "to": "Geo parcel document / Reported / calculate",
+      "count": 77747
+    },
+    {
+      "from": "Payment application / Application / calculate",
+      "to": "Payment application / Application / calculate",
+      "count": 69188
+    },
+    {
+      "from": "Payment application / Application / finish editing",
+      "to": "Payment application / Application / decide",
+      "count": 63344
+    },
+    {
+      "from": "Entitlement application / Main / calculate",
+      "to": "Entitlement application / Main / finish editing",
+      "count": 58553
+    },
+    {
+      "from": "Entitlement application / Main / begin editing",
+      "to": "Entitlement application / Main / calculate",
+      "count": 57895
+    },
+    {
+      "from": "Payment application / Application / finish editing",
+      "to": "Payment application / Application / begin editing",
+      "count": 55229
+    },
+    {
+      "from": "Geo parcel document / Reported / finish editing",
+      "to": "Geo parcel document / Reported / begin editing",
+      "count": 48543
+    },
+    {
+      "from": "Control summary / Main / begin editing",
+      "to": "Control summary / Main / finish editing",
+      "count": 43802
+    },
+    {
+      "from": "Reference alignment / Main / initialize",
+      "to": "Reference alignment / Main / performed",
+      "count": 43802
+    },
+    {
+      "from": "Control summary / Main / initialize",
+      "to": "Control summary / Main / begin editing",
+      "count": 43758
+    },
+    {
+      "from": "Payment application / Application / decide",
+      "to": "Payment application / Application / begin payment",
+      "count": 42834
+    },
+    {
+      "from": "Payment application / Application / abort payment",
+      "to": "Payment application / Application / begin payment",
+      "count": 32812
+    },
+    {
+      "from": "Payment application / Application / begin payment",
+      "to": "Payment application / Application / abort payment",
+      "count": 31021
+    },
+    {
+      "from": "Payment application / Application / begin payment",
+      "to": "Payment application / Application / insert document",
+      "count": 30645
+    },
+    {
+      "from": "Geo parcel document / Reported / finish editing",
+      "to": "Payment application / Application / begin editing",
+      "count": 29626
+    },
+    {
+      "from": "Geo parcel document / Main / initialize",
+      "to": "Geo parcel document / Declared / begin editing",
+      "count": 29003
+    },
+    {
+      "from": "Payment application / Application / insert document",
+      "to": "Payment application / Application / finish payment",
+      "count": 28820
+    },
+    {
+      "from": "Payment application / Application / mail income",
+      "to": "Payment application / Application / mail valid",
+      "count": 26897
+    },
+    {
+      "from": "Payment application / Application / initialize",
+      "to": "Payment application / Application / begin editing",
+      "count": 26827
+    },
+    {
+      "from": "Payment application / Application / mail valid",
+      "to": "Geo parcel document / Main / initialize",
+      "count": 24367
+    },
+    {
+      "from": "Payment application / Application / calculate",
+      "to": "Entitlement application / Main / begin editing",
+      "count": 23243
+    },
+    {
+      "from": "Payment application / Application / revoke decision",
+      "to": "Payment application / Application / calculate",
+      "count": 19089
+    },
+    {
+      "from": "Payment application / Application / decide",
+      "to": "Payment application / Application / revoke decision",
+      "count": 18834
+    },
+    {
+      "from": "Entitlement application / Main / finish editing",
+      "to": "Entitlement application / Main / begin editing",
+      "count": 17532
+    },
+    {
+      "from": "Geo parcel document / Declared / calculate",
+      "to": "Geo parcel document / Declared / finish editing",
+      "count": 16853
+    },
+    {
+      "from": "Geo parcel document / Declared / create",
+      "to": "Control summary / Main / initialize",
+      "count": 16753
+    }
+  ]
+}
