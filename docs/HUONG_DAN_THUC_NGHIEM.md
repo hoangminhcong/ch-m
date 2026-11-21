@@ -908,7 +908,7 @@ Z, tập Đức, v1.3) dùng code hiện tại.
 
 ### C9. Lần chạy CHÍNH THỨC bộ CAP (2026-11-21; v1–v1.2 là chạy thử)
 
-Code commit `03efa6e` (commit sau đó chỉ sửa tài liệu — dấu `code.sha256` của mọi .py giống hệt), thư mục
+Code commit `53c080e` (sau khi gỡ code BPIC2017; dấu `code.sha256` = `199640a02cf180d2`, mọi file kết quả phải ghi đúng dấu này), thư mục
 `results\cap_official`, cache trống. Hạn mức Cerebras đo được (mỗi key): 5 request / phút, 150 / giờ, 30 000 token /
 phút, 1 000 000 token / ngày; một cấu hình cần ~300–550 request và ~1 triệu token → **mỗi key ~1 cấu hình / ngày,
 ~2,5–4 giờ**. Hai key chạy song song ở hai cửa sổ (mỗi cấu hình một file cache riêng, an toàn).

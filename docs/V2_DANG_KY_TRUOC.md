@@ -153,7 +153,7 @@ phiên bản (buzer.de, "alle Fassungen seit 2006") và đối chiếu bản cô
   thứ 5 / 4, prompt 55–60k ký tự) chạy bằng `b32a643` + đúng bản vá này (meta của file ghi git_dirty = true vì vậy).
 - **2026-11-21 — v1, v1.1, v1.2 = CHẠY THỬ (pilot); lần chạy CHÍNH THỨC chạy lại từ đầu** (người dùng: "chạy lại từ
   ban đầu, coi như các lần thực nghiệm trước là bước test, nháp"; chọn "Gọi API mới hoàn toàn"). Code: commit
-  `03efa6e` (đã commit trước khi chạy; mọi file kết quả ghi mã commit). Thư mục `results/cap_official`, cache trống
+  `53c080e` (sau khi gỡ code BPIC2017, 2026-11-21; dấu code `199640a02cf180d2`; mọi file kết quả ghi mã commit). Thư mục `results/cap_official`, cache trống
   (không dùng lại câu trả lời LLM của các lần thử). Đủ 16 cấu hình CAP với cùng tham số gọi API
   (`--min-interval 30 --max-tokens 8000`, Cerebras gpt-oss-120b). Bài báo báo cáo lần chạy chính thức; các lần thử
   được nêu là thử nghiệm phát triển (đã xem kết quả của chúng khi thiết kế N — B6 đã ghi CAP là tập phát triển cho N).
