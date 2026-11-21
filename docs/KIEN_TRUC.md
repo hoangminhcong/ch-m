@@ -115,10 +115,18 @@ chính xác mọi độ dài vết (CONFLICT, CONFLICT_IF_ACTIVATED, IMPLIES, DU
 kiện — cả hai sửa 2026-11-20 khi đối chiếu với engine). `tests/test_set_checks_vs_engine.py` so thẳng với engine
 (điều kiện mức hồ sơ và mức event).
 
-## 10. Mã cũ BPIC2017 (tạm vô hiệu)
+## 10. Mã cũ BPIC2017 (đã gỡ 2026-11-21)
 
-`experiment_runner.py` tách thành `semantic_equivalence.py`, `cegis_diagnostic.py`, `vanilla_rag_baseline.py`;
-dữ liệu bộ đề `benchmark_builder.py` → `bpic2017_benchmark_rules.py` (nội dung giữ nguyên, tên cũ vẫn import được).
+22 module / script mà hệ thống CAP không chạm tới (dò đồ thị import từ mọi điểm vào của CAP; ~4 700 dòng: `run_phase1a`
+… `run_phase4`, `run_benchmark_evaluation`, `run_real_llm_experiment`, `export_gold_review`, `export_item_candidates`,
+`adjudicate_gold`, `build_benchmark`, `build_legal_graph`, `build_process_graph` (script), `validate_declare_engine`,
+`experiment_runner`, `benchmark_builder`, `bpic2017_benchmark_rules`, `cegis_diagnostic`, `semantic_equivalence`,
+`justification_tree`, `trace_safety_classifier`, `vanilla_rag_baseline`) cùng 7 file test riêng của chúng đã gỡ —
+còn nguyên trong lịch sử git (commit `57757a4`). GIỮ phần dùng chung: hồ sơ prompt `BPIC2017_PROFILE` (giá trị mặc
+định trong lõi), `grounded_auditor` (real_llm_client.chat), hàm `build_legal_graph` / `build_process_graph` của
+`src/kg` (tầng Pháp lý v2 và tầng Tiến trình CAP dùng), công tắc `src/datasets.py`, `check_setup.py` (kiểm môi
+trường cho CAP; nay kiểm cả Cerebras). Kiểm sau khi gỡ: 627 test qua, `run_pipeline pre` qua, phát lại v1.2 Y / X
+436/436 giống hệt.
 
 **Dữ liệu BPIC2017 (2026-11-21) đã chuyển ra kho lưu** `C:\Users\hayab\nsai_archive_bpic2017` (giữ nguyên đường dẫn
 tương đối; 29 file, SHA-256 đã so khớp): log `bpic2017_events.parquet`, Directive PDF + khoản đã tách, đồ thị luật /

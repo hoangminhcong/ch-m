@@ -12,15 +12,8 @@ from pathlib import Path
 from typing import Callable, List, Tuple
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(PROJECT_ROOT))
 REQUIRED_PACKAGES = ["pandas", "pyarrow", "pydantic", "pm4py", "rank_bm25", "fitz", "neo4j", "dotenv", "openai"]
-DEFAULT_LLM_BASE_URL = "https://api.groq.com/openai/v1"
-DEFAULT_LLM_MODEL = "openai/gpt-oss-120b"
-BPIC2017_DATA_FILES = [
-    "data/interim/bpic2017_events.parquet",
-    "data/processed/directive_chunks.json",
-    "data/processed/process_schema.json",
-    "data/processed/benchmark_rules_30.json",
-]
 # Bộ chính: BPIC2018 + 4 Quy định CAP (Phần C của runbook)
 CAP_DATA_FILES = [
     "data/interim/bpic2018_events.parquet",
@@ -30,11 +23,8 @@ CAP_DATA_FILES = [
     "data/processed/bpic2018_process_graph.json",
     "data/processed/gamma_bpic2018.json",
 ]
-sys.path.insert(0, str(PROJECT_ROOT))
-from src.datasets import bpic2017_enabled  # noqa: E402
-
-# BPIC2017 đang tạm vô hiệu (src/datasets.py): chỉ kiểm file của nó khi NSAI_ENABLE_BPIC2017=1
-DATA_FILES = CAP_DATA_FILES + (BPIC2017_DATA_FILES if bpic2017_enabled() else [])
+# 2026-11-21: dữ liệu BPIC2017 đã chuyển ra kho lưu → chỉ kiểm dữ liệu của bộ chính
+DATA_FILES = CAP_DATA_FILES
 
 
 def check_python() -> Tuple[bool, str]:
@@ -64,9 +54,9 @@ def check_env_file() -> Tuple[bool, str]:
     from dotenv import load_dotenv
 
     load_dotenv(env)
-    keys = ["NEO4J_URI", "NEO4J_USERNAME", "NEO4J_PASSWORD", "GROQ_API_KEY"]
+    keys = ["NEO4J_URI", "NEO4J_USERNAME", "NEO4J_PASSWORD"]
     status = ", ".join(f"{k}={'có' if os.getenv(k) else 'TRỐNG'}" for k in keys)
-    return all(os.getenv(k) for k in keys[:3]), status
+    return all(os.getenv(k) for k in keys), status
 
 
 def check_neo4j() -> Tuple[bool, str]:
@@ -83,26 +73,32 @@ def check_neo4j() -> Tuple[bool, str]:
     return True, f"kết nối OK, đang có {count} node KG"
 
 
-def check_llm() -> Tuple[bool, str]:
-    """
-    Xác thực API key bằng cách lấy danh sách model (không sinh token, không tốn quota).
-    Không dùng models.retrieve(): tên model chứa '/' bị mã hoá thành '%2F' trong URL và Groq trả 404.
-    """
-    key = os.getenv("GROQ_API_KEY")
-    if not key:
-        return False, "chưa có GROQ_API_KEY trong .env"
+def _check_provider(name: str, base_url: str, model: str) -> Tuple[bool, str]:
+    """Một nhà cung cấp: có key không, key có liệt kê được model chính không (lấy danh sách model — không sinh token,
+    không tốn quota). Không dùng models.retrieve(): tên model có '/' bị mã hoá '%2F' và Groq trả 404."""
     from openai import OpenAI
 
-    model = os.getenv("LLM_MODEL_NAME", DEFAULT_LLM_MODEL)
-    client = OpenAI(api_key=key, base_url=os.getenv("LLM_BASE_URL", DEFAULT_LLM_BASE_URL))
+    from src.evaluation.real_llm_client import key_vars_for
+
+    var = next((v for v in key_vars_for(base_url) if os.getenv(v)), None)
+    if var is None:
+        return False, f"{name}: chưa có key ({' / '.join(key_vars_for(base_url))})"
     try:
-        available = {m.id for m in client.models.list()}
-    except Exception as exc:  # báo lỗi xác thực/mạng cho người dùng
-        return False, f"key không dùng được: {type(exc).__name__}: {str(exc)[:120]}"
+        available = {m.id for m in OpenAI(api_key=os.getenv(var), base_url=base_url).models.list()}
+    except Exception as exc:  # báo lỗi xác thực / mạng cho người dùng, không dừng các nhà cung cấp khác
+        return False, f"{name}: key {var} không dùng được ({type(exc).__name__})"
     if model not in available:
-        similar = sorted(m for m in available if "gpt-oss" in m or "llama" in m)[:5]
-        return False, f"key hợp lệ nhưng không có model '{model}'. Gợi ý: {similar}"
-    return True, f"key hợp lệ, model '{model}' khả dụng"
+        return False, f"{name}: key {var} hợp lệ nhưng không có model '{model}'"
+    return True, f"{name}: key {var} hợp lệ, model '{model}' khả dụng"
+
+
+def check_llm() -> Tuple[bool, str]:
+    """Mọi nhà cung cấp của run_cap_generation (Cerebras, Groq); OK khi ÍT NHẤT một nhà cung cấp dùng được model
+    chính. 2026-11-21: trước đây chỉ kiểm Groq — báo LỖI dù Cerebras (nhà cung cấp chính) dùng được."""
+    from scripts.run_cap_generation import PROVIDERS
+
+    results = [_check_provider(name, url, model) for name, (url, model) in sorted(PROVIDERS.items())]
+    return any(ok for ok, _ in results), " | ".join(detail for _, detail in results)
 
 
 CHECKS: List[Tuple[str, Callable[[], Tuple[bool, str]]]] = [
@@ -111,7 +107,7 @@ CHECKS: List[Tuple[str, Callable[[], Tuple[bool, str]]]] = [
     ("Dữ liệu đã xử lý", check_data),
     ("File .env", check_env_file),
     ("Neo4j", check_neo4j),
-    ("LLM (Groq)", check_llm),
+    ("LLM (gpt-oss-120b)", check_llm),
 ]
 
 

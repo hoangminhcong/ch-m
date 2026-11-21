@@ -5,7 +5,9 @@ Bộ chính hiện tại: BPIC2018 + 4 Quy định CAP. Bộ BPIC2017 + Directiv
 (2026-11-09, theo yêu cầu của chủ dự án): không xoá / không di chuyển file nào, chỉ
   - script riêng của BPIC2017 từ chối chạy (require_bpic2017, thoát mã 2);
   - test riêng của BPIC2017 được bỏ qua (skip_unless_bpic2017 / setUpModule);
-  - script dùng chung (build_gamma_from_kg, check_setup) bỏ qua phần BPIC2017.
+  - script dùng chung (build_gamma_from_kg) bỏ qua phần BPIC2017.
+2026-11-21: dữ liệu BPIC2017 đã chuyển ra kho lưu, script / module riêng của BPIC2017 đã gỡ (còn trong lịch sử git,
+commit 57757a4) — công tắc này giờ chỉ còn giữ cho các test BPIC2017 cũ tự bỏ qua.
 Mở lại:  PowerShell  $env:NSAI_ENABLE_BPIC2017 = "1"   (chỉ trong cửa sổ đó)
 """
 

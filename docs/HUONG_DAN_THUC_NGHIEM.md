@@ -24,14 +24,13 @@ Mỗi thực nghiệm (TN) gồm 4 phần: **Mục đích → Lệnh chạy → 
 
 > Kiến trúc tổng quan (tầng KG, 5 giai đoạn, thứ tự kiểm, cấu hình): **`docs/KIEN_TRUC.md`**.
 
-> **Bộ dữ liệu chính: BPIC2018 + 4 Quy định CAP (Phần C).** Bộ BPIC2017 + Directive 2008/48/EC (TN1–TN3 và
-> phần "log thật" của TN4 ở Phần B) đang **tạm vô hiệu** từ 09/11: không file nào bị xoá hay di chuyển, nhưng
-> 13 script riêng của BPIC2017 từ chối chạy (báo mã 2) và test riêng của BPIC2017 được bỏ qua. TN4 trên log
-> tổng hợp (`validate_declare_engine.py`) vẫn chạy bình thường. Mở lại khi cần, trong cửa sổ PowerShell đang dùng:
-> ```powershell
-> $env:NSAI_ENABLE_BPIC2017 = "1"
-> ```
-> Kiểm tra công tắc: `python -m unittest tests.test_datasets_switch -v`.
+> **Bộ dữ liệu chính: BPIC2018 + 4 Quy định CAP (Phần C).** Bộ BPIC2017 + Directive 2008/48/EC (TN1–TN4 ở Phần B)
+> **đã gỡ khỏi dự án (2026-11-21)**: dữ liệu chuyển ra kho lưu `C:\Users\hayab\nsai_archive_bpic2017`, 22 module /
+> script riêng của BPIC2017 (`run_phase1a`…`run_phase4`, `run_benchmark_evaluation`, `run_real_llm_experiment`,
+> `export_gold_review`, `adjudicate_gold`, `validate_declare_engine`, `experiment_runner`, `benchmark_builder`, …)
+> gỡ khỏi code — còn nguyên trong lịch sử git (commit `57757a4`). Phần B dưới đây giữ lại làm lịch sử: các lệnh
+> của nó không còn chạy được. Muốn chạy lại BPIC2017: `git checkout 57757a4 -- scripts src tests`, chép kho lưu về đúng
+> chỗ, đặt `$env:NSAI_ENABLE_BPIC2017 = "1"`.
 
 > Ghi chú thay đổi kế hoạch: bỏ phép so κ với 5 checker viết tay của bài cũ — cả 5 đều là template DECLARE
 > nên so với engine là thừa. Thay vào đó, bài báo có một **bảng đối chiếu** 5 checker ↔ template DECLARE
@@ -108,9 +107,11 @@ Kết quả mong đợi (mọi dòng đều `OK`):
 [OK ] Python >= 3.11     Python 3.11.9 (...)
 [OK ] Thư viện           đủ thư viện
 [OK ] Dữ liệu đã xử lý   đủ dữ liệu
-[OK ] File .env          NEO4J_URI=có, NEO4J_USERNAME=có, NEO4J_PASSWORD=có, GROQ_API_KEY=có
+[OK ] File .env          NEO4J_URI=có, NEO4J_USERNAME=có, NEO4J_PASSWORD=có
 [OK ] Neo4j              kết nối OK, đang có 0 node KG
+[OK ] LLM (gpt-oss-120b) cerebras: key CEREBRAS_API_KEY hợp lệ, model 'gpt-oss-120b' khả dụng | groq: …
 ```
+Dòng LLM `OK` khi ÍT NHẤT một nhà cung cấp (Cerebras hoặc Groq) có key dùng được model chính.
 Banner của PM4Py và cảnh báo `fitz ... deprecated` in ra trước là bình thường.
 
 Chạy toàn bộ test:
@@ -122,6 +123,9 @@ Mong đợi: `OK`. (Nếu chưa có `GROQ_API_KEY` sẽ có đúng 1 lỗi `Miss
 ---
 
 ## Phần B — Các thực nghiệm
+
+> **Lịch sử (BPIC2017, đã gỡ 2026-11-21).** TN1–TN4 dưới đây là của bộ BPIC2017 + Directive; script của chúng đã gỡ
+> khỏi code (còn trong git, commit `57757a4`). Thực nghiệm hiện tại: **Phần C** (lần chạy chính thức: mục C9).
 
 ### TN1. Dựng và xem tầng Pháp lý của Knowledge Graph
 

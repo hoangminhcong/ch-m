@@ -6,7 +6,6 @@ Các kiểm chống ràng buộc rỗng / bịa (bộ CAP), xuất phát từ R1
   E  Entity Matcher: giá trị dạng năm phải có trong luật (verbalizer_roundtrip, check_year_values)
   B  kiểm rỗng trên log trong vòng lặp             (log_grounding + Declare4Py.count_witness_cases)
   D  phân tích nghĩa vụ, được phép no_constraint   (obligation_gate + CAP_PROFILE)
-Cộng sửa lỗi cũ: run_generic_cegis_diagnostic kiểm rỗng mọi loại điều kiện, bỏ nhánh viết cứng Directive.
 Log và khoản luật ở đây là GIẢ, nhỏ, chỉ để kiểm hành vi.
 """
 
@@ -21,7 +20,6 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from scripts.run_cap_generation import CONFIGS, outcome_of, run_clause, schema_for  # noqa: E402
-from src.evaluation.experiment_runner import run_generic_cegis_diagnostic  # noqa: E402
 from src.evaluation.real_llm_client import run_single_rule_with_real_llm  # noqa: E402
 from src.mde.typing_environment import ProcessTypingEnvironment  # noqa: E402
 from src.neural.graph_context import clause_only_chunk  # noqa: E402
@@ -263,24 +261,7 @@ class TestGenerationConfigs(unittest.TestCase):
         self.assertIsNone(rec["obligation_analysis"])
 
 
-class TestLegacyDiagnosticFixed(unittest.TestCase):
-    """Bước 4 của run_generic_cegis_diagnostic (client kiểm thử BPIC2017) trước chỉ kiểm ngưỡng số."""
-
-    LOG = pd.DataFrame({"case:concept:name": ["a", "a", "b"], "concept:name": [REF, INIT, INIT],
-                        "case:year": ["2015", "2015", "2016"]})
-
-    def test_string_condition_vacuity_detected(self) -> None:
-        res = run_generic_cegis_diagnostic(_ast(activation_attr="case:year", activation_op="==",
-                                                activation_val="2018"), {"text": "x"}, log_df=self.LOG)
-        self.assertIn("[Diagnostic Vacuity]", res["diagnostic_feedback"])
-        ok = run_generic_cegis_diagnostic(_ast(activation_attr="case:year", activation_op="==",
-                                               activation_val="2016"), {"text": "x"}, log_df=self.LOG)
-        self.assertEqual(ok["verdict"], "EQUIVALENT")
-
-    def test_hardcoded_directive_branch_removed(self) -> None:
-        src = (PROJECT_ROOT / "src" / "evaluation" / "experiment_runner.py").read_text(encoding="utf-8")
-        self.assertNotIn("in clause_lower and not entities", src)
-
+class TestDocstrings(unittest.TestCase):
     def test_docstring_no_longer_overclaims(self) -> None:
         src = (PROJECT_ROOT / "src" / "evaluation" / "real_llm_client.py").read_text(encoding="utf-8")
         self.assertNotIn("Tầng 3 (Roundtrip & Vacuity) để đưa vào bài báo", src)

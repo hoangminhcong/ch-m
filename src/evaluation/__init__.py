@@ -5,6 +5,10 @@ Evaluation, 3-Valued Safety Classification, Accountable Audit Trail & Benchmark 
 - Bước 4.3: generate_accountable_explanation & verify_posthoc_grounding (CEUR Vol-4259 + Know Your Limits Grounding Guard)
 - Thực nghiệm RQ1, RQ2, RQ3: build_normative_rule_benchmark, build_stratified_trace_benchmark, run_ablation_experiment
 
+2026-11-21: mã BPIC2017 không dùng cho CAP (experiment_runner, benchmark_builder, justification_tree,
+trace_safety_classifier, …) đã GỠ khỏi dự án (còn trong lịch sử git, commit 57757a4); chỉ còn grounded_auditor
+(real_llm_client.chat dùng). Dòng mô tả Bước 4.1–4.3 / RQ1–RQ3 ở trên là lịch sử của gói.
+
 Nạp LƯỜI (PEP 562, 2026-11-20, vấn đề A6): các tên dưới đây thuộc mã BPIC2017 cũ (experiment_runner, benchmark_builder
 kéo theo sklearn…). Trước đây gói import sẵn tất cả, nên mọi module CAP (real_llm_client, cap_scoring…) đều kéo theo mã
 cũ. Giờ chỉ nạp khi có người dùng đúng tên đó — `from src.evaluation import run_ablation_experiment` vẫn chạy như cũ.
@@ -14,20 +18,9 @@ import importlib
 from typing import Any
 
 _EXPORTS = {
-    "evaluate_trace_safety_and_status": "trace_safety_classifier",
-    "check_single_trace_semantics": "justification_tree",
-    "build_justification_tree": "justification_tree",
     "DeterministicAuditNarratorClient": "grounded_auditor",
     "generate_accountable_explanation": "grounded_auditor",
     "verify_posthoc_grounding": "grounded_auditor",
-    "build_normative_rule_benchmark": "benchmark_builder",
-    "build_stratified_trace_benchmark": "benchmark_builder",
-    "BenchmarkExperimentLLMClient": "experiment_runner",
-    "check_layer1_and_layer2": "experiment_runner",
-    "classify_semantic_equivalence": "experiment_runner",
-    "evaluate_rq1_complexity_tiers": "experiment_runner",
-    "run_ablation_experiment": "experiment_runner",
-    "run_vanilla_rag_baseline": "experiment_runner",
 }
 
 __all__ = list(_EXPORTS)
