@@ -181,6 +181,11 @@ phiên bản (buzer.de, "alle Fassungen seit 2006") và đối chiếu bản cô
   - Kết quả CHÍNH = lần chạy Groq. Lần Cerebras (`results/cap_official`: X, Y ngày 1) giữ nguyên, báo như một lần chạy
     bổ sung trên nhà cung cấp khác (cùng code / dữ liệu / prompt), không gộp vào phép so của lần Groq. Quyết định đổi
     nhà cung cấp đưa ra SAU khi đã thấy kết quả X / Y trên Cerebras — lý do là hạn mức, nhưng vẫn phải nêu trong bài.
+  - **ĐÃ HUỶ cùng ngày, TRƯỚC mọi lượt chạy Groq** (người dùng: "thế thôi lại quay lại ceberas với 2 api vậy"). Đo
+    hạn mức Groq gói miễn phí: 8 000 token / phút tính trên cả request, request lớn hơn bị từ chối vĩnh viễn (HTTP
+    413), 1 000 request / ngày; phát lại cache v1.2: 3/2 783 request > 8 000 token, prompt vòng 1 của N tới ~6 300 token
+    → một số khoản (vòng sửa cuối) không bao giờ chạy được trên Groq miễn phí. Lần chạy chính thức GIỮ NGUYÊN trên
+    Cerebras (`results/cap_official`, mục trên); không có thư mục `cap_groq`.
 
 ## Bổ sung đăng ký trước (2026-11-19) — **ĐÃ DUYỆT 2026-11-19** (người dùng: "oke duyệt tất cả", gồm B4 tùy chọn; B5 theo phương án (a)), áp dụng trước mọi lần chạy Z và tập Đức
 
