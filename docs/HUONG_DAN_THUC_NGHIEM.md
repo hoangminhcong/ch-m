@@ -872,6 +872,36 @@ python scripts/verify_cypher_compiler.py --pred-dir results/cap_cerebras_v12 --c
 `verify_cypher_compiler.py` ghi đè nhãn `:EvCase` / `:Ev` (đồ thị sự kiện), không đụng node KG. Xoá khi không cần:
 `MATCH (n) WHERE n:Ev OR n:EvCase CALL (n) { DETACH DELETE n } IN TRANSACTIONS` (trong Neo4j Browser).
 
+### C6g. Kiểm thử thường trực T1–T3 và hoàn tất v1.2 bằng đúng code của nó — 2026-11-20, không gọi API
+
+T1 chạy trong `run_pipeline pre`, T2 ở cuối `run_pipeline post` (bước nào báo vi phạm thì pipeline dừng). T3 chạy
+riêng sau mỗi lần sửa code — phát lại cache, KHÔNG gọi API, không ghi vào file dự đoán (chỉ ghi `replay_check.json`):
+```powershell
+python scripts/run_pipeline.py replay --pred-dir results/cap_cerebras_v12 --configs Y X
+```
+"N/N khoản giống hệt" = lần sửa không đổi kết quả đã báo cáo; có khoản khác → danh sách để quyết định (đổi cố ý hay lỗi).
+
+**v1.2 còn 48 khoản ERROR ở Y-noDuty.** Các bản sửa 2026-11-20 (Tầng 1 thời hạn, tự lặp theo tập) CÓ THỂ đổi hành
+vi sinh: trên 7 cấu hình v1.2 phát lại được thì không khoản nào đổi (1 526/1 526 giống hệt, cả với code hiện tại và
+commit `b32a643`), nhưng Y-noDuty từng có một vòng đề xuất `time_max` trên mẫu không thời hạn — 48 khoản còn lại có thể
+gặp lại. Để v1.2 chỉ một phiên bản hành vi, hoàn tất bằng commit `b32a643` trong một thư mục làm việc riêng. Log
+(`data/interim`) không nằm trong git → nối thư mục log sang (junction, không sao chép 2 GB):
+```powershell
+$repo = (Get-Location).Path                      # đang ở thư mục dự án
+git worktree add ..\nsai_v12 b32a643
+New-Item -ItemType Junction -Path ..\nsai_v12\data\interim -Target "$repo\data\interim"
+Copy-Item .env ..\nsai_v12\.env
+cd ..\nsai_v12
+python scripts/run_cap_generation.py --provider cerebras --config Y-noDuty --out-dir "$repo\results\cap_cerebras_v12"
+cd $repo
+cmd /c rmdir ..\nsai_v12\data\interim            # GỠ JUNCTION TRƯỚC (rmdir chỉ xoá liên kết, không đụng log gốc)
+git worktree remove ..\nsai_v12                   # rồi mới gỡ thư mục làm việc phụ
+```
+**Không** gỡ worktree khi junction còn đó (`--force` hoặc xoá thư mục bằng Explorer có thể đi theo liên kết và xoá
+log gốc trong `data\interim`).
+Sau đó chạy `run_pipeline post` bằng code hiện tại (chấm / phân tích không đổi kết quả sinh). Mọi lần chạy MỚI (N, R,
+Z, tập Đức, v1.3) dùng code hiện tại.
+
 ## Xử lý sự cố
 
 | Triệu chứng | Nguyên nhân thường gặp | Cách xử lý |

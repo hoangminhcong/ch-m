@@ -70,6 +70,11 @@ def rate_limit_wait(exc: Exception, retry_i: int) -> float:
 class LLMCallError(RuntimeError):
     """Lỗi hạ tầng khi gọi LLM (mạng, hạn mức, máy chủ) — không phải câu trả lời sai của mô hình. Không cache."""
 
+
+class TruncatedResponseError(LLMCallError):
+    """Câu trả lời bị cắt vì chạm max_completion_tokens (finish_reason = 'length') — lỗi NGÂN SÁCH của lần gọi, không
+    phải câu trả lời của mô hình: không cache, không thử lại cùng tham số (sẽ bị cắt y như vậy)."""
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
@@ -148,6 +153,7 @@ class RealLLMClient:
         cache_file: Union[str, Path] = "real_llm_cache.json",
         min_interval: float = 0.0,
         key_var: Optional[str] = None,
+        max_completion_tokens: Optional[int] = None,
     ) -> None:
         resolved_key = _resolve_api_key(api_key, base_url, key_var)
         if not resolved_key:
@@ -158,6 +164,12 @@ class RealLLMClient:
             raise ValueError("min_interval must be >= 0")
         self.min_interval = float(min_interval)  # giây tối thiểu giữa hai lần gọi API (VD 13 cho hạn 5 request/phút)
         self._last_request_at: Optional[float] = None
+        # Giới hạn độ dài câu trả lời gửi kèm request (2026-11-21). Cerebras tính độ dài trả lời MẶC ĐỊNH (~20k token)
+        # vào hạn mức token / phút → prompt ~10k token (vòng sửa thứ 4–5) luôn bị 429 dù chờ bao lâu. None = không
+        # gửi (như trước). Không vào khoá cache: câu trả lời đã cache không đổi.
+        if max_completion_tokens is not None and max_completion_tokens <= 0:
+            raise ValueError("max_completion_tokens must be > 0")
+        self.max_completion_tokens = max_completion_tokens
 
         from openai import OpenAI
 
@@ -219,7 +231,13 @@ class RealLLMClient:
 
     def _create(self, **kwargs: Any) -> Any:
         self._throttle()
-        return self.client.chat.completions.create(**kwargs)
+        if self.max_completion_tokens:
+            kwargs.setdefault("max_completion_tokens", self.max_completion_tokens)
+        response = self.client.chat.completions.create(**kwargs)
+        if self.max_completion_tokens and getattr(response.choices[0], "finish_reason", None) == "length":
+            raise TruncatedResponseError(f"Câu trả lời bị cắt ở max_completion_tokens={self.max_completion_tokens} — "
+                                         "tăng --max-tokens (prompt + giới hạn phải dưới hạn mức token / phút).")
+        return response
 
     def _make_key(self, messages: List[Dict[str, str]], temperature: float) -> str:
         payload = json.dumps(
@@ -273,6 +291,8 @@ class RealLLMClient:
                     content = (response.choices[0].message.content or "{}").strip()
                     last_err = None
                     break
+                except TruncatedResponseError:
+                    raise  # bị cắt do ngân sách: thử lại cùng tham số cho kết quả y hệt → báo ngay, không cache
                 except Exception as exc:
                     last_err = exc
                     err_str = str(exc).lower()

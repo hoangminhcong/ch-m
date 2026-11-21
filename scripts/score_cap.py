@@ -24,6 +24,7 @@ from src.evaluation.run_inputs import input_conflicts  # noqa: E402
 from src.evaluation.cap_scoring import (  # noqa: E402
     always_baseless_predictions,
     paired_comparison,
+    paired_p,
     score_config,
     tier4_ids,
 )
@@ -131,13 +132,14 @@ def score_all(gold: Mapping[str, Any], preds: Mapping[str, Mapping[str, Any]],
 
 
 def prediction_meta(pred_dir: Path) -> Dict[str, tuple]:
-    """(bộ dữ liệu, model, nhà cung cấp) của từng file dự đoán."""
+    """(bộ dữ liệu, model, nhà cung cấp, model giám khảo) của từng file dự đoán. Giám khảo None = chính bộ sinh
+    (rà soát 2026-11-20, lỗi 4: trước đây không so giám khảo — N vs Y có thể so hai giám khảo khác nhau)."""
     out = {}
     for cfg in CONFIG_ORDER:
         path = pred_dir / f"predictions_{cfg}.json"
         if path.exists():
             d = json.loads(path.read_text(encoding="utf-8"))
-            out[cfg] = (d.get("dataset", "cap"), d.get("model"), d.get("provider"))
+            out[cfg] = (d.get("dataset", "cap"), d.get("model"), d.get("provider"), d.get("judge_model"))
     return out
 
 
@@ -151,7 +153,8 @@ def check_predictions(result: Mapping[str, Any], meta: Mapping[str, tuple], allo
         raise SystemExit("Có cấu hình thiếu dự đoán cho khoản của gold (sẽ bị tính FAILED) — chạy đủ khoản, kiểm "
                          f"--gold / --pred-dir, hoặc thêm --allow-missing:\n{lines}")
     if len(set(meta.values())) > 1 and not allow_mixed:
-        raise SystemExit(f"Các file dự đoán thuộc lần chạy khác nhau (bộ dữ liệu, model, nhà cung cấp): {meta}. "
+        raise SystemExit(f"Các file dự đoán thuộc lần chạy khác nhau (bộ dữ liệu, model, nhà cung cấp, giám khảo): "
+                         f"{meta}. "
                          "Tách thư mục, hoặc thêm --allow-mixed.")
 
 
@@ -164,6 +167,9 @@ def check_inputs(pred_dir: Path, allow_mixed: bool) -> Dict[str, Any]:
     found["code_versions"] = {cfg: (d.get("code") or {}).get("sha256") for cfg, d in docs.items()}
     if len({v for v in found["code_versions"].values() if v}) > 1:
         sys.stdout.write(f"Chú ý: các cấu hình sinh bằng PHIÊN BẢN CODE khác nhau: {found['code_versions']}\n")
+    if found.get("code_within"):
+        sys.stdout.write(f"Chú ý: file lẫn PHIÊN BẢN CODE (số khoản sinh bằng code khác code ghi ở meta): "
+                         f"{found['code_within']}\n")
     if found["unstamped"]:
         sys.stdout.write(f"Chú ý: khoản chưa có dấu dữ liệu (sinh trước 2026-11-20): {found['unstamped']}\n")
     if (found["within"] or found["across"]) and not allow_mixed:
@@ -200,7 +206,7 @@ def print_temporal(sens: Mapping[str, Any]) -> None:
         w(f"  {cfg:<16}{_fmt(r)}\n")
     for name, pc in sens["paired"].items():
         w(f"  {name:<28} n={pc['n']:<4} chỉ trái={len(pc['only_a']):<3} chỉ phải={len(pc['only_b']):<3} "
-          f"p={pc['p_value']}\n")
+          f"p={paired_p(pc)}\n")
 
 
 def print_tables(result: Mapping[str, Any]) -> None:
@@ -230,7 +236,7 @@ def print_tables(result: Mapping[str, Any]) -> None:
     w("\nSo cặp (McNemar chính xác; only_a = chỉ cấu hình trái đúng):\n")
     for name, pc in result["paired"].items():
         w(f"  {name:<28} n={pc['n']:<4} cả hai đúng={pc['both']:<4} chỉ trái={len(pc['only_a']):<3} "
-          f"chỉ phải={len(pc['only_b']):<3} p={pc['p_value']}\n")
+          f"chỉ phải={len(pc['only_b']):<3} p={paired_p(pc)}\n")
 
 
 def main() -> int:

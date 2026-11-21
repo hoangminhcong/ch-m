@@ -179,3 +179,18 @@ def approval_blockers(gold: Mapping[str, Any]) -> List[str]:
 def scored_clauses(gold: Mapping[str, Any]) -> Dict[str, Dict[str, Any]]:
     """Khoản được chấm điểm: positive và trap (uncertain / unlabeled / invalid không chấm)."""
     return {nid: c for nid, c in gold["clauses"].items() if c["kind"] in ("positive", "trap")}
+
+
+MIN_GOLD_OVERLAP = 0.5  # tỉ lệ khoản dự đoán phải có trong gold — dưới mức này: gold của bộ dữ liệu khác
+
+
+def check_gold_matches(gold_ids: Sequence[str], pred_ids: Sequence[str], gold_name: str) -> None:
+    """Rà soát 2026-11-20 (lỗi 11): phễu / nhãn REVIEW mặc định dùng gold CAP — chạy cho tập Đức mà quên --gold thì
+    mọi khoản thành 'không chấm' mà không báo. Dừng khi phần lớn khoản dự đoán không có trong gold."""
+    preds = set(pred_ids)
+    if not preds or not gold_ids:
+        return
+    overlap = len(preds & set(gold_ids)) / len(preds)
+    if overlap < MIN_GOLD_OVERLAP:
+        raise SystemExit(f"Gold {gold_name} chỉ chứa {overlap:.0%} khoản của các file dự đoán — có vẻ là gold của bộ "
+                         "dữ liệu khác. Truyền --gold đúng bộ (VD tập Đức: data/review/de_gold/cap_gold_approved.json).")

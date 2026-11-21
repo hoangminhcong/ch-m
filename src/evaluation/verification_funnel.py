@@ -78,7 +78,7 @@ def markdown_table(results: Mapping[str, Mapping[str, Any]]) -> str:
     rows = [f"| {LAYER_OF.get(s, s)} | " + " | ".join(str(results[c]["rounds_by_status"].get(s, 0)) for c in configs)
             + " |" for s in statuses]
     extra = [("**Tổng vòng gọi LLM**", "llm_rounds"), ("Vòng bị chặn (Tầng 1–3, B, D)", "rejected_rounds"),
-             ("Luật được sửa đúng sau khi bị chặn", "rules_fixed_after_rejection"),
+             ("Ra luật sau khi bị chặn (không nói luật đúng)", "rules_fixed_after_rejection"),
              ("Luật cuối KHÔNG ở trạng thái PASSED", "final_rules_not_passed")]
     rows += [f"| {label} | " + " | ".join(str(results[c][key]) for c in configs) + " |" for label, key in extra]
     if all("false_rules_on_traps" in r for r in results.values()):

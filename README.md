@@ -38,7 +38,11 @@ python -m pytest tests -q                 # kiểm thử (Neo4j không chạy �
 python scripts/run_pipeline.py pre                                       # cổng kiểm: metamodel, Γ, tầng Cầu nối, dấu dữ liệu
 python scripts/run_cap_generation.py --provider cerebras --out-dir results/<thư mục> --config Y   # sinh (gọi API)
 python scripts/run_pipeline.py post --pred-dir results/<thư mục> --configs X Y --conformance    # chấm + phân tích + báo cáo HTML
+python scripts/run_pipeline.py replay --pred-dir results/<thư mục>        # sau khi sửa code: kết quả cũ có đổi không
 ```
+
+Kiểm thử thường trực: `pre` có T1 (dữ liệu phái sinh = dựng lại từ nguồn), `post` kết thúc bằng T2 (bất biến trên
+mọi đầu ra), `replay` là T3 (phát lại cache LLM bằng code hiện tại, không gọi API).
 
 Cấu hình: X (chỉ khoản luật), **Y** (Graph-RAG, cấu hình chính), các ablation Y-no*, R (RAG BM25 cùng ngân sách),
 N (khung chuẩn tắc), Z (v2) — xem `KIEN_TRUC.md` mục 6. Giám khảo Tầng 3 dùng model khác bộ sinh:

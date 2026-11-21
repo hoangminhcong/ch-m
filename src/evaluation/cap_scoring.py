@@ -29,9 +29,12 @@ TRAP_CLASSES = ["TRAP_DETECTED", "TRAP_FALSE_RULE", "TRAP_FAILED"]
 UNIT_SECONDS = {**FIXED_SECONDS, "mo": 30.44 * 86400, "wd": 1.4 * 86400}  # mo, wd: gần đúng, chỉ để xếp thứ tự
 HIERARCHIES = (
     ["Responded Existence", "Response", "Alternate Response", "Chain Response"],
-    ["Responded Existence", "Precedence", "Alternate Precedence", "Chain Precedence"],
+    ["Precedence", "Alternate Precedence", "Chain Precedence"],
     ["Existence", "Exactly1"],
 )
+# Precedence(A,B) ("B chỉ khi trước đó có A") kéo theo Responded Existence(B,A) — CÙNG cặp nhưng ĐẢO thứ tự; không kéo
+# theo Responded Existence(A,B). Rà soát 2026-11-20 (lỗi 8): trước đây RE nằm đầu họ Precedence với cùng thứ tự.
+PRECEDENCE_FAMILY = frozenset({"Precedence", "Alternate Precedence", "Chain Precedence"})
 
 
 def _norm_val(val: Any) -> Any:
@@ -96,6 +99,9 @@ def compare_ast(cand: Mapping[str, Any], gold: Mapping[str, Any]) -> str:
     acts_g = tuple(activity_members(a) if a else None for a in (gold["activation_activity"], gold.get("target_activity")))
     if cand["template_name"] == gold["template_name"] in SYMMETRIC_TEMPLATES and acts_c == acts_g[::-1]:
         acts_c = acts_g  # đối xứng: Choice(A,B) = Choice(B,A) (rà soát 2026-11-18 E-H2)
+    cross = _precedence_vs_responded(cand, gold, acts_c, acts_g)
+    if cross:
+        return cross
     if acts_c != acts_g:
         return "REVERSED" if acts_c == acts_g[::-1] and acts_g[1] else "MISMATCH"
     tc, tg = cand["template_name"], gold["template_name"]
@@ -111,12 +117,26 @@ def compare_ast(cand: Mapping[str, Any], gold: Mapping[str, Any]) -> str:
     if time_exact(cand) == time_exact(gold):
         return "EQ"
     t_c, t_g = time_seconds(cand), time_seconds(gold)
-    if t_g is None:
-        return "STRENGTHENED"
-    if t_c is not None and abs(t_c - t_g) < 1e-6 * max(t_g, 1.0):
+    if t_g is not None and t_c is not None and abs(t_c - t_g) < 1e-6 * max(t_g, 1.0):
         # cùng thời hạn quy đổi nhưng khác đơn vị (5 wd ~ 7 d; 30 d ~ 1 mo) hoặc khác time_min (rà soát E-M3, E-H3)
         return "UNIT_DIFF" if _time_min(cand) == _time_min(gold) else "COND_DIFF"
-    return "WEAKENED" if t_c is None or t_c > t_g else "STRENGTHENED"
+    tighter = t_g is None or (t_c is not None and t_c < t_g)  # cửa sổ của ứng viên hẹp hơn gold
+    # mẫu khẳng định: cửa sổ hẹp = đòi hỏi nhiều hơn = MẠNH hơn; mẫu phủ định (Not …): cửa sổ hẹp = cấm ÍT hơn = YẾU
+    # hơn (rà soát 2026-11-20, lỗi 8 — trước đây phủ định bị gán ngược chiều)
+    return "STRENGTHENED" if tighter != _negative(tg) else "WEAKENED"
+
+
+def _precedence_vs_responded(cand: Mapping[str, Any], gold: Mapping[str, Any], acts_c: tuple,
+                              acts_g: tuple) -> Optional[str]:
+    """Precedence-họ(A,B) ⇒ Responded Existence(B,A): cặp mẫu này chỉ so được khi activity ĐẢO thứ tự. Điều kiện của
+    hai bên cùng nằm trên B (Precedence: điều kiện trên sự kiện kích hoạt B; RE(B,A): trên B) nên so trực tiếp được.
+    None = không phải cặp này (so như thường)."""
+    tc, tg = cand["template_name"], gold["template_name"]
+    if not ({tc, tg} & PRECEDENCE_FAMILY and "Responded Existence" in {tc, tg}) or acts_c != acts_g[::-1]:
+        return None
+    if condition_set(cand) != condition_set(gold) or time_exact(cand) != time_exact(gold):
+        return "COND_DIFF"
+    return "STRENGTHENED" if tc in PRECEDENCE_FAMILY else "WEAKENED"
 
 
 def _time_min(ast: Mapping[str, Any]) -> float:
@@ -251,8 +271,23 @@ def paired_comparison(score_a: Mapping[str, Any], score_b: Mapping[str, Any],
     b = [is_correct(score_b["per_clause"][i]) for i in ids]
     only_a = [i for i, x, y in zip(ids, a, b, strict=True) if x and not y]
     only_b = [i for i, x, y in zip(ids, a, b, strict=True) if y and not x]
+    p = mcnemar_exact(len(only_a), len(only_b))
+    # p_value (làm tròn 4 chữ số) giữ cho tương thích; hiển thị dùng fmt_p(p_exact) — rà soát 2026-11-20 (lỗi 7):
+    # p < 0,00005 từng in thành 'p = 0.0'
     return {"n": len(ids), "both": sum(x and y for x, y in zip(a, b, strict=True)), "only_a": only_a, "only_b": only_b,
-            "p_value": round(mcnemar_exact(len(only_a), len(only_b)), 4)}
+            "p_value": round(p, 4), "p_exact": p}
+
+
+def fmt_p(p: Optional[float]) -> str:
+    """p-value để in: '< 0.0001' khi rất nhỏ (không bao giờ 'p = 0'), còn lại 4 chữ số."""
+    if p is None:
+        return "—"
+    return "< 0.0001" if p < 0.0001 else f"{p:.4f}"
+
+
+def paired_p(pc: Mapping[str, Any]) -> str:
+    """p để in từ một kết quả paired_comparison (file cũ chưa có p_exact → dùng p_value)."""
+    return fmt_p(pc.get("p_exact", pc.get("p_value")))
 
 
 def tier4_ids(gold_clauses: Mapping[str, Mapping[str, Any]]) -> List[str]:

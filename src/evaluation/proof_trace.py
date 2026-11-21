@@ -58,9 +58,23 @@ def evidence_check(evidence: Optional[str], sources: Sequence[str]) -> Dict[str,
             "verbatim": level == "verbatim", "level": level, "coverage": round(cov, 3)}
 
 
+def prompt_extras(nid: str, pred: Mapping[str, Any], graph: Mapping[str, Any]) -> List[str]:
+    """Phần ngữ cảnh NGOÀI khoản + khoản dẫn chiếu mà prompt thật sự chứa (cấu hình Z: định nghĩa thuật ngữ, ghi chú
+    phạm vi quốc gia — graph_context_chunk_v2). Rà soát 2026-11-20 (lỗi 6): trước đây dẫn chứng trích từ định nghĩa
+    bị coi là 'unsupported' (S4 oan). Dựng lại đúng văn bản đã đưa LLM (cùng hàm, cùng đồ thị v2)."""
+    from ..kg.legal_enrichment import definitions_context  # nhập tại chỗ: tránh vòng evaluation ↔ kg
+
+    out = []
+    if pred.get("definitions"):
+        out.append(definitions_context(nid, graph))
+    if pred.get("scope_note"):
+        out.append((graph.get("scope_notes") or {}).get(nid, ""))
+    return [x for x in out if x]
+
+
 def trace_record(nid: str, pred: Mapping[str, Any], index: LegalGraphIndex,
-                 set_findings: Sequence[Mapping[str, Any]] = ()) -> Dict[str, Any]:
-    """Một proof trace (dạng dữ liệu) cho khoản nid."""
+                 set_findings: Sequence[Mapping[str, Any]] = (), extras: Sequence[str] = ()) -> Dict[str, Any]:
+    """Một proof trace (dạng dữ liệu) cho khoản nid. extras = phần ngữ cảnh khác trong prompt (prompt_extras)."""
     clause_text = index.text_of(nid) if nid in index.nodes else ""
     refs = [{"target": r, "text": index.text_of(r) if r in index.nodes else ""} for r in pred.get("context_refs", [])]
     analysis = pred.get("obligation_analysis") or {}
@@ -73,7 +87,8 @@ def trace_record(nid: str, pred: Mapping[str, Any], index: LegalGraphIndex,
         "context_refs": refs, "skipped_refs": list(pred.get("skipped_refs", [])),
         "definitions": list(pred.get("definitions", [])),
         "obligation": analysis,
-        "evidence": evidence_check(analysis.get("evidence"), [clause_text] + [r["text"] for r in refs]),
+        "evidence": evidence_check(analysis.get("evidence"), [clause_text] + [r["text"] for r in refs] + list(extras)),
+        "prompt_extras": len(extras),
         "rounds": [{"round": t.get("round"), "status": t.get("status"), "error": t.get("error")}
                    for t in pred.get("trajectory", [])],
         "decl": decl, "roundtrip": pred.get("roundtrip_msg"),
@@ -87,7 +102,7 @@ def trace_record(nid: str, pred: Mapping[str, Any], index: LegalGraphIndex,
 def build_traces(predictions_doc: Mapping[str, Any], graph: Mapping[str, Any],
                  set_findings: Sequence[Mapping[str, Any]] = ()) -> List[Dict[str, Any]]:
     index = LegalGraphIndex(graph)
-    return [trace_record(nid, p, index, set_findings)
+    return [trace_record(nid, p, index, set_findings, prompt_extras(nid, p, graph))
             for nid, p in sorted(predictions_doc.get("predictions", {}).items()) if p.get("outcome") == RULE]
 
 

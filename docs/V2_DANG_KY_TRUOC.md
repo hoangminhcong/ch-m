@@ -125,6 +125,32 @@ phiên bản (buzer.de, "alle Fassungen seit 2006") và đối chiếu bản cô
     PDF R640 mất gạch nối ở 17 chỗ ngắt từ ('legisla tion') → nối lại khi từ ghép có ở chỗ khác trong cùng văn bản
     (13 khoản R640, 7 trên phiếu). Tập Đức: 'in Verbindung mit' (6 khoản đổi dẫn chiếu; 4 khoản từng trỏ nhầm
     InVeKoSV §6 thay vì §6 Marktorganisationsgesetz) — phiếu Đức dựng lại, dòng trả lời giữ nguyên.
+- **2026-11-20 — sửa lỗi sau rà soát kiểm thử (người dùng: "sửa tất cả rồi đưa t1-t3 vào để kiểm tra"); áp dụng
+  cho MỌI lần chạy SAU v1.2** (v1.2 hoàn tất bằng code commit `b32a643` — phát lại cache chứng minh code đó cho kết quả
+  giống hệt v1.2, 1 526/1 526 khoản). Không rút từ gold; không đổi prompt.
+  - Lõi, Tầng 1: `time_max` chỉ được dùng với mẫu có ngữ nghĩa thời hạn trong engine / Cypher / bản diễn đạt
+    (Response, Alternate / Chain Response, Responded Existence, Precedence, Alternate / Chain Precedence, Not
+    Response, Not Precedence). Existence, Absence, Init, Exactly1, Choice, Exclusive Choice, Not Co-Existence, Not
+    Responded Existence bỏ qua cửa sổ thời gian → trước đây là thời hạn "trên giấy" và làm N3 (B6) được thoả mà
+    không có thời hạn thật. Hạn chót kiểu mốc ngày dùng điều kiện `date` (như N5 đã ghi).
+  - Entity Matcher — đề xuất rồi HOÀN TÁC (người dùng: "hoàn tác lỗi 9"): đổi "khoản không có mốc số / ngày / năm
+    nào → BASELESS ngay" thành phản hồi cho LLM. Phát lại cache v1.2 (T3): đúng 4 khoản đổi hành vi — X: R1307:Art24(8),
+    R809:Art71(6), R809:Art75; Y: R809:Art50(5) — cả 4 là bẫy hoặc không chấm và hành vi cũ ĐÚNG ở cả 4, không khoản
+    positive nào được lợi → giữ hành vi cũ. Sau hoàn tác: phát lại v1.2 bằng code hiện tại 1 526/1 526 giống hệt.
+  - Lõi, Tầng 2: activity tự lặp so theo tập thành viên (`{A | B}` với `{B | A}` hay hai nhóm chung một activity).
+  - Chấm (phân loại MÔ TẢ, không đổi EQ / tỉ lệ đúng / p): Precedence(A,B) so với Responded Existence(B,A) (không
+    phải (A,B)); thời hạn ở mẫu phủ định đổi chiều mạnh / yếu. v1–v1.2: 0 khoản đổi lớp.
+  - TN7: khoản nhiều gold chọn gold theo kappa (trước: agreement); in p < 0,0001 thay vì "p = 0".
+  - Ghi nhận / cổng: model giám khảo vào cổng "lẫn lần chạy"; dấu code từng khoản; `--force --only` với lần chạy
+    khác bị chặn; proof trace của Z đối chiếu cả định nghĩa / ghi chú phạm vi có trong prompt (S4).
+  - Kiểm thử thường trực: T1 (dữ liệu phái sinh = dựng lại từ nguồn) trong `run_pipeline pre`, T2 (bất biến đầu ra)
+    cuối `run_pipeline post`, T3 (`run_pipeline replay`: phát lại cache bằng code hiện tại) sau mỗi lần sửa code.
+- **2026-11-21 — giới hạn độ dài câu trả lời khi gọi API (hạ tầng, không đổi logic).** Cerebras (30k token / phút)
+  tính độ dài trả lời MẶC ĐỊNH vào hạn mức: cùng prompt ~9,7k token, không gửi giới hạn → 429 mãi, gửi
+  `max_completion_tokens=8000` → 200 (đo bằng scripts/check_api_quota.py). Thêm `--max-tokens` (mặc định không gửi
+  = như cũ; ghi `max_completion_tokens` vào meta; câu trả lời bị cắt ở giới hạn = ERROR, không cache). Khoá cache không
+  đổi → mọi kết quả cũ phát lại y nguyên. v1.2 Y-noDuty: 2 khoản cuối (R1307:Art41(3), R1307:Art43(9), lỗi ở vòng sửa
+  thứ 5 / 4, prompt 55–60k ký tự) chạy bằng `b32a643` + đúng bản vá này (meta của file ghi git_dirty = true vì vậy).
 
 ## Bổ sung đăng ký trước (2026-11-19) — **ĐÃ DUYỆT 2026-11-19** (người dùng: "oke duyệt tất cả", gồm B4 tùy chọn; B5 theo phương án (a)), áp dụng trước mọi lần chạy Z và tập Đức
 

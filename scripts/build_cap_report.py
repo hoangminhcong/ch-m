@@ -26,6 +26,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from scripts.cap_report_extras import section_reliability, section_verification  # noqa: E402
+from src.evaluation.cap_scoring import paired_p  # noqa: E402
 
 CONFIG_ORDER = ["X", "Y", "Y-noL12", "Y-noL3", "Y-retry1", "Y-noVac", "Y-noDomain", "Y-noDuty", "R", "N", "Z",
                 "Z-noLegal", "Z-noProcess", "Z-noMass", "Z-noNotes", "Z-noHint"]
@@ -303,7 +304,7 @@ def section_scores(scores: Mapping[str, Any]) -> str:
                  + svg_segmented(grouped, cats)
                  + table(["Cấu hình", *scores["configs"][cfgs[0]]["positive"]["classes"]],
                          [[CONFIG_VI[c], *scores["configs"][c]["positive"]["classes"].values()] for c in cfgs]) + "</div>")
-    prows = [[name, pc["n"], pc["both"], len(pc["only_a"]), len(pc["only_b"]), pc["p_value"],
+    prows = [[name, pc["n"], pc["both"], len(pc["only_a"]), len(pc["only_b"]), paired_p(pc),
               ", ".join(pc["only_a"] + pc["only_b"])[:120]] for name, pc in scores["paired"].items()]
     parts.append('<div class="card"><h3>So cặp trên cùng các khoản (McNemar chính xác)</h3>'
                  '<p class="sub">"Chỉ trái đúng" = cấu hình bên trái đúng mà bên phải sai. p &lt; 0,05 mới coi là khác biệt.</p>'

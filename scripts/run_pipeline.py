@@ -3,8 +3,11 @@ Chạy pipeline theo thứ tự cố định, có cổng kiểm — mọi bướ
 
   pre   trước khi sinh luật:  KG tuân thủ metamodel (M2) → Γ trên đĩa đúng là phép chiếu của KG → in dấu dữ liệu
         đầu vào của các cấu hình (để đối chiếu với file kết quả)
+        → T1: dữ liệu phái sinh (đồ thị luật, đồ thị / hồ sơ Tiến trình) đúng là kết quả dựng lại từ nguồn
   post  sau khi sinh luật:    chấm (cổng: thiếu khoản / ERROR / lẫn lần chạy / lẫn PHIÊN BẢN DỮ LIỆU) → phễu kiểm
         chứng → xuất ràng buộc + kiểm tập ràng buộc → proof trace → [đối chiếu từng hồ sơ] → báo cáo HTML
+        → T2: bất biến trên mọi đầu ra (chấm lại, đếm lại, KG không cạnh treo, trace = AST, …)
+  replay  T3: phát lại cache LLM bằng code hiện tại, so từng khoản với file gốc (sau mỗi lần sửa code; nạp log)
 
 Bước nào lỗi (exit ≠ 0) thì DỪNG — không chạy bước sau trên dữ liệu chưa qua cổng.
 
@@ -46,6 +49,7 @@ def pre(dataset: str) -> None:
     _run("Γ khớp phép chiếu của KG", [str(SCRIPTS / "build_gamma_from_kg.py"), "--check"])
     _run("Tầng Cầu nối (MAPS_TO) khớp ontology đã duyệt + đồ thị",
          [str(SCRIPTS / "build_mapping_graph.py"), "--check"])
+    _run("T1 — dữ liệu phái sinh khớp nguồn (nạp log ~15 s)", [str(SCRIPTS / "check_derived_data.py")])
     sys.stdout.write(f"\n=== Dấu dữ liệu đầu vào (bộ '{dataset}') — file kết quả mới sẽ ghi đúng mã này\n")
     for cfg in CONFIGS:
         fp = fingerprint(input_paths(cfg, dataset))
@@ -85,7 +89,16 @@ def post(args: argparse.Namespace) -> None:
         _run("Đối chiếu từng hồ sơ (TN7, nạp log)",
              [str(SCRIPTS / "run_cap_conformance.py"), "--pred-dir", str(pred), *gold, "--configs", *traced])
     _run("Báo cáo HTML", [str(SCRIPTS / "build_cap_report.py"), "--dir", str(pred)])
+    _run("T2 — bất biến trên mọi đầu ra", [str(SCRIPTS / "check_outputs.py"), "--pred-dir", str(pred), *gold])
     sys.stdout.write(f"\nPipeline 'post' xong cho {pred}.\n")
+
+
+def replay(args: argparse.Namespace) -> None:
+    pred = Path(args.pred_dir)
+    pred = pred if pred.is_absolute() else PROJECT_ROOT / pred
+    configs = ["--configs", *args.configs] if args.configs else []
+    _run("T3 — phát lại cache LLM bằng code hiện tại", [str(SCRIPTS / "replay_check.py"), "--pred-dir", str(pred),
+                                                       *configs, "--report", str(pred / "replay_check.json")])
 
 
 def main() -> int:
@@ -102,9 +115,14 @@ def main() -> int:
     p_post.add_argument("--conformance", action="store_true", help="chạy cả TN7 (đối chiếu từng hồ sơ, nạp log)")
     for f in SCORE_FLAGS:
         p_post.add_argument(f"--{f.replace('_', '-')}", action="store_true", help="chuyển cho score_cap.py")
+    p_rep = sub.add_parser("replay", help="T3: phát lại cache bằng code hiện tại (không gọi API)")
+    p_rep.add_argument("--pred-dir", required=True)
+    p_rep.add_argument("--configs", nargs="*", default=None, help="mặc định: mọi cấu hình có file dự đoán")
     args = p.parse_args()
     if args.stage == "pre":
         pre(args.dataset)
+    elif args.stage == "replay":
+        replay(args)
     else:
         post(args)
     return 0

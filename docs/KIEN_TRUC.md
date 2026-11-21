@@ -89,7 +89,12 @@ Lỗi ở bất kỳ bước nào → phản hồi chẩn đoán cho LLM, sang v
   nếu có; `score_cap` báo khi các cấu hình sinh bằng code khác nhau.
 - **Khi sinh**: mỗi file kết quả và mỗi khoản ghi `inputs_id` (SHA-256 các file đầu vào); chạy tiếp khi dữ liệu đã
   đổi → dừng. Ghi kết quả nguyên tử (chịu được khoá file OneDrive).
-- **Khi chấm**: `score_cap.py` dừng nếu thiếu khoản, còn ERROR, lẫn lần chạy hoặc lẫn phiên bản dữ liệu.
+- **Khi chấm**: `score_cap.py` dừng nếu thiếu khoản, còn ERROR, lẫn lần chạy (gồm model giám khảo) hoặc lẫn phiên
+  bản dữ liệu; báo khi một file lẫn phiên bản code (`code_sha` từng khoản).
+- **Kiểm thử thường trực (2026-11-20)**: T1 `check_derived_data.py` (đồ thị luật CAP v1 / v2, đồ thị Đức, đồ thị và
+  hồ sơ Tiến trình = dựng lại từ nguồn) trong `pre`; T2 `check_outputs.py` (bất biến trên mọi đầu ra: chấm lại, đếm
+  lại, KG không cạnh treo, trace = AST, bảng rủi ro, TN7) ở cuối `post`; T3 `run_pipeline.py replay` (phát lại cache
+  LLM bằng code hiện tại, so từng khoản) — chạy sau mỗi lần sửa code để biết kết quả đã báo cáo có đổi không.
 
 ## 8. Trạng thái module so với kế hoạch M1–M11
 

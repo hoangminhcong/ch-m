@@ -61,8 +61,10 @@ class TestCliSmoke(unittest.TestCase):
                 preds[rule_clause] = {**preds[rule_clause], "outcome": "RULE", "ast": ast,
                                       "obligation_analysis": {"evidence": sheet[0]["text"][:40]},
                                       "trajectory": [{"round": 1, "status": "PASSED"}]}
+            summary = {o: sum(p["outcome"] == o for p in preds.values()) for o in ("RULE", "BASELESS", "FAILED")}
             (cls.dir / f"predictions_{cfg}.json").write_text(json.dumps(
-                {"config": cfg, "model": "m", "provider": "p", "predictions": preds}), encoding="utf-8")
+                {"config": cfg, "model": "m", "provider": "p", "predictions": preds, "summary": summary}),
+                encoding="utf-8")
 
     @classmethod
     def tearDownClass(cls) -> None:
@@ -80,6 +82,7 @@ class TestCliSmoke(unittest.TestCase):
         import scripts.build_cap_report as report
         import scripts.build_full_kg as full_kg
         import scripts.build_proof_traces as proof
+        import scripts.check_outputs as outputs
         import scripts.export_verified_constraints as export
         import scripts.review_flags as review
         import scripts.score_cap as score
@@ -91,7 +94,8 @@ class TestCliSmoke(unittest.TestCase):
                  (full_kg.main, ["--pred-dir", d, "--config", "Y"], "kg_full_Y.json"),
                  (proof.main, ["--pred-dir", d, "--config", "Y"], "proof_traces_Y.json"),
                  (review.main, ["--pred-dir", d, "--configs", "Y", "--no-log"], "review_flags_Y.json"),
-                 (report.main, ["--dir", d], "report.html")]
+                 (report.main, ["--dir", d], "report.html"),
+                 (outputs.main, ["--pred-dir", d], "output_invariants.json")]  # T2: 0 vi phạm trên đầu ra thật
         for main, argv, produced in steps:
             with self.subTest(step=produced):
                 code, out = _call(main, argv)
@@ -113,7 +117,7 @@ class TestCliSmoke(unittest.TestCase):
         self.assertEqual(code, 0)
         self.assertEqual(calls, ["score_cap.py", "verification_funnel.py", "export_verified_constraints.py",
                                  "build_full_kg.py", "build_proof_traces.py", "review_flags.py",
-                                 "run_cap_conformance.py", "build_cap_report.py"])
+                                 "run_cap_conformance.py", "build_cap_report.py", "check_outputs.py"])
 
         def failing(step, args):
             if Path(args[0]).name == "verification_funnel.py":

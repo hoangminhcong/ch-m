@@ -19,7 +19,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from scripts.build_proof_traces import _graph  # noqa: E402
 from scripts.run_cap_generation import DATASETS, load_grounding  # noqa: E402
 from scripts.score_cap import CONFIG_ORDER  # noqa: E402
-from src.evaluation.cap_gold import scored_clauses  # noqa: E402
+from src.evaluation.cap_gold import check_gold_matches, scored_clauses  # noqa: E402
 from src.evaluation.proof_trace import build_traces  # noqa: E402
 from src.evaluation.review_flags import markdown, risk_coverage, rule_signals, summary  # noqa: E402
 from src.symbolic.constraint_set_checks import check_constraint_set  # noqa: E402
@@ -76,6 +76,8 @@ def main() -> int:
     for cfg in configs:
         doc = json.loads((pred_dir / f"predictions_{cfg}.json").read_text(encoding="utf-8"))
         dataset = doc.get("dataset", "cap")
+        if gold is not None:
+            check_gold_matches(list(gold), list(doc["predictions"]), gold_path.name)
         years = {c["node_id"]: c.get("years")
                  for c in json.loads(DATASETS[dataset][0].read_text(encoding="utf-8"))}
         flags = flags_for(doc, dataset, mass, clause_doctypes(dataset), years)

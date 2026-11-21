@@ -8,7 +8,8 @@ mình được sinh từ dữ liệu nào, nên kết quả hai phiên bản d�
   meta["inputs_id"]         mã ngắn của cả bộ (12 ký tự hex)
   prediction["inputs_id"]   mã của bộ dữ liệu đã sinh RA khoản đó (khoản sinh trước khi có cơ chế này: không có)
 
-Chỉ dấu DỮ LIỆU (file); prompt / code không nằm trong dấu.
+Chỉ dấu DỮ LIỆU (file); prompt / code không nằm trong dấu — phiên bản code ghi riêng: code_version() ở meta["code"]
+và prediction["code_sha"] ở từng khoản (2026-11-20).
 """
 
 import hashlib
@@ -68,8 +69,10 @@ def input_conflicts(docs: Mapping[str, Mapping[str, Any]]) -> Dict[str, Any]:
     """Rà các file dự đoán (cấu hình → nội dung predictions_<cfg>.json).
       within    cấu hình → số khoản sinh từ bộ dữ liệu KHÁC bộ ghi ở meta (file lẫn hai phiên bản dữ liệu)
       across    tên đầu vào → {cấu hình: sha256} khi hai cấu hình đọc cùng đầu vào nhưng nội dung khác
-      unstamped cấu hình → số khoản chưa có dấu (sinh trước khi có cơ chế này — không kết luận được)"""
+      unstamped cấu hình → số khoản chưa có dấu (sinh trước khi có cơ chế này — không kết luận được)
+      code_within cấu hình → số khoản sinh bằng code KHÁC code ghi ở meta (chạy tiếp sau khi sửa code; chỉ báo)"""
     within: Dict[str, int] = {}
+    code_within: Dict[str, int] = {}
     unstamped: Dict[str, int] = {}
     seen: Dict[str, Dict[str, str]] = {}
     for cfg, doc in docs.items():
@@ -80,7 +83,12 @@ def input_conflicts(docs: Mapping[str, Mapping[str, Any]]) -> Dict[str, Any]:
         n_other = sum(1 for i in ids if i is not None and i != file_id)
         if n_other:
             within[cfg] = n_other
+        file_code = (doc.get("code") or {}).get("sha256")
+        n_code = sum(1 for p in doc.get("predictions", {}).values()
+                     if p.get("code_sha") and file_code and p["code_sha"] != file_code)
+        if n_code:
+            code_within[cfg] = n_code
         for name, digest in (doc.get("inputs") or {}).items():
             seen.setdefault(name, {})[cfg] = digest
     across = {name: by_cfg for name, by_cfg in seen.items() if len(set(by_cfg.values())) > 1}
-    return {"within": within, "across": across, "unstamped": unstamped}
+    return {"within": within, "across": across, "unstamped": unstamped, "code_within": code_within}

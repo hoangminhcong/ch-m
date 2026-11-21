@@ -12,6 +12,8 @@ import json
 from pathlib import Path
 from typing import Any, Callable, Dict, Mapping, Optional, Sequence
 
+from src.evaluation.cap_scoring import paired_p
+
 LEVELS = ("issue", "rule", "application", "conclusion")
 LEVEL_VI = {"issue": "Nhận ra nghĩa vụ", "rule": "Đúng mẫu", "application": "Đúng activity", "conclusion": "Đúng hoàn toàn (EQ)"}
 
@@ -137,7 +139,7 @@ def section_reliability(scores: Optional[Mapping[str, Any]], label: Mapping[str,
     sens = scores.get("sensitivity_temporal")
     if sens:
         rows = [[label.get(c, c), f"{r['correct']}/{r['n']}", _pct(r["rate"])] for c, r in sens["overall"].items()]
-        prow = [[n, pc["n"], len(pc["only_a"]), len(pc["only_b"]), pc["p_value"]] for n, pc in sens["paired"].items()]
+        prow = [[n, pc["n"], len(pc["only_a"]), len(pc["only_b"]), paired_p(pc)] for n, pc in sens["paired"].items()]
         parts.append(f'<div class="card"><h3>Độ nhạy theo hiệu lực thời gian (B5)</h3><p class="sub">Chấm lại sau khi '
                      f'bỏ {len(sens["excluded"])} khoản có sửa đổi 2015–2017 (còn {sens["n_scored"]} khoản). So với '
                      'phần B: kết luận có đổi không?</p>'

@@ -14,6 +14,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
+from src.evaluation.cap_gold import check_gold_matches  # noqa: E402
 from src.evaluation.verification_funnel import funnel, markdown_table  # noqa: E402
 
 ORDER = ["X", "Y", "Y-noL12", "Y-noL3", "Y-retry1", "Y-noVac", "Y-noDomain", "Y-noDuty", "R", "N", "Z",
@@ -33,7 +34,10 @@ def main() -> int:
     for cfg in ORDER:
         path = pred_dir / f"predictions_{cfg}.json"
         if path.exists():
-            results[cfg] = funnel(json.loads(path.read_text(encoding="utf-8"))["predictions"], gold)
+            preds = json.loads(path.read_text(encoding="utf-8"))["predictions"]
+            if gold is not None:
+                check_gold_matches(list(gold), list(preds), gold_path.name)
+            results[cfg] = funnel(preds, gold)
     if not results:
         raise SystemExit(f"Không có predictions_*.json trong {pred_dir}")
     errors = {c: r["outcomes"].get("ERROR", 0) for c, r in results.items() if r["outcomes"].get("ERROR")}

@@ -279,9 +279,18 @@ class ProcessTypingEnvironment:
             if not ok_tgt and msg_tgt:
                 errors.append(msg_tgt)
             elif ast_obj.target_activity == ast_obj.activation_activity:
+                # câu chữ GIỮ NGUYÊN như trước: phản hồi đổi chữ → prompt vòng sau đổi → kết quả cũ không phát lại được
                 errors.append(
                     f"Semantic Self-Loop Violation: 'activation_activity' and 'target_activity' "
                     f"cannot be identical ('{ast_obj.activation_activity}')."
+                )
+            elif activity_members(ast_obj.target_activity) & activity_members(ast_obj.activation_activity):
+                # so theo TẬP thành viên (rà soát 2026-11-20, lỗi 14): '{A | B}' và '{B | A}', hay hai nhóm chung một
+                # activity, cũng là tự lặp — trước đây chỉ bắt khi hai chuỗi giống hệt
+                shared = sorted(activity_members(ast_obj.target_activity) & activity_members(ast_obj.activation_activity))
+                errors.append(
+                    f"Semantic Self-Loop Violation: 'activation_activity' and 'target_activity' "
+                    f"share activities {shared}; a constraint cannot relate a step to itself."
                 )
 
         # 3. Kiểm tra thuộc tính dữ liệu và ép kiểu bằng δ(C, p) & Type Conformance

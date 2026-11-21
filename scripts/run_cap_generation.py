@@ -235,7 +235,10 @@ def run_clause(chunk: Mapping[str, Any], context: Dict[str, Any], gamma: Mapping
     outcome = outcome_of(result)
     row = {"node_id": chunk["node_id"], "round": chunk.get("round"), "outcome": outcome,
            "ast": result["final_ast"] if outcome == RULE else None,
-           "rounds_needed": result["rounds_needed"], "roundtrip_msg": result.get("roundtrip_msg"),
+           # llm_rounds = tổng số vòng gọi LLM, một định nghĩa cho mọi kết cục (lỗi 10); rounds_needed giữ nghĩa cũ
+           # (thành công: số lần sửa; thất bại: số vòng) để so được với v1 / v1.1 / v1.2
+           "rounds_needed": result["rounds_needed"], "llm_rounds": len(result["trajectory"]),
+           "roundtrip_msg": result.get("roundtrip_msg"),
            "grounding": result.get("grounding"), "obligation_analysis": result.get("obligation_analysis"),
            "trajectory": result["trajectory"], "context_refs": context["context_refs"],
            "skipped_refs": context["skipped_refs"], "truncated_chars": context["truncated_chars"],
@@ -266,6 +269,9 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--base-url", default=None, help="ghi đè base-url của --provider")
     p.add_argument("--min-interval", type=float, default=float(os.environ.get("LLM_MIN_INTERVAL", "0")),
                    help="giây tối thiểu giữa hai lần gọi API (VD 13 nếu hạn mức chỉ 5 request/phút)")
+    p.add_argument("--max-tokens", type=int, default=None,
+                   help="giới hạn độ dài câu trả lời gửi kèm request (VD 8000 với Cerebras: nhà cung cấp tính độ dài trả "
+                        "lời mặc định vào hạn mức token/phút → request dài bị 429 mãi). Không đổi khoá cache.")
     p.add_argument("--key-var", default=None,
                    help="tên biến key trong .env cho cửa sổ này (VD CEREBRAS_API_KEY_2); mặc định biến chuẩn")
     p.add_argument("--judge-provider", choices=sorted(PROVIDERS), default=None,
@@ -306,21 +312,29 @@ def check_resume(doc: Mapping[str, Any], args: argparse.Namespace,
     """Chạy tiếp vào file đã có: phải cùng bộ dữ liệu, model, nhà cung cấp (trừ khi --force chạy lại từ đầu).
     Không kiểm thì khoản tiếng Đức lẫn vào file CAP, hoặc kết quả hai nhà cung cấp trộn nhau (rà soát MEDIUM-2).
     `current` = dấu dữ liệu đầu vào hiện tại (A2): file đã ghi dấu mà dữ liệu đổi → dừng (sự cố v1.2)."""
-    if not doc.get("predictions") or args.force:
+    if not doc.get("predictions"):
         return
-    found = {"dataset": doc.get("dataset", "cap"), "model": doc.get("model"), "provider": doc.get("provider"),
-             "judge_model": doc.get("judge_model")}
-    wanted = {"dataset": args.dataset, "model": args.model, "provider": args.provider,
-              "judge_model": getattr(args, "judge_model", None) if getattr(args, "judge_provider", None) else None}
+    # --force chạy lại MỌI khoản → không còn kết quả cũ nào được giữ, khỏi kiểm. --force kèm --only / --limit chỉ chạy
+    # lại một phần → các khoản còn lại giữ kết quả cũ → vẫn phải kiểm (rà soát 2026-11-20, lỗi 3).
+    partial = bool(getattr(args, "only", None) or getattr(args, "limit", None))
+    if args.force and not partial:
+        return
+    found = {"dataset": doc.get("dataset", "cap"), "model": doc.get("model"), "provider": doc.get("provider")}
+    wanted = {"dataset": args.dataset, "model": args.model, "provider": args.provider}
     diff = {k: (found[k], wanted[k]) for k in found if found[k] is not None and found[k] != wanted[k]}
+    # Giám khảo: file không ghi judge_model = giám khảo là chính bộ sinh. So cả khi file KHÔNG có khóa — trước đây
+    # khóa thiếu bị bỏ qua nên chạy tiếp với --judge-provider không bị chặn (lỗi 2).
+    judge_now = getattr(args, "judge_model", None) if getattr(args, "judge_provider", None) else None
+    if doc.get("judge_model") != judge_now:
+        diff["judge_model"] = (doc.get("judge_model"), judge_now)
     if diff:
         raise SystemExit(f"File kết quả đã có thuộc lần chạy khác {diff} (đã có → lệnh này). Dùng --out-dir khác, "
-                         "hoặc --force để chạy lại mọi khoản.")
+                         "hoặc --force (KHÔNG kèm --only / --limit) để chạy lại mọi khoản.")
     changed = changed_inputs(doc.get("inputs") or {}, current or {})
     if changed:
         raise SystemExit(f"Dữ liệu đầu vào đã ĐỔI so với lúc sinh file này: {changed}. Chạy tiếp sẽ trộn kết quả của "
-                         "hai phiên bản dữ liệu. Dùng --force (khoản có prompt không đổi lấy lại từ cache, không tốn "
-                         "API), hoặc --out-dir mới.")
+                         "hai phiên bản dữ liệu. Dùng --force không kèm --only / --limit (khoản có prompt không đổi "
+                         "lấy lại từ cache, không tốn API), hoặc --out-dir mới.")
 
 
 def _summary(preds: Mapping[str, Mapping[str, Any]]) -> Dict[str, int]:
@@ -345,9 +359,11 @@ def main() -> int:
     chunks = _select(json.loads(DATASETS[args.dataset][0].read_text(encoding="utf-8")), args)
     client_cls = CacheOnlyClient if args.cache_only else RealLLMClient
     llm = client_cls(base_url=args.base_url, model_name=args.model, cache_file=args.cache_file,
-                     min_interval=args.min_interval, key_var=args.key_var)
+                     min_interval=args.min_interval, key_var=args.key_var,
+                     max_completion_tokens=args.max_tokens)
     judge_llm = (client_cls(base_url=args.judge_base_url, model_name=args.judge_model, cache_file=args.judge_cache_file,
-                            min_interval=args.min_interval, key_var=args.judge_key_var)
+                            min_interval=args.min_interval, key_var=args.judge_key_var,
+                            max_completion_tokens=args.max_tokens)
                  if args.judge_provider else None)
     build = context_builder(args.config, args.dataset)
     cfg = CONFIGS[args.config]
@@ -363,14 +379,23 @@ def main() -> int:
     bridge_path = MAPPING_GRAPHS[args.dataset]
     bridge = (load_bridge(json.loads(bridge_path.read_text(encoding="utf-8")))
               if (cfg.get("norm") or cfg.get("v2")) and bridge_path.exists() else None)
+    if cfg.get("v2") and cfg.get("v2_hint", True) and bridge is None:
+        raise SystemExit(f"Cấu hình {args.config} cần tầng Cầu nối {bridge_path.name} cho gợi ý MAPS_TO "
+                         "(python scripts/build_mapping_graph.py) — thiếu thì Z chạy như Z-noHint mà không báo.")
     if cfg.get("norm") and (bridge is None or load_ontology(ONTOLOGY) is None):
         raise SystemExit(f"Cấu hình N cần ontology ĐÃ DUYỆT và tầng Cầu nối {bridge_path.name} "
                          "(python scripts/build_mapping_graph.py) — đăng ký trước B6.")
+    code = code_version(PROJECT_ROOT)
+    old_code = (doc.get("code") or {}).get("sha256")
+    if doc.get("predictions") and not args.force and old_code and old_code != code["sha256"]:
+        sys.stdout.write(f"Chú ý: file được sinh bằng code {old_code}, lần này code {code['sha256']} — mỗi khoản ghi "
+                         "code_sha riêng; score_cap sẽ báo file lẫn phiên bản code.\n")
     meta = {"config": args.config, "options": cfg, "model": args.model, "provider": args.provider,
             "base_url": args.base_url, "key_var": args.key_var or "default", "cache_file": str(args.cache_file),
+            "max_completion_tokens": args.max_tokens,
             "profile": profile_for(args.config, args.dataset).name, "timezone": TIMEZONE,
             **({"judge_model": args.judge_model, "judge_provider": args.judge_provider} if judge_llm else {}),
-            "inputs": current, "inputs_id": run_id, "code": code_version(PROJECT_ROOT)}
+            "inputs": current, "inputs_id": run_id, "code": code}
     if args.dataset != "cap":
         meta["dataset"] = args.dataset
     if cfg.get("norm"):
@@ -391,10 +416,12 @@ def main() -> int:
             continue
         try:
             preds[nid] = {**run_clause(chunk, build(chunk), gamma, llm, args.config, grounding, process,
-                                       args.dataset, bridge, judge_llm), "inputs_id": run_id}
+                                       args.dataset, bridge, judge_llm), "inputs_id": run_id,
+                          "code_sha": code["sha256"]}
         except Exception as exc:  # ghi lỗi từng khoản (VD hết quota, cache miss), không dừng cả đợt
             preds[nid] = {"node_id": nid, "round": chunk.get("round"), "outcome": "ERROR",
-                          "error": f"{type(exc).__name__}: {str(exc)[:300]}", "inputs_id": run_id}
+                          "error": f"{type(exc).__name__}: {str(exc)[:300]}", "inputs_id": run_id,
+                          "code_sha": code["sha256"]}
         p = preds[nid]
         sys.stdout.write(f"[{i}/{len(chunks)}] {nid:<18} {p['outcome']:<8} "
                          f"vòng={p.get('rounds_needed', '-')} {p.get('seconds', '')}s\n")

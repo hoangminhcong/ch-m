@@ -32,7 +32,7 @@ def cohen_kappa(tp: int, fp: int, fn: int, tn: int) -> Optional[float]:
     pe = ((tp + fp) * (tp + fn) + (fn + tn) * (fp + tn)) / (n * n)
     if pe == 1:  # cả hai phía cùng một nhãn cho mọi hồ sơ (VD không vi phạm nào): kappa không xác định
         return None  # rà soát 2026-11-18 E-M1: trước đây trả 1.0 — "hoàn hảo" giả
-    return round((po - pe) / (1 - pe), 4)
+    return round((po - pe) / (1 - pe), 4) + 0.0  # + 0.0: không in '-0.0' (rà soát 2026-11-20, lỗi 13)
 
 
 def compare_verdicts(gold_states: Sequence[str], pred_states: Sequence[str]) -> Dict[str, Any]:
@@ -52,8 +52,12 @@ def compare_verdicts(gold_states: Sequence[str], pred_states: Sequence[str]) -> 
 
 def best_gold_match(gold_lines: Sequence[str], pred_line: str,
                     states: Mapping[str, Sequence[str]]) -> Dict[str, Any]:
-    """Khoản có nhiều gold → so với gold cho agreement cao nhất (cùng quy tắc 'lớp tốt nhất' như TN5)."""
+    """Khoản có nhiều gold → so với gold khớp nhất (cùng quy tắc 'lớp tốt nhất' như TN5): theo kappa trước, rồi
+    agreement. Rà soát 2026-11-20 (lỗi 13): trước đây theo agreement — gần như luôn chọn gold ít vi phạm nhất (đa số
+    hồ sơ không vi phạm) chứ không phải gold khớp phán quyết nhất."""
     rows: List[Dict[str, Any]] = []
     for gl in gold_lines:
         rows.append({"gold_line": gl, **compare_verdicts(states[gl], states[pred_line])})
-    return max(rows, key=lambda r: (r["agreement"] or 0, r["kappa"] or 0))
+    # trùng khớp hoàn toàn đứng đầu (kappa không xác định khi cả hai cùng một nhãn cho mọi hồ sơ)
+    return max(rows, key=lambda r: (r["agreement"] == 1.0, r["kappa"] if r["kappa"] is not None else -2.0,
+                                    r["agreement"] or 0))

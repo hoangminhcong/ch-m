@@ -37,6 +37,15 @@ BINARY_TEMPLATES = {
     "Not Co-Existence",
 }
 
+# Mẫu có ngữ nghĩa thời hạn trong engine (declare4py_verifier._check_single_trace), Cypher (M8) và bản diễn đạt
+# ngược. Các mẫu còn lại (Existence, Absence, Init, Exactly1, Choice, Exclusive Choice, Not Co-Existence, Not Responded
+# Existence) BỎ QUA cửa sổ thời gian → time_max trên chúng là thời hạn "trên giấy" (rà soát 2026-11-20, lỗi 1): Tầng 1
+# từ chối. Hạn chót kiểu "không làm A sau mốc" dùng điều kiện 'date', không dùng time_max.
+TIMED_TEMPLATES = frozenset({
+    "Response", "Alternate Response", "Chain Response", "Responded Existence",
+    "Precedence", "Alternate Precedence", "Chain Precedence", "Not Response", "Not Precedence",
+})
+
 TemplateLiteral = Literal[
     "Existence",
     "Absence",
@@ -207,6 +216,12 @@ class DeclareConstraintAST(BaseModel):
             _check_date_value(c.attr, c.val, f"extra_conditions[{i}]")
 
         # Kiểm tra khoảng thời gian hợp lệ
+        if self.time_max is not None and self.template_name not in TIMED_TEMPLATES:
+            raise ValueError(
+                f"Layer 1 Structural Error: template '{self.template_name}' has no time semantics, so 'time_max' "
+                f"would be ignored. Remove time_max/time_min, use a template with a deadline "
+                f"({', '.join(sorted(TIMED_TEMPLATES))}), or express a calendar deadline with a condition on 'date'."
+            )
         if self.time_max is not None:
             min_t = 0 if self.time_min is None else self.time_min
             if min_t < 0 or self.time_max < min_t:

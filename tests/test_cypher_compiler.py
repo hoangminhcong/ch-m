@@ -116,7 +116,7 @@ class TestAgainstEngineOnNeo4j(unittest.TestCase):
             from src.kg.neo4j_store import Neo4jKGStore
             cls.store = Neo4jKGStore.from_env()
         except Exception as exc:  # noqa: BLE001 — không có Neo4j / .env: bỏ qua
-            raise unittest.SkipTest(f"Neo4j không sẵn sàng: {type(exc).__name__}")
+            raise unittest.SkipTest(f"Neo4j không sẵn sàng: {type(exc).__name__}") from None
 
     @classmethod
     def tearDownClass(cls) -> None:
