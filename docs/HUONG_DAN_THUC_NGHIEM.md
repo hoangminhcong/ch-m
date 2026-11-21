@@ -938,6 +938,19 @@ Ngày 9–10 (thêm 2026-11-21, phân tích độ vững — xem `V2_DANG_KY_TRU
 `--out-dir`. Câu trả lời LLM không tất định (chỉ ~20% câu trả lời vòng 1 giống hệt giữa hai lần chạy), nên một kết luận
 X vs Y chỉ vững khi cùng chiều ở cả 3 lần.
 
+**Chạy liên tục bằng hàng đợi (2026-11-21, thay cho chia theo ngày).** `scripts/run_queue.ps1` (không thuộc dấu code):
+chạy lần lượt các cấu hình của một key; cấu hình còn ERROR (hết hạn mức ngày) → chờ 30 phút, chạy lại đúng lệnh (chỉ
+khoản còn lỗi) tới khi 218/218, 0 ERROR mới sang cấu hình sau. Tắt / mở lại bất kỳ lúc nào: chạy lại đúng lệnh, cấu
+hình đã xong được bỏ qua. Log mỗi cấu hình: `<thư mục>\run_<cấu hình>.log`. Tổng 18 lượt, ~9 lượt mỗi key (~9 ngày nếu
+mỗi key ~1 cấu hình / ngày). Hai cửa sổ:
+```powershell
+# cửa sổ 1
+.\scripts\run_queue.ps1 -KeyVar CEREBRAS_API_KEY -Jobs "Y-noL12","Y-retry1","Y-noDomain","R","Z","Z-noProcess","Z-noNotes","Y@results\cap_official_rep2","Y@results\cap_official_rep3"
+# cửa sổ 2
+.\scripts\run_queue.ps1 -KeyVar CEREBRAS_API_KEY_2 -Jobs "Y-noL3","Y-noVac","Y-noDuty","N","Z-noLegal","Z-noMass","Z-noHint","X@results\cap_official_rep2","X@results\cap_official_rep3"
+```
+Nếu PowerShell báo không cho chạy script: chạy trước `Set-ExecutionPolicy -Scope Process Bypass` (chỉ cửa sổ đó).
+
 - Xong một cấu hình: dòng `Tổng hợp` phải có `'ERROR': 0`. Còn ERROR (VD hết hạn mức ngày giữa chừng) → hôm sau chạy
   lại ĐÚNG lệnh đó trước (chỉ chạy khoản còn lỗi), rồi mới sang cấu hình mới.
 - Không dùng `--force`, không đổi `--min-interval` / `--max-tokens` giữa chừng (ghi trong meta).
