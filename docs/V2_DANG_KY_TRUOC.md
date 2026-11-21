@@ -151,6 +151,12 @@ phiên bản (buzer.de, "alle Fassungen seit 2006") và đối chiếu bản cô
   = như cũ; ghi `max_completion_tokens` vào meta; câu trả lời bị cắt ở giới hạn = ERROR, không cache). Khoá cache không
   đổi → mọi kết quả cũ phát lại y nguyên. v1.2 Y-noDuty: 2 khoản cuối (R1307:Art41(3), R1307:Art43(9), lỗi ở vòng sửa
   thứ 5 / 4, prompt 55–60k ký tự) chạy bằng `b32a643` + đúng bản vá này (meta của file ghi git_dirty = true vì vậy).
+- **2026-11-21 — v1, v1.1, v1.2 = CHẠY THỬ (pilot); lần chạy CHÍNH THỨC chạy lại từ đầu** (người dùng: "chạy lại từ
+  ban đầu, coi như các lần thực nghiệm trước là bước test, nháp"; chọn "Gọi API mới hoàn toàn"). Code: commit
+  `03efa6e` (đã commit trước khi chạy; mọi file kết quả ghi mã commit). Thư mục `results/cap_official`, cache trống
+  (không dùng lại câu trả lời LLM của các lần thử). Đủ 16 cấu hình CAP với cùng tham số gọi API
+  (`--min-interval 30 --max-tokens 8000`, Cerebras gpt-oss-120b). Bài báo báo cáo lần chạy chính thức; các lần thử
+  được nêu là thử nghiệm phát triển (đã xem kết quả của chúng khi thiết kế N — B6 đã ghi CAP là tập phát triển cho N).
 
 ## Bổ sung đăng ký trước (2026-11-19) — **ĐÃ DUYỆT 2026-11-19** (người dùng: "oke duyệt tất cả", gồm B4 tùy chọn; B5 theo phương án (a)), áp dụng trước mọi lần chạy Z và tập Đức
 
