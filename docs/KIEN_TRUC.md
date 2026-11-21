@@ -120,6 +120,12 @@ kiện — cả hai sửa 2026-11-20 khi đối chiếu với engine). `tests/te
 `experiment_runner.py` tách thành `semantic_equivalence.py`, `cegis_diagnostic.py`, `vanilla_rag_baseline.py`;
 dữ liệu bộ đề `benchmark_builder.py` → `bpic2017_benchmark_rules.py` (nội dung giữ nguyên, tên cũ vẫn import được).
 
+**Dữ liệu BPIC2017 (2026-11-21) đã chuyển ra kho lưu** `C:\Users\hayab\nsai_archive_bpic2017` (giữ nguyên đường dẫn
+tương đối; 29 file, SHA-256 đã so khớp): log `bpic2017_events.parquet`, Directive PDF + khoản đã tách, đồ thị luật /
+tiến trình, Γ BPIC2017 (`process_schema.json`, `gamma_bpic2017.json`), bộ đề 30 luật, gold + nhãn BPIC2017,
+`configs/config.yaml`, kết quả cũ trong `results/`. Hệ thống CAP không đọc file nào trong số đó (đã kiểm: 637 test qua,
+`run_pipeline pre` qua, phát lại v1.2 Y / X 436/436 giống hệt). Test BPIC2017 tự bỏ qua khi bộ này tắt.
+
 ## 11. Ghi chú trung thực về Graph-RAG và Neo4j
 
 - **Truy xuất lúc sinh luật đọc KG dạng JSON** (`src/neural/graph_context.py` duyệt cạnh REFERS_TO / DEFINES / USES_TERM

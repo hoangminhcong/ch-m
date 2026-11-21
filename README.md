@@ -7,8 +7,9 @@ KG cùng bằng chứng.
 
 **Bộ dữ liệu chính:** nhật ký BPIC2018 (chi trả trực tiếp cho nông dân Đức, 43 809 hồ sơ, 2,5 triệu sự kiện) +
 4 Quy định CAP của EU (1306/2013, 1307/2013, 640/2014, 809/2014) + tập Đức (InVeKoSV, DirektZahlDurchfV) theo phiên
-bản từng năm. **Model:** `gpt-oss-120b` (Cerebras / Groq). Bộ cũ BPIC2017 + Directive 2008/48/EC đang tạm vô hiệu
-(mở lại: biến môi trường `NSAI_ENABLE_BPIC2017=1`).
+bản từng năm. **Model:** `gpt-oss-120b` (Cerebras / Groq). Bộ cũ BPIC2017 + Directive 2008/48/EC: mã đang tạm vô hiệu,
+dữ liệu đã chuyển ra kho lưu `C:\Users\hayab\nsai_archive_bpic2017` (2026-11-21; mở lại: chép kho lưu về đúng chỗ rồi
+đặt `NSAI_ENABLE_BPIC2017=1`).
 
 ## Tài liệu
 
