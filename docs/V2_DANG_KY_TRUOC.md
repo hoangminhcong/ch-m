@@ -157,6 +157,19 @@ phiên bản (buzer.de, "alle Fassungen seit 2006") và đối chiếu bản cô
   (không dùng lại câu trả lời LLM của các lần thử). Đủ 16 cấu hình CAP với cùng tham số gọi API
   (`--min-interval 30 --max-tokens 8000`, Cerebras gpt-oss-120b). Bài báo báo cáo lần chạy chính thức; các lần thử
   được nêu là thử nghiệm phát triển (đã xem kết quả của chúng khi thiết kế N — B6 đã ghi CAP là tập phát triển cho N).
+- **2026-11-21 — phát hiện độ dao động giữa các lần chạy; THÊM lần chạy lặp cho X và Y (quyết định SAU khi đã xem kết
+  quả X / Y của lần chạy chính thức; người dùng chọn "Thêm lần chạy lặp").** Lần chính thức: X 194/210, Y 184/210, X vs Y
+  p = 0,013 (12 / 2 khoản lệch); v1.2 cùng code / dữ liệu / prompt: X 190, Y 192, p = 0,79. So hai lần: câu trả lời vòng 1
+  giống hệt chỉ 42/218 (X), 43/218 (Y) — Cerebras gpt-oss-120b KHÔNG tất định ở temperature 0; 10 (X) / 18 (Y) khoản đổi
+  đúng ↔ sai. Vậy McNemar trên MỘT lần chạy không tách được khác biệt cấu hình khỏi dao động lấy mẫu.
+  - Kết quả CHÍNH vẫn là lần chạy đã đăng ký (`results/cap_official`), báo nguyên như đã chạy.
+  - Phân tích ĐỘ VỮNG (thêm, sau khi xem kết quả): thêm 2 lần chạy lặp X và Y, cùng commit `53c080e`, cùng tham số,
+    cache trống, thư mục `results/cap_official_rep2`, `results/cap_official_rep3`. Báo: trung bình và khoảng (min–max)
+    của tỉ lệ đúng / luật sai trên bẫy qua 3 lần; số khoản cho cùng kết quả ở cả 3 lần; so X vs Y bằng số khoản đúng ở
+    đa số lần (≥ 2/3). Một kết luận X vs Y chỉ được nêu là vững khi cùng chiều ở cả 3 lần.
+  - Các phép so ablation (ngày 2–8, mỗi cấu hình một lần) phải đọc cùng giới hạn này: chỉ nêu là vững khi sai khác lớn
+    hơn hẳn mức dao động đo được của X / Y (~10–18 khoản đổi giữa hai lần).
+  - Đã chắc ở mọi lần chạy (v1.2 + chính thức): 0/3 khoản positive đúng; Y thua mức chuẩn "luôn BASELESS" (p < 0,0001).
 
 ## Bổ sung đăng ký trước (2026-11-19) — **ĐÃ DUYỆT 2026-11-19** (người dùng: "oke duyệt tất cả", gồm B4 tùy chọn; B5 theo phương án (a)), áp dụng trước mọi lần chạy Z và tập Đức
 

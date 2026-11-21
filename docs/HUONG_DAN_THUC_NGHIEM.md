@@ -931,6 +931,12 @@ C:\Users\hayab\.venvs\nsai-compliance\Scripts\python.exe scripts\run_cap_generat
 | 6 | Z | Z-noLegal |
 | 7 | Z-noProcess | Z-noMass |
 | 8 | Z-noNotes | Z-noHint |
+| 9 | Y → `--out-dir results\cap_official_rep2` | X → `--out-dir results\cap_official_rep2` |
+| 10 | Y → `--out-dir results\cap_official_rep3` | X → `--out-dir results\cap_official_rep3` |
+
+Ngày 9–10 (thêm 2026-11-21, phân tích độ vững — xem `V2_DANG_KY_TRUOC.md`): lặp X và Y với ĐÚNG lệnh trên, chỉ đổi
+`--out-dir`. Câu trả lời LLM không tất định (chỉ ~20% câu trả lời vòng 1 giống hệt giữa hai lần chạy), nên một kết luận
+X vs Y chỉ vững khi cùng chiều ở cả 3 lần.
 
 - Xong một cấu hình: dòng `Tổng hợp` phải có `'ERROR': 0`. Còn ERROR (VD hết hạn mức ngày giữa chừng) → hôm sau chạy
   lại ĐÚNG lệnh đó trước (chỉ chạy khoản còn lỗi), rồi mới sang cấu hình mới.
