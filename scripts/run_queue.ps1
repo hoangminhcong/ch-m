@@ -3,10 +3,15 @@
 # còn lỗi) cho tới khi 0 ERROR mới sang cấu hình sau. Chạy lại script bất kỳ lúc nào: cấu hình đã xong được bỏ qua.
 #
 #   .\scripts\run_queue.ps1 -KeyVar CEREBRAS_API_KEY -Jobs "Y-noL12","Y@results\cap_official_rep2"
-#   Mỗi job: "<cấu hình>" (thư mục mặc định results\cap_official) hoặc "<cấu hình>@<thư mục>".
+#   Mỗi job: "<cấu hình>" (thư mục mặc định -DefaultOutDir) hoặc "<cấu hình>@<thư mục>".
+#   Groq: -Provider groq -KeyVar GROQ_API_KEY_2 -MinInterval <giây> -MaxTokens <token> -DefaultOutDir results\cap_groq
 param(
     [Parameter(Mandatory = $true)][string]$KeyVar,
     [Parameter(Mandatory = $true)][string[]]$Jobs,
+    [ValidateSet("cerebras", "groq")][string]$Provider = "cerebras",
+    [double]$MinInterval = 30,
+    [int]$MaxTokens = 8000,
+    [string]$DefaultOutDir = "results\cap_official",
     [int]$WaitMinutes = 30,
     [int]$MaxAttempts = 60
 )
@@ -28,7 +33,7 @@ function Get-ErrorCount([string]$OutDir, [string]$Config) {
 foreach ($job in $Jobs) {
     $parts = $job.Split("@", 2)
     $config = $parts[0]
-    $outDir = if ($parts.Count -gt 1) { $parts[1] } else { "results\cap_official" }
+    $outDir = if ($parts.Count -gt 1) { $parts[1] } else { $DefaultOutDir }
     New-Item -ItemType Directory -Force -Path $outDir | Out-Null
     $log = Join-Path $outDir "run_$config.log"
     for ($attempt = 1; $attempt -le $MaxAttempts; $attempt++) {
@@ -36,8 +41,8 @@ foreach ($job in $Jobs) {
         $stamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
         Write-Host "`n=== $stamp  $config -> $outDir  (lần $attempt, key $KeyVar)" -ForegroundColor Cyan
         "`n=== $stamp  $config -> $outDir  (lần $attempt)" | Out-File -Append -Encoding utf8 $log
-        & $Python scripts\run_cap_generation.py --provider cerebras --config $config --key-var $KeyVar `
-            --min-interval 30 --max-tokens 8000 --out-dir $outDir 2>&1 | Tee-Object -Append -FilePath $log
+        & $Python scripts\run_cap_generation.py --provider $Provider --config $config --key-var $KeyVar `
+            --min-interval $MinInterval --max-tokens $MaxTokens --out-dir $outDir 2>&1 | Tee-Object -Append -FilePath $log
         $left = Get-ErrorCount $outDir $config
         if ($left -eq 0) { break }
         Write-Host "Còn $left khoản ERROR (-1 = chưa đủ 218 khoản) — chờ $WaitMinutes phút rồi chạy lại" -ForegroundColor Yellow

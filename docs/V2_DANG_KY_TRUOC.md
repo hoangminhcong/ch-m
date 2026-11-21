@@ -170,6 +170,17 @@ phiên bản (buzer.de, "alle Fassungen seit 2006") và đối chiếu bản cô
   - Các phép so ablation (ngày 2–8, mỗi cấu hình một lần) phải đọc cùng giới hạn này: chỉ nêu là vững khi sai khác lớn
     hơn hẳn mức dao động đo được của X / Y (~10–18 khoản đổi giữa hai lần).
   - Đã chắc ở mọi lần chạy (v1.2 + chính thức): 0/3 khoản positive đúng; Y thua mức chuẩn "luôn BASELESS" (p < 0,0001).
+- **2026-11-21 — lần chạy chính thức CHUYỂN SANG GROQ, chạy lại TẤT CẢ** (người dùng: "t quyết định chạy tất cả lại bằng
+  6 key groq"; lý do: hạn mức Cerebras 1 triệu token / ngày / key không đủ cho 18 lượt còn lại). Không trộn hai nhà
+  cung cấp: cùng model gpt-oss-120b nhưng hệ phục vụ khác nhau → mọi cấu hình, kể cả X và Y, chạy lại trên Groq.
+  - Model `openai/gpt-oss-120b` (Groq), code commit có dấu code `199640a02cf180d2` (không đổi), 6 key Groq (một cửa sổ
+    hàng đợi mỗi key, `scripts/run_queue.ps1 -Provider groq`), cache trống. Thư mục `results/cap_groq` (16 cấu hình)
+    và `results/cap_groq_rep2`, `results/cap_groq_rep3` (lặp X, Y — phân tích độ vững như mục trên).
+  - Tham số gọi API (`--min-interval`, `--max-tokens`): chốt TỪ HẠN MỨC ĐO ĐƯỢC của Groq (scripts/check_api_quota.py)
+    TRƯỚC lượt chạy đầu tiên, giữ nguyên cho mọi cấu hình; ghi bổ sung giá trị vào đây khi chốt.
+  - Kết quả CHÍNH = lần chạy Groq. Lần Cerebras (`results/cap_official`: X, Y ngày 1) giữ nguyên, báo như một lần chạy
+    bổ sung trên nhà cung cấp khác (cùng code / dữ liệu / prompt), không gộp vào phép so của lần Groq. Quyết định đổi
+    nhà cung cấp đưa ra SAU khi đã thấy kết quả X / Y trên Cerebras — lý do là hạn mức, nhưng vẫn phải nêu trong bài.
 
 ## Bổ sung đăng ký trước (2026-11-19) — **ĐÃ DUYỆT 2026-11-19** (người dùng: "oke duyệt tất cả", gồm B4 tùy chọn; B5 theo phương án (a)), áp dụng trước mọi lần chạy Z và tập Đức
 
