@@ -902,6 +902,39 @@ log gốc trong `data\interim`).
 Sau đó chạy `run_pipeline post` bằng code hiện tại (chấm / phân tích không đổi kết quả sinh). Mọi lần chạy MỚI (N, R,
 Z, tập Đức, v1.3) dùng code hiện tại.
 
+### C9. Lần chạy CHÍNH THỨC bộ CAP (2026-11-21; v1–v1.2 là chạy thử)
+
+Code commit `03efa6e` (commit sau đó chỉ sửa tài liệu — dấu `code.sha256` của mọi .py giống hệt), thư mục
+`results\cap_official`, cache trống. Hạn mức Cerebras đo được (mỗi key): 5 request / phút, 150 / giờ, 30 000 token /
+phút, 1 000 000 token / ngày; một cấu hình cần ~300–550 request và ~1 triệu token → **mỗi key ~1 cấu hình / ngày,
+~2,5–4 giờ**. Hai key chạy song song ở hai cửa sổ (mỗi cấu hình một file cache riêng, an toàn).
+
+Một lần trước khi bắt đầu (và sau mỗi lần sửa code / dữ liệu): `python scripts\run_pipeline.py pre` phải qua hết.
+
+Mỗi ngày, mỗi cửa sổ một cấu hình (cửa sổ 1 dùng `CEREBRAS_API_KEY`, cửa sổ 2 `CEREBRAS_API_KEY_2`):
+```powershell
+C:\Users\hayab\.venvs\nsai-compliance\Scripts\python.exe scripts\run_cap_generation.py --provider cerebras `
+  --config <CẤU HÌNH> --key-var <BIẾN KEY> --min-interval 30 --max-tokens 8000 --out-dir results\cap_official
+```
+
+| Ngày | Cửa sổ 1 (`CEREBRAS_API_KEY`) | Cửa sổ 2 (`CEREBRAS_API_KEY_2`) |
+|---|---|---|
+| 1 | Y | X |
+| 2 | Y-noL12 | Y-noL3 |
+| 3 | Y-retry1 | Y-noVac |
+| 4 | Y-noDomain | Y-noDuty |
+| 5 | R | N |
+| 6 | Z | Z-noLegal |
+| 7 | Z-noProcess | Z-noMass |
+| 8 | Z-noNotes | Z-noHint |
+
+- Xong một cấu hình: dòng `Tổng hợp` phải có `'ERROR': 0`. Còn ERROR (VD hết hạn mức ngày giữa chừng) → hôm sau chạy
+  lại ĐÚNG lệnh đó trước (chỉ chạy khoản còn lỗi), rồi mới sang cấu hình mới.
+- Không dùng `--force`, không đổi `--min-interval` / `--max-tokens` giữa chừng (ghi trong meta).
+- Bất kỳ lúc nào (không gọi API): `python scripts\run_pipeline.py post --pred-dir results\cap_official --configs X Y`
+  — chấm những cấu hình đã có; T2 ở cuối phải 0 vi phạm.
+- Tạm dừng OneDrive khi đang chạy. Tập Đức chạy SAU khi có gold Đức (AI #2 + phân xử).
+
 ## Xử lý sự cố
 
 | Triệu chứng | Nguyên nhân thường gặp | Cách xử lý |
